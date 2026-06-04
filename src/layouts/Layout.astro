@@ -108,7 +108,7 @@ const jsonLd = {
 
     <slot name="head" />
   </head>
-  <body class="font-body text-brand-dark antialiased min-h-screen flex flex-col">
+  <body class="font-body text-brand-dark antialiased min-h-dvh flex flex-col">
     <a
       href="#main-content"
       class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[60] focus:px-4 focus:py-2 focus:bg-brand-green focus:text-white"
@@ -124,6 +124,44 @@ const jsonLd = {
     <Footer />
     <ScrollTop />
     <CookieBanner />
+
+    <!-- Tradutor (Google) carregado sob demanda, só quando a pessoa clica em EN/ES (LGPD) -->
+    <div id="google_translate_element" class="hidden" aria-hidden="true"></div>
+    <script is:inline>
+      (function () {
+        var loaded = false;
+        window.googleTranslateElementInit = function () {
+          new google.translate.TranslateElement(
+            { pageLanguage: 'pt', autoDisplay: false },
+            'google_translate_element'
+          );
+        };
+        function loadGT(cb) {
+          if (loaded) { cb && cb(); return; }
+          loaded = true;
+          var s = document.createElement('script');
+          s.src = 'https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';
+          document.body.appendChild(s);
+          var tries = 0;
+          var t = setInterval(function () {
+            if (document.querySelector('.goog-te-combo')) { clearInterval(t); cb && cb(); }
+            else if (++tries > 30) { clearInterval(t); }
+          }, 300);
+        }
+        function fire(el, ev) {
+          try { var e = document.createEvent('HTMLEvents'); e.initEvent(ev, true, true); el.dispatchEvent(e); } catch (_) {}
+        }
+        window.doGTranslate = function (pair) {
+          if (pair && typeof pair === 'object' && pair.value) pair = pair.value;
+          if (!pair) return;
+          var lang = pair.split('|')[1];
+          loadGT(function () {
+            var combo = document.querySelector('.goog-te-combo');
+            if (combo) { combo.value = lang; fire(combo, 'change'); }
+          });
+        };
+      })();
+    </script>
 
     <script>
       // Reveal suave ao entrar na viewport. Sem biblioteca, respeita prefers-reduced-motion (via CSS).
