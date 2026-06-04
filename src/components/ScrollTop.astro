@@ -1,0 +1,30 @@
+---
+---
+
+<button
+  id="scroll-top"
+  type="button"
+  aria-label="Voltar ao topo da página"
+  class="fixed bottom-6 right-6 z-30 w-12 h-12 bg-brand-terracota text-white items-center justify-center transition-all duration-300 opacity-0 invisible hover:bg-brand-terracota-hover hidden md:flex"
+>
+  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 15l7-7 7 7" />
+  </svg>
+</button>
+
+<script>
+  const btn = document.getElementById('scroll-top');
+  if (btn) {
+    window.addEventListener('scroll', () => {
+      const shouldShow = window.scrollY > 600;
+      btn.classList.toggle('opacity-100', shouldShow);
+      btn.classList.toggle('opacity-0', !shouldShow);
+      btn.classList.toggle('visible', shouldShow);
+      btn.classList.toggle('invisible', !shouldShow);
+    });
+
+    btn.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  }
+</script>

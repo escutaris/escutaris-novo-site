@@ -1,0 +1,45 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout
+  title="Página não encontrada | Escutaris"
+  description="A página que você procura não foi encontrada."
+>
+  <section class="section-pad bg-brand-off-white">
+    <div class="container-soft">
+      <div class="max-w-2xl mx-auto text-center py-12 md:py-20">
+        <p class="font-display text-7xl md:text-8xl font-bold text-brand-green leading-none mb-6 tabular-nums">
+          404
+        </p>
+        <h1 class="text-3xl md:text-4xl font-display font-bold text-brand-dark mb-5 leading-tight">
+          Esta página não foi encontrada.
+        </h1>
+        <p class="text-lg text-brand-muted leading-relaxed mb-10">
+          O endereço pode ter mudado ou não existe mais. Vamos te ajudar a encontrar
+          o caminho de volta.
+        </p>
+        <div class="flex flex-wrap gap-3 justify-center">
+          <a href="/" class="btn-primary">
+            Ir para o início
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
+          </a>
+          <a href="/diagnostico-dos-fatores-psicossociais-e-saude-mental-no-trabalho" class="btn-ghost">
+            Conhecer o Diagnóstico
+          </a>
+        </div>
+
+        <div class="mt-12 pt-8 border-t border-brand-border">
+          <p class="text-[11px] uppercase tracking-[0.18em] text-brand-muted mb-4">Talvez você procure</p>
+          <div class="flex flex-wrap gap-x-6 gap-y-2 justify-center text-sm">
+            <a href="/#servicos" class="text-brand-green hover:text-brand-terracota transition-colors">Serviços</a>
+            <a href="/blog" class="text-brand-green hover:text-brand-terracota transition-colors">Blog</a>
+            <a href="/#contato" class="text-brand-green hover:text-brand-terracota transition-colors">Contato</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

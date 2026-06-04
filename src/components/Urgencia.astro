@@ -1,0 +1,60 @@
+---
+const stats = [
+  {
+    num: '2º',
+    desc: 'país do mundo em casos de burnout',
+    fonte: 'ISMA-BR',
+  },
+  {
+    num: '3ª',
+    desc: 'maior causa de afastamento pelo INSS são os transtornos mentais',
+    fonte: 'INSS',
+  },
+  {
+    num: '+R$45 mil',
+    desc: 'é o custo médio de um afastamento por transtorno mental, por trabalhador ao ano',
+    fonte: 'absenteísmo, presenteísmo, substituição e passivo jurídico',
+  },
+  {
+    num: 'US$1 → US$4',
+    desc: 'de retorno em produtividade para cada dólar investido em saúde mental',
+    fonte: 'OMS',
+  },
+];
+---
+
+<section id="urgencia" class="section-pad bg-brand-dark text-white">
+  <div class="container-soft">
+    <div class="reveal max-w-4xl mb-14 md:mb-16">
+      <span class="eyebrow mb-5">Por que agir agora</span>
+      <h2 class="text-3xl md:text-5xl font-display font-bold mb-6 leading-[1.1] text-white">
+        A conta do adoecimento chegou — e a fiscalização também.
+      </h2>
+      <p class="text-lg md:text-xl text-white/80 leading-relaxed">
+        Desde 2025, a Portaria MTE 1.419/2024 e a NR-1 atualizada exigem que toda empresa
+        identifique, avalie e gerencie os fatores psicossociais no PGR. Ignorar deixou de
+        ser uma opção: o custo do adoecimento e o risco regulatório agora andam juntos.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 border-t border-l border-white/15">
+      {stats.map((s) => (
+        <div class="reveal p-7 md:p-8 border-r border-b border-white/15 flex flex-col">
+          <p class="font-display text-3xl md:text-4xl font-bold text-brand-terracota-hover mb-3 leading-none tabular-nums">
+            {s.num}
+          </p>
+          <p class="text-white/85 leading-snug mb-4 flex-1">{s.desc}</p>
+          <p class="text-[11px] uppercase tracking-[0.14em] text-white/45">{s.fonte}</p>
+        </div>
+      ))}
+    </div>
+
+    <div class="reveal mt-10 border-l-2 border-brand-terracota pl-5 max-w-3xl">
+      <p class="text-white/75 leading-relaxed">
+        A Portaria MTE 1.419/2024 tornou obrigatória a inclusão dos fatores psicossociais
+        no PGR. Empresas que não se adequarem ficam sujeitas a
+        <strong class="text-white font-semibold"> autuações, interdições e ações regressivas do INSS</strong>.
+      </p>
+    </div>
+  </div>
+</section>

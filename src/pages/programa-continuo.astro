@@ -1,0 +1,390 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const whatsappUrl =
+  'https://api.whatsapp.com/send?phone=5571981357004&text=Ol%C3%A1%2C+gostaria+de+conhecer+o+Programa+Cont%C3%ADnuo+da+Escutaris';
+
+const fases = [
+  {
+    titulo: 'Diagnóstico Inicial',
+    atividades: 'Avaliação completa dos fatores psicossociais e mapeamento de riscos.',
+    prazo: 'Meses 1–2',
+    entrega: 'Relatório técnico + PGR psicossocial.',
+  },
+  {
+    titulo: 'Intervenção',
+    atividades: 'Treinamentos, rodas de conversa e ações corretivas direcionadas.',
+    prazo: 'Meses 3–6',
+    entrega: 'Plano executado + indicadores de acompanhamento.',
+  },
+  {
+    titulo: 'Monitoramento',
+    atividades: 'Acompanhamento mensal e supervisão de líderes.',
+    prazo: 'Meses 7–10',
+    entrega: 'Relatórios mensais + ajustes do plano.',
+  },
+  {
+    titulo: 'Reavaliação',
+    atividades: 'Diagnóstico comparativo e relatório anual de evolução.',
+    prazo: 'Meses 11–12',
+    entrega: 'Evolução documentada + desenho do próximo ciclo.',
+  },
+];
+
+const inclui = [
+  'Diagnóstico inicial dos fatores psicossociais',
+  'Treinamentos programados ao longo do ciclo',
+  'Acompanhamento mensal com a sua equipe',
+  'Relatórios trimestrais de evolução',
+  'Relatório anual consolidado',
+];
+
+const evidencias = [
+  {
+    metrica: 'US$ 4',
+    titulo: 'Retorno por dólar investido',
+    texto:
+      'Segundo a OMS, cada US$ 1 investido em saúde mental no trabalho gera, em média, US$ 4 de retorno em produtividade e redução de afastamentos.',
+  },
+  {
+    metrica: '30–50%',
+    titulo: 'Redução de absenteísmo',
+    texto:
+      'Programas estruturados e contínuos de saúde mental ocupacional estão associados a reduções de 30% a 50% nas taxas de absenteísmo.',
+  },
+  {
+    metrica: 'NR-1',
+    titulo: 'Conformidade permanente',
+    texto:
+      'O ciclo anual mantém o gerenciamento de riscos psicossociais sempre atualizado, com documentação técnica integrada ao PGR.',
+  },
+];
+
+const faqs = [
+  {
+    q: 'Qual a diferença entre o programa contínuo e um diagnóstico isolado?',
+    a: 'O diagnóstico isolado fotografa um momento. O programa contínuo é um ciclo anual que integra diagnóstico, intervenção, monitoramento e reavaliação — gerando evolução documentada e conformidade permanente com a NR-1.',
+  },
+  {
+    q: 'O programa atende às exigências da NR-1?',
+    a: 'Sim. O ciclo mantém o gerenciamento de riscos psicossociais atualizado ao longo do ano, com diagnóstico, PGR psicossocial e relatórios que sustentam a conformidade de forma permanente, não pontual.',
+  },
+  {
+    q: 'Qual a duração do programa?',
+    a: 'O programa é estruturado em um ciclo anual de doze meses, organizado em quatro fases que se retroalimentam. Ao final do ciclo, a reavaliação já desenha o ponto de partida do ciclo seguinte.',
+  },
+  {
+    q: 'Quem conduz o programa?',
+    a: 'A coordenação técnica é da Dra. Ana Paula Teixeira (CRM-BA 12797), com metodologia baseada em evidências e nas diretrizes da OMS e da OIT para saúde mental no trabalho.',
+  },
+  {
+    q: 'O que a empresa recebe ao longo do ano?',
+    a: 'Diagnóstico inicial, treinamentos programados, acompanhamento mensal, relatórios trimestrais e um relatório anual consolidado com a evolução dos indicadores.',
+  },
+];
+
+const siteUrl = 'https://www.escutaris.com.br';
+const pageUrl = `${siteUrl}/programa-continuo`;
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'Service',
+      '@id': `${pageUrl}#service`,
+      name: 'Programa Contínuo de Saúde Mental Ocupacional',
+      serviceType: 'Programa contínuo de saúde mental ocupacional (NR-1)',
+      provider: { '@id': `${siteUrl}/#organization` },
+      areaServed: 'BR',
+      url: pageUrl,
+      description:
+        'Programa contínuo de saúde mental ocupacional da Escutaris: ciclo anual que integra diagnóstico, intervenção, monitoramento e reavaliação, com conformidade permanente à NR-1 e resultados mensuráveis.',
+    },
+    {
+      '@type': 'FAQPage',
+      '@id': `${pageUrl}#faq`,
+      mainEntity: faqs.map((f) => ({
+        '@type': 'Question',
+        name: f.q,
+        acceptedAnswer: { '@type': 'Answer', text: f.a },
+      })),
+    },
+  ],
+};
+---
+
+<Layout
+  title="Programa Contínuo de Saúde Mental Ocupacional | Escutaris"
+  description="Programa contínuo de saúde mental ocupacional da Escutaris: ciclo anual que integra diagnóstico, intervenção, monitoramento e reavaliação. Conformidade permanente com a NR-1 e resultados mensuráveis, com base em evidências da OMS e da OIT."
+  canonical={pageUrl}
+>
+  <script
+    slot="head"
+    type="application/ld+json"
+    set:html={JSON.stringify(jsonLd)}
+    is:inline
+  />
+
+  <!-- HERO -->
+  <section class="bg-brand-off-white">
+    <div class="container-soft py-16 md:py-24">
+      <nav class="mb-8 text-xs uppercase tracking-[0.14em] text-brand-muted" aria-label="Trilha">
+        <a href="/" class="hover:text-brand-terracota transition-colors">Início</a>
+        <span class="mx-2" aria-hidden="true">/</span>
+        <span>Programa Contínuo</span>
+      </nav>
+
+      <div class="max-w-4xl">
+        <span class="eyebrow mb-5 block">Programa contínuo · Ciclo anual</span>
+        <h1 class="text-4xl md:text-5xl lg:text-[3.5rem] font-display font-bold mb-6 leading-[1.08] text-brand-dark">
+          Saúde mental não é evento. É <span class="text-brand-green">gestão contínua</span>.
+        </h1>
+        <p class="text-lg md:text-xl text-brand-muted leading-relaxed mb-10 max-w-3xl">
+          Para empresas que entendem que conformidade e cuidado se constroem ao longo do
+          tempo. O programa integra diagnóstico, capacitação, acompanhamento e documentação
+          em um ciclo que se retroalimenta — gerando resultados mensuráveis e conformidade
+          permanente com a NR-1.
+        </p>
+        <div class="flex flex-wrap gap-3">
+          <a href="/#contato" class="btn-primary">
+            Solicite uma proposta
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
+          </a>
+          <a href={whatsappUrl} target="_blank" rel="noopener" class="btn-whatsapp">
+            Falar no WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="border-y border-brand-border bg-white">
+      <div class="container-soft">
+        <div class="grid grid-cols-2 md:grid-cols-4 divide-y md:divide-y-0 md:divide-x divide-brand-border">
+          {[
+            { n: '4', l: 'Fases que se retroalimentam' },
+            { n: '12', l: 'Meses de ciclo completo' },
+            { n: 'NR-1', l: 'Conformidade permanente' },
+            { n: 'OMS/OIT', l: 'Base científica e técnica' },
+          ].map((s) => (
+            <div class="py-8 md:py-10 px-6 text-center md:text-left">
+              <p class="font-display text-3xl md:text-4xl font-bold text-brand-green mb-1.5 leading-none tabular-nums">
+                {s.n}
+              </p>
+              <p class="text-sm text-brand-muted leading-snug">{s.l}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- POR QUE CONTÍNUO -->
+  <section class="section-pad bg-white">
+    <div class="container-soft">
+      <div class="reveal max-w-4xl mb-16 md:mb-20">
+        <span class="eyebrow mb-5">Por que contínuo</span>
+        <h2 class="text-3xl md:text-5xl font-display font-bold mb-6 leading-[1.1] text-brand-dark">
+          Um ciclo que se retroalimenta, não uma ação avulsa.
+        </h2>
+        <p class="text-lg md:text-xl text-brand-muted leading-relaxed">
+          O gerenciamento de riscos psicossociais exigido pela NR-1 não termina em um relatório.
+          Cada fase do programa alimenta a seguinte: o diagnóstico orienta a intervenção, o
+          monitoramento ajusta o plano e a reavaliação abre o próximo ciclo — sustentando a
+          conformidade ao longo de todo o ano.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ESTRUTURA DO PROGRAMA -->
+  <section class="section-pad bg-brand-off-white">
+    <div class="container-soft">
+      <div class="reveal max-w-4xl mb-16 md:mb-20">
+        <span class="eyebrow mb-5">Estrutura do programa</span>
+        <h2 class="text-3xl md:text-5xl font-display font-bold mb-6 leading-[1.1] text-brand-dark">
+          Quatro fases ao longo de doze meses.
+        </h2>
+        <p class="text-lg md:text-xl text-brand-muted leading-relaxed">
+          Cada fase tem atividades, prazo e entregas técnicas definidas. Juntas, formam um
+          ciclo anual completo de saúde mental ocupacional.
+        </p>
+      </div>
+
+      <ol class="border border-brand-border bg-white">
+        {fases.map((fase, i) => (
+          <li class:list={[
+            'reveal',
+            i < fases.length - 1 && 'border-b border-brand-border',
+          ]}>
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 p-8 md:p-10">
+              <div class="lg:col-span-3 flex items-start gap-4">
+                <span class="font-display text-4xl md:text-5xl font-bold text-brand-terracota leading-none tabular-nums">
+                  0{i + 1}
+                </span>
+                <div>
+                  <h3 class="text-lg md:text-xl font-display font-bold text-brand-dark leading-tight">
+                    {fase.titulo}
+                  </h3>
+                  <p class="text-sm text-brand-green font-semibold mt-1 tabular-nums">{fase.prazo}</p>
+                </div>
+              </div>
+              <div class="lg:col-span-5">
+                <span class="text-[11px] uppercase tracking-[0.16em] text-brand-muted font-semibold mb-2 block">
+                  Atividades
+                </span>
+                <p class="text-brand-dark leading-relaxed">{fase.atividades}</p>
+              </div>
+              <div class="lg:col-span-4">
+                <span class="text-[11px] uppercase tracking-[0.16em] text-brand-muted font-semibold mb-2 block">
+                  Entrega
+                </span>
+                <p class="text-brand-dark leading-relaxed">{fase.entrega}</p>
+              </div>
+            </div>
+          </li>
+        ))}
+      </ol>
+    </div>
+  </section>
+
+  <!-- O QUE ESTÁ INCLUÍDO -->
+  <section class="section-pad bg-white">
+    <div class="container-soft">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-start">
+        <div class="reveal lg:col-span-5">
+          <span class="eyebrow mb-5">O que está incluído</span>
+          <h2 class="text-3xl md:text-4xl font-display font-bold mb-6 leading-[1.1] text-brand-dark">
+            Tudo o que o ciclo anual contempla.
+          </h2>
+          <p class="text-brand-muted leading-relaxed text-lg">
+            O programa é contratado em regime anual e acompanha a sua organização do
+            diagnóstico inicial ao relatório consolidado de evolução.
+          </p>
+        </div>
+
+        <div class="lg:col-span-7">
+          <ul class="border border-brand-border bg-brand-off-white divide-y divide-brand-border">
+            {inclui.map((item) => (
+              <li class="flex items-start gap-4 p-6 md:p-7">
+                <span class="text-brand-terracota font-bold mt-0.5 flex-shrink-0" aria-hidden="true">·</span>
+                <span class="text-brand-dark leading-relaxed">{item}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EVIDÊNCIAS E RETORNO -->
+  <section class="section-pad bg-brand-green text-white">
+    <div class="container-soft">
+      <div class="max-w-4xl mb-14 md:mb-16">
+        <span class="text-[11px] uppercase tracking-[0.18em] text-white/70 font-semibold mb-4 block">
+          O que dizem as evidências
+        </span>
+        <h2 class="text-3xl md:text-4xl font-display font-bold text-white mb-6 leading-tight">
+          Saúde mental ocupacional é investimento com retorno medido.
+        </h2>
+        <p class="text-white/85 leading-relaxed text-lg max-w-2xl">
+          Os dados de mercado da OMS e da OIT mostram que programas contínuos e estruturados
+          se pagam — em produtividade, redução de afastamentos e conformidade permanente.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 border border-white/15 divide-y md:divide-y-0 md:divide-x divide-white/15">
+        {evidencias.map((e) => (
+          <div class="p-8 md:p-10">
+            <p class="font-display text-4xl md:text-5xl font-bold text-white mb-4 leading-none tabular-nums">
+              {e.metrica}
+            </p>
+            <p class="font-display font-bold text-white mb-2">{e.titulo}</p>
+            <p class="text-sm text-white/75 leading-relaxed">{e.texto}</p>
+          </div>
+        ))}
+      </div>
+
+      <p class="text-xs text-white/55 leading-relaxed mt-8 max-w-3xl">
+        Fontes: Organização Mundial da Saúde (OMS) e Organização Internacional do Trabalho (OIT).
+        Dados de mercado de referência; resultados variam conforme o contexto de cada organização.
+      </p>
+    </div>
+  </section>
+
+  <!-- COORDENAÇÃO TÉCNICA -->
+  <section class="section-pad bg-brand-off-white">
+    <div class="container-soft">
+      <div class="reveal border border-brand-border bg-white p-8 md:p-12 max-w-4xl">
+        <span class="eyebrow mb-5 block">Coordenação técnica</span>
+        <h2 class="text-2xl md:text-3xl font-display font-bold text-brand-dark mb-5 leading-tight">
+          Metodologia baseada em evidências, sob coordenação médica.
+        </h2>
+        <p class="text-brand-muted leading-relaxed text-lg">
+          O programa é coordenado pela <strong class="text-brand-dark font-semibold">Dra. Ana Paula
+          Teixeira (CRM-BA 12797)</strong>, com metodologia ancorada nas diretrizes da OMS e da OIT
+          para saúde mental no trabalho. Cada decisão técnica — do diagnóstico à reavaliação — é
+          orientada por evidência científica e pela conformidade com a NR-1.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section-pad bg-white">
+    <div class="container-soft">
+      <div class="reveal max-w-4xl mb-16 md:mb-20">
+        <span class="eyebrow mb-5">Perguntas frequentes</span>
+        <h2 class="text-3xl md:text-5xl font-display font-bold mb-6 leading-[1.1] text-brand-dark">
+          O que as empresas costumam perguntar.
+        </h2>
+      </div>
+
+      <div class="max-w-3xl border-t border-brand-border">
+        {faqs.map((f) => (
+          <details class="group border-b border-brand-border">
+            <summary class="flex items-start justify-between gap-4 py-6 cursor-pointer list-none">
+              <span class="font-display font-bold text-brand-dark text-lg leading-snug">
+                {f.q}
+              </span>
+              <span class="text-brand-terracota text-2xl leading-none flex-shrink-0 transition-transform group-open:rotate-45" aria-hidden="true">
+                +
+              </span>
+            </summary>
+            <p class="text-brand-muted leading-relaxed pb-6 -mt-1 max-w-2xl">
+              {f.a}
+            </p>
+          </details>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="section-pad bg-brand-off-white-warm">
+    <div class="container-soft">
+      <div class="border border-brand-border bg-white p-8 md:p-14 text-center max-w-4xl mx-auto">
+        <span class="eyebrow mb-4 block">Vamos começar</span>
+        <h2 class="text-3xl md:text-4xl font-display font-bold text-brand-dark mb-5 leading-tight">
+          Pronto para tratar saúde mental como gestão contínua?
+        </h2>
+        <p class="text-brand-muted leading-relaxed mb-8 max-w-2xl mx-auto">
+          Conte para a gente o contexto da sua organização. Desenhamos o ciclo anual ideal e
+          enviamos uma proposta sob medida para o seu programa de saúde mental ocupacional.
+        </p>
+        <div class="flex flex-wrap gap-3 justify-center">
+          <a href="/#contato" class="btn-primary">
+            Solicite uma proposta
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
+          </a>
+          <a href={whatsappUrl} target="_blank" rel="noopener" class="btn-whatsapp">
+            Falar no WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

@@ -1,0 +1,287 @@
+@import "tailwindcss";
+
+/* Fontes hospedadas localmente (sem CDN do Google — privacidade/LGPD + velocidade) */
+/* Poppins = corpo de texto. (Garet, dos títulos, é declarada em @font-face abaixo.) */
+@import "@fontsource/poppins/300.css";
+@import "@fontsource/poppins/400.css";
+@import "@fontsource/poppins/500.css";
+@import "@fontsource/poppins/600.css";
+@import "@fontsource/poppins/700.css";
+
+/* Garet = fonte oficial dos títulos (brand book). */
+@font-face {
+  font-family: "Garet";
+  src: url("/fonts/garet/Garet-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Garet";
+  src: url("/fonts/garet/Garet-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Garet";
+  src: url("/fonts/garet/Garet-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Garet";
+  src: url("/fonts/garet/Garet-Extra-Bold.woff2") format("woff2");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@theme {
+  /* === Paleta v2 (Brandbook Escutaris v2) === */
+  --color-brand-green: #46603a;        /* verde */
+  --color-brand-green-hover: #5a7449;
+  --color-brand-green-dark: #34492a;
+  --color-brand-terracota: #b95839;    /* terra */
+  --color-brand-terracota-hover: #c96343;
+
+  /* Off-white system (warm/orgânico) */
+  --color-brand-off-white: #f8f7f4;       /* bege */
+  --color-brand-off-white-warm: #f6f0e9;
+  --color-brand-off-white-cool: #f0f0e8;
+
+  /* Texto */
+  --color-brand-dark: #222d19;         /* poseidon (quase preto esverdeado) */
+  --color-brand-muted: #565e48;        /* hermes (sage) */
+  --color-brand-border: #e4dfd9;       /* cinza */
+
+  /* Acentos extras da paleta v2 (disponíveis para uso pontual) */
+  --color-brand-amber: #c98a42;
+  --color-brand-cobre: #a95821;
+  --color-brand-brasa: #be3a1b;
+
+  /* PALETA ANTERIOR (reverter se necessário):
+     green #506e3f / hover #8a9c6e / dark #3d5430
+     terracota #b64f2b / hover #d4623a
+     off-white #f9f7f3 / warm #f3efe7 / cool #f5f6f3
+     dark #1f2421 / muted #6b7066 / border #e6e2da */
+
+  /* Tipografia (Garet = títulos, brand book; Poppins = corpo) */
+  --font-display: "Garet", system-ui, -apple-system, sans-serif;
+  --font-body: "Poppins", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-nav: "Poppins", system-ui, -apple-system, "Segoe UI", sans-serif;
+
+  /* Sem arredondamento — bordas retas em todo o sistema */
+  --radius-soft: 0;
+  --radius-card: 0;
+  --radius-section: 0;
+
+  /* Transições padrão */
+  --ease-soft: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    font-family: var(--font-body);
+    color: var(--color-brand-dark);
+    background-color: var(--color-brand-off-white);
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+    color: var(--color-brand-green);
+    font-weight: 700;
+    line-height: 1.15;
+    letter-spacing: -0.01em;
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  ::selection {
+    background-color: var(--color-brand-terracota);
+    color: #ffffff;
+  }
+
+  /* Foco visível e consistente para navegação por teclado (acessibilidade + confiança) */
+  a:focus-visible,
+  button:focus-visible,
+  input:focus-visible,
+  select:focus-visible,
+  textarea:focus-visible,
+  [tabindex]:focus-visible {
+    outline: 2px solid var(--color-brand-green);
+    outline-offset: 2px;
+  }
+
+  /* Botões reagem ao toque sem o atraso de 300ms no mobile */
+  a, button, [role="button"] {
+    touch-action: manipulation;
+  }
+
+  /* Números alinhados (estatísticas, valores) */
+  .tabular-nums {
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* Reveal suave ao rolar a página */
+  .reveal {
+    opacity: 0;
+    transform: translateY(16px);
+    transition: opacity 0.6s var(--ease-soft), transform 0.6s var(--ease-soft);
+    will-change: opacity, transform;
+  }
+  .reveal.is-visible {
+    opacity: 1;
+    transform: none;
+  }
+
+  /* Respeita quem prefere menos movimento (relevante para um produto de saúde mental) */
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+    .reveal {
+      opacity: 1;
+      transform: none;
+    }
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 px-7 py-3.5 font-medium text-white transition-colors duration-200;
+    background-color: var(--color-brand-terracota);
+  }
+  .btn-primary:hover {
+    background-color: var(--color-brand-terracota-hover);
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 px-7 py-3.5 font-medium transition-colors duration-200;
+    color: var(--color-brand-green);
+    border: 1px solid var(--color-brand-green);
+    background-color: transparent;
+  }
+  .btn-secondary:hover {
+    background-color: var(--color-brand-green);
+    color: #ffffff;
+  }
+
+  .btn-whatsapp {
+    @apply inline-flex items-center justify-center gap-2 px-7 py-3.5 font-medium text-white transition-colors duration-200;
+    background-color: #25d366;
+  }
+  .btn-whatsapp:hover {
+    background-color: #1ebd5a;
+  }
+
+  .btn-ghost {
+    @apply inline-flex items-center justify-center gap-2 px-7 py-3.5 font-medium transition-colors duration-200;
+    color: var(--color-brand-dark);
+    border: 1px solid var(--color-brand-border);
+    background-color: transparent;
+  }
+  .btn-ghost:hover {
+    border-color: var(--color-brand-dark);
+  }
+
+  .container-soft {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .section-pad {
+    @apply py-20 md:py-28;
+  }
+
+  .eyebrow {
+    @apply inline-block text-xs font-semibold uppercase tracking-[0.18em];
+    color: var(--color-brand-terracota);
+  }
+
+  .divider {
+    border-top: 1px solid var(--color-brand-border);
+  }
+
+  /* Tipografia de leitura dos artigos do blog */
+  .article-prose {
+    color: var(--color-brand-dark);
+    font-size: 1.0625rem;
+    line-height: 1.75;
+    max-width: 70ch;
+  }
+  .article-prose > * + * {
+    margin-top: 1.4em;
+  }
+  .article-prose h2 {
+    font-family: var(--font-display);
+    color: var(--color-brand-dark);
+    font-size: 1.6rem;
+    line-height: 1.25;
+    font-weight: 700;
+    margin-top: 2.4em;
+    margin-bottom: 0.2em;
+    letter-spacing: -0.01em;
+  }
+  .article-prose h3 {
+    font-family: var(--font-display);
+    color: var(--color-brand-dark);
+    font-size: 1.3rem;
+    line-height: 1.3;
+    font-weight: 700;
+    margin-top: 1.8em;
+  }
+  .article-prose p {
+    color: #3a403a;
+  }
+  .article-prose a {
+    color: var(--color-brand-terracota);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+  .article-prose a:hover {
+    color: var(--color-brand-terracota-hover);
+  }
+  .article-prose ul,
+  .article-prose ol {
+    padding-left: 1.5rem;
+    color: #3a403a;
+  }
+  .article-prose ul { list-style: disc; }
+  .article-prose ol { list-style: decimal; }
+  .article-prose li + li { margin-top: 0.5em; }
+  .article-prose li::marker { color: var(--color-brand-terracota); }
+  .article-prose strong { color: var(--color-brand-dark); font-weight: 600; }
+  .article-prose blockquote {
+    border-left: 3px solid var(--color-brand-terracota);
+    padding-left: 1.25rem;
+    font-style: italic;
+    color: var(--color-brand-muted);
+  }
+  .article-prose img {
+    width: 100%;
+    height: auto;
+    border: 1px solid var(--color-brand-border);
+  }
+  .article-prose figure figcaption {
+    font-size: 0.85rem;
+    color: var(--color-brand-muted);
+    margin-top: 0.5rem;
+    text-align: center;
+  }
+}

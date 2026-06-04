@@ -1,0 +1,33 @@
+---
+---
+
+<div
+  id="cookie-banner"
+  class="hidden fixed bottom-0 inset-x-0 z-50 bg-white border-t border-brand-border shadow-[0_-4px_20px_rgba(31,36,33,0.06)]"
+>
+  <div class="container-soft py-4 flex flex-col sm:flex-row sm:items-center gap-4">
+    <p class="text-sm text-brand-dark leading-relaxed flex-1">
+      Usamos cookies para garantir o funcionamento do site e entender, de forma agregada,
+      como ele é utilizado. Ao continuar, você concorda com a nossa
+      <a href="/politica-de-privacidade" class="underline hover:text-brand-terracota transition-colors">política de privacidade</a>.
+    </p>
+    <button id="cookie-accept" type="button" class="btn-primary text-sm whitespace-nowrap self-start sm:self-auto">
+      Aceitar
+    </button>
+  </div>
+</div>
+
+<script>
+  const KEY = 'escutaris-cookie-consent';
+  const banner = document.getElementById('cookie-banner');
+  const accept = document.getElementById('cookie-accept');
+
+  if (banner && !localStorage.getItem(KEY)) {
+    banner.classList.remove('hidden');
+  }
+
+  accept?.addEventListener('click', () => {
+    try { localStorage.setItem(KEY, '1'); } catch (e) {}
+    banner?.classList.add('hidden');
+  });
+</script>

@@ -1,0 +1,196 @@
+---
+import { getCollection, render } from 'astro:content';
+import Layout from '../../layouts/Layout.astro';
+
+export async function getStaticPaths() {
+  const posts = (await getCollection('blog')).filter((p) => !p.data.draft);
+  return posts.map((post) => ({
+    params: { slug: post.id },
+    props: { post },
+  }));
+}
+
+const { post } = Astro.props;
+const { Content } = await render(post);
+
+const words = (post.body ?? '').split(/\s+/).filter(Boolean).length;
+const readingTime = Math.max(1, Math.round(words / 200));
+
+const pool = (await getCollection('blog')).filter((p) => !p.data.draft && p.id !== post.id);
+const sameCat = pool.filter((p) => p.data.category === post.data.category);
+const related = [...sameCat, ...pool.filter((p) => !sameCat.includes(p))].slice(0, 3);
+
+const dateFmt = new Intl.DateTimeFormat('pt-BR', {
+  day: '2-digit',
+  month: 'long',
+  year: 'numeric',
+});
+
+const siteUrl = 'https://www.escutaris.com.br';
+const postUrl = `${siteUrl}/blog/${post.id}`;
+const heroAbsolute = post.data.heroImage
+  ? new URL(post.data.heroImage, siteUrl).href
+  : undefined;
+
+// Dados estruturados do artigo (resultados ricos + autoria médica = credibilidade).
+const articleLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  '@id': `${postUrl}#article`,
+  headline: post.data.title,
+  description: post.data.description,
+  url: postUrl,
+  datePublished: post.data.pubDate.toISOString(),
+  inLanguage: 'pt-BR',
+  articleSection: post.data.category,
+  ...(heroAbsolute ? { image: heroAbsolute } : {}),
+  author: {
+    '@type': 'Person',
+    name: 'Dra. Ana Paula Teixeira',
+    jobTitle: 'Médica do Trabalho',
+    identifier: 'CRM-BA 12797',
+  },
+  publisher: { '@id': `${siteUrl}/#organization` },
+  mainEntityOfPage: { '@type': 'WebPage', '@id': postUrl },
+};
+
+const whatsappUrl =
+  'https://api.whatsapp.com/send?phone=5571981357004&text=Ol%C3%A1%2C+li+um+artigo+no+blog+e+gostaria+de+saber+mais+sobre+o+diagn%C3%B3stico+psicossocial';
+---
+
+<Layout
+  title={`${post.data.title} | Escutaris`}
+  description={post.data.description}
+  canonical={postUrl}
+  ogImage={post.data.heroImage ?? '/hero-banner.webp'}
+>
+  <script
+    slot="head"
+    type="application/ld+json"
+    set:html={JSON.stringify(articleLd)}
+    is:inline
+  />
+
+  <article class="section-pad bg-white">
+    <div class="container-soft">
+      <!-- Cabeçalho -->
+      <div class="max-w-3xl mx-auto">
+        <nav class="mb-8 text-xs uppercase tracking-[0.14em] text-brand-muted" aria-label="Trilha">
+          <a href="/blog" class="hover:text-brand-terracota transition-colors">Blog</a>
+          <span class="mx-2" aria-hidden="true">/</span>
+          <span>{post.data.category}</span>
+        </nav>
+
+        <span class="eyebrow mb-4 block">{post.data.category}</span>
+        <h1 class="text-3xl md:text-[2.75rem] font-display font-bold text-brand-dark mb-6 leading-[1.12]">
+          {post.data.title}
+        </h1>
+
+        <div class="flex items-center gap-3 text-sm text-brand-muted pb-8 mb-2 border-b border-brand-border">
+          <span class="font-semibold text-brand-dark">Dra. Ana Paula Teixeira</span>
+          <span aria-hidden="true">·</span>
+          <time datetime={post.data.pubDate.toISOString()}>
+            {dateFmt.format(post.data.pubDate)}
+          </time>
+          <span aria-hidden="true">·</span>
+          <span>{readingTime} min de leitura</span>
+        </div>
+      </div>
+
+      <!-- Imagem de destaque -->
+      {post.data.heroImage && (
+        <div class="max-w-4xl mx-auto my-10">
+          <img
+            src={post.data.heroImage}
+            alt={post.data.heroImageAlt ?? post.data.title}
+            width="1000"
+            height="560"
+            loading="eager"
+            fetchpriority="high"
+            class="w-full h-auto border border-brand-border"
+          />
+        </div>
+      )}
+
+      <!-- Corpo -->
+      <div class="article-prose mx-auto">
+        <Content />
+      </div>
+
+      <!-- Caixa de autoria -->
+      <div class="max-w-3xl mx-auto mt-16">
+        <div class="flex items-start gap-5 border border-brand-border bg-brand-off-white p-6 md:p-8">
+          <div class="w-16 h-16 flex-shrink-0 bg-brand-green text-white font-display font-bold text-xl flex items-center justify-center" aria-hidden="true">
+            AP
+          </div>
+          <div>
+            <p class="font-display font-bold text-brand-dark mb-1">Dra. Ana Paula Teixeira</p>
+            <p class="text-xs text-brand-muted mb-3">Médica do trabalho · CRM-BA 12797</p>
+            <p class="text-sm text-brand-muted leading-relaxed">
+              Pesquisadora em Lesão Moral no Trabalho e fatores psicossociais. Autora de
+              <em>Quando o Trabalho Dói</em> (Práxedes Livros, 2025) e fundadora da Escutaris.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- CTA final -->
+      <div class="max-w-3xl mx-auto mt-10">
+        <div class="border border-brand-border bg-brand-off-white-warm p-8 md:p-10">
+          <span class="eyebrow mb-3 block">Diagnóstico Psicossocial</span>
+          <h2 class="text-2xl md:text-3xl font-display font-bold text-brand-dark mb-4 leading-tight">
+            Sua empresa já fez o diagnóstico que a NR-1 exige?
+          </h2>
+          <p class="text-brand-muted leading-relaxed mb-6">
+            A Escutaris conduz o diagnóstico de fatores psicossociais com base científica,
+            anonimato garantido e dashboard interativo em até 72 horas.
+          </p>
+          <div class="flex flex-wrap gap-3">
+            <a href="/#contato" class="btn-primary">
+              Iniciar diagnóstico
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+              </svg>
+            </a>
+            <a href={whatsappUrl} target="_blank" rel="noopener" class="btn-whatsapp">
+              Falar no WhatsApp
+            </a>
+          </div>
+        </div>
+
+        <div class="mt-10">
+          <a href="/blog" class="text-sm font-semibold text-brand-green hover:text-brand-terracota transition-colors">
+            ← Ver todos os artigos
+          </a>
+        </div>
+      </div>
+
+      {related.length > 0 && (
+        <div class="max-w-5xl mx-auto mt-20 pt-12 border-t border-brand-border">
+          <span class="eyebrow mb-8 block">Leia também</span>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {related.map((p) => (
+              <a href={`/blog/${p.id}`} class="group flex flex-col border border-brand-border bg-white">
+                {p.data.heroImage && (
+                  <img
+                    src={p.data.heroImage}
+                    alt={p.data.heroImageAlt ?? p.data.title}
+                    width="400"
+                    height="225"
+                    loading="lazy"
+                    class="w-full h-auto object-cover aspect-[16/9]"
+                  />
+                )}
+                <div class="p-5 flex-1">
+                  <h3 class="font-display font-bold text-brand-dark text-[15px] leading-snug group-hover:text-brand-terracota transition-colors">
+                    {p.data.title}
+                  </h3>
+                </div>
+              </a>
+            ))}
+          </div>
+        </div>
+      )}
+    </div>
+  </article>
+</Layout>

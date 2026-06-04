@@ -1,0 +1,60 @@
+---
+const depoimentos = [
+  {
+    texto: 'A experiência com a Escutaris foi positiva. Dividimos os trabalhadores em turmas e, após esclarecer o anonimato do questionário, todos se sentiram seguros. O envio dos links foi fácil e a explicação sobre o objetivo da avaliação ajudou a evitar mal-entendidos e facilitar o engajamento. A visualização dos resultados foi clara e a ferramenta se mostrou eficiente para entender os riscos psicossociais.',
+    autor: 'Dra. Vanessa Lima Marques Ferreira',
+    cargo: 'Médica do Trabalho · CRM-BA 21443',
+  },
+  {
+    texto: 'A Escutaris é uma plataforma inovadora, que surpreende pela riqueza de informações relevantes, gerando um diagnóstico preciso e permitindo a elaboração de planos de ação mais efetivos sobre a saúde psicossocial no ambiente de trabalho.',
+    autor: 'Sara Sobral',
+    cargo: 'Consultora · Sinética Inteligência Empreendedora',
+  },
+  {
+    texto: 'O que mais chamou a atenção de nossa equipe foi que o trabalho não fica só no diagnóstico. É tudo muito prático e direto, com insights importantes. Isso faz toda a diferença para quem quer criar um ambiente de trabalho consistente.',
+    autor: 'Cecilia Oliveira',
+    cargo: 'Administradora · Imobiliária Tex Empreendimentos',
+  },
+];
+---
+
+<section id="depoimentos" class="section-pad bg-brand-off-white">
+  <div class="container-soft">
+    <div class="reveal max-w-4xl mb-16 md:mb-20">
+      <span class="eyebrow mb-5">Depoimentos</span>
+      <h2 class="text-3xl md:text-5xl font-display font-bold mb-6 leading-[1.1] text-brand-dark">
+        Quem já aplicou.
+      </h2>
+      <p class="text-lg md:text-xl text-brand-muted leading-relaxed">
+        Profissionais de saúde, gestores e líderes que conduziram o diagnóstico com a Escutaris.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-0 border border-brand-border bg-white">
+      {depoimentos.map((dep, i) => (
+        <article class:list={[
+          'p-8 md:p-10 flex flex-col',
+          i < depoimentos.length - 1 && 'border-b md:border-b-0 md:border-r border-brand-border',
+        ]}>
+          <span
+            class="font-display text-6xl text-brand-terracota leading-none mb-4 select-none"
+            aria-hidden="true"
+          >&ldquo;</span>
+
+          <p class="text-brand-dark leading-relaxed text-[15px] mb-8 flex-1">
+            {dep.texto}
+          </p>
+
+          <div class="pt-5 border-t border-brand-border">
+            <p class="font-display font-bold text-brand-dark text-[15px] mb-1 leading-tight">
+              {dep.autor}
+            </p>
+            <p class="text-xs text-brand-muted tracking-wide">
+              {dep.cargo}
+            </p>
+          </div>
+        </article>
+      ))}
+    </div>
+  </div>
+</section>

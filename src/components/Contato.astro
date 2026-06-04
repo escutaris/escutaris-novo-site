@@ -1,0 +1,305 @@
+---
+const whatsappUrl = 'https://api.whatsapp.com/send?phone=5571981357004&text=Ol%C3%A1%2C+gostaria+de+falar+com+a+Escutaris';
+
+const servicos = [
+  { value: 'diagnostico', label: 'Diagnóstico Psicossocial (Plataforma SaaS)' },
+  { value: 'palestra', label: 'Palestra' },
+  { value: 'roda', label: 'Roda de Conversa' },
+  { value: 'direcionamento', label: 'Direcionamento Executivo (urgente)' },
+];
+---
+
+<section id="contato" class="section-pad bg-brand-off-white-warm">
+  <div class="container-soft">
+    <div class="reveal max-w-4xl mb-16 md:mb-20">
+      <span class="eyebrow mb-5">Contato</span>
+      <h2 class="text-3xl md:text-5xl font-display font-bold mb-6 leading-[1.1] text-brand-dark">
+        Pronto para agir?
+      </h2>
+      <p class="text-lg md:text-xl text-brand-muted leading-relaxed">
+        Escolha o canal que prefere. Respondemos em até 24 horas úteis.
+        Direcionamento Executivo tem prioridade — use o WhatsApp.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-0 border border-brand-border bg-white">
+      <aside class="lg:col-span-5 p-8 md:p-12 lg:p-14 bg-brand-green text-white order-2 lg:order-1">
+        <span class="text-[11px] uppercase tracking-[0.18em] text-white/70 font-semibold mb-4 block">
+          Canais diretos
+        </span>
+
+        <h3 class="text-2xl md:text-3xl font-display font-bold text-white mb-8 leading-tight">
+          Prefere falar agora?
+        </h3>
+
+        <div class="space-y-6 mb-10">
+          <a
+            href={whatsappUrl}
+            target="_blank"
+            rel="noopener"
+            class="block group"
+          >
+            <p class="text-[11px] uppercase tracking-[0.18em] text-white/60 mb-1.5 font-semibold">
+              WhatsApp
+            </p>
+            <p class="font-display font-bold text-white text-lg group-hover:text-brand-cream-warm transition-colors">
+              (71) 98135-7004
+            </p>
+            <p class="text-sm text-white/70 mt-1">
+              Resposta prioritária para Direcionamento Executivo
+            </p>
+          </a>
+
+          <div class="h-px bg-white/15"></div>
+
+          <a href="mailto:contato@escutaris.com.br" class="block group">
+            <p class="text-[11px] uppercase tracking-[0.18em] text-white/60 mb-1.5 font-semibold">
+              E-mail
+            </p>
+            <p class="font-display font-bold text-white text-lg group-hover:text-brand-cream-warm transition-colors break-all">
+              contato@escutaris.com.br
+            </p>
+          </a>
+
+          <div class="h-px bg-white/15"></div>
+
+          <div>
+            <p class="text-[11px] uppercase tracking-[0.18em] text-white/60 mb-1.5 font-semibold">
+              Sede
+            </p>
+            <p class="text-white text-base">
+              Salvador, Bahia
+            </p>
+          </div>
+        </div>
+
+        <div class="pt-8 border-t border-white/15">
+          <p class="text-xs text-white/65 leading-relaxed">
+            <span class="block text-white/85 font-semibold mb-1">Queluz Serviços Médicos Ltda.</span>
+            Responsabilidade técnica: Dra. Ana Paula Teixeira, CRM-BA 12797.
+          </p>
+        </div>
+      </aside>
+
+      <div class="lg:col-span-7 p-8 md:p-12 lg:p-14 order-1 lg:order-2">
+        <form
+          id="contact-form"
+          class="space-y-5"
+          novalidate
+        >
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+            <div>
+              <label for="nome" class="block text-xs uppercase tracking-[0.12em] text-brand-dark font-semibold mb-2">
+                Nome <span class="text-brand-terracota" aria-hidden="true">*</span>
+              </label>
+              <input
+                type="text"
+                id="nome"
+                name="nome"
+                required
+                autocomplete="name"
+                class="w-full px-4 py-3 border border-brand-border bg-brand-off-white text-brand-dark focus:border-brand-green transition-colors"
+              />
+            </div>
+
+            <div>
+              <label for="empresa" class="block text-xs uppercase tracking-[0.12em] text-brand-dark font-semibold mb-2">
+                Empresa
+              </label>
+              <input
+                type="text"
+                id="empresa"
+                name="empresa"
+                autocomplete="organization"
+                class="w-full px-4 py-3 border border-brand-border bg-brand-off-white text-brand-dark focus:border-brand-green transition-colors"
+              />
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+            <div>
+              <label for="email" class="block text-xs uppercase tracking-[0.12em] text-brand-dark font-semibold mb-2">
+                E-mail <span class="text-brand-terracota" aria-hidden="true">*</span>
+              </label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                autocomplete="email"
+                class="w-full px-4 py-3 border border-brand-border bg-brand-off-white text-brand-dark focus:border-brand-green transition-colors"
+              />
+            </div>
+
+            <div>
+              <label for="telefone" class="block text-xs uppercase tracking-[0.12em] text-brand-dark font-semibold mb-2">
+                Telefone
+              </label>
+              <input
+                type="tel"
+                id="telefone"
+                name="telefone"
+                autocomplete="tel"
+                class="w-full px-4 py-3 border border-brand-border bg-brand-off-white text-brand-dark focus:border-brand-green transition-colors"
+              />
+            </div>
+          </div>
+
+          <div>
+            <label for="servico" class="block text-xs uppercase tracking-[0.12em] text-brand-dark font-semibold mb-2">
+              Serviço de interesse <span class="text-brand-terracota" aria-hidden="true">*</span>
+            </label>
+            <select
+              id="servico"
+              name="servico"
+              required
+              class="w-full px-4 py-3 border border-brand-border bg-brand-off-white text-brand-dark focus:border-brand-green transition-colors appearance-none cursor-pointer"
+            >
+              <option value="">Selecione...</option>
+              {servicos.map((s) => (
+                <option value={s.value}>{s.label}</option>
+              ))}
+            </select>
+          </div>
+
+          <div>
+            <label for="mensagem" class="block text-xs uppercase tracking-[0.12em] text-brand-dark font-semibold mb-2">
+              Mensagem
+            </label>
+            <textarea
+              id="mensagem"
+              name="mensagem"
+              rows="4"
+              class="w-full px-4 py-3 border border-brand-border bg-brand-off-white text-brand-dark focus:border-brand-green transition-colors resize-none"
+              placeholder="Conte brevemente sobre sua organização e o que está buscando."
+            ></textarea>
+          </div>
+
+          <div
+            id="form-error"
+            class="hidden p-4 border border-brand-terracota bg-brand-terracota/5 text-sm text-brand-dark"
+            role="alert"
+          >
+            <strong class="font-semibold">Não foi possível enviar.</strong>
+            <span id="form-error-message"></span>
+            Tente novamente ou fale conosco direto no WhatsApp.
+          </div>
+
+          <div class="pt-2">
+            <button
+              type="submit"
+              id="submit-button"
+              class="btn-primary w-full md:w-auto disabled:opacity-60 disabled:cursor-not-allowed"
+            >
+              <span id="submit-label">Enviar mensagem</span>
+              <svg id="submit-icon" class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+              </svg>
+              <svg id="submit-spinner" class="hidden w-4 h-4 animate-spin" fill="none" viewBox="0 0 24 24" aria-hidden="true">
+                <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v4a4 4 0 00-4 4H4z"></path>
+              </svg>
+            </button>
+            <p class="text-xs text-brand-muted mt-3">
+              Ao enviar, você concorda com nossa
+              <a href="/politica-de-privacidade" class="underline hover:text-brand-terracota transition-colors">política de privacidade</a> (LGPD).
+            </p>
+          </div>
+        </form>
+
+        <div
+          id="form-success"
+          class="hidden p-8 md:p-10 border-2 border-brand-green bg-brand-green/5 text-center"
+          role="status"
+          aria-live="polite"
+        >
+          <div class="inline-flex items-center justify-center w-14 h-14 bg-brand-green mb-5">
+            <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7" />
+            </svg>
+          </div>
+          <h3 class="text-2xl font-display font-bold text-brand-dark mb-3">
+            Mensagem recebida.
+          </h3>
+          <p class="text-brand-muted leading-relaxed max-w-md mx-auto">
+            Vamos retornar em até 24 horas úteis pelo canal que você indicou.
+            Se for urgente, fale com a gente também no WhatsApp.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  import { insertLead, type LeadServico } from '../lib/supabase';
+
+  const form = document.getElementById('contact-form') as HTMLFormElement | null;
+  const submitButton = document.getElementById('submit-button') as HTMLButtonElement | null;
+  const submitLabel = document.getElementById('submit-label');
+  const submitIcon = document.getElementById('submit-icon');
+  const submitSpinner = document.getElementById('submit-spinner');
+  const errorBox = document.getElementById('form-error');
+  const errorMessage = document.getElementById('form-error-message');
+  const successBox = document.getElementById('form-success');
+
+  function setLoading(isLoading: boolean) {
+    if (!submitButton || !submitLabel || !submitIcon || !submitSpinner) return;
+    submitButton.disabled = isLoading;
+    submitLabel.textContent = isLoading ? 'Enviando...' : 'Enviar mensagem';
+    submitIcon.classList.toggle('hidden', isLoading);
+    submitSpinner.classList.toggle('hidden', !isLoading);
+  }
+
+  function showError(msg: string) {
+    if (!errorBox || !errorMessage) return;
+    errorMessage.textContent = ` ${msg}.`;
+    errorBox.classList.remove('hidden');
+    errorBox.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  }
+
+  function hideError() {
+    errorBox?.classList.add('hidden');
+  }
+
+  form?.addEventListener('submit', async (event) => {
+    event.preventDefault();
+    hideError();
+
+    const formData = new FormData(form);
+    const nome = String(formData.get('nome') ?? '').trim();
+    const empresa = String(formData.get('empresa') ?? '').trim();
+    const email = String(formData.get('email') ?? '').trim();
+    const telefone = String(formData.get('telefone') ?? '').trim();
+    const servico = String(formData.get('servico') ?? '').trim() as LeadServico;
+    const mensagem = String(formData.get('mensagem') ?? '').trim();
+
+    if (!nome || !email || !servico) {
+      showError('Preencha os campos obrigatórios');
+      return;
+    }
+
+    setLoading(true);
+
+    const { error } = await insertLead({
+      nome,
+      empresa: empresa || undefined,
+      email,
+      telefone: telefone || undefined,
+      servico,
+      mensagem: mensagem || undefined,
+    });
+
+    setLoading(false);
+
+    if (error) {
+      console.error('Erro ao enviar lead:', error);
+      showError('Erro inesperado');
+      return;
+    }
+
+    form.classList.add('hidden');
+    successBox?.classList.remove('hidden');
+    successBox?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  });
+</script>

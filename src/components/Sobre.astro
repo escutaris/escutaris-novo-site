@@ -1,0 +1,142 @@
+---
+const areasDraAna = [
+  'Medicina do Trabalho',
+  'Fatores Psicossociais de Risco',
+  'NR-01 e PGR',
+  'Lesão Moral no Trabalho',
+  'Diagnóstico Psicossocial Organizacional',
+];
+
+const equipe = [
+  {
+    titulo: 'Medicina do Trabalho',
+    descricao: 'Diagnóstico clínico, nexo causal, conduta médica e responsabilidade técnica.',
+  },
+  {
+    titulo: 'Psicologia do Trabalho',
+    descricao: 'Avaliação de risco psicossocial, escuta qualificada e devolutiva estratégica.',
+  },
+  {
+    titulo: 'Engenharia de Segurança',
+    descricao: 'Integração com PGR e GRO, gestão de risco ocupacional e conformidade regulatória.',
+  },
+  {
+    titulo: 'Ergonomia',
+    descricao: 'Análise de organização do trabalho, ritmo e cargas que afetam a saúde mental.',
+  },
+];
+
+const diferenciais = [
+  {
+    titulo: 'Framework OMS/OIT (2022)',
+    texto:
+      'Única consultoria brasileira que opera com base nos quatro pilares da OMS/OIT para a saúde mental no trabalho.',
+  },
+  {
+    titulo: 'Pioneirismo em Moral Injury',
+    texto:
+      'Pesquisa e aplicação clínica da Lesão Moral Ocupacional no Brasil, com instrumento diagnóstico próprio em validação.',
+  },
+  {
+    titulo: 'Evidência, não motivação',
+    texto:
+      'Abordagem fundamentada em ciência e dados, em conformidade com NR-1, PGR, eSocial e a Lei 14.831 (Empresa Promotora de Saúde Mental).',
+  },
+];
+---
+
+<section id="sobre" class="section-pad">
+  <div class="container-soft">
+    <div class="reveal max-w-4xl mb-16 md:mb-20">
+      <span class="eyebrow mb-5">Sobre a Escutaris</span>
+      <h2 class="text-3xl md:text-5xl font-display font-bold mb-6 leading-[1.1] text-brand-dark">
+        Ciência que escuta, soluções que transformam.
+      </h2>
+      <p class="text-lg md:text-xl text-brand-muted leading-relaxed">
+        A Escutaris ajuda organizações a enxergar e enfrentar, com seriedade técnica,
+        os fatores psicossociais que adoecem pessoas e comprometem resultados.
+      </p>
+    </div>
+
+    <div class="reveal mb-12 md:mb-16">
+      <img
+        src="/blog-img/diagnostico-psicossocial-reuniao-equipe.webp"
+        alt="Profissionais em ambiente de trabalho colaborativo"
+        width="1024"
+        height="683"
+        loading="lazy"
+        class="w-full h-auto max-h-[420px] object-cover border border-brand-border"
+      />
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-0 border border-brand-border bg-white">
+      <div class="p-8 md:p-12 border-b lg:border-b-0 lg:border-r border-brand-border">
+        <span class="eyebrow mb-4 block">Quem conduz</span>
+
+        <h3 class="text-2xl md:text-3xl font-display font-bold text-brand-dark mb-2 leading-tight">
+          Dra. Ana Paula Teixeira
+        </h3>
+        <p class="text-sm text-brand-muted mb-6 font-medium tracking-wide">
+          Médica do trabalho · CRM-BA 12797
+        </p>
+
+        <p class="text-brand-dark mb-8 leading-relaxed">
+          Pesquisadora em Lesão Moral no Trabalho e fatores psicossociais.
+          Autora de <em class="font-display">Quando o Trabalho Dói: Do Adoecimento Silencioso à Cultura de Bem-Estar</em>
+          (Práxedes Livros, 2025).
+        </p>
+
+        <p class="text-[11px] uppercase tracking-[0.18em] text-brand-muted mb-4 font-semibold">
+          Áreas de atuação
+        </p>
+        <ul class="space-y-2.5">
+          {areasDraAna.map((area) => (
+            <li class="flex items-start gap-3 text-sm text-brand-dark">
+              <span class="inline-block w-1 h-1 bg-brand-terracota mt-2.5 flex-shrink-0" aria-hidden="true"></span>
+              <span>{area}</span>
+            </li>
+          ))}
+        </ul>
+      </div>
+
+      <div class="p-8 md:p-12">
+        <span class="eyebrow mb-4 block">Equipe técnica</span>
+
+        <h3 class="text-2xl md:text-3xl font-display font-bold text-brand-dark mb-6 leading-tight">
+          Multidisciplinar por princípio
+        </h3>
+
+        <p class="text-brand-dark mb-8 leading-relaxed">
+          O olhar técnico sobre fatores psicossociais exige perspectivas combinadas.
+          A Escutaris reúne quatro frentes do conhecimento ocupacional:
+        </p>
+
+        <div class="space-y-5">
+          {equipe.map((area) => (
+            <div class="border-l-2 border-brand-terracota pl-4">
+              <h4 class="font-display font-bold text-brand-dark mb-1 text-[15px]">
+                {area.titulo}
+              </h4>
+              <p class="text-sm text-brand-muted leading-relaxed">{area.descricao}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+
+    <p class="reveal text-[11px] uppercase tracking-[0.18em] text-brand-muted font-semibold mt-16 mb-6">
+      O que nos diferencia
+    </p>
+    <div class="grid grid-cols-1 md:grid-cols-3 border-t border-l border-brand-border bg-white">
+      {diferenciais.map((d) => (
+        <div class="reveal p-8 border-r border-b border-brand-border">
+          <div class="w-8 h-1 bg-brand-terracota mb-5" aria-hidden="true"></div>
+          <h3 class="font-display font-bold text-brand-dark mb-3 text-[15px] leading-tight">
+            {d.titulo}
+          </h3>
+          <p class="text-sm text-brand-muted leading-relaxed">{d.texto}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

@@ -1,0 +1,306 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const whatsappUrl =
+  'https://api.whatsapp.com/send?phone=5571981357004&text=Ol%C3%A1%2C+gostaria+de+uma+proposta+de+treinamento+da+Escutaris';
+
+const treinamentos = [
+  {
+    nome: 'Gestão de Riscos Psicossociais para Líderes',
+    carga: '8h (2 dias)',
+    publico: 'Gestores e coordenadores',
+    conteudo: [
+      'Identificação de fatores de risco psicossocial',
+      'Comunicação assertiva com a equipe',
+      'Construção de plano de ação individual',
+      'Papel do líder no GRO',
+    ],
+  },
+  {
+    nome: 'NR-1 na Prática: Implementação do GRO Psicossocial',
+    carga: '16h (4 dias)',
+    publico: 'RH, SESMT e SST',
+    conteudo: [
+      'Mapeamento de riscos psicossociais',
+      'Metodologias de avaliação',
+      'Integração com o PGR',
+      'Documentação e preparação para fiscalização',
+    ],
+  },
+  {
+    nome: 'Primeiros Socorros Psicológicos no Trabalho',
+    carga: '4h',
+    publico: 'Líderes, CIPA e brigada',
+    conteudo: [
+      'Acolhimento em situações de crise',
+      'Encaminhamento adequado',
+      'Limites da atuação do líder',
+      'Protocolo de emergência emocional',
+    ],
+  },
+  {
+    nome: 'Formação em Saúde Mental Ocupacional (Programa Completo)',
+    carga: '40h a 55h',
+    publico: 'RH estratégico e medicina do trabalho',
+    conteudo: [
+      'Framework OMS/OIT completo em 6 módulos',
+      'Conceitos, diagnóstico e intervenção',
+      'Legislação e auditoria',
+      'Estratégia profissional aplicada',
+    ],
+  },
+];
+
+const diferenciais = [
+  {
+    titulo: 'Carga horária definida',
+    texto:
+      'Cada programa tem duração estruturada e cronograma claro — do encontro de 4 horas à formação completa de até 55 horas.',
+  },
+  {
+    titulo: 'Conteúdo programático',
+    texto:
+      'Conteúdo organizado em módulos, com objetivos de aprendizagem definidos e progressão técnica do conceito à aplicação.',
+  },
+  {
+    titulo: 'Avaliação de aprendizado',
+    texto:
+      'Diferente de palestras e rodas, os treinamentos verificam o que foi assimilado e desenvolvem competências com profundidade.',
+  },
+];
+
+const siteUrl = 'https://www.escutaris.com.br';
+const pageUrl = `${siteUrl}/treinamentos`;
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Service',
+  '@id': `${pageUrl}#service`,
+  name: 'Treinamentos Estruturados em Saúde Mental Ocupacional',
+  serviceType: 'Treinamento e capacitação técnica (NR-1)',
+  provider: { '@id': `${siteUrl}/#organization` },
+  areaServed: 'BR',
+  url: pageUrl,
+  description:
+    'Programas de capacitação técnica in-company da Escutaris em saúde mental ocupacional e gestão de riscos psicossociais, com carga horária definida, conteúdo programático estruturado e avaliação de aprendizado. Conduzidos pela Dra. Ana Paula Teixeira (CRM-BA 12797), com base no framework OMS/OIT e nas exigências da NR-1.',
+};
+---
+
+<Layout
+  title="Treinamentos Estruturados em Saúde Mental Ocupacional | Escutaris"
+  description="Treinamentos in-company da Escutaris em gestão de riscos psicossociais, NR-1, primeiros socorros psicológicos e formação completa em saúde mental ocupacional. Carga horária definida, conteúdo estruturado e avaliação de aprendizado, conduzidos pela Dra. Ana Paula Teixeira."
+  canonical={pageUrl}
+>
+  <script
+    slot="head"
+    type="application/ld+json"
+    set:html={JSON.stringify(jsonLd)}
+    is:inline
+  />
+
+  <!-- HERO -->
+  <section class="bg-brand-off-white">
+    <div class="container-soft py-16 md:py-24">
+      <nav class="mb-8 text-xs uppercase tracking-[0.14em] text-brand-muted" aria-label="Trilha">
+        <a href="/" class="hover:text-brand-terracota transition-colors">Início</a>
+        <span class="mx-2" aria-hidden="true">/</span>
+        <span>Treinamentos</span>
+      </nav>
+
+      <div class="max-w-4xl">
+        <span class="eyebrow mb-5 block">Capacitação técnica · Turmas in-company</span>
+        <h1 class="text-4xl md:text-5xl lg:text-[3.5rem] font-display font-bold mb-6 leading-[1.08] text-brand-dark">
+          Treinamentos que desenvolvem competência para a <span class="text-brand-green">NR-1</span>, não só consciência.
+        </h1>
+        <p class="text-lg md:text-xl text-brand-muted leading-relaxed mb-10 max-w-3xl">
+          Programas de capacitação técnica com carga horária definida, conteúdo
+          programático estruturado e avaliação de aprendizado. Diferente de palestras e
+          rodas, os treinamentos desenvolvem competências específicas com profundidade.
+          Conduzidos pela Dra. Ana Paula Teixeira (CRM-BA 12797), com base no framework
+          OMS/OIT.
+        </p>
+        <div class="flex flex-wrap gap-3">
+          <a href="/#contato" class="btn-primary">
+            Solicite uma proposta
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
+          </a>
+          <a href={whatsappUrl} target="_blank" rel="noopener" class="btn-whatsapp">
+            Falar no WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="border-y border-brand-border bg-white">
+      <div class="container-soft">
+        <div class="grid grid-cols-2 md:grid-cols-4 divide-y md:divide-y-0 md:divide-x divide-brand-border">
+          {[
+            { n: '4', l: 'Programas estruturados' },
+            { n: '4h–55h', l: 'Carga horária por programa' },
+            { n: 'OMS/OIT', l: 'Framework de referência' },
+            { n: 'In-company', l: 'Turmas na sua empresa' },
+          ].map((s) => (
+            <div class="py-8 md:py-10 px-6 text-center md:text-left">
+              <p class="font-display text-3xl md:text-4xl font-bold text-brand-green mb-1.5 leading-none tabular-nums">
+                {s.n}
+              </p>
+              <p class="text-sm text-brand-muted leading-snug">{s.l}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- POR QUE TREINAMENTO -->
+  <section class="section-pad bg-white">
+    <div class="container-soft">
+      <div class="reveal max-w-4xl mb-16 md:mb-20">
+        <span class="eyebrow mb-5">Por que um treinamento</span>
+        <h2 class="text-3xl md:text-5xl font-display font-bold mb-6 leading-[1.1] text-brand-dark">
+          Capacitação técnica, não sensibilização pontual.
+        </h2>
+        <p class="text-lg md:text-xl text-brand-muted leading-relaxed">
+          A NR-1 está em vigor e exige preparo real das equipes para identificar, avaliar
+          e gerir riscos psicossociais. Treinamento entrega o que palestra e roda de
+          conversa não alcançam: competência verificável.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 border border-brand-border bg-brand-off-white">
+        {diferenciais.map((d, i) => (
+          <article class:list={[
+            'reveal p-8 md:p-10',
+            i < diferenciais.length - 1 && 'border-b md:border-b-0 md:border-r border-brand-border',
+          ]}>
+            <div class="w-10 h-1 bg-brand-terracota mb-6" aria-hidden="true"></div>
+            <h3 class="text-xl font-display font-bold text-brand-dark mb-3 leading-tight">
+              {d.titulo}
+            </h3>
+            <p class="text-sm text-brand-muted leading-relaxed">{d.texto}</p>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- OS QUATRO TREINAMENTOS -->
+  <section class="section-pad bg-brand-off-white">
+    <div class="container-soft">
+      <div class="reveal max-w-4xl mb-16 md:mb-20">
+        <span class="eyebrow mb-5">Os programas</span>
+        <h2 class="text-3xl md:text-5xl font-display font-bold mb-6 leading-[1.1] text-brand-dark">
+          Quatro treinamentos, do líder ao RH estratégico.
+        </h2>
+        <p class="text-lg md:text-xl text-brand-muted leading-relaxed">
+          Cada programa tem público, carga horária e conteúdo próprios. Selecionamos
+          o que melhor responde ao momento e ao objetivo da sua organização.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 border border-brand-border bg-white">
+        {treinamentos.map((t, i) => (
+          <article class:list={[
+            'reveal p-8 md:p-12 border-brand-border',
+            i < treinamentos.length - 1 && 'border-b',
+            i >= treinamentos.length - 2 && 'md:border-b-0',
+            i % 2 === 0 && 'md:border-r',
+          ]}>
+            <span class="font-display text-4xl md:text-5xl font-bold text-brand-terracota leading-none mb-5 block tabular-nums">
+              0{i + 1}
+            </span>
+            <h3 class="text-xl md:text-2xl font-display font-bold text-brand-dark mb-5 leading-tight">
+              {t.nome}
+            </h3>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-3 border-y border-brand-border py-4 mb-5">
+              <div>
+                <p class="text-[11px] uppercase tracking-[0.16em] text-brand-muted mb-1">Carga horária</p>
+                <p class="font-display font-bold text-brand-green tabular-nums">{t.carga}</p>
+              </div>
+              <div>
+                <p class="text-[11px] uppercase tracking-[0.16em] text-brand-muted mb-1">Público</p>
+                <p class="font-display font-bold text-brand-dark">{t.publico}</p>
+              </div>
+            </div>
+
+            <p class="text-[11px] uppercase tracking-[0.16em] text-brand-muted mb-3">Conteúdo-chave</p>
+            <ul class="space-y-2.5">
+              {t.conteudo.map((c) => (
+                <li class="flex items-start gap-3">
+                  <span class="text-brand-terracota font-bold mt-0.5 flex-shrink-0" aria-hidden="true">·</span>
+                  <span class="text-sm text-brand-dark leading-relaxed">{c}</span>
+                </li>
+              ))}
+            </ul>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- IN-COMPANY -->
+  <section class="section-pad bg-brand-green text-white">
+    <div class="container-soft">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+        <div class="lg:col-span-7">
+          <span class="text-[11px] uppercase tracking-[0.18em] text-white/70 font-semibold mb-4 block">
+            Formato in-company
+          </span>
+          <h2 class="text-3xl md:text-4xl font-display font-bold text-white mb-6 leading-tight">
+            Turmas fechadas, no contexto da sua empresa.
+          </h2>
+          <p class="text-white/85 leading-relaxed text-lg max-w-2xl">
+            Todos os treinamentos são oferecidos in-company: turmas exclusivas da sua
+            organização, com exemplos e cenários ajustados à sua realidade, setores e
+            cultura. O conteúdo é técnico e baseado em evidências, conduzido pela Dra. Ana
+            Paula Teixeira (CRM-BA 12797).
+          </p>
+        </div>
+        <div class="lg:col-span-5">
+          <div class="border border-white/15 divide-y divide-white/15">
+            {[
+              ['Turma exclusiva', 'Apenas colaboradores da sua empresa'],
+              ['Conteúdo ajustado', 'Cenários adaptados ao seu setor e cultura'],
+              ['Base científica', 'Framework OMS/OIT e exigências da NR-1'],
+            ].map(([t, d]) => (
+              <div class="p-6">
+                <p class="font-display font-bold text-white mb-1">{t}</p>
+                <p class="text-sm text-white/70 leading-relaxed">{d}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="section-pad bg-brand-off-white-warm">
+    <div class="container-soft">
+      <div class="border border-brand-border bg-white p-8 md:p-14 text-center max-w-4xl mx-auto">
+        <span class="eyebrow mb-4 block">Vamos começar</span>
+        <h2 class="text-3xl md:text-4xl font-display font-bold text-brand-dark mb-5 leading-tight">
+          Qual treinamento a sua equipe precisa para a NR-1?
+        </h2>
+        <p class="text-brand-muted leading-relaxed mb-8 max-w-2xl mx-auto">
+          Conte para a gente o perfil da sua equipe e o objetivo da capacitação.
+          Desenhamos a turma in-company ideal e enviamos uma proposta para o seu contexto.
+        </p>
+        <div class="flex flex-wrap gap-3 justify-center">
+          <a href="/#contato" class="btn-primary">
+            Solicite uma proposta
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
+          </a>
+          <a href={whatsappUrl} target="_blank" rel="noopener" class="btn-whatsapp">
+            Falar no WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

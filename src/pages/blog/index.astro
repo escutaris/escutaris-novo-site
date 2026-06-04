@@ -1,0 +1,110 @@
+---
+import { getCollection } from 'astro:content';
+import Layout from '../../layouts/Layout.astro';
+
+const posts = (await getCollection('blog'))
+  .filter((p) => !p.data.draft)
+  .sort((a, b) => b.data.pubDate.getTime() - a.data.pubDate.getTime());
+
+const dateFmt = new Intl.DateTimeFormat('pt-BR', {
+  day: '2-digit',
+  month: 'long',
+  year: 'numeric',
+});
+
+const [featured, ...rest] = posts;
+---
+
+<Layout
+  title="Blog | Riscos Psicossociais, NR-1 e Saúde Mental no Trabalho | Escutaris"
+  description="Artigos técnicos sobre NR-1, fatores psicossociais de risco, PGR, assédio moral e saúde mental no trabalho. Conteúdo da Dra. Ana Paula Teixeira."
+>
+  <section class="section-pad bg-brand-off-white">
+    <div class="container-soft">
+      <div class="reveal max-w-4xl mb-16 md:mb-20">
+        <span class="eyebrow mb-5">Blog</span>
+        <h1 class="text-3xl md:text-5xl font-display font-bold mb-6 leading-[1.1] text-brand-dark">
+          Conhecimento técnico sobre saúde mental no trabalho.
+        </h1>
+        <p class="text-lg md:text-xl text-brand-muted leading-relaxed">
+          NR-1, fatores psicossociais de risco, PGR e cultura organizacional.
+          Conteúdo aprofundado para quem precisa adequar a empresa com seriedade.
+        </p>
+      </div>
+
+      {posts.length === 0 && (
+        <p class="text-brand-muted">Em breve, novos artigos.</p>
+      )}
+
+      {featured && (
+        <a
+          href={`/blog/${featured.id}`}
+          class="reveal group block border border-brand-border bg-white mb-12 lg:mb-16"
+        >
+          <div class="grid grid-cols-1 lg:grid-cols-12">
+            {featured.data.heroImage && (
+              <div class="lg:col-span-6 overflow-hidden">
+                <img
+                  src={featured.data.heroImage}
+                  alt={featured.data.heroImageAlt ?? featured.data.title}
+                  width="800"
+                  height="500"
+                  loading="eager"
+                  class="w-full h-full object-cover aspect-[16/10] transition-transform duration-500 group-hover:scale-[1.03]"
+                />
+              </div>
+            )}
+            <div class="lg:col-span-6 p-8 md:p-12 flex flex-col justify-center">
+              <span class="eyebrow mb-4">{featured.data.category}</span>
+              <h2 class="text-2xl md:text-3xl font-display font-bold text-brand-dark mb-4 leading-tight group-hover:text-brand-terracota transition-colors">
+                {featured.data.title}
+              </h2>
+              <p class="text-brand-muted leading-relaxed mb-6">
+                {featured.data.description}
+              </p>
+              <span class="text-xs uppercase tracking-[0.14em] text-brand-muted">
+                {dateFmt.format(featured.data.pubDate)}
+              </span>
+            </div>
+          </div>
+        </a>
+      )}
+
+      {rest.length > 0 && (
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {rest.map((post) => (
+            <a
+              href={`/blog/${post.id}`}
+              class="reveal group flex flex-col border border-brand-border bg-white"
+            >
+              {post.data.heroImage && (
+                <div class="overflow-hidden">
+                  <img
+                    src={post.data.heroImage}
+                    alt={post.data.heroImageAlt ?? post.data.title}
+                    width="600"
+                    height="375"
+                    loading="lazy"
+                    class="w-full h-auto object-cover aspect-[16/10] transition-transform duration-500 group-hover:scale-[1.03]"
+                  />
+                </div>
+              )}
+              <div class="p-6 md:p-8 flex flex-col flex-1">
+                <span class="eyebrow mb-3 text-[10px]">{post.data.category}</span>
+                <h2 class="text-lg font-display font-bold text-brand-dark mb-3 leading-snug group-hover:text-brand-terracota transition-colors">
+                  {post.data.title}
+                </h2>
+                <p class="text-sm text-brand-muted leading-relaxed mb-5 flex-1">
+                  {post.data.description}
+                </p>
+                <span class="text-[11px] uppercase tracking-[0.14em] text-brand-muted">
+                  {dateFmt.format(post.data.pubDate)}
+                </span>
+              </div>
+            </a>
+          ))}
+        </div>
+      )}
+    </div>
+  </section>
+</Layout>

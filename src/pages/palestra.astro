@@ -1,0 +1,294 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const whatsappUrl =
+  'https://api.whatsapp.com/send?phone=5571981357004&text=Ol%C3%A1%2C+gostaria+de+uma+proposta+da+Escutaris';
+
+const temas = [
+  {
+    titulo: 'Quando o Trabalho Dói',
+    texto:
+      'Como identificar e nomear o sofrimento no trabalho antes que se torne adoecimento. Baseada no livro homônimo da Dra. Ana Paula Teixeira. Ideal para abertura de eventos, SIPAT ou convenções.',
+  },
+  {
+    titulo: 'NR-1 e Riscos Psicossociais: O Que Muda na Prática',
+    texto:
+      'Panorama das obrigações legais atualizadas, o que a fiscalização vai cobrar e o passo a passo para a empresa se adequar. Para RH, jurídico, SESMT e diretoria.',
+  },
+  {
+    titulo: 'Moral Injury: A Ferida Invisível do Trabalho',
+    texto:
+      'Introdução à Lesão Moral Ocupacional: o adoecimento que surge quando o profissional é obrigado a agir contra seus valores. Tema inovador e exclusivo, fruto da pesquisa da Dra. Ana Paula.',
+  },
+  {
+    titulo: 'Liderança que Adoece vs. Liderança que Protege',
+    texto:
+      'O papel do líder como fator de risco ou de proteção psicossocial. Casos reais, dados e ferramentas práticas para a gestão.',
+  },
+  {
+    titulo: 'Microagressões no Trabalho: Do Invisível ao Mensurável',
+    texto:
+      'Como comportamentos sutis e repetidos geram adoecimento organizacional mensurável. Ferramentas de identificação e intervenção precoce.',
+  },
+];
+
+const formatos = [
+  {
+    titulo: 'Formato Padrão',
+    duracao: '1h a 1h30',
+    publico: 'Até 200 pessoas',
+    inclui: [
+      'Apresentação conduzida pela Dra. Ana Paula Teixeira',
+      'Material digital de apoio',
+      'Certificado de participação',
+    ],
+  },
+  {
+    titulo: 'Formato Expandido',
+    duracao: '2h a 3h (com workshop)',
+    publico: 'Até 50 pessoas (interativo)',
+    inclui: [
+      'Palestra completa',
+      'Dinâmica prática em grupo',
+      'Plano de ação construído com os participantes',
+      'Relatório da atividade',
+    ],
+  },
+];
+
+const siteUrl = 'https://www.escutaris.com.br';
+const pageUrl = `${siteUrl}/palestra`;
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'Service',
+      '@id': `${pageUrl}#service`,
+      name: 'Palestras Corporativas em Saúde Mental no Trabalho',
+      serviceType: 'Palestra corporativa de sensibilização (NR-1)',
+      provider: { '@id': `${siteUrl}/#organization` },
+      areaServed: 'BR',
+      url: pageUrl,
+      description:
+        'Palestras corporativas baseadas em evidências, conduzidas pela Dra. Ana Paula Teixeira (CRM-BA 12797): sensibilização técnica sobre riscos psicossociais, NR-1, lesão moral e liderança protetora.',
+    },
+  ],
+};
+---
+
+<Layout
+  title="Palestras Corporativas em Saúde Mental no Trabalho | Escutaris"
+  description="Palestras corporativas baseadas em evidências, conduzidas pela Dra. Ana Paula Teixeira (CRM-BA 12797). Sensibilização técnica sobre riscos psicossociais, NR-1, lesão moral e liderança — não são palestras motivacionais."
+  canonical={pageUrl}
+>
+  <script
+    slot="head"
+    type="application/ld+json"
+    set:html={JSON.stringify(jsonLd)}
+    is:inline
+  />
+
+  <!-- HERO -->
+  <section class="bg-brand-off-white">
+    <div class="container-soft py-16 md:py-24">
+      <nav class="mb-8 text-xs uppercase tracking-[0.14em] text-brand-muted" aria-label="Trilha">
+        <a href="/" class="hover:text-brand-terracota transition-colors">Início</a>
+        <span class="mx-2" aria-hidden="true">/</span>
+        <span>Palestras Corporativas</span>
+      </nav>
+
+      <div class="max-w-4xl">
+        <span class="eyebrow mb-5 block">Sensibilização baseada em evidências</span>
+        <h1 class="text-4xl md:text-5xl lg:text-[3.5rem] font-display font-bold mb-6 leading-[1.08] text-brand-dark">
+          Palestras que transformam como a <span class="text-brand-green">liderança</span> entende saúde mental no trabalho.
+        </h1>
+        <p class="text-lg md:text-xl text-brand-muted leading-relaxed mb-10 max-w-3xl">
+          Profundidade técnica e linguagem acessível, conduzidas pela Dra. Ana Paula Teixeira,
+          médica do trabalho (CRM-BA 12797) e autora de <em>Quando o Trabalho Dói</em>.
+          Não são palestras motivacionais — são intervenções de sensibilização baseadas
+          em evidências.
+        </p>
+        <div class="flex flex-wrap gap-3">
+          <a href="/#contato" class="btn-primary">
+            Solicite uma proposta
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
+          </a>
+          <a href={whatsappUrl} target="_blank" rel="noopener" class="btn-whatsapp">
+            Falar no WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="border-y border-brand-border bg-white">
+      <div class="container-soft">
+        <div class="grid grid-cols-2 md:grid-cols-4 divide-y md:divide-y-0 md:divide-x divide-brand-border">
+          {[
+            { n: '5', l: 'Temas disponíveis' },
+            { n: 'CRM-BA', l: 'Conduzida por médica do trabalho' },
+            { n: 'NR-1', l: 'Alinhada à norma em vigor' },
+            { n: 'OMS/OIT', l: 'Referencial técnico internacional' },
+          ].map((s) => (
+            <div class="py-8 md:py-10 px-6 text-center md:text-left">
+              <p class="font-display text-3xl md:text-4xl font-bold text-brand-green mb-1.5 leading-none tabular-nums">
+                {s.n}
+              </p>
+              <p class="text-sm text-brand-muted leading-snug">{s.l}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUEM CONDUZ -->
+  <section class="section-pad bg-white">
+    <div class="container-soft">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
+        <div class="reveal lg:col-span-7">
+          <span class="eyebrow mb-5">Quem conduz</span>
+          <h2 class="text-3xl md:text-5xl font-display font-bold mb-6 leading-[1.1] text-brand-dark">
+            Autoridade técnica, não palco motivacional.
+          </h2>
+          <p class="text-lg text-brand-muted leading-relaxed mb-5 max-w-2xl">
+            As palestras são conduzidas pela Dra. Ana Paula Teixeira, médica do trabalho
+            (CRM-BA 12797), autora do livro <em>Quando o Trabalho Dói</em> e pesquisadora
+            em Moral Injury (Lesão Moral Ocupacional).
+          </p>
+          <p class="text-lg text-brand-muted leading-relaxed max-w-2xl">
+            O conteúdo dialoga com o framework da OMS/OIT sobre saúde mental no trabalho e
+            com a urgência da NR-1, traduzindo evidência científica em decisões práticas
+            para a liderança.
+          </p>
+        </div>
+        <div class="reveal lg:col-span-5">
+          <div class="border border-brand-border bg-brand-off-white divide-y divide-brand-border">
+            {[
+              ['Médica do trabalho', 'CRM-BA 12797'],
+              ['Autora', 'Quando o Trabalho Dói'],
+              ['Pesquisadora', 'Moral Injury / Lesão Moral Ocupacional'],
+            ].map(([t, d]) => (
+              <div class="p-6">
+                <p class="font-display font-bold text-brand-dark mb-1">{t}</p>
+                <p class="text-sm text-brand-muted leading-relaxed">{d}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TEMAS -->
+  <section class="section-pad bg-brand-off-white">
+    <div class="container-soft">
+      <div class="reveal max-w-4xl mb-16 md:mb-20">
+        <span class="eyebrow mb-5">Temas disponíveis</span>
+        <h2 class="text-3xl md:text-5xl font-display font-bold mb-6 leading-[1.1] text-brand-dark">
+          Cinco temas, todos ancorados em evidência.
+        </h2>
+        <p class="text-lg md:text-xl text-brand-muted leading-relaxed">
+          Cada tema é desenhado para um objetivo e um público específicos — da abertura
+          de eventos à preparação técnica de RH, jurídico, SESMT e diretoria.
+        </p>
+      </div>
+
+      <div class="border border-brand-border bg-white grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+        {temas.map((tema, i) => (
+          <article class:list={[
+            'reveal p-8 md:p-10 border-brand-border',
+            'border-b lg:[&:nth-child(n+4)]:border-b-0',
+            '[&:not(:last-child)]:border-b md:[&:nth-child(odd)]:border-r lg:[&:nth-child(3n+1)]:border-r lg:[&:nth-child(3n+2)]:border-r',
+          ]}>
+            <span class="font-display text-4xl md:text-5xl font-bold text-brand-terracota leading-none mb-5 block tabular-nums">
+              0{i + 1}
+            </span>
+            <h3 class="text-lg md:text-xl font-display font-bold text-brand-dark mb-3 leading-tight">
+              {tema.titulo}
+            </h3>
+            <p class="text-sm text-brand-muted leading-relaxed">{tema.texto}</p>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- FORMATOS -->
+  <section class="section-pad bg-white">
+    <div class="container-soft">
+      <div class="reveal max-w-4xl mb-16 md:mb-20">
+        <span class="eyebrow mb-5">Formatos</span>
+        <h2 class="text-3xl md:text-5xl font-display font-bold mb-6 leading-[1.1] text-brand-dark">
+          Dois formatos, conforme o objetivo do seu evento.
+        </h2>
+        <p class="text-lg md:text-xl text-brand-muted leading-relaxed">
+          Da sensibilização ampla de grandes públicos ao trabalho profundo e interativo
+          com grupos menores. Desenhamos a entrega para o seu contexto.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 border border-brand-border bg-brand-off-white">
+        {formatos.map((f, i) => (
+          <article class:list={[
+            'reveal p-8 md:p-12 border-brand-border',
+            i === 0 && 'border-b md:border-b-0 md:border-r',
+          ]}>
+            <div class="w-10 h-1 bg-brand-terracota mb-6" aria-hidden="true"></div>
+            <h3 class="text-2xl font-display font-bold text-brand-dark mb-6 leading-tight">
+              {f.titulo}
+            </h3>
+            <dl class="space-y-4 mb-8">
+              <div class="flex items-baseline gap-3">
+                <dt class="text-xs uppercase tracking-[0.14em] text-brand-muted w-20 flex-shrink-0">Duração</dt>
+                <dd class="text-brand-dark font-medium tabular-nums">{f.duracao}</dd>
+              </div>
+              <div class="flex items-baseline gap-3">
+                <dt class="text-xs uppercase tracking-[0.14em] text-brand-muted w-20 flex-shrink-0">Público</dt>
+                <dd class="text-brand-dark font-medium">{f.publico}</dd>
+              </div>
+            </dl>
+            <p class="text-xs uppercase tracking-[0.14em] text-brand-muted mb-3">Inclui</p>
+            <ul class="space-y-3">
+              {f.inclui.map((item) => (
+                <li class="flex items-start gap-3">
+                  <span class="text-brand-terracota font-bold mt-0.5 flex-shrink-0" aria-hidden="true">·</span>
+                  <span class="text-brand-dark leading-relaxed">{item}</span>
+                </li>
+              ))}
+            </ul>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="section-pad bg-brand-off-white-warm">
+    <div class="container-soft">
+      <div class="border border-brand-border bg-white p-8 md:p-14 text-center max-w-4xl mx-auto">
+        <span class="eyebrow mb-4 block">Vamos conversar</span>
+        <h2 class="text-3xl md:text-4xl font-display font-bold text-brand-dark mb-5 leading-tight">
+          Leve uma palestra com profundidade técnica para a sua organização.
+        </h2>
+        <p class="text-brand-muted leading-relaxed mb-8 max-w-2xl mx-auto">
+          Conte para a gente o tema, o público e o formato que faz sentido para o seu
+          evento. Montamos uma proposta sob medida para o seu contexto.
+        </p>
+        <div class="flex flex-wrap gap-3 justify-center">
+          <a href="/#contato" class="btn-primary">
+            Solicite uma proposta
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
+          </a>
+          <a href={whatsappUrl} target="_blank" rel="noopener" class="btn-whatsapp">
+            Falar no WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>
