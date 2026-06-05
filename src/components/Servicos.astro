@@ -6,6 +6,7 @@ const servicosSecundarios = [
     descricao:
       'Intervenções de sensibilização baseadas em evidências — não motivacionais — para despertar a liderança sobre saúde mental e NR-1.',
     href: '/palestra',
+    img: '/palestra-plateia-evento.webp',
   },
   {
     eyebrow: 'Sensibilizar',
@@ -13,6 +14,7 @@ const servicosSecundarios = [
     descricao:
       'Espaço de reflexão estruturada para líderes nomearem o que observam e saírem com ferramentas concretas de ação.',
     href: '/roda-de-conversa',
+    img: '/roda-conversa-grupo.webp',
   },
   {
     eyebrow: 'Capacitar',
@@ -20,6 +22,7 @@ const servicosSecundarios = [
     descricao:
       'Capacitação técnica com carga horária e avaliação de aprendizado, do papel do líder à implementação do GRO psicossocial.',
     href: '/treinamentos',
+    img: '/treinamento-grupo-sst.webp',
   },
   {
     eyebrow: 'Transformar',
@@ -27,6 +30,7 @@ const servicosSecundarios = [
     descricao:
       'Gestão permanente de saúde mental: diagnóstico, intervenção, monitoramento e reavaliação em ciclo anual.',
     href: '/programa-continuo',
+    img: '/lideranca-dialogo-corporativo.webp',
   },
   {
     eyebrow: 'Transformar',
@@ -34,6 +38,7 @@ const servicosSecundarios = [
     descricao:
       'Projeto de escopo definido para adequar a empresa rapidamente às exigências da NR-1, com documentação para fiscalização.',
     href: '/consultoria-nr1',
+    img: '/analise-dados-diagnostico.webp',
   },
 ];
 ---
@@ -122,24 +127,37 @@ const servicosSecundarios = [
       {servicosSecundarios.map((servico) => (
         <a
           href={servico.href}
-          class="group p-8 md:p-10 flex flex-col border-r border-b border-brand-border hover:bg-brand-off-white-warm transition-colors"
+          class="group flex flex-col border-r border-b border-brand-border hover:bg-brand-off-white-warm transition-colors"
         >
-          <span class="eyebrow mb-3 block text-[10px]">{servico.eyebrow}</span>
+          <div class="overflow-hidden">
+            <img
+              src={servico.img}
+              alt={servico.titulo}
+              width="640"
+              height="360"
+              loading="lazy"
+              class="w-full h-40 object-cover transition-transform duration-500 group-hover:scale-[1.04]"
+            />
+          </div>
 
-          <h3 class="text-xl font-display font-bold text-brand-dark mb-3 leading-tight group-hover:text-brand-terracota transition-colors">
-            {servico.titulo}
-          </h3>
+          <div class="p-7 md:p-8 flex flex-col flex-1">
+            <span class="eyebrow mb-3 block text-[10px]">{servico.eyebrow}</span>
 
-          <p class="text-sm text-brand-muted leading-relaxed mb-6 flex-1">
-            {servico.descricao}
-          </p>
+            <h3 class="text-xl font-display font-bold text-brand-dark mb-3 leading-tight group-hover:text-brand-terracota transition-colors">
+              {servico.titulo}
+            </h3>
 
-          <span class="text-sm font-semibold text-brand-green group-hover:text-brand-terracota transition-colors inline-flex items-center gap-2">
-            Saiba mais
-            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-            </svg>
-          </span>
+            <p class="text-sm text-brand-muted leading-relaxed mb-6 flex-1">
+              {servico.descricao}
+            </p>
+
+            <span class="text-sm font-semibold text-brand-green group-hover:text-brand-terracota transition-colors inline-flex items-center gap-2">
+              Saiba mais
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+              </svg>
+            </span>
+          </div>
         </a>
       ))}
     </div>

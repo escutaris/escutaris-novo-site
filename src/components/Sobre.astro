@@ -25,24 +25,6 @@ const equipe = [
     descricao: 'Análise de organização do trabalho, ritmo e cargas que afetam a saúde mental.',
   },
 ];
-
-const diferenciais = [
-  {
-    titulo: 'Framework OMS/OIT (2022)',
-    texto:
-      'Única consultoria brasileira que opera com base nos quatro pilares da OMS/OIT para a saúde mental no trabalho.',
-  },
-  {
-    titulo: 'Pioneirismo em Moral Injury',
-    texto:
-      'Pesquisa e aplicação clínica da Lesão Moral Ocupacional no Brasil, com instrumento diagnóstico próprio em validação.',
-  },
-  {
-    titulo: 'Evidência, não motivação',
-    texto:
-      'Abordagem fundamentada em ciência e dados, em conformidade com NR-1, PGR, eSocial e a Lei 14.831 (Empresa Promotora de Saúde Mental).',
-  },
-];
 ---
 
 <section id="sobre" class="section-pad">
@@ -123,19 +105,5 @@ const diferenciais = [
       </div>
     </div>
 
-    <p class="reveal text-[11px] uppercase tracking-[0.18em] text-brand-muted font-semibold mt-16 mb-6">
-      O que nos diferencia
-    </p>
-    <div class="grid grid-cols-1 md:grid-cols-3 border-t border-l border-brand-border bg-white">
-      {diferenciais.map((d) => (
-        <div class="reveal p-8 border-r border-b border-brand-border">
-          <div class="w-8 h-1 bg-brand-terracota mb-5" aria-hidden="true"></div>
-          <h3 class="font-display font-bold text-brand-dark mb-3 text-[15px] leading-tight">
-            {d.titulo}
-          </h3>
-          <p class="text-sm text-brand-muted leading-relaxed">{d.texto}</p>
-        </div>
-      ))}
-    </div>
   </div>
 </section>
