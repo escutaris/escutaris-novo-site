@@ -85,6 +85,8 @@
   html {
     scroll-behavior: smooth;
     -webkit-text-size-adjust: 100%;
+    /* Compensa o cabeçalho fixo ao navegar por âncoras (#sobre, #contato, etc.) */
+    scroll-padding-top: 6rem;
   }
 
   body {
