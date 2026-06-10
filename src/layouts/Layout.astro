@@ -183,5 +183,58 @@ const jsonLd = {
         els.forEach((el) => el.classList.add('is-visible'));
       }
     </script>
+
+    <script>
+      // Números que sobem de 0 até o alvo (estilo cronômetro) quando entram na tela.
+      // Suporta data-prefix / data-suffix / data-decimals. Respeita prefers-reduced-motion.
+      const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      const easeOutCubic = (t: number) => 1 - Math.pow(1 - t, 3);
+
+      function animateCounter(el: HTMLElement) {
+        const target = parseFloat(el.dataset.target ?? '');
+        if (Number.isNaN(target)) return;
+        const duration = parseInt(el.dataset.duration ?? '1600', 10);
+        const decimals = parseInt(el.dataset.decimals ?? '0', 10);
+        const prefix = el.dataset.prefix ?? '';
+        const suffix = el.dataset.suffix ?? '';
+        const fmt = (v: number) =>
+          prefix +
+          v.toLocaleString('pt-BR', { minimumFractionDigits: decimals, maximumFractionDigits: decimals }) +
+          suffix;
+
+        if (prefersReduced) {
+          el.textContent = fmt(target);
+          return;
+        }
+
+        const start = performance.now();
+        const tick = (now: number) => {
+          const t = Math.min(1, (now - start) / duration);
+          el.textContent = fmt(target * easeOutCubic(t));
+          if (t < 1) requestAnimationFrame(tick);
+        };
+        requestAnimationFrame(tick);
+      }
+
+      const counters = document.querySelectorAll<HTMLElement>('[data-counter]');
+      if (counters.length > 0) {
+        if ('IntersectionObserver' in window) {
+          const io = new IntersectionObserver(
+            (entries) => {
+              for (const entry of entries) {
+                if (entry.isIntersecting) {
+                  animateCounter(entry.target as HTMLElement);
+                  io.unobserve(entry.target);
+                }
+              }
+            },
+            { threshold: 0.5 }
+          );
+          counters.forEach((el) => io.observe(el));
+        } else {
+          counters.forEach((el) => animateCounter(el));
+        }
+      }
+    </script>
   </body>
 </html>

@@ -15,24 +15,82 @@ const depoimentos = [
     autor: 'Cecilia Oliveira',
     cargo: 'Administradora · Imobiliária Tex Empreendimentos',
   },
+  {
+    texto: 'Parabéns pelo trabalho que vocês fazem. Os questionários, muito bem feitos, me ajudaram a enxergar questões na empresa que a gente nem percebe no dia a dia. E o relatório que a Dra. Ana elaborou foi fundamental para montarmos o plano de ação de 2025. É muito bom contar com um trabalho tão completo e cuidadoso.',
+    autor: 'Gelo Alagoinhas',
+    cargo: 'Setor Pessoal',
+  },
+  {
+    texto: 'Esta empresa presta serviços com excelente qualidade e profissionalismo. Recomendo.',
+    autor: 'Joel Santana',
+    cargo: 'Interface Treinamentos & Consultoria',
+  },
+  {
+    texto: 'Estar perto do mundo tecnológico nos surpreende: tanto a fazer, a facilitar e a nos ajudar. Realmente impressionada com o serviço contratado. Recomendo.',
+    autor: 'Giovana Muniz',
+    cargo: 'Médica',
+  },
+];
+
+// Logos autorizados pela Dra. Ana Paula para uso público.
+// 'altura' equilibra o tamanho visual de cada logo (proporções diferentes).
+const clientes = [
+  { nome: 'J. Macêdo', logo: '/clientes/jmacedo.jpeg', altura: 'max-h-14' },
+  { nome: 'CISVIVER', logo: '/clientes/cisviver.jpeg', altura: 'max-h-16' },
+  { nome: 'ASPIL — Aspiração e Serviços Industriais', logo: '/clientes/aspil.jpeg', altura: 'max-h-12' },
+  { nome: 'GACC-BA', logo: '/clientes/gacc.svg', altura: 'max-h-16' },
+  { nome: 'Interface Treinamentos & Consultoria', logo: '/clientes/interface-crop.png', altura: 'max-h-10' },
+  { nome: 'Sinética Inteligência Empreendedora', logo: '/clientes/sinetica.png', altura: 'max-h-9' },
+  { nome: 'Gelo Alagoinhas', logo: '/clientes/gelo-mci.png', altura: 'max-h-20' },
 ];
 ---
 
 <section id="depoimentos" class="section-pad bg-brand-off-white">
   <div class="container-soft">
-    <div class="reveal max-w-4xl mb-16 md:mb-20">
+    <!-- 1) Organizações que confiam — vem primeiro, com título maior -->
+    <div class="reveal max-w-4xl mb-10 md:mb-12">
       <h2 class="text-3xl md:text-5xl font-display font-bold mb-6 leading-[1.1] text-brand-dark">
-        Quem já aplicou.
+        Organizações que confiam na Escutaris.
       </h2>
       <p class="text-lg md:text-xl text-brand-muted leading-relaxed">
+        Empresas e instituições que já diagnosticaram seus fatores psicossociais com a nossa equipe.
+      </p>
+    </div>
+
+    <!-- Faixa deslizante de logos -->
+    <div class="reveal mb-20 md:mb-28">
+      <div class="logos-marquee">
+        <div class="logos-marquee-track">
+          {/* Renderiza duas vezes para o loop ficar contínuo (translateX -50%) */}
+          {[...clientes, ...clientes].map((cliente, i) => (
+            <div class="logo-item">
+              <img
+                src={cliente.logo}
+                alt={i < clientes.length ? cliente.nome : ''}
+                aria-hidden={i < clientes.length ? undefined : 'true'}
+                class={`w-auto object-contain ${cliente.altura}`}
+                loading="lazy"
+              />
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+
+    <!-- 2) Depoimentos -->
+    <div class="reveal max-w-4xl mb-10 md:mb-12">
+      <h3 class="text-2xl md:text-4xl font-display font-bold mb-4 leading-[1.12] text-brand-dark">
+        O que falam sobre nós.
+      </h3>
+      <p class="text-base md:text-lg text-brand-muted leading-relaxed">
         Profissionais de saúde, gestores e líderes que conduziram o diagnóstico com a Escutaris.
       </p>
     </div>
 
-    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
-      <!-- Depoimento em vídeo (toca ao clicar) -->
+    <!-- Vídeo em destaque + texto ao lado (linha equilibrada) -->
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center mb-8 md:mb-10">
       <div class="reveal lg:col-span-5">
-        <div class="relative max-w-[340px] mx-auto lg:mx-0 border border-brand-border bg-brand-dark overflow-hidden">
+        <div class="relative max-w-[360px] mx-auto lg:mx-0 border border-brand-border bg-brand-dark overflow-hidden">
           <video
             id="video-depoimento"
             class="w-full h-auto block"
@@ -64,28 +122,103 @@ const depoimentos = [
         </div>
       </div>
 
-      <!-- Depoimentos em texto -->
-      <div class="lg:col-span-7 border-t border-l border-brand-border bg-white">
-        {depoimentos.map((dep) => (
-          <article class="p-7 md:p-9 border-r border-b border-brand-border flex flex-col">
-            <span class="font-display text-5xl text-brand-terracota leading-none mb-3 select-none" aria-hidden="true">&ldquo;</span>
-            <p class="text-brand-dark leading-relaxed text-[15px] mb-6">
-              {dep.texto}
+      <div class="reveal lg:col-span-7">
+        <span class="eyebrow mb-3 block">Depoimento em vídeo</span>
+        <h4 class="text-2xl md:text-3xl font-display font-bold text-brand-dark mb-4 leading-tight">
+          Antônia Fernanda, da Rádio Sociedade da Bahia
+        </h4>
+        <p class="text-brand-muted leading-relaxed max-w-xl">
+          Assista ao relato sobre a experiência de diagnosticar os fatores psicossociais
+          com a Escutaris — do convite às equipes à leitura dos resultados.
+        </p>
+      </div>
+    </div>
+
+    <!-- 6 depoimentos em texto, grade limpa 3×2 -->
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 border-t border-l border-brand-border bg-white">
+      {depoimentos.map((dep) => (
+        <article class="p-6 md:p-7 border-r border-b border-brand-border flex flex-col">
+          <span class="font-display text-5xl text-brand-terracota leading-none mb-3 select-none" aria-hidden="true">&ldquo;</span>
+          <p class="text-brand-dark leading-relaxed text-[15px] mb-6">
+            {dep.texto}
+          </p>
+          <div class="mt-auto pt-4 border-t border-brand-border">
+            <p class="font-display font-bold text-brand-dark text-[15px] mb-1 leading-tight">
+              {dep.autor}
             </p>
-            <div class="mt-auto pt-4 border-t border-brand-border">
-              <p class="font-display font-bold text-brand-dark text-[15px] mb-1 leading-tight">
-                {dep.autor}
-              </p>
+            {dep.cargo && (
               <p class="text-xs text-brand-muted tracking-wide">
                 {dep.cargo}
               </p>
-            </div>
-          </article>
-        ))}
-      </div>
+            )}
+          </div>
+        </article>
+      ))}
     </div>
   </div>
 </section>
+
+<style>
+  .logos-marquee {
+    overflow: hidden;
+    width: 100%;
+    -webkit-mask-image: linear-gradient(to right, transparent 0, #000 8%, #000 92%, transparent 100%);
+    mask-image: linear-gradient(to right, transparent 0, #000 8%, #000 92%, transparent 100%);
+  }
+
+  .logos-marquee-track {
+    display: flex;
+    gap: 0;
+    align-items: stretch;
+    width: max-content;
+    animation: logos-scroll 42s linear infinite;
+  }
+
+  .logos-marquee-track:hover {
+    animation-play-state: paused;
+  }
+
+  @keyframes logos-scroll {
+    from { transform: translateX(0); }
+    to   { transform: translateX(-50%); }
+  }
+
+  .logo-item {
+    flex: 0 0 auto;
+    width: 180px;
+    height: 112px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 28px;
+    background: #fff;
+    border-right: 1px solid var(--color-brand-border);
+    border-top: 1px solid var(--color-brand-border);
+    border-bottom: 1px solid var(--color-brand-border);
+    border-radius: 6px;
+  }
+
+  .logo-item img {
+    filter: grayscale(100%) contrast(1.05);
+    opacity: 0.7;
+    transition: filter 250ms ease, opacity 250ms ease;
+  }
+
+  .logo-item:hover img {
+    filter: grayscale(0%);
+    opacity: 1;
+  }
+
+  @media (max-width: 600px) {
+    .logo-item { width: 150px; height: 96px; padding: 0 20px; }
+  }
+
+  /* Acessibilidade: quem pediu menos movimento vê a faixa parada */
+  @media (prefers-reduced-motion: reduce) {
+    .logos-marquee { overflow-x: auto; }
+    .logos-marquee-track { animation: none; }
+  }
+</style>
 
 <script>
   const v = document.getElementById('video-depoimento') as HTMLVideoElement | null;

@@ -1,7 +1,7 @@
 ---
 title: "Comunicação de Riscos no Trabalho: Guia Completo para Implementação Eficaz"
 description: "Comunicação de riscos eficiente: aprenda a criar processos claros conforme normas e reduzir acidentes no trabalho. Guia prático. Saiba mais."
-pubDate: 2026-06-23
+pubDate: 2026-06-02
 heroImage: "/blog-img/artigo-como-a-nr1-orienta.webp"
 heroImageAlt: "Como a NR1 orienta a comunicação de riscos ocupacionais aos trabalhadores"
 category: "Saúde Mental no Trabalho"

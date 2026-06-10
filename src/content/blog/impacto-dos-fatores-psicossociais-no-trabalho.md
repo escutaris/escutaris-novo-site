@@ -1,7 +1,7 @@
 ---
 title: "Fatores Psicossociais no Trabalho: Impacto na Saúde Mental"
 description: "Fatores psicossociais no trabalho: entenda impactos na saúde mental e como melhorar o bem-estar e produtividade da equipe. Saiba mais."
-pubDate: 2026-07-21
+pubDate: 2026-05-12
 heroImage: "/blog-img/blog-impacto_dos_fatores.webp"
 heroImageAlt: "Fatores psicossociais no trabalho e impacto na saúde mental"
 category: "Saúde Mental no Trabalho"
@@ -61,7 +61,7 @@ O bem-estar psicossocial não é apenas uma questão de "boas intenções", mas 
 
 Quem está cuidando dos fatores invisíveis no dashboard, mas que aparecem nas conversas informais e atestados médicos?
 
-[Fale com um especialista](https://api.whatsapp.com/send?phone=557388281600&text=Olá, gostaria de saber mais sobre fatores psicossociais no trabalho!)
+[Fale com um especialista](https://api.whatsapp.com/send?phone=5571981357004&text=Olá, gostaria de saber mais sobre fatores psicossociais no trabalho!)
 
 ##### Referências Bibliográficas:
 

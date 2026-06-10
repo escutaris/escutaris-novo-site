@@ -1,0 +1,165 @@
+---
+// Sanfona de perguntas frequentes (estilo PUCRS): clica na pergunta, a resposta abre.
+// Usa <details name="faq"> — só uma fica aberta por vez, sem precisar de JavaScript.
+// RASCUNHO: revisar respostas com a Dra. Ana antes de publicar.
+// Bloco 1 — a plataforma/produto vem primeiro; bloco 2 — conformidade e dores.
+const faqs = [
+  {
+    grupo: 'A plataforma',
+    pergunta: 'Quais instrumentos científicos a plataforma utiliza?',
+    resposta:
+      'A avaliação usa questionários validados e reconhecidos internacionalmente — não pesquisas genéricas. Entre eles: o HSE Management Standards (referência britânica para fatores psicossociais), o JCQ (modelo demanda-controle), o ERI (equilíbrio entre esforço e recompensa) e a escala de Segurança Psicológica, alinhados também à ISO 45003. A combinação é definida conforme o objetivo de cada avaliação, garantindo confiabilidade científica e aceitação técnica.',
+  },
+  {
+    grupo: 'A plataforma',
+    pergunta: 'Em quanto tempo recebemos os resultados?',
+    resposta:
+      'O dashboard interativo é liberado em até 72 horas após o encerramento da coleta de respostas. Já o relatório técnico, por ser interpretado e redigido por uma médica do trabalho, tem prazo proporcional ao porte da empresa e ao volume de respostas — quanto maior e mais segmentada a organização, mais aprofundada é a leitura. O cronograma exato é definido com a sua equipe no início do projeto.',
+  },
+  {
+    grupo: 'A plataforma',
+    pergunta: 'O que o dashboard tem de diferente de um relatório comum?',
+    resposta:
+      'Em vez de gráficos estáticos numa folha de PDF, você recebe um painel vivo: dá para explorar os dados por conta própria, cruzar variáveis e filtrar os resultados por setor, função, geração e jornada de trabalho. Isso permite enxergar exatamente onde o risco se concentra e direcionar o plano de ação com precisão — em vez de uma leitura única e engessada. O relatório técnico acompanha o painel, mas é ele que coloca a informação viva nas mãos da gestão.',
+  },
+  {
+    grupo: 'A plataforma',
+    pergunta: 'Quem elabora e assina o relatório técnico?',
+    resposta:
+      'O relatório é elaborado e interpretado pela Dra. Ana Paula Teixeira, médica do trabalho com mais de 28 anos de experiência e uma das principais referências em saúde mental no trabalho no país — premiada com o Prêmio Proteção Brasil (Ouro e Prata) e 1º lugar nacional na prova de título da ANAMT. Não é um documento gerado automaticamente: é a leitura clínica e técnica de quem domina o tema, o que dá peso e credibilidade ao resultado perante a empresa e a fiscalização.',
+  },
+  {
+    grupo: 'A plataforma',
+    pergunta: 'Como garantir que os trabalhadores respondam com sinceridade?',
+    resposta:
+      'O anonimato é garantido pela arquitetura da plataforma: os resultados são sempre apresentados de forma agregada, sem identificar quem respondeu, e tratados em conformidade com a LGPD. É esse sigilo que dá segurança ao trabalhador para responder com honestidade — tornando os dados mais representativos e confiáveis. Também orientamos a comunicação interna para aumentar a adesão sem comprometer o anonimato.',
+  },
+  {
+    grupo: 'Conformidade e dúvidas',
+    pergunta: 'Minha empresa é mesmo obrigada a avaliar os riscos psicossociais?',
+    resposta:
+      'Sim. Desde a atualização da NR-1 e a Portaria MTE 1.419/2024, toda organização que admite trabalhadores precisa identificar, avaliar e gerenciar os fatores psicossociais de risco dentro do PGR. A exigência vale independentemente do porte — o que muda é a proporcionalidade da abordagem.',
+  },
+  {
+    grupo: 'Conformidade e dúvidas',
+    pergunta: 'Como o diagnóstico entra no PGR e fica defensável numa fiscalização?',
+    resposta:
+      'O diagnóstico entrega exatamente o que o PGR precisa: identificação dos fatores psicossociais, avaliação do risco e subsídio para o plano de ação. Você recebe documentação técnica estruturada e assinada por responsável técnico (médica do trabalho), pronta para anexar ao programa e demonstrar, de forma defensável diante de auditoria ou fiscalização, que a empresa avaliou e está gerenciando esses riscos.',
+  },
+  {
+    grupo: 'Conformidade e dúvidas',
+    pergunta: 'Qual a diferença para uma pesquisa de clima ou para a AET?',
+    resposta:
+      'A pesquisa de clima mede satisfação, não risco psicossocial. A Análise Ergonômica do Trabalho (AET) olha principalmente a ergonomia física. O diagnóstico psicossocial avalia especificamente os fatores psicossociais, com instrumentos próprios e validados, classificando o risco por setor, função e geração. É isso que a NR-1 exige no PGR — e que essas abordagens, sozinhas, não cobrem.',
+  },
+  {
+    grupo: 'Conformidade e dúvidas',
+    pergunta: 'Empresas de pequeno porte e órgãos públicos também precisam?',
+    resposta:
+      'Sim. A gestão de riscos psicossociais se aplica a organizações de todos os portes e também à administração pública. O que adaptamos é a profundidade e o instrumento, para que a avaliação seja proporcional à realidade de cada organização sem perder validade técnica.',
+  },
+  {
+    grupo: 'Conformidade e dúvidas',
+    pergunta: 'Se um risco for identificado, somos obrigados a agir?',
+    resposta:
+      'Identificar e não agir é o pior cenário, inclusive do ponto de vista legal. A NR-1 exige medidas de prevenção e controle proporcionais ao risco encontrado. Por isso o diagnóstico já entrega um plano de ação priorizado — e, para riscos mais críticos, indicamos os encaminhamentos mais urgentes, para que a empresa saiba exatamente por onde começar.',
+  },
+  {
+    grupo: 'Conformidade e dúvidas',
+    pergunta: 'Como justifico esse investimento para a diretoria?',
+    resposta:
+      'Além da conformidade legal, os números convencem: os transtornos mentais são a 3ª maior causa de afastamento pelo INSS, cada afastamento custa em média mais de R$45 mil por trabalhador ao ano, e a OMS estima um retorno de US$4 para cada US$1 investido em saúde mental. O diagnóstico transforma um tema tido como subjetivo em dados objetivos que a diretoria entende e aprova.',
+  },
+  {
+    grupo: 'Conformidade e dúvidas',
+    pergunta: 'Diagnóstico pontual basta, ou isso precisa ser contínuo?',
+    resposta:
+      'A NR-1 trata a gestão de risco como processo contínuo, não como um retrato isolado. Por isso oferecemos acompanhamento em ciclos: reavaliação periódica e indicadores que mostram se as medidas adotadas realmente estão reduzindo os riscos. Assim a liderança enxerga evolução ao longo do tempo, e não apenas um diagnóstico que fica na gaveta.',
+  },
+  {
+    grupo: 'Conformidade e dúvidas',
+    pergunta: 'Quanto custa?',
+    resposta:
+      'O investimento depende do porte da organização, do número de trabalhadores e do nível de profundidade escolhido (plataforma ou consultoria organizacional). Por isso elaboramos uma proposta sob medida para cada empresa. Fale com a nossa equipe e solicite uma proposta sem compromisso.',
+  },
+];
+
+// Agrupa mantendo a ordem de aparição dos grupos.
+const grupos = faqs.reduce((acc, faq) => {
+  (acc[faq.grupo] ??= []).push(faq);
+  return acc;
+}, {} as Record<string, typeof faqs>);
+
+// JSON-LD FAQPage — ajuda o Google a exibir as perguntas direto no resultado de busca.
+const faqJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faqs.map((f) => ({
+    '@type': 'Question',
+    name: f.pergunta,
+    acceptedAnswer: { '@type': 'Answer', text: f.resposta },
+  })),
+};
+---
+
+<section id="faq" class="section-pad bg-white">
+  <div class="container-soft">
+    <div class="reveal max-w-4xl mb-12 md:mb-16">
+      <span class="eyebrow mb-5">Tire suas dúvidas</span>
+      <h2 class="text-3xl md:text-5xl font-display font-bold mb-6 leading-[1.1] text-brand-dark">
+        Perguntas frequentes.
+      </h2>
+      <p class="text-lg md:text-xl text-brand-muted leading-relaxed">
+        As dúvidas mais comuns de quem precisa adequar a empresa à NR-1.
+        Não encontrou a sua? <a href="#contato" class="text-brand-terracota underline hover:no-underline">Fale com a gente</a>.
+      </p>
+    </div>
+
+    <div class="reveal max-w-3xl">
+      {Object.entries(grupos).map(([grupo, itens]) => (
+        <div class="mb-10 last:mb-0">
+          <p class="text-[11px] uppercase tracking-[0.2em] text-brand-terracota font-semibold mb-3 pb-3 border-b-2 border-brand-terracota/30">
+            {grupo}
+          </p>
+          <div class="border-t border-brand-border">
+            {itens.map((faq) => (
+              <details name="faq" class="faq-item border-b border-brand-border">
+                <summary class="flex items-start justify-between gap-4 cursor-pointer py-6 list-none">
+                  <span class="font-display font-bold text-brand-dark text-lg md:text-xl leading-snug">
+                    {faq.pergunta}
+                  </span>
+                  <span class="faq-icon flex-shrink-0 mt-1 text-brand-terracota transition-transform duration-300" aria-hidden="true">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                    </svg>
+                  </span>
+                </summary>
+                <div class="pb-6 -mt-1 pr-8">
+                  <p class="text-brand-muted leading-relaxed">{faq.resposta}</p>
+                </div>
+              </details>
+            ))}
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+<script type="application/ld+json" set:html={JSON.stringify(faqJsonLd)} is:inline />
+
+<style>
+  /* Remove a setinha padrão do <summary> (Safari/Chrome) */
+  .faq-item summary::-webkit-details-marker { display: none; }
+  .faq-item summary { list-style: none; }
+
+  /* Gira a setinha quando a pergunta está aberta */
+  .faq-item[open] .faq-icon { transform: rotate(180deg); }
+
+  /* Realce sutil ao passar o mouse na pergunta */
+  .faq-item summary:hover .font-display { color: var(--color-brand-terracota); }
+
+  @media (prefers-reduced-motion: reduce) {
+    .faq-icon { transition: none; }
+  }
+</style>

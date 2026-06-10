@@ -1,16 +1,16 @@
 ---
 const stats = [
-  { number: '72h', label: 'Dashboard interativo entregue' },
-  { number: 'NR-1', label: '100% em conformidade' },
-  { number: '12+', label: 'Anos em saúde ocupacional' },
-  { number: 'Equipe', label: 'Especialistas multidisciplinares' },
+  { target: 72, suffix: 'h', label: 'Dashboard interativo entregue' },
+  { texto: 'NR-1', label: '100% em conformidade' },
+  { target: 28, suffix: '+', label: 'Anos em saúde ocupacional' },
+  { texto: 'Equipe', label: 'Especialistas multidisciplinares' },
 ];
 
 const whatsappUrl = 'https://api.whatsapp.com/send?phone=5571981357004&text=Ol%C3%A1%2C+gostaria+de+saber+mais+sobre+o+diagn%C3%B3stico+psicossocial';
 ---
 
 <section id="hero" class="bg-brand-off-white">
-  <div class="container-soft py-16 md:py-24">
+  <div class="container-soft py-14 md:py-20">
     <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
       <div class="lg:col-span-7">
         <h1 class="text-4xl md:text-6xl lg:text-[4rem] font-display font-bold mb-6 leading-[1.04] text-brand-dark">
@@ -37,13 +37,6 @@ const whatsappUrl = 'https://api.whatsapp.com/send?phone=5571981357004&text=Ol%C
           </a>
         </div>
 
-        <div class="pt-6 border-t border-brand-border max-w-2xl">
-          <p class="text-sm text-brand-muted leading-relaxed">
-            Conduzido pela <strong class="text-brand-dark font-semibold">Dra. Ana Paula Teixeira</strong> ·
-            Médica do trabalho, CRM-BA 12797 · Autora de
-            <em>Quando o Trabalho Dói</em> (Práxedes Livros, 2025)
-          </p>
-        </div>
       </div>
 
       <div class="lg:col-span-5">
@@ -68,7 +61,13 @@ const whatsappUrl = 'https://api.whatsapp.com/send?phone=5571981357004&text=Ol%C
         {stats.map((stat) => (
           <div class="py-8 md:py-10 px-6 text-center md:text-left">
             <p class="font-display text-3xl md:text-4xl font-bold text-brand-green mb-1.5 leading-none tabular-nums">
-              {stat.number}
+              {stat.texto ? (
+                stat.texto
+              ) : (
+                <span data-counter data-target={stat.target} data-suffix={stat.suffix}>
+                  {stat.target}{stat.suffix}
+                </span>
+              )}
             </p>
             <p class="text-sm text-brand-muted leading-snug">{stat.label}</p>
           </div>

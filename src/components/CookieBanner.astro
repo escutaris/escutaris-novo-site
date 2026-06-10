@@ -1,19 +1,24 @@
 ---
+// Banner de cookies trilíngue (PT/EN/ES) com aceitar OU recusar.
+// Marcado como "notranslate" para não ser traduzido pelo Google: nós mesmos
+// controlamos o idioma lendo o cookie do tradutor (googtrans). Texto de
+// consentimento sempre correto em cada idioma.
 ---
 
 <div
   id="cookie-banner"
-  class="hidden fixed bottom-0 inset-x-0 z-50 bg-white border-t border-brand-border shadow-[0_-4px_20px_rgba(31,36,33,0.06)]"
+  class="notranslate hidden fixed bottom-0 inset-x-0 z-50 bg-white border-t border-brand-border shadow-[0_-4px_20px_rgba(31,36,33,0.06)]"
+  translate="no"
 >
   <div class="container-soft py-4 flex flex-col sm:flex-row sm:items-center gap-4">
     <p class="text-sm text-brand-dark leading-relaxed flex-1">
-      Usamos cookies para garantir o funcionamento do site e entender, de forma agregada,
-      como ele é utilizado. Ao continuar, você concorda com a nossa
-      <a href="/politica-de-privacidade" class="underline hover:text-brand-terracota transition-colors">política de privacidade</a>.
+      <span id="cookie-text">Usamos cookies para garantir o funcionamento do site e entender, de forma agregada, como ele é utilizado. Você pode aceitar ou recusar os cookies de análise.</span>
+      <a id="cookie-policy" href="/politica-de-privacidade" class="underline hover:text-brand-terracota transition-colors">Política de privacidade</a>.
     </p>
-    <button id="cookie-accept" type="button" class="btn-primary text-sm whitespace-nowrap self-start sm:self-auto">
-      Aceitar
-    </button>
+    <div class="flex gap-3 self-start sm:self-auto">
+      <button id="cookie-reject" type="button" class="btn-ghost text-sm whitespace-nowrap">Recusar</button>
+      <button id="cookie-accept" type="button" class="btn-primary text-sm whitespace-nowrap">Aceitar</button>
+    </div>
   </div>
 </div>
 
@@ -21,13 +26,49 @@
   const KEY = 'escutaris-cookie-consent';
   const banner = document.getElementById('cookie-banner');
   const accept = document.getElementById('cookie-accept');
+  const reject = document.getElementById('cookie-reject');
+  const textEl = document.getElementById('cookie-text');
+  const policyEl = document.getElementById('cookie-policy');
+
+  const T: Record<string, { text: string; policy: string; accept: string; reject: string }> = {
+    pt: {
+      text: 'Usamos cookies para garantir o funcionamento do site e entender, de forma agregada, como ele é utilizado. Você pode aceitar ou recusar os cookies de análise.',
+      policy: 'Política de privacidade', accept: 'Aceitar', reject: 'Recusar',
+    },
+    en: {
+      text: 'We use cookies to keep the site working and to understand, in aggregate, how it is used. You can accept or reject analytics cookies.',
+      policy: 'Privacy policy', accept: 'Accept', reject: 'Reject',
+    },
+    es: {
+      text: 'Usamos cookies para garantizar el funcionamiento del sitio y entender, de forma agregada, cómo se utiliza. Puede aceptar o rechazar las cookies de análisis.',
+      policy: 'Política de privacidad', accept: 'Aceptar', reject: 'Rechazar',
+    },
+  };
+
+  function currentLang(): string {
+    const m = document.cookie.match(/googtrans=\/[a-z]{2}\/([a-z]{2})/);
+    const l = m ? m[1] : 'pt';
+    return T[l] ? l : 'pt';
+  }
+
+  function applyLang() {
+    const t = T[currentLang()];
+    if (textEl) textEl.textContent = t.text;
+    if (policyEl) policyEl.textContent = t.policy;
+    if (accept) accept.textContent = t.accept;
+    if (reject) reject.textContent = t.reject;
+  }
+
+  function close(value: string) {
+    try { localStorage.setItem(KEY, value); } catch (e) {}
+    banner?.classList.add('hidden');
+  }
 
   if (banner && !localStorage.getItem(KEY)) {
+    applyLang();
     banner.classList.remove('hidden');
   }
 
-  accept?.addEventListener('click', () => {
-    try { localStorage.setItem(KEY, '1'); } catch (e) {}
-    banner?.classList.add('hidden');
-  });
+  accept?.addEventListener('click', () => close('accepted'));
+  reject?.addEventListener('click', () => close('rejected'));
 </script>

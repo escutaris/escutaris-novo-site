@@ -45,14 +45,14 @@ const servicosSecundarios = [
 
 <section id="servicos" class="section-pad bg-brand-off-white">
   <div class="container-soft">
-    <div class="reveal max-w-4xl mb-16 md:mb-20">
+    <div class="reveal max-w-4xl mb-12 md:mb-16">
       <h2 class="text-3xl md:text-5xl font-display font-bold mb-6 leading-[1.1] text-brand-dark">
-        Do primeiro alerta à transformação da cultura.
+        Nossas soluções.
       </h2>
       <p class="text-lg md:text-xl text-brand-muted leading-relaxed">
-        Uma arquitetura de soluções que acompanha a sua organização em cada estágio:
-        sensibilizar a liderança, capacitar as equipes, diagnosticar os riscos e
-        transformar a cultura de forma contínua.
+        Do primeiro alerta à transformação contínua da cultura: soluções que acompanham
+        a sua organização em cada estágio — sensibilizar a liderança, capacitar as equipes,
+        diagnosticar os riscos e sustentar a mudança.
       </p>
     </div>
 
@@ -61,23 +61,43 @@ const servicosSecundarios = [
 
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-0">
         <div class="lg:col-span-7 p-8 md:p-12 lg:p-14 lg:border-r border-brand-border">
-          <span class="eyebrow mb-4 block">Produto principal · Diagnóstico</span>
+          <span class="eyebrow mb-4 block">Dois níveis de profundidade</span>
 
           <h3 class="text-3xl md:text-4xl font-display font-bold text-brand-dark mb-5 leading-tight">
             Diagnóstico Psicossocial
           </h3>
 
           <p class="text-base md:text-lg text-brand-dark mb-6 leading-relaxed">
-            Avaliação dos fatores psicossociais e da saúde mental no trabalho, em dois níveis:
-            a plataforma com questionários validados e dashboard em até 72 horas, ou a consultoria
-            organizacional aprofundada com base nos 10 domínios da OMS/OIT. Processo anonimizado e
-            em conformidade integral com a NR-1.
+            Avaliação técnica dos fatores psicossociais e da saúde mental no trabalho —
+            anonimizada e em conformidade integral com a NR-1. Você escolhe a profundidade:
           </p>
+
+          <div class="space-y-4 mb-8">
+            <div class="border-l-2 border-brand-terracota pl-4">
+              <p class="font-display font-bold text-brand-dark text-[15px] mb-1">
+                Nível 1 · Plataforma <span class="font-body font-normal text-brand-muted">— resultado em até 72h</span>
+              </p>
+              <p class="text-sm text-brand-muted leading-relaxed">
+                Questionários científicos validados e dashboard interativo. Ideal para mapear
+                os riscos com agilidade e cumprir a NR-1.
+              </p>
+            </div>
+            <div class="border-l-2 border-brand-green pl-4">
+              <p class="font-display font-bold text-brand-dark text-[15px] mb-1">
+                Nível 2 · Consultoria organizacional <span class="font-body font-normal text-brand-muted">— análise aprofundada</span>
+              </p>
+              <p class="text-sm text-brand-muted leading-relaxed">
+                Avaliação conduzida pela nossa equipe com base nos 10 domínios psicossociais
+                da OMS/OIT, com devolutiva estratégica e plano de ação. Para transformar a
+                cultura, não apenas medir.
+              </p>
+            </div>
+          </div>
 
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-3 mb-8">
             <div class="flex items-start gap-3 text-sm">
               <span class="text-brand-terracota font-bold mt-0.5" aria-hidden="true">·</span>
-              <span class="text-brand-dark"><strong class="font-semibold">Conformidade integral</strong> com NR-01 e PGR</span>
+              <span class="text-brand-dark"><strong class="font-semibold">Conformidade integral</strong> com NR-1 e PGR</span>
             </div>
             <div class="flex items-start gap-3 text-sm">
               <span class="text-brand-terracota font-bold mt-0.5" aria-hidden="true">·</span>
@@ -108,10 +128,10 @@ const servicosSecundarios = [
 
         <div class="lg:col-span-5 bg-brand-off-white-warm p-8 md:p-12 flex items-center justify-center">
           <img
-            src="/dashboard-karasek.webp"
-            alt="Dashboard interativo de diagnóstico psicossocial com filtros por setor, função e geração"
-            width="640"
-            height="360"
+            src="/dashboard-real.webp"
+            alt="Dashboard interativo real da Escutaris, com análise dos fatores psicossociais por setor, função e geração"
+            width="730"
+            height="620"
             class="w-full h-auto border border-brand-border"
             loading="lazy"
           />
@@ -120,7 +140,7 @@ const servicosSecundarios = [
     </article>
 
     <p class="text-[11px] uppercase tracking-[0.18em] text-brand-muted font-semibold mb-6">
-      Outras frentes da jornada
+      Soluções complementares
     </p>
 
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 border-t border-l border-brand-border bg-white">
@@ -132,7 +152,7 @@ const servicosSecundarios = [
           <div class="overflow-hidden">
             <img
               src={servico.img}
-              alt={servico.titulo}
+              alt=""
               width="640"
               height="360"
               loading="lazy"

@@ -5,7 +5,13 @@ const supabaseKey = import.meta.env.PUBLIC_SUPABASE_PUBLISHABLE_KEY;
 
 export const supabase = createClient(supabaseUrl, supabaseKey);
 
-export type LeadServico = 'diagnostico' | 'palestra' | 'roda' | 'direcionamento';
+export type LeadServico =
+  | 'diagnostico'
+  | 'palestra'
+  | 'roda'
+  | 'treinamento'
+  | 'programa'
+  | 'consultoria';
 
 export interface LeadInput {
   nome: string;

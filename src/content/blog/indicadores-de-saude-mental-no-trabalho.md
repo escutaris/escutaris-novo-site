@@ -1,7 +1,7 @@
 ---
 title: "11 Indicadores de Saúde Mental no Trabalho + Como Agir"
 description: "11 indicadores de saúde mental no trabalho e ações práticas para melhorar o bem-estar organizacional. Veja dados e estratégias eficazes."
-pubDate: 2026-07-28
+pubDate: 2026-05-19
 heroImage: "/blog-img/blog_indicadores_de_saude.webp"
 heroImageAlt: "Indicadores de saúde mental no trabalho e como agir"
 category: "Saúde Mental no Trabalho"

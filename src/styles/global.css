@@ -72,9 +72,9 @@
   --font-body: "Poppins", system-ui, -apple-system, "Segoe UI", sans-serif;
   --font-nav: "Poppins", system-ui, -apple-system, "Segoe UI", sans-serif;
 
-  /* Sem arredondamento — bordas retas em todo o sistema */
-  --radius-soft: 0;
-  --radius-card: 0;
+  /* Arredondamento leve nas caixas independentes; seções full-bleed seguem retas */
+  --radius-soft: 6px;
+  --radius-card: 6px;
   --radius-section: 0;
 
   /* Transições padrão */
@@ -134,6 +134,24 @@
   /* Números alinhados (estatísticas, valores) */
   .tabular-nums {
     font-variant-numeric: tabular-nums;
+  }
+
+  /* === Arredondamento leve e consistente das caixas (6px) ===
+     Suaviza o visual sem perder o ar editorial. Caixas independentes (cards,
+     botões, campos, tabela, imagens emolduradas) ganham canto leve. As grades
+     de células coladas (border-t/l/r/b) permanecem retas de propósito, para não
+     quebrar o encaixe. Elementos com rounded-* explícito (ex.: botão circular)
+     continuam mandando. */
+  input, select, textarea {
+    border-radius: var(--radius-soft);
+  }
+  .border,
+  .border-2 {
+    border-radius: var(--radius-soft);
+  }
+  .article-prose img,
+  .article-prose figure {
+    border-radius: var(--radius-soft);
   }
 
   /* Reveal suave ao rolar a página */
@@ -201,6 +219,13 @@
   }
   .btn-ghost:hover {
     border-color: var(--color-brand-dark);
+  }
+
+  .btn-primary,
+  .btn-secondary,
+  .btn-whatsapp,
+  .btn-ghost {
+    border-radius: var(--radius-soft);
   }
 
   .container-soft {

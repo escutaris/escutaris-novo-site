@@ -1,22 +1,27 @@
 ---
 const stats = [
   {
-    num: '2º',
+    target: 2,
+    suffix: 'º',
     desc: 'país do mundo em casos de burnout',
     fonte: 'ISMA-BR',
   },
   {
-    num: '3ª',
+    target: 3,
+    suffix: 'ª',
     desc: 'maior causa de afastamento pelo INSS são os transtornos mentais',
     fonte: 'INSS',
   },
   {
-    num: '+R$45 mil',
+    target: 45,
+    prefix: '+R$ ',
+    suffix: ' mil',
     desc: 'é o custo médio de um afastamento por transtorno mental, por trabalhador ao ano',
     fonte: 'absenteísmo, presenteísmo, substituição e passivo jurídico',
   },
   {
-    num: 'US$1 → US$4',
+    target: 4,
+    prefix: 'US$1 → US$',
     desc: 'de retorno em produtividade para cada dólar investido em saúde mental',
     fonte: 'OMS',
   },
@@ -36,12 +41,12 @@ const stats = [
   <div class="absolute inset-0 bg-brand-dark/88" aria-hidden="true"></div>
 
   <div class="relative container-soft">
-    <div class="reveal max-w-4xl mb-14 md:mb-16">
-      <span class="eyebrow mb-5">Por que agir agora</span>
-      <h2 class="text-3xl md:text-5xl font-display font-bold mb-6 leading-[1.1] text-white">
+    <div class="reveal max-w-3xl mb-10 md:mb-12">
+      <span class="eyebrow mb-4">Por que agir agora</span>
+      <h2 class="text-2xl md:text-4xl font-display font-bold mb-4 leading-[1.12] text-white">
         A conta do adoecimento chegou — e a fiscalização também.
       </h2>
-      <p class="text-lg md:text-xl text-white/80 leading-relaxed">
+      <p class="text-base md:text-lg text-white/80 leading-relaxed">
         Desde 2025, a Portaria MTE 1.419/2024 e a NR-1 atualizada exigem que toda empresa
         identifique, avalie e gerencie os fatores psicossociais no PGR. Ignorar deixou de
         ser uma opção: o custo do adoecimento e o risco regulatório agora andam juntos.
@@ -52,7 +57,13 @@ const stats = [
       {stats.map((s) => (
         <div class="reveal p-7 md:p-8 border-r border-b border-white/15 flex flex-col">
           <p class="font-display text-3xl md:text-4xl font-bold text-brand-terracota-hover mb-3 leading-none tabular-nums">
-            {s.num}
+            {s.texto ? (
+              s.texto
+            ) : (
+              <span data-counter data-target={s.target} data-prefix={s.prefix} data-suffix={s.suffix}>
+                {s.prefix}{s.target}{s.suffix}
+              </span>
+            )}
           </p>
           <p class="text-white/85 leading-snug mb-4 flex-1">{s.desc}</p>
           <p class="text-[11px] uppercase tracking-[0.14em] text-white/45">{s.fonte}</p>
