@@ -1,0 +1,159 @@
+{
+  "redirects": [
+    {
+      "source": "/index.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/index.html",
+      "destination": "/blog",
+      "permanent": true
+    },
+    {
+      "source": "/cookies.html",
+      "destination": "/politica-de-privacidade",
+      "permanent": true
+    },
+    {
+      "source": "/escuta-e-direcionamento-dos-trabalhadores-com-sinais-de-sofrimento-mental.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/mentoria-para-lideres-e-profissionais-de-sst-sobre-saude-mental-no-trabalho.html",
+      "destination": "/roda-de-conversa",
+      "permanent": true
+    },
+    {
+      "source": "/passo-a-passo-do-cliente.html",
+      "destination": "/diagnostico-dos-fatores-psicossociais-e-saude-mental-no-trabalho",
+      "permanent": true
+    },
+    {
+      "source": "/blog/a_nova_nr_1_e_a_gestao_de_riscos_psicossociais.html",
+      "destination": "/blog/a-nova-nr-1-e-a-gestao-de-riscos-psicossociais",
+      "permanent": true
+    },
+    {
+      "source": "/blog/adequacao_a_nr1.html",
+      "destination": "/blog/adequacao-a-nr1",
+      "permanent": true
+    },
+    {
+      "source": "/blog/ambiente_seguro_mentalmente.html",
+      "destination": "/blog/ambiente-seguro-mentalmente",
+      "permanent": true
+    },
+    {
+      "source": "/blog/anonimato_e_lgpd.html",
+      "destination": "/blog/anonimato-e-lgpd",
+      "permanent": true
+    },
+    {
+      "source": "/blog/antes_de_aplicar_saiba_escolher.html",
+      "destination": "/blog/antes-de-aplicar-saiba-escolher",
+      "permanent": true
+    },
+    {
+      "source": "/blog/assedio_moral_trabalho.html",
+      "destination": "/blog/assedio-moral-trabalho",
+      "permanent": true
+    },
+    {
+      "source": "/blog/avaliacao_fatores_psicossociais.html",
+      "destination": "/blog/avaliacao-fatores-psicossociais",
+      "permanent": true
+    },
+    {
+      "source": "/blog/comunicacao_de_riscos.html",
+      "destination": "/blog/comunicacao-de-riscos",
+      "permanent": true
+    },
+    {
+      "source": "/blog/cultura_organizacional_e_saude_mental.html",
+      "destination": "/blog/cultura-organizacional-e-saude-mental",
+      "permanent": true
+    },
+    {
+      "source": "/blog/hse_indicator_tool.html",
+      "destination": "/blog/hse-indicator-tool",
+      "permanent": true
+    },
+    {
+      "source": "/blog/impacto_dos_fatores_psicossociais_no_trabalho.html",
+      "destination": "/blog/impacto-dos-fatores-psicossociais-no-trabalho",
+      "permanent": true
+    },
+    {
+      "source": "/blog/indicadores_de_saude_mental_no_trabalho.html",
+      "destination": "/blog/indicadores-de-saude-mental-no-trabalho",
+      "permanent": true
+    },
+    {
+      "source": "/blog/integracaodos_risco_psicossociais_ao_PCMSO.html",
+      "destination": "/blog/integracaodos-risco-psicossociais-ao-PCMSO",
+      "permanent": true
+    },
+    {
+      "source": "/blog/lideranca_saude_mental.html",
+      "destination": "/blog/lideranca-saude-mental",
+      "permanent": true
+    },
+    {
+      "source": "/blog/nao_sou_um_lider_toxico.html",
+      "destination": "/blog/nao-sou-um-lider-toxico",
+      "permanent": true
+    },
+    {
+      "source": "/blog/nova_nr1_vai_aumentar_a_burocracia.html",
+      "destination": "/blog/nova-nr1-vai-aumentar-a-burocracia",
+      "permanent": true
+    },
+    {
+      "source": "/blog/o_HSE_IT_e_a_gestao_dos_fatores_psicossociais_no_trabalho.html",
+      "destination": "/blog/o-HSE-IT-e-a-gestao-dos-fatores-psicossociais-no-trabalho",
+      "permanent": true
+    },
+    {
+      "source": "/blog/o_erro_fatal_na_adequacao_a_nr1.html",
+      "destination": "/blog/o-erro-fatal-na-adequacao-a-nr1",
+      "permanent": true
+    },
+    {
+      "source": "/blog/o_perigo_invisivel.html",
+      "destination": "/blog/o-perigo-invisivel",
+      "permanent": true
+    },
+    {
+      "source": "/blog/pesquisa_riscos_psicossociais.html",
+      "destination": "/blog/pesquisa-riscos-psicossociais",
+      "permanent": true
+    },
+    {
+      "source": "/blog/riscos_psicossociais.html",
+      "destination": "/blog/riscos-psicossociais",
+      "permanent": true
+    },
+    {
+      "source": "/blog/riscos_psicossociais_no_trabalho.html",
+      "destination": "/blog/riscos-psicossociais-no-trabalho",
+      "permanent": true
+    },
+    {
+      "source": "/blog/riscos_psicossociais_nova_nr1.html",
+      "destination": "/blog/riscos-psicossociais-nova-nr1",
+      "permanent": true
+    },
+    {
+      "source": "/blog/:slug(.+)\\.html",
+      "destination": "/blog/:slug",
+      "permanent": true
+    },
+    {
+      "source": "/:page(.+)\\.html",
+      "destination": "/:page",
+      "permanent": true
+    }
+  ]
+}
