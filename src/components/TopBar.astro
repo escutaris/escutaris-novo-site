@@ -36,35 +36,53 @@ const emailUrl = 'mailto:contato@escutaris.com.br?subject=Or%C3%A7amento';
     </div>
 
     <div class="flex items-center gap-5">
-      <div class="flex items-center gap-2" aria-label="Traduzir idioma">
+      <div class="flex items-center gap-2.5" aria-label="Traduzir idioma">
         <button
           type="button"
-          class="font-medium tracking-wider text-white/80 hover:text-white transition-colors"
+          class="opacity-75 hover:opacity-100 transition-opacity"
           onclick="doGTranslate('pt|pt'); return false;"
           aria-label="Voltar ao português"
           title="Português"
         >
-          PT
+          <svg class="w-5 h-3.5 block rounded-[2px] ring-1 ring-white/25" viewBox="0 0 20 14" aria-hidden="true">
+            <rect width="20" height="14" fill="#009b3a" />
+            <path d="M10 1.8 18 7l-8 5.2L2 7z" fill="#fedf00" />
+            <circle cx="10" cy="7" r="3" fill="#002776" />
+            <path d="M7.2 6.4c2-.7 4.2-.3 5.6 1" stroke="#fff" stroke-width="0.6" fill="none" />
+          </svg>
         </button>
-        <span class="text-white/30" aria-hidden="true">·</span>
         <button
           type="button"
-          class="font-medium tracking-wider text-white/80 hover:text-white transition-colors"
+          class="opacity-75 hover:opacity-100 transition-opacity"
           onclick="doGTranslate('pt|en'); return false;"
           aria-label="Traduzir para inglês"
           title="English"
         >
-          EN
+          <svg class="w-5 h-3.5 block rounded-[2px] ring-1 ring-white/25" viewBox="0 0 20 14" aria-hidden="true">
+            <rect width="20" height="14" fill="#b22234" />
+            <g fill="#fff">
+              <rect y="1.08" width="20" height="1.08" />
+              <rect y="3.23" width="20" height="1.08" />
+              <rect y="5.38" width="20" height="1.08" />
+              <rect y="7.54" width="20" height="1.08" />
+              <rect y="9.69" width="20" height="1.08" />
+              <rect y="11.85" width="20" height="1.08" />
+            </g>
+            <rect width="8" height="7.54" fill="#3c3b6e" />
+          </svg>
         </button>
-        <span class="text-white/30" aria-hidden="true">·</span>
         <button
           type="button"
-          class="font-medium tracking-wider text-white/80 hover:text-white transition-colors"
+          class="opacity-75 hover:opacity-100 transition-opacity"
           onclick="doGTranslate('pt|es'); return false;"
           aria-label="Traduzir para espanhol"
           title="Español"
         >
-          ES
+          <svg class="w-5 h-3.5 block rounded-[2px] ring-1 ring-white/25" viewBox="0 0 20 14" aria-hidden="true">
+            <rect width="20" height="14" fill="#aa151b" />
+            <rect y="3.5" width="20" height="7" fill="#f1bf00" />
+            <rect x="4.2" y="5.4" width="1.8" height="2.6" fill="#aa151b" />
+          </svg>
         </button>
       </div>
 
