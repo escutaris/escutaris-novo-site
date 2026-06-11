@@ -125,43 +125,67 @@ const jsonLd = {
     <ScrollTop />
     <CookieBanner />
 
-    <!-- Tradutor (Google) carregado sob demanda, só quando a pessoa clica em EN/ES (LGPD) -->
+    <!-- Tradutor (Google). LGPD: o script do Google só carrega se a pessoa já escolheu
+         um idioma (cookie googtrans). A troca grava o cookie e recarrega a página,
+         que abre direto traduzida — método mais confiável que disparar o combo. -->
     <div id="google_translate_element" class="hidden" aria-hidden="true"></div>
     <script is:inline>
       (function () {
-        var loaded = false;
+        function activeLang() {
+          var m = document.cookie.match(/(?:^|;\s*)googtrans=([^;]*)/);
+          return m ? decodeURIComponent(m[1]).split('/')[2] || '' : '';
+        }
         window.googleTranslateElementInit = function () {
           new google.translate.TranslateElement(
             { pageLanguage: 'pt', autoDisplay: false },
             'google_translate_element'
           );
         };
-        function loadGT(cb) {
-          if (loaded) { cb && cb(); return; }
-          loaded = true;
+        function loadGT() {
           var s = document.createElement('script');
           s.src = 'https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';
           document.body.appendChild(s);
-          var tries = 0;
-          var t = setInterval(function () {
-            if (document.querySelector('.goog-te-combo')) { clearInterval(t); cb && cb(); }
-            else if (++tries > 30) { clearInterval(t); }
-          }, 300);
         }
-        function fire(el, ev) {
-          try { var e = document.createEvent('HTMLEvents'); e.initEvent(ev, true, true); el.dispatchEvent(e); } catch (_) {}
+        function setCookie(value) {
+          // Grava no host atual e no domínio raiz (o Google às vezes grava com domínio).
+          var clear = value === null;
+          var exp = clear ? '; expires=Thu, 01 Jan 1970 00:00:00 GMT' : '';
+          var val = clear ? '' : value;
+          document.cookie = 'googtrans=' + val + exp + '; path=/';
+          var parts = location.hostname.split('.');
+          while (parts.length > 1) {
+            document.cookie = 'googtrans=' + val + exp + '; path=/; domain=.' + parts.join('.');
+            parts.shift();
+          }
         }
         window.doGTranslate = function (pair) {
           if (pair && typeof pair === 'object' && pair.value) pair = pair.value;
           if (!pair) return;
           var lang = pair.split('|')[1];
-          loadGT(function () {
-            var combo = document.querySelector('.goog-te-combo');
-            if (combo) { combo.value = lang; fire(combo, 'change'); }
-          });
+          if (lang === 'pt') setCookie(null);
+          else setCookie('/pt/' + lang);
+          location.reload();
         };
+        if (activeLang() && activeLang() !== 'pt') loadGT();
       })();
     </script>
+    <style is:global>
+      /* Esconde a barra e os balões que o Google Tradutor injeta na página */
+      body { top: 0 !important; }
+      iframe.skiptranslate,
+      .goog-te-banner-frame,
+      .VIpgJd-ZVi9od-ORHb-OEVmcd,
+      #goog-gt-tt,
+      .goog-te-balloon-frame,
+      .goog-tooltip,
+      .goog-te-spinner-pos { display: none !important; visibility: hidden !important; }
+      .goog-text-highlight,
+      .VIpgJd-yAWNEb-VIpgJd-fmcmS-sn54Q {
+        background: none !important;
+        box-shadow: none !important;
+      }
+      font[style] { background: none !important; }
+    </style>
 
     <script>
       // Reveal suave ao entrar na viewport. Sem biblioteca, respeita prefers-reduced-motion (via CSS).
