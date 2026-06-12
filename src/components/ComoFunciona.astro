@@ -1,5 +1,6 @@
 ---
-// Bloco 4 da home: o caminho do cliente em quatro etapas, com CTA ao final.
+// Bloco 4 da home: o caminho do cliente em quatro etapas,
+// no mesmo estilo de fluxo visual da página do diagnóstico.
 const passos = [
   {
     titulo: 'Conversa de alinhamento',
@@ -32,31 +33,65 @@ const passos = [
       </p>
     </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 border border-brand-border bg-brand-off-white">
-      {passos.map((p, i) => (
-        <article class:list={[
-          'reveal p-7 md:p-8 border-brand-border',
-          i < passos.length - 1 && 'border-b lg:border-b-0 lg:border-r',
-          i === 1 && 'md:border-r lg:md:border-r',
-        ]}>
-          <span class="font-display text-4xl font-bold text-brand-terracota leading-none mb-4 block tabular-nums">
-            0{i + 1}
-          </span>
-          <h3 class="text-lg font-display font-bold text-brand-dark mb-2.5 leading-tight">
-            {p.titulo}
-          </h3>
-          <p class="text-sm text-brand-muted leading-relaxed">{p.texto}</p>
-        </article>
-      ))}
-    </div>
+    <div class="relative max-w-5xl mx-auto">
+      <!-- linha do fluxo -->
+      <div
+        class="absolute left-5 lg:left-1/2 top-2 bottom-2 w-px bg-brand-terracota/30 lg:-translate-x-1/2"
+        aria-hidden="true"
+      ></div>
 
-    <div class="mt-10 text-center">
-      <a href="#contato" class="btn-primary">
-        Começar agora — a conversa é gratuita
-        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-        </svg>
-      </a>
+      <ol class="space-y-8 lg:space-y-0">
+        {passos.map((passo, i) => (
+          <li class="reveal relative lg:grid lg:grid-cols-[1fr_5rem_1fr] lg:items-start lg:pb-10">
+            <div class="absolute left-0 top-6 lg:static lg:col-start-2 lg:row-start-1 lg:flex lg:justify-center lg:pt-6">
+              <span class="w-10 h-10 rounded-full bg-brand-terracota text-white font-display font-bold flex items-center justify-center tabular-nums">
+                {i + 1}
+              </span>
+            </div>
+
+            <article class:list={[
+              'ml-16 lg:ml-0 bg-brand-off-white border border-brand-border p-6 md:p-8',
+              i % 2 === 0 ? 'lg:col-start-1 lg:row-start-1' : 'lg:col-start-3 lg:row-start-1',
+            ]}>
+              <h3 class="text-lg md:text-xl font-display font-bold text-brand-dark mb-2.5 leading-tight">
+                {passo.titulo}
+              </h3>
+              <p class="text-sm text-brand-muted leading-relaxed">{passo.texto}</p>
+            </article>
+          </li>
+        ))}
+      </ol>
+
+      <!-- resultado do fluxo -->
+      <div class="reveal relative mt-8 lg:mt-2">
+        <div class="absolute left-0 top-6 lg:left-1/2 lg:top-0 lg:-translate-x-1/2 lg:-translate-y-1/2">
+          <span class="w-10 h-10 rounded-full bg-brand-green text-white flex items-center justify-center">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7" />
+            </svg>
+          </span>
+        </div>
+        <div class="ml-16 lg:ml-0 lg:max-w-xl lg:mx-auto bg-white border border-brand-green p-6 md:p-8 lg:pt-10 lg:text-center">
+          <p class="text-[11px] uppercase tracking-[0.18em] text-brand-green font-semibold mb-2">
+            Você sai com
+          </p>
+          <p class="font-display font-bold text-brand-dark text-xl md:text-2xl mb-2 leading-tight">
+            Dashboard interativo + relatório técnico
+          </p>
+          <p class="text-sm text-brand-muted leading-relaxed">
+            O resultado e a análise dos dados, prontos para orientar as decisões da sua empresa.
+          </p>
+        </div>
+      </div>
+
+      <div class="reveal mt-10 text-center">
+        <a href="#contato" class="btn-primary">
+          Começar agora — a conversa é gratuita
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+          </svg>
+        </a>
+      </div>
     </div>
   </div>
 </section>
