@@ -18,7 +18,7 @@ const formatos = [
     duracao: '2h a 3h',
     publico: 'Grupo de 8 a 15 líderes',
     inclui: [
-      'Facilitação conduzida pela Dra. Ana Paula Teixeira',
+      'Facilitação por especialista da equipe multidisciplinar',
       'Material de apoio',
       'Síntese executiva da sessão',
     ],
@@ -68,7 +68,7 @@ const jsonLd = {
       areaServed: 'BR',
       url: pageUrl,
       description:
-        'Rodas de conversa para grupos de líderes e gestores, facilitadas pela Dra. Ana Paula Teixeira (CRM-BA 12797): reflexão estruturada sobre saúde mental no trabalho, casos reais anonimizados e ferramentas concretas de ação.',
+        'Rodas de conversa para grupos de líderes e gestores, facilitadas pela Dra. Ana Paula Teixeira (CRM-BA 12797) ou por especialistas da equipe multidisciplinar da Escutaris: reflexão estruturada sobre saúde mental no trabalho, casos reais anonimizados e ferramentas concretas de ação.',
     },
   ],
 };
@@ -76,7 +76,7 @@ const jsonLd = {
 
 <Layout
   title="Rodas de Conversa para Lideranças em Saúde Mental | Escutaris"
-  description="Rodas de conversa para grupos de líderes e gestores, facilitadas pela Dra. Ana Paula Teixeira (CRM-BA 12797). Reflexão estruturada, casos reais anonimizados e ferramentas concretas de ação em saúde mental no trabalho."
+  description="Rodas de conversa para grupos de líderes e gestores, facilitadas pela Dra. Ana Paula Teixeira (CRM-BA 12797) ou por especialistas da equipe multidisciplinar da Escutaris. Reflexão estruturada, casos reais anonimizados e ferramentas concretas de ação em saúde mental no trabalho."
   canonical={pageUrl}
 >
   <script
@@ -101,10 +101,11 @@ const jsonLd = {
           Um espaço de <span class="text-brand-green">reflexão estruturada</span> para quem lidera pessoas.
         </h1>
         <p class="text-lg md:text-xl text-brand-muted leading-relaxed mb-10 max-w-3xl">
-          Formato íntimo e profundo, desenhado para grupos de líderes e gestores e
-          facilitado pela Dra. Ana Paula Teixeira (CRM-BA 12797). Não é palestra — é um
-          espaço onde a liderança nomeia o que observa, discute casos reais anonimizados
-          e sai com ferramentas concretas de ação.
+          Formato íntimo e profundo, desenhado para grupos de líderes e gestores.
+          A facilitação é da Dra. Ana Paula Teixeira (CRM-BA 12797) ou de um
+          especialista da nossa equipe multidisciplinar, conforme o tema. Não é
+          palestra — é um espaço onde a liderança nomeia o que observa, discute
+          casos reais anonimizados e sai com ferramentas concretas de ação.
         </p>
         <div class="flex flex-wrap gap-3">
           <a href="/#contato" class="btn-primary">
@@ -126,7 +127,7 @@ const jsonLd = {
           {[
             { n: '8–15', l: 'Líderes por grupo' },
             { n: '2', l: 'Formatos disponíveis' },
-            { n: 'CRM-BA', l: 'Facilitação por médica do trabalho' },
+            { n: 'Multi', l: 'Facilitação por equipe multidisciplinar' },
             { n: 'NR-1', l: 'Alinhada à norma em vigor' },
           ].map((s) => (
             <div class="py-8 md:py-10 px-6 text-center md:text-left">
@@ -141,17 +142,53 @@ const jsonLd = {
     </div>
   </section>
 
-  <!-- IMAGEM MOLDURA -->
-  <div class="container-soft pt-16 md:pt-20">
-    <img
-      src="/roda-conversa-grupo.webp"
-      alt="Grupo de profissionais reunido em uma roda de conversa"
-      width="1672"
-      height="941"
-      loading="lazy"
-      class="reveal w-full h-auto max-h-[440px] object-cover border border-brand-border"
-    />
-  </div>
+  <!-- QUEM FACILITA -->
+  <section class="section-pad bg-white">
+    <div class="container-soft">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-start">
+        <div class="reveal lg:col-span-7">
+          <span class="eyebrow mb-5 block">Quem facilita</span>
+          <h2 class="text-3xl md:text-5xl font-display font-bold mb-6 leading-[1.1] text-brand-dark">
+            Facilitação especializada, escolhida conforme o tema.
+          </h2>
+          <p class="text-lg text-brand-muted leading-relaxed mb-5 max-w-2xl">
+            As rodas podem ser facilitadas pela Dra. Ana Paula Teixeira, médica do
+            trabalho (CRM-BA 12797) e fundadora da Escutaris, ou por um dos parceiros
+            da nossa equipe multidisciplinar — sempre alguém com vivência clínica ou
+            organizacional no tema da conversa.
+          </p>
+          <ul class="flex flex-wrap gap-2.5 mt-8">
+            {[
+              'Médica do trabalho',
+              'Psicólogo(a) organizacional',
+              'Psiquiatra do trabalho',
+              'Advogado(a) em direito do trabalho',
+              'Outros especialistas convidados',
+            ].map((esp) => (
+              <li class="text-sm text-brand-dark border border-brand-border bg-brand-off-white px-4 py-2">
+                {esp}
+              </li>
+            ))}
+          </ul>
+        </div>
+        <div class="reveal lg:col-span-5">
+          <figure>
+            <img
+              src="/dra-ana-paula-roda-auditorio-vestido-vermelho.webp"
+              alt="Dra. Ana Paula Teixeira facilitando uma roda de conversa, com participantes sentados em círculo"
+              width="1200"
+              height="1500"
+              loading="lazy"
+              class="w-full h-auto max-h-[480px] object-cover border border-brand-border"
+            />
+            <figcaption class="text-xs text-brand-muted mt-3">
+              Roda de conversa facilitada pela Dra. Ana Paula Teixeira.
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- O QUE É -->
   <section class="section-pad bg-white">
@@ -186,8 +223,18 @@ const jsonLd = {
   </section>
 
   <!-- TEMAS RECORRENTES -->
-  <section class="section-pad bg-brand-off-white">
-    <div class="container-soft">
+  <section class="relative isolate section-pad bg-brand-off-white overflow-hidden">
+    <img
+      src="/roda-conversa-grupo.webp"
+      alt=""
+      aria-hidden="true"
+      width="1400"
+      height="788"
+      loading="lazy"
+      class="absolute inset-0 w-full h-full object-cover"
+    />
+    <div class="absolute inset-0 bg-brand-off-white/[0.93]" aria-hidden="true"></div>
+    <div class="relative container-soft">
       <div class="reveal max-w-4xl mb-16 md:mb-20">
         <span class="eyebrow mb-5">Temas recorrentes</span>
         <h2 class="text-3xl md:text-5xl font-display font-bold mb-6 leading-[1.1] text-brand-dark">
