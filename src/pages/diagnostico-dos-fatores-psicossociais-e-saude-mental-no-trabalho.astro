@@ -26,9 +26,9 @@ const passos = [
       'Os dados são processados diariamente em infraestrutura Google Cloud, de forma anonimizada. É tecnicamente impossível identificar quem respondeu.',
   },
   {
-    titulo: 'Entrega em até 72 horas',
+    titulo: 'Entrega',
     texto:
-      'Você recebe o relatório e o dashboard interativo em até 72 horas após o fechamento da pesquisa, com os resultados segmentados e prontos para análise.',
+      'Você recebe o dashboard interativo em até 72 horas após o fechamento da pesquisa — e, na sequência, o relatório técnico elaborado pela nossa equipe, sob responsabilidade da Dra. Ana Paula Teixeira.',
   },
   {
     titulo: 'Devolutiva',
@@ -41,12 +41,18 @@ const questionarios = [
   {
     sigla: 'HSE',
     nome: 'HSE Indicator Tool',
+    destaque: 'Recomendado',
     mede: 'Fatores psicossociais de risco no trabalho — o instrumento que atende às exigências da NR-1.',
+    venda:
+      'Desenvolvido pelo órgão oficial de saúde e segurança do governo britânico, é a referência internacional na área e cobre exatamente as dimensões que a NR-1 manda avaliar. É por ele que recomendamos começar.',
   },
   {
     sigla: 'Seg. Psicológica',
     nome: 'Segurança Psicológica',
+    destaque: 'Recomendado',
     mede: 'O quanto as pessoas se sentem à vontade para se expressar, errar e pedir ajuda sem medo de retaliação.',
+    venda:
+      'O par ideal do HSE: equipes psicologicamente seguras falam antes de adoecer, aprendem mais rápido e sustentam qualquer mudança. É o termômetro mais direto da cultura da sua empresa.',
   },
   {
     sigla: 'ERI',
@@ -90,7 +96,7 @@ const desdobramentos = [
 const faqs = [
   {
     q: 'O diagnóstico atende à NR-1?',
-    a: 'Sim. O diagnóstico é estruturado conforme os critérios da NR-1 sobre fatores psicossociais de risco, com documentação técnica que pode ser integrada ao PGR.',
+    a: 'Sim. O diagnóstico é estruturado conforme os critérios da NR-1 sobre fatores psicossociais de risco, e o relatório técnico fornece subsídios para o plano de ação e para a documentação do PGR.',
   },
   {
     q: 'A pesquisa é mesmo anônima?',
@@ -98,7 +104,7 @@ const faqs = [
   },
   {
     q: 'Em quanto tempo recebo os resultados?',
-    a: 'Você recebe o dashboard interativo em até 72 horas após o fechamento da pesquisa.',
+    a: 'Você recebe o dashboard interativo em até 72 horas após o fechamento da pesquisa. O relatório técnico, elaborado pela nossa equipe, é entregue na sequência.',
   },
   {
     q: 'Quem aplica os questionários?',
@@ -106,7 +112,7 @@ const faqs = [
   },
   {
     q: 'Quais questionários são utilizados?',
-    a: 'Trabalhamos com quatro instrumentos cientificamente validados: HSE, Segurança Psicológica, ERI e JCQ, selecionados conforme o objetivo da sua organização.',
+    a: 'Trabalhamos com quatro instrumentos cientificamente validados: HSE, Segurança Psicológica, ERI e JCQ. Para a maioria das empresas, recomendamos o HSE — que atende diretamente à NR-1 — combinado ao de Segurança Psicológica; os demais entram conforme o objetivo da organização.',
   },
 ];
 
@@ -169,8 +175,9 @@ const jsonLd = {
         </h1>
         <p class="text-lg md:text-xl text-brand-muted leading-relaxed mb-10 max-w-3xl">
           A Escutaris conduz o diagnóstico como serviço: você contrata, nós aplicamos e
-          entregamos o relatório e o dashboard interativo. Questionários cientificamente
-          validados, processo anonimizado e resultados em até 72 horas.
+          entregamos o dashboard interativo e o relatório técnico da nossa equipe, sob
+          responsabilidade da Dra. Ana Paula Teixeira. Questionários cientificamente
+          validados, processo anonimizado e dashboard em até 72 horas.
         </p>
         <div class="flex flex-wrap gap-3">
           <a href="/#contato" class="btn-primary">
@@ -193,7 +200,7 @@ const jsonLd = {
             { n: '72h', l: 'Dashboard entregue' },
             { n: '4', l: 'Questionários validados' },
             { n: '100%', l: 'Anônimo e em conformidade com a LGPD' },
-            { n: 'NR-1', l: 'Documentação para o PGR' },
+            { n: 'NR-1', l: 'Subsídios para o plano de ação e o PGR' },
           ].map((s) => (
             <div class="py-8 md:py-10 px-6 text-center md:text-left">
               <p class="font-display text-3xl md:text-4xl font-bold text-brand-green mb-1.5 leading-none tabular-nums">
@@ -219,35 +226,35 @@ const jsonLd = {
     />
   </div>
 
-  <!-- DOIS NÍVEIS -->
+  <!-- O QUE VOCÊ RECEBE -->
   <section class="section-pad bg-white">
     <div class="container-soft">
       <div class="reveal max-w-4xl mb-16 md:mb-20">
-        <span class="eyebrow mb-5">Dois caminhos</span>
+        <span class="eyebrow mb-5">O que você recebe</span>
         <h2 class="text-3xl md:text-5xl font-display font-bold mb-6 leading-[1.1] text-brand-dark">
-          Dois níveis de diagnóstico, conforme a sua necessidade.
+          Dois entregáveis: o dado vivo e a análise técnica.
         </h2>
         <p class="text-lg md:text-xl text-brand-muted leading-relaxed">
-          Da avaliação ágil via plataforma à consultoria organizacional aprofundada.
-          Você escolhe a profundidade certa para o momento da sua empresa.
+          O diagnóstico entrega o resultado e a análise dos dados — a base técnica
+          para a sua empresa priorizar, decidir e agir.
         </p>
       </div>
 
       <div class="grid grid-cols-1 lg:grid-cols-2 border border-brand-border bg-brand-off-white">
         <article class="reveal p-8 md:p-12 border-b lg:border-b-0 lg:border-r border-brand-border">
           <span class="text-[11px] uppercase tracking-[0.18em] text-brand-terracota font-semibold mb-4 block">
-            Nível 1 · Ágil
+            Entregável 1 · O dado vivo
           </span>
           <h3 class="text-2xl md:text-3xl font-display font-bold text-brand-dark mb-4 leading-tight">
-            Diagnóstico via Plataforma
+            Dashboard interativo
           </h3>
           <p class="text-brand-dark leading-relaxed mb-6">
-            Questionários cientificamente validados respondidos online, com dashboard
-            interativo entregue em até 72 horas. Ágil, anônimo e acessível — ideal para
-            mapear os fatores psicossociais e atender à NR-1 com rapidez.
+            Painel entregue em até 72 horas após o fechamento da pesquisa. Em vez de um
+            PDF estático, você explora, cruza e filtra os resultados por conta própria —
+            a informação viva nas mãos da gestão.
           </p>
           <ul class="space-y-2.5">
-            {['Questionários HSE, Segurança Psicológica, ERI e JCQ', 'Dashboard interativo em até 72 horas', 'Processo anonimizado e em conformidade com a LGPD'].map((item) => (
+            {['Filtros por setor, função, jornada, geração e gênero', 'Do resultado geral ao detalhe de cada função', 'Exportação e modo de apresentação para reuniões'].map((item) => (
               <li class="flex items-start gap-3 text-sm text-brand-dark">
                 <span class="text-brand-terracota font-bold mt-0.5 flex-shrink-0" aria-hidden="true">·</span>
                 <span>{item}</span>
@@ -258,19 +265,18 @@ const jsonLd = {
 
         <article class="reveal p-8 md:p-12">
           <span class="text-[11px] uppercase tracking-[0.18em] text-brand-green font-semibold mb-4 block">
-            Nível 2 · Aprofundado
+            Entregável 2 · A análise técnica
           </span>
           <h3 class="text-2xl md:text-3xl font-display font-bold text-brand-dark mb-4 leading-tight">
-            Diagnóstico Psicossocial Organizacional
+            Relatório técnico
           </h3>
           <p class="text-brand-dark leading-relaxed mb-6">
-            Avaliação aprofundada que combina os questionários com análise documental,
-            entrevistas individuais e grupais, observação do ambiente (walkthrough) e o
-            mapeamento dos 10 domínios da OMS/OIT. Conduzida em 30 a 90 dias, para quem
-            precisa de profundidade qualitativa e quantitativa.
+            Elaborado pela equipe Escutaris sob responsabilidade técnica da Dra. Ana Paula
+            Teixeira (CRM-BA 12797), médica do trabalho: avaliação dos resultados, reflexão
+            sobre o contexto da sua organização e propostas para orientar as decisões.
           </p>
           <ul class="space-y-2.5">
-            {['Mapa de calor de riscos por área e unidade', 'Matriz de priorização (probabilidade × severidade)', 'Plano de ação e documentação para o PGR'].map((item) => (
+            {['Avaliação e interpretação técnica dos resultados', 'Subsídios para a matriz de priorização (probabilidade × severidade)', 'Subsídios para o plano de ação e a documentação do PGR'].map((item) => (
               <li class="flex items-start gap-3 text-sm text-brand-dark">
                 <span class="text-brand-green font-bold mt-0.5 flex-shrink-0" aria-hidden="true">·</span>
                 <span>{item}</span>
@@ -281,8 +287,9 @@ const jsonLd = {
       </div>
 
       <p class="text-sm text-brand-muted mt-6 max-w-3xl">
-        Em dúvida sobre qual nível faz sentido? Na conversa de alinhamento, indicamos o
-        caminho ideal para o porte e o objetivo da sua organização.
+        Precisa de uma avaliação organizacional aprofundada, com entrevistas, análise
+        documental e adequação completa do PGR? Esse é o trabalho da nossa
+        <a href="/consultoria-nr1" class="text-brand-green font-semibold hover:text-brand-terracota transition-colors">Consultoria NR-1/GRO</a>.
       </p>
     </div>
   </section>
@@ -301,22 +308,56 @@ const jsonLd = {
         </p>
       </div>
 
-      <div class="border border-brand-border bg-brand-off-white grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-        {passos.map((passo, i) => (
-          <article class:list={[
-            'reveal p-8 md:p-10 border-brand-border',
-            'border-b lg:[&:nth-child(n+4)]:border-b-0',
-            '[&:not(:last-child)]:border-b md:[&:nth-child(odd)]:border-r lg:[&:nth-child(3n+1)]:border-r lg:[&:nth-child(3n+2)]:border-r',
-          ]}>
-            <span class="font-display text-4xl md:text-5xl font-bold text-brand-terracota leading-none mb-5 block tabular-nums">
-              0{i + 1}
+      <div class="relative max-w-5xl mx-auto">
+        <!-- linha do fluxo -->
+        <div
+          class="absolute left-5 lg:left-1/2 top-2 bottom-2 w-px bg-brand-terracota/30 lg:-translate-x-1/2"
+          aria-hidden="true"
+        ></div>
+
+        <ol class="space-y-8 lg:space-y-0">
+          {passos.map((passo, i) => (
+            <li class="reveal relative lg:grid lg:grid-cols-[1fr_5rem_1fr] lg:items-start lg:pb-10">
+              <div class="absolute left-0 top-6 lg:static lg:col-start-2 lg:row-start-1 lg:flex lg:justify-center lg:pt-6">
+                <span class="w-10 h-10 rounded-full bg-brand-terracota text-white font-display font-bold flex items-center justify-center tabular-nums">
+                  {i + 1}
+                </span>
+              </div>
+
+              <article class:list={[
+                'ml-16 lg:ml-0 bg-brand-off-white border border-brand-border p-6 md:p-8',
+                i % 2 === 0 ? 'lg:col-start-1 lg:row-start-1' : 'lg:col-start-3 lg:row-start-1',
+              ]}>
+                <h3 class="text-lg md:text-xl font-display font-bold text-brand-dark mb-2.5 leading-tight">
+                  {passo.titulo}
+                </h3>
+                <p class="text-sm text-brand-muted leading-relaxed">{passo.texto}</p>
+              </article>
+            </li>
+          ))}
+        </ol>
+
+        <!-- resultado do fluxo -->
+        <div class="reveal relative mt-8 lg:mt-2">
+          <div class="absolute left-0 top-6 lg:left-1/2 lg:top-0 lg:-translate-x-1/2 lg:-translate-y-1/2">
+            <span class="w-10 h-10 rounded-full bg-brand-green text-white flex items-center justify-center">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7" />
+              </svg>
             </span>
-            <h3 class="text-lg md:text-xl font-display font-bold text-brand-dark mb-3 leading-tight">
-              {passo.titulo}
-            </h3>
-            <p class="text-sm text-brand-muted leading-relaxed">{passo.texto}</p>
-          </article>
-        ))}
+          </div>
+          <div class="ml-16 lg:ml-0 lg:max-w-xl lg:mx-auto bg-white border border-brand-green p-6 md:p-8 lg:pt-10 lg:text-center">
+            <p class="text-[11px] uppercase tracking-[0.18em] text-brand-green font-semibold mb-2">
+              Você sai com
+            </p>
+            <p class="font-display font-bold text-brand-dark text-xl md:text-2xl mb-2 leading-tight">
+              Dashboard interativo + relatório técnico
+            </p>
+            <p class="text-sm text-brand-muted leading-relaxed">
+              O resultado e a análise dos dados, prontos para orientar as decisões da sua empresa.
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -331,7 +372,9 @@ const jsonLd = {
         </h2>
         <p class="text-lg md:text-xl text-brand-muted leading-relaxed">
           Selecionamos os questionários conforme o objetivo da sua organização.
-          Todos com evidência científica publicada, não improviso de clima.
+          Todos com evidência científica publicada, não improviso de clima — e dois
+          deles, o HSE e o de Segurança Psicológica, são os que recomendamos para a
+          maioria das empresas.
         </p>
       </div>
 
@@ -342,14 +385,23 @@ const jsonLd = {
             i < questionarios.length - 1 && 'border-b',
             i >= questionarios.length - 2 && 'md:border-b-0',
             i % 2 === 0 && 'md:border-r',
+            q.destaque && 'border-t-2 border-t-brand-terracota bg-brand-off-white-warm',
           ]}>
-            <div class="flex items-baseline gap-4 mb-4">
+            <div class="flex items-baseline gap-4 mb-4 flex-wrap">
               <span class="font-display text-2xl md:text-3xl font-bold text-brand-green leading-none">
                 {q.sigla}
               </span>
               <span class="text-sm text-brand-muted">{q.nome}</span>
+              {q.destaque && (
+                <span class="text-[10px] uppercase tracking-[0.16em] font-semibold text-white bg-brand-terracota px-2.5 py-1">
+                  {q.destaque}
+                </span>
+              )}
             </div>
             <p class="text-brand-dark leading-relaxed">{q.mede}</p>
+            {q.venda && (
+              <p class="text-sm text-brand-muted leading-relaxed mt-4">{q.venda}</p>
+            )}
           </article>
         ))}
       </div>
