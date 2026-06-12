@@ -4,39 +4,6 @@ import Layout from '../layouts/Layout.astro';
 const whatsappUrl =
   'https://api.whatsapp.com/send?phone=5571981357004&text=Ol%C3%A1%2C+quero+contratar+o+diagn%C3%B3stico+psicossocial+da+Escutaris';
 
-const passos = [
-  {
-    titulo: 'Alinhamento',
-    texto:
-      'Entendemos o objetivo da sua organização — conformidade com a NR-1, clima organizacional ou ambos — e definimos juntos quais questionários serão aplicados.',
-  },
-  {
-    titulo: 'Envio dos dados',
-    texto:
-      'Você nos envia uma planilha simples com setores, cargos e jornadas. Orientamos o preenchimento para preservar o anonimato desde o início.',
-  },
-  {
-    titulo: 'Aplicação',
-    texto:
-      'Marcamos a data e enviamos o link da pesquisa. Os colaboradores respondem pelo computador, tablet ou celular. Cada pessoa responde uma única vez.',
-  },
-  {
-    titulo: 'Processamento seguro',
-    texto:
-      'Os dados são processados diariamente em infraestrutura Google Cloud, de forma anonimizada: a plataforma não coleta identificadores diretos de quem responde.',
-  },
-  {
-    titulo: 'Entrega',
-    texto:
-      'Você recebe o dashboard interativo em até 72 horas após o fechamento da pesquisa — e, na sequência, o relatório técnico elaborado pela nossa equipe, sob responsabilidade da Dra. Ana Paula Teixeira.',
-  },
-  {
-    titulo: 'Devolutiva',
-    texto:
-      'Apresentamos e interpretamos os resultados com a sua equipe, transformando os números em um ponto de partida claro para o plano de ação.',
-  },
-];
-
 const questionarios = [
   {
     sigla: 'HSE',
@@ -294,74 +261,6 @@ const jsonLd = {
         documental e adequação completa do PGR? Esse é o trabalho da nossa
         <a href="/consultoria-nr1" class="text-brand-green font-semibold hover:text-brand-terracota transition-colors">Consultoria NR-1/GRO</a>.
       </p>
-    </div>
-  </section>
-
-  <!-- COMO FUNCIONA -->
-  <section class="section-pad bg-white">
-    <div class="container-soft">
-      <div class="reveal max-w-4xl mb-16 md:mb-20">
-        <span class="eyebrow mb-5">Como funciona</span>
-        <h2 class="text-3xl md:text-5xl font-display font-bold mb-6 leading-[1.1] text-brand-dark">
-          Um serviço conduzido, do alinhamento à devolutiva.
-        </h2>
-        <p class="text-lg md:text-xl text-brand-muted leading-relaxed">
-          Você não precisa dominar a ferramenta nem interpretar os dados sozinho.
-          A Escutaris cuida de cada etapa ao seu lado.
-        </p>
-      </div>
-
-      <div class="relative max-w-5xl mx-auto">
-        <!-- linha do fluxo -->
-        <div
-          class="absolute left-5 lg:left-1/2 top-2 bottom-2 w-px bg-brand-terracota/30 lg:-translate-x-1/2"
-          aria-hidden="true"
-        ></div>
-
-        <ol class="space-y-8 lg:space-y-0">
-          {passos.map((passo, i) => (
-            <li class="reveal relative lg:grid lg:grid-cols-[1fr_5rem_1fr] lg:items-start lg:pb-10">
-              <div class="absolute left-0 top-6 lg:static lg:col-start-2 lg:row-start-1 lg:flex lg:justify-center lg:pt-6">
-                <span class="w-10 h-10 rounded-full bg-brand-terracota text-white font-display font-bold flex items-center justify-center tabular-nums">
-                  {i + 1}
-                </span>
-              </div>
-
-              <article class:list={[
-                'ml-16 lg:ml-0 bg-brand-off-white border border-brand-border p-6 md:p-8',
-                i % 2 === 0 ? 'lg:col-start-1 lg:row-start-1' : 'lg:col-start-3 lg:row-start-1',
-              ]}>
-                <h3 class="text-lg md:text-xl font-display font-bold text-brand-dark mb-2.5 leading-tight">
-                  {passo.titulo}
-                </h3>
-                <p class="text-sm text-brand-muted leading-relaxed">{passo.texto}</p>
-              </article>
-            </li>
-          ))}
-        </ol>
-
-        <!-- resultado do fluxo -->
-        <div class="reveal relative mt-8 lg:mt-2">
-          <div class="absolute left-0 top-6 lg:left-1/2 lg:top-0 lg:-translate-x-1/2 lg:-translate-y-1/2">
-            <span class="w-10 h-10 rounded-full bg-brand-green text-white flex items-center justify-center">
-              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7" />
-              </svg>
-            </span>
-          </div>
-          <div class="ml-16 lg:ml-0 lg:max-w-xl lg:mx-auto bg-white border border-brand-green p-6 md:p-8 lg:pt-10 lg:text-center">
-            <p class="text-[11px] uppercase tracking-[0.18em] text-brand-green font-semibold mb-2">
-              Você sai com
-            </p>
-            <p class="font-display font-bold text-brand-dark text-xl md:text-2xl mb-2 leading-tight">
-              Dashboard interativo + relatório técnico
-            </p>
-            <p class="text-sm text-brand-muted leading-relaxed">
-              O resultado e a análise dos dados, prontos para orientar as decisões da sua empresa.
-            </p>
-          </div>
-        </div>
-      </div>
     </div>
   </section>
 
