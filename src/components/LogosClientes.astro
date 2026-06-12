@@ -1,0 +1,103 @@
+---
+// Bloco 2 da home: prova social imediata, logo após o hero.
+// Logos autorizados pela Dra. Ana Paula para uso público.
+// 'altura' equilibra o tamanho visual de cada logo (proporções diferentes).
+const clientes = [
+  { nome: 'J. Macêdo', logo: '/clientes/jmacedo.jpeg', altura: 'max-h-14' },
+  { nome: 'CISVIVER', logo: '/clientes/cisviver.jpeg', altura: 'max-h-16' },
+  { nome: 'ASPIL — Aspiração e Serviços Industriais', logo: '/clientes/aspil.jpeg', altura: 'max-h-12' },
+  { nome: 'GACC-BA', logo: '/clientes/gacc.svg', altura: 'max-h-16' },
+  { nome: 'Interface Treinamentos & Consultoria', logo: '/clientes/interface-crop.png', altura: 'max-h-10' },
+  { nome: 'Sinética Inteligência Empreendedora', logo: '/clientes/sinetica.png', altura: 'max-h-9' },
+  { nome: 'Gelo Alagoinhas', logo: '/clientes/gelo-mci.png', altura: 'max-h-20' },
+];
+---
+
+<section class="py-12 md:py-16 bg-brand-off-white">
+  <div class="container-soft">
+    <p class="reveal text-[11px] uppercase tracking-[0.18em] text-brand-muted font-semibold mb-8 text-center">
+      Organizações que confiam na Escutaris
+    </p>
+
+    <div class="reveal">
+      <div class="logos-marquee">
+        <div class="logos-marquee-track">
+          {/* Renderiza duas vezes para o loop ficar contínuo (translateX -50%) */}
+          {[...clientes, ...clientes].map((cliente, i) => (
+            <div class="logo-item">
+              <img
+                src={cliente.logo}
+                alt={i < clientes.length ? cliente.nome : ''}
+                aria-hidden={i < clientes.length ? undefined : 'true'}
+                class={`w-auto object-contain ${cliente.altura}`}
+                loading="lazy"
+              />
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .logos-marquee {
+    overflow: hidden;
+    width: 100%;
+    -webkit-mask-image: linear-gradient(to right, transparent 0, #000 8%, #000 92%, transparent 100%);
+    mask-image: linear-gradient(to right, transparent 0, #000 8%, #000 92%, transparent 100%);
+  }
+
+  .logos-marquee-track {
+    display: flex;
+    gap: 0;
+    align-items: stretch;
+    width: max-content;
+    animation: logos-scroll 42s linear infinite;
+  }
+
+  .logos-marquee-track:hover {
+    animation-play-state: paused;
+  }
+
+  @keyframes logos-scroll {
+    from { transform: translateX(0); }
+    to   { transform: translateX(-50%); }
+  }
+
+  .logo-item {
+    flex: 0 0 auto;
+    width: 180px;
+    height: 112px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 28px;
+    background: #fff;
+    border-right: 1px solid var(--color-brand-border);
+    border-top: 1px solid var(--color-brand-border);
+    border-bottom: 1px solid var(--color-brand-border);
+    border-radius: 6px;
+  }
+
+  .logo-item img {
+    filter: grayscale(100%) contrast(1.05);
+    opacity: 0.7;
+    transition: filter 250ms ease, opacity 250ms ease;
+  }
+
+  .logo-item:hover img {
+    filter: grayscale(0%);
+    opacity: 1;
+  }
+
+  @media (max-width: 600px) {
+    .logo-item { width: 150px; height: 96px; padding: 0 20px; }
+  }
+
+  /* Acessibilidade: quem pediu menos movimento vê a faixa parada */
+  @media (prefers-reduced-motion: reduce) {
+    .logos-marquee { overflow-x: auto; }
+    .logos-marquee-track { animation: none; }
+  }
+</style>

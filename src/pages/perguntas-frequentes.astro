@@ -1,0 +1,47 @@
+---
+// Página interna: FAQ completa (conteúdo que saiu da home).
+import Layout from '../layouts/Layout.astro';
+import Faq from '../components/Faq.astro';
+
+const siteUrl = 'https://www.escutaris.com.br';
+const pageUrl = `${siteUrl}/perguntas-frequentes`;
+---
+
+<Layout
+  title="Perguntas Frequentes | NR-1, Diagnóstico Psicossocial e LGPD | Escutaris"
+  description="Tire suas dúvidas sobre o diagnóstico de fatores psicossociais da Escutaris: NR-1, PGR, anonimato, LGPD, prazos, custos e diferenças para pesquisa de clima e AET."
+  canonical={pageUrl}
+>
+  <div class="bg-brand-off-white border-b border-brand-border">
+    <div class="container-soft py-10">
+      <nav class="text-xs uppercase tracking-[0.14em] text-brand-muted" aria-label="Trilha">
+        <a href="/" class="hover:text-brand-terracota transition-colors">Início</a>
+        <span class="mx-2" aria-hidden="true">/</span>
+        <span>Perguntas Frequentes</span>
+      </nav>
+    </div>
+  </div>
+
+  <Faq />
+
+  <!-- CTA FINAL -->
+  <section class="section-pad bg-brand-off-white-warm">
+    <div class="container-soft">
+      <div class="border border-brand-border bg-white p-8 md:p-14 text-center max-w-4xl mx-auto">
+        <span class="eyebrow mb-4 block">Ficou alguma dúvida?</span>
+        <h2 class="text-3xl md:text-4xl font-display font-bold text-brand-dark mb-5 leading-tight">
+          Fale direto com a nossa equipe.
+        </h2>
+        <p class="text-brand-muted leading-relaxed mb-8 max-w-2xl mx-auto">
+          A conversa inicial é gratuita e respondemos em até 24 horas úteis.
+        </p>
+        <a href="/#contato" class="btn-primary">
+          Falar com um especialista
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+</Layout>

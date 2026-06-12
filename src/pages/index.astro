@@ -1,16 +1,13 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Hero from '../components/Hero.astro';
-import Urgencia from '../components/Urgencia.astro';
-import Sobre from '../components/Sobre.astro';
+import LogosClientes from '../components/LogosClientes.astro';
 import Servicos from '../components/Servicos.astro';
 import ComoFunciona from '../components/ComoFunciona.astro';
-import Comparativo from '../components/Comparativo.astro';
+import PorQueConfiar from '../components/PorQueConfiar.astro';
 import Depoimentos from '../components/Depoimentos.astro';
 import Frase from '../components/Frase.astro';
-import Faq from '../components/Faq.astro';
 import Contato from '../components/Contato.astro';
-import CtaFaixa from '../components/CtaFaixa.astro';
 ---
 
 <Layout
@@ -18,21 +15,11 @@ import CtaFaixa from '../components/CtaFaixa.astro';
   description="Plataforma de diagnóstico de fatores psicossociais e saúde mental no trabalho. Conformidade com a NR-1, base científica e dashboard interativo em 72 horas."
 >
   <Hero />
-  <Urgencia />
-  <CtaFaixa
-    titulo="Adequar sua empresa é mais simples do que parece."
-    subtitulo="Conversa inicial gratuita — entendemos seu contexto e indicamos o caminho."
-  />
-  <Sobre />
+  <LogosClientes />
   <Servicos />
   <ComoFunciona />
-  <Comparativo />
+  <PorQueConfiar />
   <Depoimentos />
-  <CtaFaixa
-    titulo="Junte-se às empresas que já fizeram o diagnóstico."
-    subtitulo="Dashboard em até 72 horas após o fechamento da pesquisa."
-  />
   <Frase />
-  <Faq />
   <Contato />
 </Layout>

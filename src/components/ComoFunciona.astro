@@ -1,56 +1,62 @@
 ---
-const pilares = [
+// Bloco 4 da home: o caminho do cliente em quatro etapas, com CTA ao final.
+const passos = [
   {
-    titulo: 'Conformidade NR-1',
-    descricao: 'Diagnóstico estruturado conforme os critérios da NR-1 sobre fatores psicossociais de risco. Relatório técnico com subsídios para o plano de ação e o PGR, com evidência rastreável de avaliação para fiscalização, auditoria e relatórios ESG.',
+    titulo: 'Conversa de alinhamento',
+    texto: 'Gratuita e sem compromisso. Entendemos o porte, o objetivo e o momento da sua organização.',
   },
   {
-    titulo: 'Base científica',
-    descricao: 'Questionários cientificamente validados e adaptados para psicologia do trabalho e saúde ocupacional. Sem instrumentos genéricos: apenas ferramentas com evidência publicada e validação cultural para o contexto brasileiro.',
+    titulo: 'Aplicação anônima',
+    texto: 'Enviamos o link da pesquisa. Os colaboradores respondem online, sem identificadores diretos.',
   },
   {
-    titulo: 'Dashboard interativo',
-    descricao: 'Plataforma visual com filtros por setor, função, faixa etária e jornada de trabalho. Análise multifator que identifica padrões e orienta intervenção, não apenas mede percepção em médias agregadas.',
+    titulo: 'Dashboard em até 72h',
+    texto: 'Resultados por setor, função, jornada e geração — você explora os dados em um painel interativo.',
   },
   {
-    titulo: 'Confidencialidade e LGPD',
-    descricao: 'A plataforma não coleta identificadores diretos de quem responde, e os resultados são sempre apresentados de forma agregada — em conformidade com a Lei Geral de Proteção de Dados.',
+    titulo: 'Relatório e devolutiva',
+    texto: 'Relatório técnico com análise e subsídios para o plano de ação e o PGR, apresentado à sua equipe.',
   },
 ];
 ---
 
 <section id="como-funciona" class="section-pad bg-white">
   <div class="container-soft">
-    <div class="reveal max-w-4xl mb-16 md:mb-20">
+    <div class="reveal max-w-4xl mb-12 md:mb-16">
       <h2 class="text-3xl md:text-5xl font-display font-bold mb-6 leading-[1.1] text-brand-dark">
-        Quatro pilares técnicos.
+        Como funciona, em quatro etapas.
       </h2>
       <p class="text-lg md:text-xl text-brand-muted leading-relaxed">
-        O que diferencia um diagnóstico psicossocial sério de uma pesquisa de clima comum.
+        A Escutaris conduz tudo: a sua empresa só distribui o link da pesquisa
+        aos colaboradores.
       </p>
     </div>
 
-    <div class="border border-brand-border bg-brand-off-white grid grid-cols-1 md:grid-cols-2">
-      {pilares.map((pilar, i) => (
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 border border-brand-border bg-brand-off-white">
+      {passos.map((p, i) => (
         <article class:list={[
-          'p-8 md:p-12 border-brand-border',
-          i < pilares.length - 1 && 'border-b',
-          i >= pilares.length - 2 && 'md:border-b-0',
-          i % 2 === 0 && 'md:border-r',
+          'reveal p-7 md:p-8 border-brand-border',
+          i < passos.length - 1 && 'border-b lg:border-b-0 lg:border-r',
+          i === 1 && 'md:border-r lg:md:border-r',
         ]}>
-          <span class="font-display text-5xl md:text-6xl font-bold text-brand-terracota leading-none mb-6 block">
+          <span class="font-display text-4xl font-bold text-brand-terracota leading-none mb-4 block tabular-nums">
             0{i + 1}
           </span>
-
-          <h3 class="text-xl md:text-2xl font-display font-bold text-brand-dark mb-4 leading-tight">
-            {pilar.titulo}
+          <h3 class="text-lg font-display font-bold text-brand-dark mb-2.5 leading-tight">
+            {p.titulo}
           </h3>
-
-          <p class="text-brand-muted leading-relaxed">
-            {pilar.descricao}
-          </p>
+          <p class="text-sm text-brand-muted leading-relaxed">{p.texto}</p>
         </article>
       ))}
+    </div>
+
+    <div class="mt-10 text-center">
+      <a href="#contato" class="btn-primary">
+        Começar agora — a conversa é gratuita
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+        </svg>
+      </a>
     </div>
   </div>
 </section>
