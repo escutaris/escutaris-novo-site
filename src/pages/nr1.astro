@@ -14,10 +14,9 @@ const beneficios = [
 ];
 
 const numeros = [
-  { n: '2º', l: 'país do mundo em casos de burnout', fonte: 'ISMA-BR' },
-  { n: '3ª', l: 'maior causa de afastamento pelo INSS: transtornos mentais', fonte: 'INSS' },
-  { n: '+R$ 45 mil', l: 'custo médio anual de um afastamento por transtorno mental', fonte: 'estimativa por trabalhador' },
-  { n: 'US$ 4', l: 'de retorno para cada US$ 1 investido em saúde mental', fonte: 'OMS' },
+  { n: '546.254', l: 'benefícios por incapacidade temporária por transtornos mentais e comportamentais concedidos em 2025', fonte: 'Previdência Social' },
+  { n: '+15,66%', l: 'de crescimento desses afastamentos em relação a 2024', fonte: 'Previdência Social' },
+  { n: '26 mai 2026', l: 'novo texto da NR-1 em vigor, com os fatores psicossociais expressos no GRO', fonte: 'MTE · Portaria 1.419/2024' },
 ];
 
 const passos = [
@@ -46,7 +45,7 @@ const faqs = [
   },
   {
     q: 'A pesquisa é mesmo anônima?',
-    a: 'Sim. O anonimato é garantido por arquitetura técnica: é impossível para a Escutaris saber quem respondeu. Os resultados são sempre apresentados de forma agregada.',
+    a: 'Sim. A plataforma não coleta identificadores diretos de quem responde, e os resultados são sempre apresentados de forma agregada — nunca individuais.',
   },
   {
     q: 'Em quanto tempo fico em dia?',
@@ -99,13 +98,14 @@ const jsonLd = {
           <span class="eyebrow mb-5 block">Diagnóstico psicossocial · NR-1</span>
           <h1 class="text-4xl md:text-5xl lg:text-[3.5rem] font-display font-bold mb-6 leading-[1.08] text-brand-dark">
             O prazo da <span class="text-brand-terracota">NR-1</span> acabou.
-            A fiscalização já começou.
+            A fiscalização já pode autuar.
           </h1>
           <p class="text-lg md:text-xl text-brand-muted leading-relaxed mb-8 max-w-2xl">
-            Desde 2025, toda empresa precisa identificar, avaliar e gerenciar os fatores
-            psicossociais no PGR — sob risco de
+            Desde 26 de maio de 2026, o novo texto da NR-1 está em vigor — e o período
+            educativo da fiscalização terminou. Toda empresa precisa identificar, avaliar
+            e gerenciar os fatores psicossociais no GRO, sob risco de
             <strong class="text-brand-dark font-semibold">autuações, interdições e ações regressivas do INSS</strong>.
-            A Escutaris resolve isso de ponta a ponta.
+            A Escutaris conduz essa avaliação de ponta a ponta.
           </p>
 
           <ul class="space-y-3.5 mb-8">
@@ -271,7 +271,7 @@ const jsonLd = {
   <!-- NÚMEROS DE URGÊNCIA -->
   <section class="bg-brand-dark text-white">
     <div class="container-soft py-12 md:py-16">
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 border-t border-l border-white/15">
+      <div class="grid grid-cols-1 sm:grid-cols-3 border-t border-l border-white/15">
         {numeros.map((s) => (
           <div class="p-7 md:p-8 border-r border-b border-white/15 flex flex-col">
             <p class="font-display text-3xl md:text-4xl font-bold text-brand-terracota-hover mb-3 leading-none">
@@ -282,6 +282,9 @@ const jsonLd = {
           </div>
         ))}
       </div>
+      <p class="text-xs text-white/45 mt-3">
+        Os afastamentos incluem todos os transtornos do capítulo V da CID, com ou sem relação com o trabalho.
+      </p>
     </div>
   </section>
 

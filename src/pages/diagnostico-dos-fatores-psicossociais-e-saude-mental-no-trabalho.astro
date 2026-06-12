@@ -23,7 +23,7 @@ const passos = [
   {
     titulo: 'Processamento seguro',
     texto:
-      'Os dados são processados diariamente em infraestrutura Google Cloud, de forma anonimizada. É tecnicamente impossível identificar quem respondeu.',
+      'Os dados são processados diariamente em infraestrutura Google Cloud, de forma anonimizada: a plataforma não coleta identificadores diretos de quem responde.',
   },
   {
     titulo: 'Entrega',
@@ -42,9 +42,9 @@ const questionarios = [
     sigla: 'HSE',
     nome: 'HSE Indicator Tool',
     destaque: 'Recomendado',
-    mede: 'Fatores psicossociais de risco no trabalho — o instrumento que atende às exigências da NR-1.',
+    mede: 'Fatores psicossociais de risco no trabalho — instrumento validado que subsidia a identificação e a avaliação exigidas pela NR-1.',
     venda:
-      'Desenvolvido pelo órgão oficial de saúde e segurança do governo britânico, é a referência internacional na área e cobre exatamente as dimensões que a NR-1 manda avaliar. É por ele que recomendamos começar.',
+      'Desenvolvido pelo órgão oficial de saúde e segurança do governo britânico, é referência internacional na área e cobre as principais dimensões da gestão de fatores psicossociais, integrado à análise das condições reais de trabalho. É por ele que recomendamos começar.',
   },
   {
     sigla: 'Seg. Psicológica',
@@ -100,7 +100,7 @@ const faqs = [
   },
   {
     q: 'A pesquisa é mesmo anônima?',
-    a: 'Sim. O anonimato é garantido por arquitetura técnica: é impossível para a Escutaris saber o nome de quem respondeu. Os resultados são sempre apresentados de forma agregada.',
+    a: 'Sim. A plataforma não coleta identificadores diretos de quem responde, e os resultados são sempre apresentados de forma agregada — nunca individuais.',
   },
   {
     q: 'Em quanto tempo recebo os resultados?',
@@ -112,7 +112,7 @@ const faqs = [
   },
   {
     q: 'Quais questionários são utilizados?',
-    a: 'Trabalhamos com quatro instrumentos cientificamente validados: HSE, Segurança Psicológica, ERI e JCQ. Para a maioria das empresas, recomendamos o HSE — que atende diretamente à NR-1 — combinado ao de Segurança Psicológica; os demais entram conforme o objetivo da organização.',
+    a: 'Trabalhamos com quatro instrumentos cientificamente validados: HSE, Segurança Psicológica, ERI e JCQ. Para a maioria das empresas, recomendamos o HSE — referência internacional para fatores psicossociais — combinado ao de Segurança Psicológica; os demais entram conforme o objetivo da organização.',
   },
 ];
 
@@ -171,7 +171,7 @@ const jsonLd = {
       <div class="max-w-4xl">
         <span class="eyebrow mb-5 block">Produto principal · Serviço completo</span>
         <h1 class="text-4xl md:text-5xl lg:text-[3.5rem] font-display font-bold mb-6 leading-[1.08] text-brand-dark">
-          O diagnóstico psicossocial que a <span class="text-brand-green">NR-1</span> exige, conduzido de ponta a ponta.
+          A avaliação psicossocial para a gestão que a <span class="text-brand-green">NR-1</span> exige, conduzida de ponta a ponta.
         </h1>
         <p class="text-lg md:text-xl text-brand-muted leading-relaxed mb-10 max-w-3xl">
           A Escutaris conduz o diagnóstico como serviço: você contrata, nós aplicamos e
@@ -199,7 +199,7 @@ const jsonLd = {
           {[
             { n: '72h', l: 'Dashboard entregue' },
             { n: '4', l: 'Questionários validados' },
-            { n: '100%', l: 'Anônimo e em conformidade com a LGPD' },
+            { n: 'LGPD', l: 'Sem identificadores diretos, resultados agregados' },
             { n: 'NR-1', l: 'Subsídios para o plano de ação e o PGR' },
           ].map((s) => (
             <div class="py-8 md:py-10 px-6 text-center md:text-left">
@@ -478,10 +478,11 @@ const jsonLd = {
             Anonimato garantido por arquitetura, não por promessa.
           </h2>
           <p class="text-white/85 leading-relaxed text-lg max-w-2xl">
-            Cada resposta é tratada de forma anonimizada. É tecnicamente impossível
-            para a Escutaris identificar quem respondeu. O processamento ocorre
+            Cada resposta é tratada de forma anonimizada: a plataforma não coleta
+            identificadores diretos de quem responde. O processamento ocorre
             diariamente em infraestrutura Google Cloud, e os resultados são sempre
-            apresentados de forma agregada, em conformidade integral com a LGPD.
+            apresentados de forma agregada — nunca individuais —, em conformidade
+            com a LGPD.
           </p>
         </div>
         <div class="lg:col-span-5">
@@ -582,7 +583,7 @@ const jsonLd = {
       <div class="border border-brand-border bg-white p-8 md:p-14 text-center max-w-4xl mx-auto">
         <span class="eyebrow mb-4 block">Vamos começar</span>
         <h2 class="text-3xl md:text-4xl font-display font-bold text-brand-dark mb-5 leading-tight">
-          Sua empresa já fez o diagnóstico que a NR-1 exige?
+          Sua empresa já estruturou a gestão dos fatores psicossociais que a NR-1 exige?
         </h2>
         <p class="text-brand-muted leading-relaxed mb-8 max-w-2xl mx-auto">
           Conte para a gente o objetivo da sua organização. Marcamos uma conversa de

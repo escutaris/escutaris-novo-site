@@ -1,5 +1,5 @@
 ---
-title: "O Erro Fatal na Adequação à NR1 que 89% das Empresas Cometem"
+title: "O Erro Mais Comum na Adequação à NR-1 — e Como Evitá-lo"
 description: "Erro crítico na adequação à NR-1 que pode invalidar tudo. Veja como evitar e garantir aprovação na fiscalização. Saiba mais."
 pubDate: 2025-03-21
 heroImage: "/blog-img/erro.webp"

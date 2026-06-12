@@ -1,5 +1,5 @@
 ---
-title: "O Perigo Invisível no Ambiente de Trabalho que 80% das Empresas Ignoram"
+title: "O Perigo Invisível no Ambiente de Trabalho que Muitas Empresas Ignoram"
 description: "Riscos ocultos no trabalho: identifique sinais que afetam sua equipe e veja como criar um ambiente seguro e saudável. Saiba mais."
 pubDate: 2025-04-28
 heroImage: "/blog-img/o-perigo-invisivel.webp"

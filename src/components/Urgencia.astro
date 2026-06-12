@@ -1,29 +1,22 @@
 ---
 const stats = [
   {
-    target: 2,
-    suffix: 'º',
-    desc: 'país do mundo em casos de burnout',
-    fonte: 'ISMA-BR',
+    target: 546254,
+    desc: 'benefícios por incapacidade temporária por transtornos mentais e comportamentais concedidos em 2025',
+    fonte: 'Previdência Social',
   },
   {
-    target: 3,
-    suffix: 'ª',
-    desc: 'maior causa de afastamento pelo INSS são os transtornos mentais',
-    fonte: 'INSS',
+    target: 15.66,
+    decimals: 2,
+    prefix: '+',
+    suffix: '%',
+    desc: 'de crescimento desses afastamentos em relação a 2024',
+    fonte: 'Previdência Social',
   },
   {
-    target: 45,
-    prefix: '+R$ ',
-    suffix: ' mil',
-    desc: 'é o custo médio de um afastamento por transtorno mental, por trabalhador ao ano',
-    fonte: 'absenteísmo, presenteísmo, substituição e passivo jurídico',
-  },
-  {
-    target: 4,
-    prefix: 'US$1 → US$',
-    desc: 'de retorno em produtividade para cada dólar investido em saúde mental',
-    fonte: 'OMS',
+    texto: '26 mai 2026',
+    desc: 'novo texto da NR-1 em vigor, com os fatores psicossociais expressos no GRO',
+    fonte: 'MTE · Portaria 1.419/2024',
   },
 ];
 ---
@@ -47,20 +40,21 @@ const stats = [
         A conta do adoecimento chegou — e a fiscalização também.
       </h2>
       <p class="text-base md:text-lg text-white/80 leading-relaxed">
-        Desde 2025, a Portaria MTE 1.419/2024 e a NR-1 atualizada exigem que toda empresa
-        identifique, avalie e gerencie os fatores psicossociais no PGR. Ignorar deixou de
-        ser uma opção: o custo do adoecimento e o risco regulatório agora andam juntos.
+        Desde 26 de maio de 2026, o novo texto da NR-1 inclui expressamente os fatores
+        de risco psicossociais no GRO — e o período educativo da fiscalização terminou.
+        Gerenciar esses riscos é exigência legal e, antes dela, responsabilidade com as
+        pessoas que fazem a empresa funcionar.
       </p>
     </div>
 
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 border-t border-l border-white/15">
+    <div class="grid grid-cols-1 sm:grid-cols-3 border-t border-l border-white/15">
       {stats.map((s) => (
         <div class="reveal p-7 md:p-8 border-r border-b border-white/15 flex flex-col">
           <p class="font-display text-3xl md:text-4xl font-bold text-brand-terracota-hover mb-3 leading-none tabular-nums">
             {s.texto ? (
               s.texto
             ) : (
-              <span data-counter data-target={s.target} data-prefix={s.prefix} data-suffix={s.suffix}>
+              <span data-counter data-target={s.target} data-prefix={s.prefix} data-suffix={s.suffix} data-decimals={s.decimals}>
                 {s.prefix}{s.target}{s.suffix}
               </span>
             )}
@@ -70,11 +64,14 @@ const stats = [
         </div>
       ))}
     </div>
+    <p class="text-xs text-white/45 mt-3 max-w-3xl">
+      Os afastamentos incluem todos os transtornos do capítulo V da CID, com ou sem relação com o trabalho.
+    </p>
 
     <div class="reveal mt-10 border-l-2 border-brand-terracota pl-5 max-w-3xl">
       <p class="text-white/75 leading-relaxed">
-        A Portaria MTE 1.419/2024 tornou obrigatória a inclusão dos fatores psicossociais
-        no PGR. Empresas que não se adequarem ficam sujeitas a
+        O novo texto da NR-1 tornou obrigatória a inclusão dos fatores psicossociais
+        no GRO. Empresas que não se adequarem ficam sujeitas a
         <strong class="text-white font-semibold"> autuações, interdições e ações regressivas do INSS</strong>.
       </p>
     </div>
