@@ -6,7 +6,8 @@ const servicosSecundarios = [
     descricao:
       'Intervenções de sensibilização baseadas em evidências — não motivacionais — para despertar a liderança sobre saúde mental e NR-1.',
     href: '/palestra',
-    img: '/palestra-plateia-evento.webp',
+    img: '/dra-ana-paula-palestra-abrh-vestido-vermelho.webp',
+    imgPos: '50% 18%',
   },
   {
     eyebrow: 'Sensibilizar',
@@ -157,6 +158,7 @@ const servicosSecundarios = [
               height="360"
               loading="lazy"
               class="w-full h-40 object-cover transition-transform duration-500 group-hover:scale-[1.04]"
+              style={servico.imgPos ? `object-position: ${servico.imgPos}` : undefined}
             />
           </div>
 
