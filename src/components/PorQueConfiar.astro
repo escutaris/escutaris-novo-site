@@ -1,5 +1,6 @@
 ---
-// Bloco 5 da home: os quatro pilares de confiança + responsabilidade técnica.
+// Bloco 5 da home: tudo que sustenta a confiança em um lugar só —
+// os 4 pilares técnicos + a responsável técnica + a equipe multidisciplinar.
 const pilares = [
   {
     titulo: 'Alinhamento à NR-1',
@@ -18,6 +19,33 @@ const pilares = [
     descricao: 'A plataforma não coleta identificadores diretos de quem responde, e os resultados são sempre apresentados de forma agregada — em conformidade com a Lei Geral de Proteção de Dados.',
   },
 ];
+
+const areasDraAna = [
+  'Medicina do Trabalho',
+  'Fatores Psicossociais de Risco',
+  'NR-1 e PGR',
+  'Lesão Moral no Trabalho',
+  'Diagnóstico Psicossocial Organizacional',
+];
+
+const equipe = [
+  {
+    titulo: 'Medicina do Trabalho',
+    descricao: 'Diagnóstico clínico, nexo causal, conduta médica e responsabilidade técnica.',
+  },
+  {
+    titulo: 'Psicologia do Trabalho',
+    descricao: 'Avaliação de risco psicossocial, escuta qualificada e devolutiva estratégica.',
+  },
+  {
+    titulo: 'Engenharia de Segurança',
+    descricao: 'Integração com PGR e GRO, gestão de risco ocupacional e conformidade regulatória.',
+  },
+  {
+    titulo: 'Ergonomia',
+    descricao: 'Análise de organização do trabalho, ritmo e cargas que afetam a saúde mental.',
+  },
+];
 ---
 
 <section id="por-que-confiar" class="section-pad bg-white">
@@ -27,40 +55,126 @@ const pilares = [
         Por que confiar na Escutaris.
       </h2>
       <p class="text-lg md:text-xl text-brand-muted leading-relaxed">
-        O que diferencia um diagnóstico psicossocial sério de uma pesquisa de clima comum.
+        Método sério, responsabilidade médica e uma equipe multidisciplinar —
+        o que diferencia um diagnóstico psicossocial de uma pesquisa de clima comum.
       </p>
     </div>
 
-    <div class="border border-brand-border bg-brand-off-white grid grid-cols-1 md:grid-cols-2">
+    <!-- Os 4 pilares técnicos -->
+    <div class="border border-brand-border bg-brand-off-white grid grid-cols-1 md:grid-cols-2 mb-12 md:mb-16">
       {pilares.map((pilar, i) => (
         <article class:list={[
-          'p-8 md:p-12 border-brand-border',
+          'p-8 md:p-10 border-brand-border',
           i < pilares.length - 1 && 'border-b',
           i >= pilares.length - 2 && 'md:border-b-0',
           i % 2 === 0 && 'md:border-r',
         ]}>
-          <span class="font-display text-5xl md:text-6xl font-bold text-brand-terracota leading-none mb-6 block">
+          <span class="font-display text-4xl md:text-5xl font-bold text-brand-terracota leading-none mb-5 block">
             0{i + 1}
           </span>
 
-          <h3 class="text-xl md:text-2xl font-display font-bold text-brand-dark mb-4 leading-tight">
+          <h3 class="text-xl md:text-2xl font-display font-bold text-brand-dark mb-3 leading-tight">
             {pilar.titulo}
           </h3>
 
-          <p class="text-brand-muted leading-relaxed">
+          <p class="text-brand-muted leading-relaxed text-[15px]">
             {pilar.descricao}
           </p>
         </article>
       ))}
     </div>
 
-    <div class="reveal mt-8 border-l-2 border-brand-terracota pl-5 max-w-3xl">
-      <p class="text-brand-muted leading-relaxed">
-        Responsabilidade técnica da
-        <strong class="text-brand-dark font-semibold">Dra. Ana Paula Teixeira (CRM-BA 12797)</strong>,
-        médica do trabalho com mais de 28 anos de experiência, junto a uma equipe multidisciplinar.
-        <a href="/sobre" class="text-brand-green font-semibold hover:text-brand-terracota transition-colors">Conheça a equipe →</a>
-      </p>
+    <!-- Quem responde por isso: Dra. Ana Paula + equipe multidisciplinar -->
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-0 border border-brand-border bg-white">
+      <div class="reveal p-8 md:p-12 border-b lg:border-b-0 lg:border-r border-brand-border">
+        <span class="eyebrow mb-4 block">Responsável Técnica</span>
+
+        <h3 class="text-2xl md:text-3xl font-display font-bold text-brand-dark mb-2 leading-tight">
+          Dra. Ana Paula Teixeira
+        </h3>
+        <p class="text-sm text-brand-muted mb-6 font-medium tracking-wide">
+          Médica do trabalho · CRM-BA 12797
+        </p>
+
+        <p class="text-brand-dark mb-6 leading-relaxed">
+          Médica do trabalho com mais de 28 anos de experiência e uma das principais
+          referências em saúde mental no trabalho. Pesquisadora em Lesão Moral, palestrante e
+          autora de <em class="font-display">Quando o Trabalho Dói: Do Adoecimento Silencioso à Cultura de Bem-Estar</em>
+          (Assedionet, 2025).
+        </p>
+
+        <!-- Números de impacto (sobem ao entrar na tela) -->
+        <div class="grid grid-cols-3 gap-4 mb-6 py-5 border-y border-brand-border">
+          <div>
+            <p class="font-display text-2xl md:text-3xl font-bold text-brand-green leading-none mb-1 tabular-nums">
+              <span data-counter data-target="30" data-prefix="+" data-suffix=" mil">+30 mil</span>
+            </p>
+            <p class="text-xs text-brand-muted leading-snug">Pessoas impactadas</p>
+          </div>
+          <div>
+            <p class="font-display text-2xl md:text-3xl font-bold text-brand-green leading-none mb-1 tabular-nums">
+              <span data-counter data-target="130" data-prefix="+">+130</span>
+            </p>
+            <p class="text-xs text-brand-muted leading-snug">Palestras realizadas</p>
+          </div>
+          <div>
+            <p class="font-display text-2xl md:text-3xl font-bold text-brand-green leading-none mb-1 tabular-nums">
+              <span data-counter data-target="1000" data-prefix="+" data-suffix="h">+1.000h</span>
+            </p>
+            <p class="text-xs text-brand-muted leading-snug">Horas de mentoria</p>
+          </div>
+        </div>
+
+        <p class="text-[11px] uppercase tracking-[0.18em] text-brand-muted mb-3 font-semibold">
+          Reconhecimento
+        </p>
+        <ul class="space-y-2 mb-8">
+          <li class="flex items-start gap-3 text-sm text-brand-dark">
+            <svg class="w-4 h-4 text-brand-amber flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l2.4 7.4H22l-6 4.6 2.3 7.4-6.3-4.6L5.7 21.4 8 14 2 9.4h7.6z"/></svg>
+            <span>Prêmio Proteção Brasil — Ouro e Prata</span>
+          </li>
+          <li class="flex items-start gap-3 text-sm text-brand-dark">
+            <svg class="w-4 h-4 text-brand-amber flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l2.4 7.4H22l-6 4.6 2.3 7.4-6.3-4.6L5.7 21.4 8 14 2 9.4h7.6z"/></svg>
+            <span>1º lugar nacional na prova de título da ANAMT</span>
+          </li>
+        </ul>
+
+        <p class="text-[11px] uppercase tracking-[0.18em] text-brand-muted mb-4 font-semibold">
+          Áreas de atuação
+        </p>
+        <ul class="space-y-2.5">
+          {areasDraAna.map((area) => (
+            <li class="flex items-start gap-3 text-sm text-brand-dark">
+              <span class="inline-block w-1 h-1 bg-brand-terracota mt-2.5 flex-shrink-0" aria-hidden="true"></span>
+              <span>{area}</span>
+            </li>
+          ))}
+        </ul>
+      </div>
+
+      <div class="reveal p-8 md:p-12">
+        <span class="eyebrow mb-4 block">Equipe técnica</span>
+
+        <h3 class="text-2xl md:text-3xl font-display font-bold text-brand-dark mb-6 leading-tight">
+          Multidisciplinar por princípio
+        </h3>
+
+        <p class="text-brand-dark mb-8 leading-relaxed">
+          O olhar técnico sobre fatores psicossociais exige perspectivas combinadas.
+          A Escutaris reúne quatro frentes do conhecimento ocupacional:
+        </p>
+
+        <div class="space-y-5">
+          {equipe.map((area) => (
+            <div class="border-l-2 border-brand-terracota pl-4">
+              <h4 class="font-display font-bold text-brand-dark mb-1 text-[15px]">
+                {area.titulo}
+              </h4>
+              <p class="text-sm text-brand-muted leading-relaxed">{area.descricao}</p>
+            </div>
+          ))}
+        </div>
+      </div>
     </div>
   </div>
 </section>
