@@ -23,11 +23,9 @@ export interface LeadInput {
 }
 
 export async function insertLead(lead: LeadInput) {
-  const { data, error } = await supabase
-    .from('leads_escutaris')
-    .insert([lead])
-    .select()
-    .single();
+  // Sem .select(): a política de segurança permite ao visitante INSERIR um lead,
+  // mas (corretamente) não permite LER a tabela — pedir o dado de volta derruba o envio.
+  const { error } = await supabase.from('leads_escutaris').insert([lead]);
 
-  return { data, error };
+  return { error };
 }
