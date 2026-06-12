@@ -19,14 +19,6 @@ const servicosSecundarios = [
     imgPos: '50% 42%',
   },
   {
-    eyebrow: 'Capacitar',
-    titulo: 'Treinamentos',
-    descricao:
-      'Capacitação técnica com carga horária e avaliação de aprendizado, do papel do líder à implementação do GRO psicossocial.',
-    href: '/treinamentos',
-    img: '/treinamento-grupo-sst.webp',
-  },
-  {
     eyebrow: 'Transformar',
     titulo: 'Programa Contínuo',
     descricao:
@@ -53,8 +45,8 @@ const servicosSecundarios = [
       </h2>
       <p class="text-lg md:text-xl text-brand-muted leading-relaxed">
         Do primeiro alerta à transformação contínua da cultura: soluções que acompanham
-        a sua organização em cada estágio — sensibilizar a liderança, capacitar as equipes,
-        diagnosticar os riscos e sustentar a mudança.
+        a sua organização em cada estágio — sensibilizar a liderança, diagnosticar os
+        riscos e sustentar a mudança.
       </p>
     </div>
 
@@ -145,7 +137,7 @@ const servicosSecundarios = [
       Soluções complementares
     </p>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 border-t border-l border-brand-border bg-white">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 border-t border-l border-brand-border bg-white">
       {servicosSecundarios.map((servico) => (
         <a
           href={servico.href}
