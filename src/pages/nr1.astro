@@ -1,0 +1,521 @@
+---
+// Landing page de campanha (anúncios/links diretos): foco total em conversão.
+// Formulário no topo, urgência, prova social e CTAs que rolam para o formulário.
+import Layout from '../layouts/Layout.astro';
+
+const whatsappUrl =
+  'https://api.whatsapp.com/send?phone=5571981357004&text=Ol%C3%A1%2C+preciso+adequar+minha+empresa+%C3%A0+NR-1';
+
+const beneficios = [
+  'Dashboard interativo entregue em até 72 horas',
+  'Relatório técnico assinado por médica do trabalho (CRM-BA 12797)',
+  'Questionários cientificamente validados — não pesquisa genérica',
+  'Anonimato garantido por arquitetura e conformidade com a LGPD',
+];
+
+const numeros = [
+  { n: '2º', l: 'país do mundo em casos de burnout', fonte: 'ISMA-BR' },
+  { n: '3ª', l: 'maior causa de afastamento pelo INSS: transtornos mentais', fonte: 'INSS' },
+  { n: '+R$ 45 mil', l: 'custo médio anual de um afastamento por transtorno mental', fonte: 'estimativa por trabalhador' },
+  { n: 'US$ 4', l: 'de retorno para cada US$ 1 investido em saúde mental', fonte: 'OMS' },
+];
+
+const passos = [
+  {
+    titulo: 'Conversa de alinhamento',
+    texto: 'Gratuita e sem compromisso. Entendemos o porte, o objetivo e o prazo da sua empresa.',
+  },
+  {
+    titulo: 'Aplicação anônima',
+    texto: 'Enviamos o link da pesquisa. Os colaboradores respondem online, com anonimato técnico garantido.',
+  },
+  {
+    titulo: 'Dashboard em até 72h',
+    texto: 'Resultados por setor, função, jornada e geração — você explora os dados em um painel interativo.',
+  },
+  {
+    titulo: 'Relatório e devolutiva',
+    texto: 'Relatório técnico com análise, avaliação e subsídios para o plano de ação e o PGR, apresentado à sua equipe.',
+  },
+];
+
+const faqs = [
+  {
+    q: 'O diagnóstico atende à NR-1?',
+    a: 'Sim. O diagnóstico é estruturado conforme os critérios da NR-1 sobre fatores psicossociais de risco, e o relatório técnico fornece subsídios para o plano de ação e para a documentação do PGR.',
+  },
+  {
+    q: 'A pesquisa é mesmo anônima?',
+    a: 'Sim. O anonimato é garantido por arquitetura técnica: é impossível para a Escutaris saber quem respondeu. Os resultados são sempre apresentados de forma agregada.',
+  },
+  {
+    q: 'Em quanto tempo fico em dia?',
+    a: 'O dashboard interativo chega em até 72 horas após o fechamento da pesquisa, e o relatório técnico na sequência. Todo o processo, do alinhamento à devolutiva, costuma levar poucas semanas.',
+  },
+  {
+    q: 'Empresas pequenas também precisam?',
+    a: 'Sim. Desde a Portaria MTE 1.419/2024, toda organização que admite trabalhadores precisa identificar, avaliar e gerenciar os fatores psicossociais no PGR, independentemente do porte.',
+  },
+  {
+    q: 'Quanto custa?',
+    a: 'O valor depende do número de colaboradores e do objetivo da empresa. Na conversa de alinhamento — gratuita — apresentamos a proposta exata para o seu caso.',
+  },
+];
+
+const siteUrl = 'https://www.escutaris.com.br';
+const pageUrl = `${siteUrl}/nr1`;
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Service',
+  '@id': `${pageUrl}#service`,
+  name: 'Adequação à NR-1: Diagnóstico de Fatores Psicossociais',
+  serviceType: 'Diagnóstico psicossocial (NR-1)',
+  provider: { '@id': `${siteUrl}/#organization` },
+  areaServed: 'BR',
+  url: pageUrl,
+  description:
+    'Diagnóstico psicossocial para adequação à NR-1: questionários validados, anonimato garantido, dashboard interativo em até 72 horas e relatório técnico assinado por médica do trabalho.',
+};
+---
+
+<Layout
+  title="Adequação à NR-1: Diagnóstico Psicossocial em até 72h | Escutaris"
+  description="A fiscalização da NR-1 já começou. Diagnóstico psicossocial completo: dashboard em até 72 horas e relatório técnico assinado por médica do trabalho. Fale com um especialista — conversa inicial gratuita."
+  canonical={pageUrl}
+>
+  <script
+    slot="head"
+    type="application/ld+json"
+    set:html={JSON.stringify(jsonLd)}
+    is:inline
+  />
+
+  <!-- HERO COM FORMULÁRIO -->
+  <section class="bg-brand-off-white">
+    <div class="container-soft py-14 md:py-20">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
+        <div class="lg:col-span-7">
+          <span class="eyebrow mb-5 block">Diagnóstico psicossocial · NR-1</span>
+          <h1 class="text-4xl md:text-5xl lg:text-[3.5rem] font-display font-bold mb-6 leading-[1.08] text-brand-dark">
+            O prazo da <span class="text-brand-terracota">NR-1</span> acabou.
+            A fiscalização já começou.
+          </h1>
+          <p class="text-lg md:text-xl text-brand-muted leading-relaxed mb-8 max-w-2xl">
+            Desde 2025, toda empresa precisa identificar, avaliar e gerenciar os fatores
+            psicossociais no PGR — sob risco de
+            <strong class="text-brand-dark font-semibold">autuações, interdições e ações regressivas do INSS</strong>.
+            A Escutaris resolve isso de ponta a ponta.
+          </p>
+
+          <ul class="space-y-3.5 mb-8">
+            {beneficios.map((b) => (
+              <li class="flex items-start gap-3">
+                <span class="flex-shrink-0 w-5 h-5 mt-0.5 bg-brand-green text-white flex items-center justify-center">
+                  <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7" />
+                  </svg>
+                </span>
+                <span class="text-brand-dark leading-relaxed">{b}</span>
+              </li>
+            ))}
+          </ul>
+
+          <p class="text-sm text-brand-muted">
+            Conversa inicial gratuita e sem compromisso · Resposta em até 24h úteis
+          </p>
+        </div>
+
+        <div class="lg:col-span-5">
+          <div id="form-nr1" class="bg-white border-2 border-brand-green p-7 md:p-9 scroll-mt-28">
+            <h2 class="text-2xl font-display font-bold text-brand-dark mb-2 leading-tight">
+              Fale com um especialista
+            </h2>
+            <p class="text-sm text-brand-muted mb-6">
+              Preencha e retornamos em até 24 horas úteis com os próximos passos.
+            </p>
+
+            <form id="lp-form" class="space-y-4" novalidate>
+              <div>
+                <label for="lp-nome" class="block text-xs uppercase tracking-[0.12em] text-brand-dark font-semibold mb-2">
+                  Nome <span class="text-brand-terracota" aria-hidden="true">*</span>
+                </label>
+                <input
+                  type="text"
+                  id="lp-nome"
+                  name="nome"
+                  required
+                  autocomplete="name"
+                  class="w-full px-4 py-3 border border-brand-border bg-brand-off-white text-brand-dark focus:border-brand-green transition-colors"
+                />
+              </div>
+
+              <div>
+                <label for="lp-email" class="block text-xs uppercase tracking-[0.12em] text-brand-dark font-semibold mb-2">
+                  E-mail corporativo <span class="text-brand-terracota" aria-hidden="true">*</span>
+                </label>
+                <input
+                  type="email"
+                  id="lp-email"
+                  name="email"
+                  required
+                  autocomplete="email"
+                  class="w-full px-4 py-3 border border-brand-border bg-brand-off-white text-brand-dark focus:border-brand-green transition-colors"
+                />
+              </div>
+
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div>
+                  <label for="lp-telefone" class="block text-xs uppercase tracking-[0.12em] text-brand-dark font-semibold mb-2">
+                    Telefone / WhatsApp
+                  </label>
+                  <input
+                    type="tel"
+                    id="lp-telefone"
+                    name="telefone"
+                    autocomplete="tel"
+                    class="w-full px-4 py-3 border border-brand-border bg-brand-off-white text-brand-dark focus:border-brand-green transition-colors"
+                  />
+                </div>
+                <div>
+                  <label for="lp-empresa" class="block text-xs uppercase tracking-[0.12em] text-brand-dark font-semibold mb-2">
+                    Empresa
+                  </label>
+                  <input
+                    type="text"
+                    id="lp-empresa"
+                    name="empresa"
+                    autocomplete="organization"
+                    class="w-full px-4 py-3 border border-brand-border bg-brand-off-white text-brand-dark focus:border-brand-green transition-colors"
+                  />
+                </div>
+              </div>
+
+              <div>
+                <label for="lp-colaboradores" class="block text-xs uppercase tracking-[0.12em] text-brand-dark font-semibold mb-2">
+                  Número de colaboradores
+                </label>
+                <select
+                  id="lp-colaboradores"
+                  name="colaboradores"
+                  class="w-full px-4 py-3 border border-brand-border bg-brand-off-white text-brand-dark focus:border-brand-green transition-colors appearance-none cursor-pointer"
+                >
+                  <option value="">Selecione...</option>
+                  <option value="ate-19">Até 19</option>
+                  <option value="20-99">20 a 99</option>
+                  <option value="100-499">100 a 499</option>
+                  <option value="500+">500 ou mais</option>
+                </select>
+              </div>
+
+              <div
+                id="lp-form-error"
+                class="hidden p-4 border border-brand-terracota bg-brand-terracota/5 text-sm text-brand-dark"
+                role="alert"
+              >
+                <strong class="font-semibold">Não foi possível enviar.</strong>
+                <span id="lp-form-error-message"></span>
+                Tente novamente ou fale conosco direto no WhatsApp.
+              </div>
+
+              <div class="pt-1">
+                <button
+                  type="submit"
+                  id="lp-submit-button"
+                  class="btn-primary w-full justify-center disabled:opacity-60 disabled:cursor-not-allowed"
+                >
+                  <span id="lp-submit-label">Quero me adequar à NR-1</span>
+                  <svg id="lp-submit-icon" class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                  </svg>
+                  <svg id="lp-submit-spinner" class="hidden w-4 h-4 animate-spin" fill="none" viewBox="0 0 24 24" aria-hidden="true">
+                    <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                    <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v4a4 4 0 00-4 4H4z"></path>
+                  </svg>
+                </button>
+                <p class="text-xs text-brand-muted mt-3">
+                  Suas informações estão seguras. Ao enviar, você concorda com nossa
+                  <a href="/politica-de-privacidade" class="underline hover:text-brand-terracota transition-colors">política de privacidade</a> (LGPD).
+                </p>
+              </div>
+            </form>
+
+            <div
+              id="lp-form-success"
+              class="hidden p-6 md:p-8 border-2 border-brand-green bg-brand-green/5 text-center"
+              role="status"
+              aria-live="polite"
+            >
+              <div class="inline-flex items-center justify-center w-12 h-12 bg-brand-green mb-4">
+                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7" />
+                </svg>
+              </div>
+              <h3 class="text-xl font-display font-bold text-brand-dark mb-2">
+                Recebido!
+              </h3>
+              <p class="text-sm text-brand-muted leading-relaxed">
+                Um especialista da Escutaris vai falar com você em até 24 horas úteis.
+                Se preferir agilizar, chame no WhatsApp.
+              </p>
+              <a href={whatsappUrl} target="_blank" rel="noopener" class="btn-whatsapp mt-5 inline-flex">
+                Falar no WhatsApp
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NÚMEROS DE URGÊNCIA -->
+  <section class="bg-brand-dark text-white">
+    <div class="container-soft py-12 md:py-16">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 border-t border-l border-white/15">
+        {numeros.map((s) => (
+          <div class="p-7 md:p-8 border-r border-b border-white/15 flex flex-col">
+            <p class="font-display text-3xl md:text-4xl font-bold text-brand-terracota-hover mb-3 leading-none">
+              {s.n}
+            </p>
+            <p class="text-white/85 leading-snug mb-3 flex-1">{s.l}</p>
+            <p class="text-[11px] uppercase tracking-[0.14em] text-white/45">{s.fonte}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- COMO FUNCIONA -->
+  <section class="section-pad bg-white">
+    <div class="container-soft">
+      <div class="reveal max-w-4xl mb-12 md:mb-16">
+        <span class="eyebrow mb-5">Como funciona</span>
+        <h2 class="text-3xl md:text-5xl font-display font-bold mb-6 leading-[1.1] text-brand-dark">
+          Quatro passos para ficar em dia.
+        </h2>
+        <p class="text-lg md:text-xl text-brand-muted leading-relaxed">
+          A Escutaris conduz tudo: você só distribui o link da pesquisa aos colaboradores.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 border border-brand-border bg-brand-off-white">
+        {passos.map((p, i) => (
+          <article class:list={[
+            'reveal p-7 md:p-8 border-brand-border',
+            i < passos.length - 1 && 'border-b lg:border-b-0 lg:border-r',
+            i === 1 && 'md:border-r lg:md:border-r',
+          ]}>
+            <span class="font-display text-4xl font-bold text-brand-terracota leading-none mb-4 block tabular-nums">
+              0{i + 1}
+            </span>
+            <h3 class="text-lg font-display font-bold text-brand-dark mb-2.5 leading-tight">
+              {p.titulo}
+            </h3>
+            <p class="text-sm text-brand-muted leading-relaxed">{p.texto}</p>
+          </article>
+        ))}
+      </div>
+
+      <div class="mt-10 text-center">
+        <a href="#form-nr1" class="btn-primary">
+          Começar agora — é gratuito conversar
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- O QUE VOCÊ RECEBE -->
+  <section class="section-pad bg-brand-off-white">
+    <div class="container-soft">
+      <div class="reveal max-w-4xl mb-12 md:mb-16">
+        <span class="eyebrow mb-5">O que você recebe</span>
+        <h2 class="text-3xl md:text-5xl font-display font-bold mb-6 leading-[1.1] text-brand-dark">
+          O dado vivo e a análise técnica.
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+        <figure class="reveal border border-brand-border bg-white p-4 md:p-6">
+          <img
+            src="/dashboard-real.webp"
+            alt="Dashboard interativo da Escutaris com análise dos fatores psicossociais por setor, função e geração"
+            width="1460"
+            height="1240"
+            loading="lazy"
+            class="w-full h-auto border border-brand-border"
+          />
+          <figcaption class="text-xs text-brand-muted mt-3 text-center">
+            Painel interativo de resultados. Dados ilustrativos.
+          </figcaption>
+        </figure>
+
+        <div class="reveal space-y-6">
+          <div class="border-l-2 border-brand-terracota pl-5">
+            <h3 class="font-display font-bold text-brand-dark text-xl mb-2">Dashboard interativo — em até 72h</h3>
+            <p class="text-brand-muted leading-relaxed">
+              Você explora os resultados por setor, função, jornada e geração,
+              exporta os dados e apresenta em reuniões. A informação viva nas mãos
+              da gestão, não um PDF engessado.
+            </p>
+          </div>
+          <div class="border-l-2 border-brand-green pl-5">
+            <h3 class="font-display font-bold text-brand-dark text-xl mb-2">Relatório técnico — da nossa equipe</h3>
+            <p class="text-brand-muted leading-relaxed">
+              Elaborado sob responsabilidade técnica da Dra. Ana Paula Teixeira
+              (CRM-BA 12797), médica do trabalho: avaliação dos resultados e subsídios
+              para o plano de ação e a documentação do PGR — evidência técnica
+              defensável diante de fiscalização.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROVA SOCIAL -->
+  <section class="section-pad bg-white">
+    <div class="container-soft">
+      <div class="max-w-3xl mx-auto text-center">
+        <span class="eyebrow mb-6 block">Quem já fez</span>
+        <blockquote class="reveal">
+          <p class="text-2xl md:text-3xl font-display font-bold text-brand-dark leading-snug mb-6">
+            &ldquo;Fiz a leitura dos relatórios e fiquei impressionada com a qualidade
+            e a riqueza das informações apresentadas.&rdquo;
+          </p>
+          <footer>
+            <p class="font-display font-bold text-brand-dark">Neusa Dantas</p>
+            <p class="text-sm text-brand-muted">Coordenadora de RH · Rádio Sociedade da Bahia</p>
+          </footer>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section-pad bg-brand-off-white">
+    <div class="container-soft">
+      <div class="reveal max-w-4xl mb-12 md:mb-16">
+        <span class="eyebrow mb-5">Perguntas frequentes</span>
+        <h2 class="text-3xl md:text-5xl font-display font-bold mb-6 leading-[1.1] text-brand-dark">
+          Antes de falar com a gente.
+        </h2>
+      </div>
+
+      <div class="max-w-3xl border-t border-brand-border">
+        {faqs.map((f) => (
+          <details class="group border-b border-brand-border">
+            <summary class="flex items-start justify-between gap-4 py-6 cursor-pointer list-none">
+              <span class="font-display font-bold text-brand-dark text-lg leading-snug">
+                {f.q}
+              </span>
+              <span class="text-brand-terracota text-2xl leading-none flex-shrink-0 transition-transform group-open:rotate-45" aria-hidden="true">
+                +
+              </span>
+            </summary>
+            <p class="text-brand-muted leading-relaxed pb-6 -mt-1 max-w-2xl">
+              {f.a}
+            </p>
+          </details>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="bg-brand-green">
+    <div class="container-soft py-14 md:py-20 text-center">
+      <h2 class="text-3xl md:text-4xl font-display font-bold text-white mb-4 leading-tight">
+        Não espere a fiscalização chegar primeiro.
+      </h2>
+      <p class="text-white/80 leading-relaxed mb-8 max-w-2xl mx-auto">
+        Comece com uma conversa gratuita: entendemos o seu contexto e apresentamos
+        o caminho exato para a sua empresa ficar em dia com a NR-1.
+      </p>
+      <div class="flex flex-wrap gap-3 justify-center">
+        <a
+          href="#form-nr1"
+          class="inline-flex items-center gap-2 px-6 py-3 bg-white text-brand-green font-semibold hover:bg-brand-off-white-warm transition-colors"
+        >
+          Falar com um especialista
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+          </svg>
+        </a>
+        <a href={whatsappUrl} target="_blank" rel="noopener" class="btn-whatsapp">
+          Falar no WhatsApp
+        </a>
+      </div>
+    </div>
+  </section>
+</Layout>
+
+<script>
+  import { insertLead } from '../lib/supabase';
+
+  const form = document.getElementById('lp-form') as HTMLFormElement | null;
+  const submitButton = document.getElementById('lp-submit-button') as HTMLButtonElement | null;
+  const submitLabel = document.getElementById('lp-submit-label');
+  const submitIcon = document.getElementById('lp-submit-icon');
+  const submitSpinner = document.getElementById('lp-submit-spinner');
+  const errorBox = document.getElementById('lp-form-error');
+  const errorMessage = document.getElementById('lp-form-error-message');
+  const successBox = document.getElementById('lp-form-success');
+
+  function setLoading(isLoading: boolean) {
+    if (!submitButton || !submitLabel || !submitIcon || !submitSpinner) return;
+    submitButton.disabled = isLoading;
+    submitLabel.textContent = isLoading ? 'Enviando...' : 'Quero me adequar à NR-1';
+    submitIcon.classList.toggle('hidden', isLoading);
+    submitSpinner.classList.toggle('hidden', !isLoading);
+  }
+
+  function showError(msg: string) {
+    if (!errorBox || !errorMessage) return;
+    errorMessage.textContent = ` ${msg}.`;
+    errorBox.classList.remove('hidden');
+    errorBox.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  }
+
+  form?.addEventListener('submit', async (event) => {
+    event.preventDefault();
+    errorBox?.classList.add('hidden');
+
+    const formData = new FormData(form);
+    const nome = String(formData.get('nome') ?? '').trim();
+    const email = String(formData.get('email') ?? '').trim();
+    const telefone = String(formData.get('telefone') ?? '').trim();
+    const empresa = String(formData.get('empresa') ?? '').trim();
+    const colaboradores = String(formData.get('colaboradores') ?? '').trim();
+
+    if (!nome || !email) {
+      showError('Preencha nome e e-mail');
+      return;
+    }
+
+    setLoading(true);
+
+    const { error } = await insertLead({
+      nome,
+      empresa: empresa || undefined,
+      email,
+      telefone: telefone || undefined,
+      servico: 'diagnostico',
+      mensagem: `Origem: landing page NR-1${colaboradores ? ` · Colaboradores: ${colaboradores}` : ''}`,
+    });
+
+    setLoading(false);
+
+    if (error) {
+      console.error('Erro ao enviar lead:', error);
+      showError('Erro inesperado');
+      return;
+    }
+
+    form.classList.add('hidden');
+    successBox?.classList.remove('hidden');
+    successBox?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  });
+</script>
