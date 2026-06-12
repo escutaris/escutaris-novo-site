@@ -319,12 +319,20 @@ const jsonLd = {
       </div>
 
       <div class="mt-10 text-center">
-        <a href="#form-nr1" class="btn-primary">
-          Começar agora — é gratuito conversar
-          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-          </svg>
-        </a>
+        <div class="flex flex-wrap gap-3 justify-center">
+          <a href={whatsappUrl} target="_blank" rel="noopener" class="btn-whatsapp">
+            Agendar conversa no WhatsApp
+          </a>
+          <a href="#form-nr1" class="btn-primary">
+            Preencher formulário de agendamento
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
+          </a>
+        </div>
+        <p class="text-sm text-brand-muted mt-4">
+          A conversa inicial é gratuita e sem compromisso.
+        </p>
       </div>
     </div>
   </section>
