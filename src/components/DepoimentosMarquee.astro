@@ -1,0 +1,154 @@
+---
+// Versão da landing page de campanha (/nr1): sem vídeo, depoimentos em marquee
+// horizontal contínuo. A lista é duplicada para o loop não ter corte.
+const depoimentos = [
+  {
+    texto: 'Fiz a leitura dos relatórios e fiquei impressionada com a qualidade e a riqueza das informações apresentadas.',
+    autor: 'Neusa Dantas',
+    cargo: 'Coordenadora de RH · Rádio Sociedade da Bahia',
+    iniciais: 'ND',
+    cor: 'bg-brand-terracota',
+  },
+  {
+    texto: 'A experiência com a Escutaris foi positiva. Dividimos os trabalhadores em turmas e, após esclarecer o anonimato do questionário, todos se sentiram seguros. A visualização dos resultados foi clara e a ferramenta se mostrou eficiente para entender os riscos psicossociais.',
+    autor: 'Dra. Vanessa Lima Marques Ferreira',
+    cargo: 'Médica do Trabalho · CRM-BA 21443',
+    iniciais: 'VF',
+    cor: 'bg-brand-green',
+  },
+  {
+    texto: 'A Escutaris é uma plataforma inovadora, que surpreende pela riqueza de informações relevantes, gerando um diagnóstico preciso e permitindo a elaboração de planos de ação mais efetivos sobre a saúde psicossocial no ambiente de trabalho.',
+    autor: 'Sara Sobral',
+    cargo: 'Consultora · Sinética Inteligência Empreendedora',
+    iniciais: 'SS',
+    cor: 'bg-brand-terracota',
+  },
+  {
+    texto: 'Parabéns pelo trabalho que vocês fazem. Os questionários, muito bem feitos, me ajudaram a enxergar questões na empresa que a gente nem percebe no dia a dia. E o relatório que a Dra. Ana elaborou foi fundamental para montarmos o plano de ação de 2025. É muito bom contar com um trabalho tão completo e cuidadoso.',
+    autor: 'Gelo Alagoinhas',
+    cargo: 'Setor Pessoal',
+    iniciais: 'GA',
+    cor: 'bg-brand-green',
+  },
+  {
+    texto: 'Não podia deixar de dar esse feedback sobre o trabalho da Escutaris. A forma como vocês trazem à tona a importância dos riscos psicossociais e da saúde mental no ambiente de trabalho é algo que poucas empresas fazem com tanto cuidado. O trabalho não fica só no diagnóstico — é prático, direto e traz insights importantes para quem quer criar um ambiente de trabalho melhor.',
+    autor: 'Cecília Oliveira',
+    cargo: 'Administradora · Imobiliária Tex Empreendimentos',
+    iniciais: 'CO',
+    cor: 'bg-brand-terracota',
+  },
+  {
+    texto: 'Estar perto do mundo tecnológico nos surpreende — tanto pelo que há a fazer quanto pelo que facilita e ajuda. Fiquei realmente impressionada com o serviço contratado. Recomendo.',
+    autor: 'Giovana Muniz',
+    cargo: '',
+    iniciais: 'GM',
+    cor: 'bg-brand-green',
+  },
+  {
+    texto: 'Essa empresa presta serviços com excelente qualidade e profissionalismo. Recomendo.',
+    autor: 'Joel Santana',
+    cargo: '',
+    iniciais: 'JS',
+    cor: 'bg-brand-terracota',
+  },
+];
+
+const track = [...depoimentos, ...depoimentos];
+---
+
+<section id="depoimentos" class="section-pad bg-brand-off-white">
+  <div class="container-soft">
+    <div class="reveal max-w-4xl mb-10 md:mb-12">
+      <h2 class="text-3xl md:text-5xl font-display font-bold mb-6 leading-[1.1] text-brand-dark">
+        O que falam sobre nós.
+      </h2>
+      <p class="text-lg md:text-xl text-brand-muted leading-relaxed">
+        Profissionais de saúde, gestores e líderes que conduziram o diagnóstico com a Escutaris.
+      </p>
+    </div>
+
+    <div class="reveal depoimentos-marquee">
+      <div class="depoimentos-marquee-track">
+        {track.map((dep, i) => (
+          <article
+            class="depoimento-card p-6 md:p-7 border border-brand-border bg-white flex flex-col"
+            aria-hidden={i < depoimentos.length ? undefined : 'true'}
+          >
+            <span class="font-display text-5xl text-brand-terracota leading-none mb-3 select-none" aria-hidden="true">&ldquo;</span>
+            <p class="text-brand-dark leading-relaxed text-[15px] mb-6 line-clamp-6">
+              {dep.texto}
+            </p>
+            <div class="mt-auto pt-4 border-t border-brand-border flex items-center gap-3">
+              <span class={`flex-shrink-0 w-10 h-10 rounded-full ${dep.cor} text-white font-display font-bold text-sm flex items-center justify-center`} aria-hidden="true">
+                {dep.iniciais}
+              </span>
+              <div>
+                <p class="font-display font-bold text-brand-dark text-[15px] mb-0.5 leading-tight">
+                  {dep.autor}
+                </p>
+                {dep.cargo && (
+                  <p class="text-xs text-brand-muted tracking-wide">
+                    {dep.cargo}
+                  </p>
+                )}
+              </div>
+            </div>
+          </article>
+        ))}
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .depoimentos-marquee {
+    overflow: hidden;
+    width: 100%;
+    -webkit-mask-image: linear-gradient(to right, transparent 0, #000 4%, #000 96%, transparent 100%);
+    mask-image: linear-gradient(to right, transparent 0, #000 4%, #000 96%, transparent 100%);
+  }
+
+  .depoimentos-marquee-track {
+    display: flex;
+    gap: 1.5rem;
+    align-items: stretch;
+    width: max-content;
+    animation: depoimentos-scroll 80s linear infinite;
+  }
+
+  .depoimentos-marquee-track:hover {
+    animation-play-state: paused;
+  }
+
+  @keyframes depoimentos-scroll {
+    from { transform: translateX(0); }
+    to   { transform: translateX(-50%); }
+  }
+
+  .depoimento-card {
+    flex: 0 0 auto;
+    width: 300px;
+  }
+
+  @media (min-width: 768px) {
+    .depoimento-card { width: 360px; }
+  }
+
+  @media (max-width: 600px) {
+    .depoimento-card { width: 280px; }
+  }
+
+  /* Touch não tem hover: sem isso, não há como pausar o auto-scroll pra ler.
+     Em telas de toque, a faixa fica parada e deslizável manualmente. */
+  @media (max-width: 768px) {
+    .depoimentos-marquee { overflow-x: auto; -webkit-overflow-scrolling: touch; scroll-snap-type: x proximity; }
+    .depoimentos-marquee-track { animation: none; }
+    .depoimento-card { scroll-snap-align: start; }
+  }
+
+  /* Acessibilidade: quem pediu menos movimento vê a faixa parada e rolável */
+  @media (prefers-reduced-motion: reduce) {
+    .depoimentos-marquee { overflow-x: auto; }
+    .depoimentos-marquee-track { animation: none; }
+  }
+</style>

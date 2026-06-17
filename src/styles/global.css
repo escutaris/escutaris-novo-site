@@ -61,6 +61,10 @@
   --color-brand-cobre: #a95821;
   --color-brand-brasa: #be3a1b;
 
+  /* Fundos alternativos do brandbook (variação de ritmo entre seções) */
+  --color-brand-sage: #dbe2d9;
+  --color-brand-creme: #eed6c7;
+
   /* PALETA ANTERIOR (reverter se necessário):
      green #506e3f / hover #8a9c6e / dark #3d5430
      terracota #b64f2b / hover #d4623a

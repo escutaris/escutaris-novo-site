@@ -2,15 +2,17 @@
 // Landing page de campanha (anúncios/links diretos): foco total em conversão.
 // Formulário no topo, urgência, prova social e CTAs que rolam para o formulário.
 import Layout from '../layouts/Layout.astro';
+import LogosClientes from '../components/LogosClientes.astro';
+import DepoimentosMarquee from '../components/DepoimentosMarquee.astro';
 
 const whatsappUrl =
   'https://api.whatsapp.com/send?phone=5571981357004&text=Ol%C3%A1%2C+preciso+adequar+minha+empresa+%C3%A0+NR-1';
 
 const beneficios = [
-  'Dashboard interativo entregue em até 72 horas',
-  'Relatório técnico assinado por médica do trabalho (CRM-BA 12797)',
-  'Questionários cientificamente validados — não pesquisa genérica',
-  'Anonimato garantido por arquitetura e conformidade com a LGPD',
+  'Dashboard em até 72h — decisão rápida, sem esperar relatório fechado',
+  'Relatório assinado por médica do trabalho (CRM-BA 12797 · RQE 7237) — evidência técnica válida em fiscalização',
+  'Questionários cientificamente validados — defensáveis em auditoria, não pesquisa de clima genérica',
+  'Anonimato garantido por arquitetura e LGPD — elimina o risco de dado viciado que invalidaria o diagnóstico',
 ];
 
 const numeros = [
@@ -36,6 +38,15 @@ const passos = [
     titulo: 'Relatório e devolutiva',
     texto: 'Relatório técnico com análise, avaliação e subsídios para o plano de ação e o PGR, apresentado à sua equipe.',
   },
+];
+
+const comparativo = [
+  { criterio: 'Atende aos critérios da NR-1 sobre fatores psicossociais', escutaris: true, clima: false, nada: false },
+  { criterio: 'Relatório assinado por médica do trabalho (CRM)', escutaris: true, clima: false, nada: false },
+  { criterio: 'Instrumentos cientificamente validados (HSE-IT, ERI, JCQ, Segurança Psicológica)', escutaris: true, clima: 'parcial', nada: false },
+  { criterio: 'Anonimato técnico garantido, conforme a LGPD', escutaris: true, clima: 'parcial', nada: false },
+  { criterio: 'Subsídios prontos para o PGR e o plano de ação', escutaris: true, clima: false, nada: false },
+  { criterio: 'Prazo até o dashboard de resultados', escutaris: 'Até 72h', clima: 'Semanas, quando há', nada: '—' },
 ];
 
 const faqs = [
@@ -97,8 +108,8 @@ const jsonLd = {
         <div class="lg:col-span-7">
           <span class="eyebrow mb-5 block">Diagnóstico psicossocial · NR-1</span>
           <h1 class="text-4xl md:text-5xl lg:text-[3.5rem] font-display font-bold mb-6 leading-[1.08] text-brand-dark">
-            O prazo da <span class="text-brand-terracota">NR-1</span> acabou.
-            Sua empresa está em dia?
+            A fiscalização da <span class="text-brand-terracota">NR-1</span> já começou.
+            Sua empresa está em dia com os riscos psicossociais?
           </h1>
           <p class="text-lg md:text-xl text-brand-muted leading-relaxed mb-8 max-w-2xl">
             O novo texto da NR-1 já está em vigor: toda empresa precisa identificar,
@@ -263,32 +274,76 @@ const jsonLd = {
             </div>
           </div>
         </div>
+
       </div>
     </div>
   </section>
+
+  <LogosClientes />
 
   <!-- NÚMEROS DE URGÊNCIA -->
   <section class="bg-brand-dark text-white">
     <div class="container-soft py-12 md:py-16">
-      <div class="grid grid-cols-1 sm:grid-cols-3 border-t border-l border-white/15">
-        {numeros.map((s) => (
-          <div class="p-7 md:p-8 border-r border-b border-white/15 flex flex-col">
-            <p class="font-display text-3xl md:text-4xl font-bold text-brand-terracota-hover mb-3 leading-none">
-              {s.n}
-            </p>
-            <p class="text-white/85 leading-snug mb-3 flex-1">{s.l}</p>
-            <p class="text-[11px] uppercase tracking-[0.14em] text-white/45">{s.fonte}</p>
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-start">
+        <div class="lg:col-span-7">
+          <div class="grid grid-cols-1 sm:grid-cols-3 border-t border-l border-white/15">
+            {numeros.map((s) => (
+              <div class="p-7 md:p-8 border-r border-b border-white/15 flex flex-col">
+                <p class="font-display text-3xl md:text-4xl font-bold text-brand-terracota-hover mb-3 leading-none">
+                  {s.n}
+                </p>
+                <p class="text-white/85 leading-snug mb-3 flex-1">{s.l}</p>
+                <p class="text-[11px] uppercase tracking-[0.14em] text-white/70">{s.fonte}</p>
+              </div>
+            ))}
           </div>
-        ))}
+          <p class="text-xs text-white/70 mt-3">
+            Os afastamentos incluem todos os transtornos do capítulo V da CID, com ou sem relação com o trabalho.
+          </p>
+
+          <div class="grid grid-cols-3 gap-4 mt-10 pt-8 border-t border-white/15">
+            <div>
+              <p class="font-display text-2xl md:text-3xl font-bold text-brand-terracota-hover leading-none mb-1 tabular-nums">
+                <span data-counter data-target="30" data-prefix="+" data-suffix=" mil">+30 mil</span>
+              </p>
+              <p class="text-xs text-white/60 leading-snug">Pessoas impactadas pela Dra. Ana Paula Teixeira</p>
+            </div>
+            <div>
+              <p class="font-display text-2xl md:text-3xl font-bold text-brand-terracota-hover leading-none mb-1 tabular-nums">
+                <span data-counter data-target="130" data-prefix="+">+130</span>
+              </p>
+              <p class="text-xs text-white/60 leading-snug">Palestras realizadas</p>
+            </div>
+            <div>
+              <p class="font-display text-2xl md:text-3xl font-bold text-brand-terracota-hover leading-none mb-1 tabular-nums">
+                <span data-counter data-target="1000" data-prefix="+" data-suffix="h">+1.000h</span>
+              </p>
+              <p class="text-xs text-white/60 leading-snug">Horas de mentoria</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="lg:col-span-5">
+          <figure>
+            <img
+              src="/dra-ana-paula-palestra-abrh-vestido-vermelho.webp"
+              alt="Dra. Ana Paula Teixeira palestrando sobre saúde mental no trabalho"
+              width="900"
+              height="1100"
+              loading="lazy"
+              class="w-full h-auto object-cover"
+            />
+            <figcaption class="text-xs text-white/70 mt-3">
+              Dra. Ana Paula Teixeira (CRM-BA 12797 · RQE 7237) em palestra para a ABRH-BA.
+            </figcaption>
+          </figure>
+        </div>
       </div>
-      <p class="text-xs text-white/45 mt-3">
-        Os afastamentos incluem todos os transtornos do capítulo V da CID, com ou sem relação com o trabalho.
-      </p>
     </div>
   </section>
 
   <!-- COMO FUNCIONA -->
-  <section class="section-pad bg-white">
+  <section class="section-pad bg-brand-sage">
     <div class="container-soft">
       <div class="reveal max-w-4xl mb-12 md:mb-16">
         <span class="eyebrow mb-5">Como funciona</span>
@@ -337,8 +392,20 @@ const jsonLd = {
     </div>
   </section>
 
+  <!-- QUEBRA VISUAL -->
+  <section class="bg-brand-sage">
+    <img
+      src="/equipe-conversa-ambiente-acolhedor.webp"
+      alt="Equipe em conversa em ambiente de trabalho acolhedor"
+      width="1600"
+      height="900"
+      loading="lazy"
+      class="w-full h-auto max-h-[420px] object-cover"
+    />
+  </section>
+
   <!-- O QUE VOCÊ RECEBE -->
-  <section class="section-pad bg-brand-off-white">
+  <section class="section-pad bg-brand-creme">
     <div class="container-soft">
       <div class="reveal max-w-4xl mb-12 md:mb-16">
         <span class="eyebrow mb-5">O que você recebe</span>
@@ -349,16 +416,21 @@ const jsonLd = {
 
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
         <figure class="reveal border border-brand-border bg-white p-4 md:p-6">
-          <img
-            src="/dashboard-real.webp"
-            alt="Dashboard interativo da Escutaris com análise dos fatores psicossociais por setor, função e geração"
+          <video
+            controls
+            preload="none"
+            poster="/dashboard-escutaris-poster.webp"
             width="1460"
-            height="1240"
-            loading="lazy"
-            class="w-full h-auto border border-brand-border"
-          />
+            height="821"
+            class="w-full h-auto border border-brand-border bg-black"
+            aria-label="Demonstração do dashboard interativo de resultados da Escutaris"
+          >
+            <source src="/dashboard-escutaris.mp4" type="video/mp4" />
+            Seu navegador não suporta a reprodução de vídeo.
+            <a href="/dashboard-escutaris.mp4">Abra o vídeo do dashboard</a>.
+          </video>
           <figcaption class="text-xs text-brand-muted mt-3 text-center">
-            Painel interativo de resultados. Dados ilustrativos.
+            Demonstração do dashboard interativo de resultados (2min22).
           </figcaption>
         </figure>
 
@@ -375,9 +447,17 @@ const jsonLd = {
             <h3 class="font-display font-bold text-brand-dark text-xl mb-2">Relatório técnico — da nossa equipe</h3>
             <p class="text-brand-muted leading-relaxed">
               Elaborado sob responsabilidade técnica da Dra. Ana Paula Teixeira
-              (CRM-BA 12797), médica do trabalho: avaliação dos resultados e subsídios
+              (CRM-BA 12797 · RQE 7237), médica do trabalho: avaliação dos resultados e subsídios
               para o plano de ação e a documentação do PGR — evidência técnica
               defensável diante de fiscalização.
+            </p>
+          </div>
+          <div class="border-l-2 border-brand-border pl-5">
+            <h3 class="font-display font-bold text-brand-dark text-xl mb-2">Instrumentos validados, não pesquisa de clima</h3>
+            <p class="text-brand-muted leading-relaxed">
+              A avaliação usa quatro instrumentos cientificamente validados — HSE
+              Indicator Tool, Segurança Psicológica, ERI e JCQ — com evidência
+              publicada e validação cultural para o contexto brasileiro.
             </p>
           </div>
         </div>
@@ -385,27 +465,91 @@ const jsonLd = {
     </div>
   </section>
 
-  <!-- PROVA SOCIAL -->
+  <!-- COMPARATIVO -->
   <section class="section-pad bg-white">
     <div class="container-soft">
-      <div class="max-w-3xl mx-auto text-center">
-        <span class="eyebrow mb-6 block">Quem já fez</span>
-        <blockquote class="reveal">
-          <p class="text-2xl md:text-3xl font-display font-bold text-brand-dark leading-snug mb-6">
-            &ldquo;Fiz a leitura dos relatórios e fiquei impressionada com a qualidade
-            e a riqueza das informações apresentadas.&rdquo;
-          </p>
-          <footer>
-            <p class="font-display font-bold text-brand-dark">Neusa Dantas</p>
-            <p class="text-sm text-brand-muted">Coordenadora de RH · Rádio Sociedade da Bahia</p>
-          </footer>
-        </blockquote>
+      <div class="reveal max-w-4xl mb-12 md:mb-16">
+        <span class="eyebrow mb-5">Por que um diagnóstico, não uma pesquisa</span>
+        <h2 class="text-3xl md:text-5xl font-display font-bold mb-6 leading-[1.1] text-brand-dark">
+          O que muda na prática.
+        </h2>
+        <p class="text-lg md:text-xl text-brand-muted leading-relaxed">
+          Pesquisa de clima e diagnóstico psicossocial não são a mesma coisa —
+          e a diferença aparece exatamente onde a fiscalização olha.
+        </p>
+      </div>
+
+      <div class="reveal overflow-x-auto">
+        <table class="w-full min-w-[640px] border-collapse">
+          <thead>
+            <tr>
+              <th scope="col" class="text-left text-sm text-brand-muted font-normal p-4 border-b border-brand-border w-2/5"></th>
+              <th scope="col" class="p-4 border-b-2 border-brand-dark bg-brand-dark text-white text-left">
+                <span class="font-display font-bold text-base">Diagnóstico Escutaris</span>
+              </th>
+              <th scope="col" class="p-4 border-b border-brand-border text-left">
+                <span class="font-display font-bold text-base text-brand-dark">Pesquisa de clima genérica</span>
+              </th>
+              <th scope="col" class="p-4 border-b border-brand-border text-left">
+                <span class="font-display font-bold text-base text-brand-dark">Não fazer nada</span>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            {comparativo.map((linha) => (
+              <tr class="border-b border-brand-border">
+                <th scope="row" class="p-4 text-sm text-brand-dark leading-snug font-normal text-left">{linha.criterio}</th>
+                <td class="p-4 bg-brand-dark/[0.03]">
+                  {typeof linha.escutaris === 'string' ? (
+                    <span class="font-display font-bold text-brand-green">{linha.escutaris}</span>
+                  ) : (
+                    <span class={linha.escutaris ? 'text-brand-green text-xl font-bold' : 'text-brand-muted text-xl'} aria-label={linha.escutaris ? 'Sim' : 'Não'}>
+                      {linha.escutaris ? '✓' : '✗'}
+                    </span>
+                  )}
+                </td>
+                <td class="p-4">
+                  {typeof linha.clima === 'string' ? (
+                    <span class="text-sm text-brand-muted">{linha.clima}</span>
+                  ) : linha.clima === 'parcial' ? (
+                    <span class="text-sm text-brand-muted">Parcial</span>
+                  ) : (
+                    <span class={linha.clima ? 'text-brand-green text-xl font-bold' : 'text-brand-muted text-xl'} aria-label={linha.clima ? 'Sim' : 'Não'}>
+                      {linha.clima ? '✓' : '✗'}
+                    </span>
+                  )}
+                </td>
+                <td class="p-4">
+                  {typeof linha.nada === 'string' ? (
+                    <span class="text-sm text-brand-muted">{linha.nada}</span>
+                  ) : (
+                    <span class={linha.nada ? 'text-brand-green text-xl font-bold' : 'text-brand-muted text-xl'} aria-label={linha.nada ? 'Sim' : 'Não'}>
+                      {linha.nada ? '✓' : '✗'}
+                    </span>
+                  )}
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+
+      <div class="mt-8">
+        <a href="#form-nr1" class="btn-primary">
+          Quero o diagnóstico, não a pesquisa de clima
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+          </svg>
+        </a>
       </div>
     </div>
   </section>
 
+  <!-- PROVA SOCIAL -->
+  <DepoimentosMarquee />
+
   <!-- FAQ -->
-  <section class="section-pad bg-brand-off-white">
+  <section class="section-pad bg-white">
     <div class="container-soft">
       <div class="reveal max-w-4xl mb-12 md:mb-16">
         <span class="eyebrow mb-5">Perguntas frequentes</span>
@@ -502,6 +646,12 @@ const jsonLd = {
 
     if (!nome || !email) {
       showError('Preencha nome e e-mail');
+      return;
+    }
+
+    const emailValido = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+    if (!emailValido) {
+      showError('Informe um e-mail válido');
       return;
     }
 
