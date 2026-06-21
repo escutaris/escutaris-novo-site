@@ -1,0 +1,69 @@
+---
+// Vídeo do dashboard como prova visual da entrega (2min02, narração da
+// Dra. Ana Paula). Click-to-play, sem autoplay com som — mesmo padrão do
+// depoimento em vídeo. Arquivo em /dashboard-escutaris.mp4.
+const whatsappUrl =
+  'https://api.whatsapp.com/send?phone=5571981357004&text=Ol%C3%A1%2C+quero+entender+como+aplicar+o+diagn%C3%B3stico+na+minha+empresa';
+---
+
+<section id="video-dashboard" class="section-pad bg-brand-off-white">
+  <div class="container-soft">
+    <div class="reveal max-w-4xl mb-10 md:mb-14">
+      <span class="eyebrow mb-3 block">Veja na prática</span>
+      <h2 class="text-3xl md:text-5xl font-display font-bold mb-6 leading-[1.1] text-brand-dark">
+        Veja como o dashboard funciona na prática.
+      </h2>
+      <p class="text-lg md:text-xl text-brand-muted leading-relaxed">
+        Em pouco mais de dois minutos, a Dra. Ana Paula mostra como a empresa visualiza
+        os resultados, aplica filtros e transforma os dados do diagnóstico em insumos
+        para decisão.
+      </p>
+    </div>
+
+    <div class="reveal relative border border-brand-border bg-brand-dark overflow-hidden max-w-4xl mx-auto">
+      <video
+        id="video-dashboard-player"
+        class="w-full h-auto block"
+        poster="/dashboard-escutaris-poster.webp"
+        preload="none"
+        controls
+        playsinline
+      >
+        <source src="/dashboard-escutaris.mp4" type="video/mp4" />
+      </video>
+
+      <button
+        type="button"
+        id="video-dashboard-play"
+        class="absolute inset-0 flex items-center justify-center bg-brand-dark/30 hover:bg-brand-dark/15 transition-colors group"
+        aria-label="Reproduzir vídeo do dashboard Escutaris"
+      >
+        <span class="w-20 h-20 rounded-full bg-white/95 flex items-center justify-center group-hover:scale-105 transition-transform">
+          <svg class="w-8 h-8 text-brand-terracota ml-1.5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M8 5v14l11-7z" />
+          </svg>
+        </span>
+      </button>
+    </div>
+
+    <div class="reveal mt-8 text-center">
+      <a href={whatsappUrl} target="_blank" rel="noopener" class="btn-primary">
+        Quero entender como aplicar na minha empresa
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+        </svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<script>
+  const v = document.getElementById('video-dashboard-player') as HTMLVideoElement | null;
+  const btn = document.getElementById('video-dashboard-play');
+
+  btn?.addEventListener('click', () => {
+    if (!v) return;
+    btn.style.display = 'none';
+    v.play();
+  });
+</script>

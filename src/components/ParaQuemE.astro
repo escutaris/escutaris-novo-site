@@ -1,0 +1,52 @@
+---
+// Segmentação de público: o diagnóstico fala com quatro decisores diferentes,
+// cada um com a sua dor. Ajuda o visitante a se reconhecer rápido.
+const publicos = [
+  {
+    titulo: 'RH',
+    descricao:
+      'Para quem precisa engajar os times, cuidar da comunicação interna, apoiar lideranças e transformar dados em plano de ação.',
+  },
+  {
+    titulo: 'SESMT / SST',
+    descricao:
+      'Para quem precisa de evidência técnica, integração com o GRO/PGR, inventário de riscos e documentação rastreável.',
+  },
+  {
+    titulo: 'Diretoria e C-level',
+    descricao:
+      'Para quem precisa reduzir exposição regulatória, priorizar investimento, proteger a operação e decidir com base em dados.',
+  },
+  {
+    titulo: 'Lideranças',
+    descricao:
+      'Para quem precisa entender os fatores que afetam o time sem culpar pessoas — ajustando organização do trabalho, suporte e autonomia.',
+  },
+];
+---
+
+<section id="para-quem-e" class="section-pad bg-white">
+  <div class="container-soft">
+    <div class="reveal max-w-4xl mb-12 md:mb-16">
+      <h2 class="text-3xl md:text-5xl font-display font-bold mb-6 leading-[1.1] text-brand-dark">
+        Para quem é.
+      </h2>
+      <p class="text-lg md:text-xl text-brand-muted leading-relaxed">
+        O diagnóstico atende quem decide sobre saúde no trabalho — cada área com a sua
+        necessidade, lendo os mesmos dados sob ângulos diferentes.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 border-t border-l border-brand-border bg-brand-off-white">
+      {publicos.map((p) => (
+        <article class="p-7 md:p-8 border-r border-b border-brand-border flex flex-col">
+          <span class="w-10 h-1 bg-brand-terracota mb-5 block" aria-hidden="true"></span>
+          <h3 class="text-xl md:text-2xl font-display font-bold text-brand-dark mb-3 leading-tight">
+            {p.titulo}
+          </h3>
+          <p class="text-sm text-brand-muted leading-relaxed">{p.descricao}</p>
+        </article>
+      ))}
+    </div>
+  </div>
+</section>
