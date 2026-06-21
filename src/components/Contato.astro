@@ -298,6 +298,13 @@ const servicos = [
       return;
     }
 
+    // Conversão Google Ads — "Lead - Formulário Site". Dispara só no envio real.
+    (window as any).gtag?.('event', 'conversion', {
+      send_to: 'AW-16879349391/HJV_CMDrjsMcEI_d2fA-',
+      value: 1.0,
+      currency: 'BRL',
+    });
+
     form.classList.add('hidden');
     successBox?.classList.remove('hidden');
     successBox?.scrollIntoView({ behavior: 'smooth', block: 'center' });
