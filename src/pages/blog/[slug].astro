@@ -1,6 +1,7 @@
 ---
 import { getCollection, render } from 'astro:content';
 import Layout from '../../layouts/Layout.astro';
+import { mapaDeRelacionados } from '../../lib/relacionados';
 
 export async function getStaticPaths() {
   const posts = (await getCollection('blog')).filter((p) => !p.data.draft);
@@ -16,9 +17,13 @@ const { Content } = await render(post);
 const words = (post.body ?? '').split(/\s+/).filter(Boolean).length;
 const readingTime = Math.max(1, Math.round(words / 200));
 
-const pool = (await getCollection('blog')).filter((p) => !p.data.draft && p.id !== post.id);
-const sameCat = pool.filter((p) => p.data.category === post.data.category);
-const related = [...sameCat, ...pool.filter((p) => !sameCat.includes(p))].slice(0, 3);
+// Todos os artigos estão na mesma categoria, então filtrar por categoria devolvia
+// a coleção inteira em ordem alfabética: os três primeiros nomes de arquivo
+// ocupavam o "Leia também" de todo o blog e os outros vinte não recebiam link
+// nenhum. A proximidade agora sai do assunto, com teto de repetição.
+const related = mapaDeRelacionados(
+  (await getCollection('blog')).filter((p) => !p.data.draft),
+).get(post.id) ?? [];
 
 const dateFmt = new Intl.DateTimeFormat('pt-BR', {
   day: '2-digit',
