@@ -1,0 +1,631 @@
+---
+// Página de conteúdo autoral: a leitura da Escutaris sobre a base de intervenções
+// de saúde no trabalho do McKinsey Health Institute (jan/2026).
+//
+// IMPORTANTE — base autoral da página: as descrições e as análises são escritas por nós.
+// Do estudo original vêm apenas as notas de impacto e viabilidade, citadas como dado
+// com atribuição. Nunca traduzir nem parafrasear de perto o texto do MHI aqui.
+import Layout from '../layouts/Layout.astro';
+
+const whatsappUrl =
+  'https://api.whatsapp.com/send?phone=5571981357004&text=Ol%C3%A1%2C+quero+entender+quais+interven%C3%A7%C3%B5es+psicossociais+fazem+sentido+para+a+minha+empresa';
+
+const fonteUrl =
+  'https://www.mckinsey.com/mhi/our-insights/from-potential-to-practical-fueling-performance-with-proven-workplace-health-interventions';
+
+const DIM = { F: 'Física', M: 'Mental', S: 'Social' };
+const NIVEL = { I: 'Indivíduo', T: 'Trabalho', E: 'Equipe', O: 'Organização' };
+
+// Cinco traços que se repetem nas intervenções melhor avaliadas. Reescritos por nós.
+const tracos = [
+  'Fortalecem o que já sustenta o trabalho: apoio entre colegas, margem de decisão, capacidade de adaptação e compromisso de quem lidera.',
+  'Acontecem dentro do fluxo do trabalho, não em paralelo a ele. Programa que exige parar o dia para participar tem adesão baixa e vida curta.',
+  'Têm entrega simples. Quanto menos dependem de especialista escasso, mais longe conseguem chegar.',
+  'Mexem em mais de uma dimensão de saúde ao mesmo tempo, e por isso rendem mais do que a soma das partes.',
+  'Definem o que vão medir, em saúde e em resultado de negócio, antes de começar.',
+];
+
+const sequencia = [
+  {
+    t: 'Medir primeiro',
+    d: 'Sem linha de base, a escolha da intervenção é palpite. E palpite não se sustenta diante de fiscalização.',
+  },
+  {
+    t: 'Casar a intervenção com o fator encontrado',
+    d: 'Se o dado mostrou baixo controle sobre o próprio trabalho, a resposta está em redesenho de tarefa e autonomia, não em aplicativo de meditação.',
+  },
+  {
+    t: 'Combinar, em vez de escolher uma só',
+    d: 'Medida de comportamento sem suporte estrutural é desfeita pela realidade do dia seguinte.',
+  },
+  {
+    t: 'Pilotar antes de escalar',
+    d: 'Com métrica de saúde e de negócio definida desde o começo, não depois que o resultado aparece.',
+  },
+  {
+    t: 'Pactuar',
+    d: 'Plano de ação que não foi acordado com quem vai viver com ele não é plano, é documento.',
+  },
+];
+
+// n  = número exibido no gráfico e âncora do cartão
+// imp/via = notas do MHI (dado citado)
+// desc/leitura = texto autoral da Escutaris
+// lp = lado do rótulo numérico no gráfico ('r' direita, 'l' esquerda)
+// dx = deslocamento horizontal em px, só onde duas intervenções têm notas idênticas
+const intervencoes = [
+  {
+    n: 1,
+    nome: 'Saúde mental digital com nudges',
+    imp: 6.0, via: 5.7, dim: 'M', nivel: 'I', lp: 'r', dx: 0,
+    desc: 'Plataforma de apoio psicológico acessada pelo próprio trabalhador, que combina registro de como ele está, conteúdo ajustado ao que relata e lembretes no momento certo.',
+    leitura: 'É a nota de impacto mais alta da base, e também uma das mais viáveis, porque não depende de agenda de especialista. Serve bem como camada de acesso ao cuidado. O risco é a empresa usá-la para substituir a correção do que está adoecendo: acesso a cuidado não conserta jornada mal desenhada.',
+    estudo: 'https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5550734/',
+  },
+  {
+    n: 2,
+    nome: 'Pausas de descanso ativo em grupo',
+    imp: 5.7, via: 6.0, dim: 'S', nivel: 'E', lp: 'l', dx: 0,
+    desc: 'Blocos curtos de movimento feitos junto, de poucos minutos, algumas vezes por semana, dentro do expediente.',
+    leitura: 'Age em duas frentes ao mesmo tempo: tira o corpo da posição fixa e cria convivência entre colegas. Isso conversa direto com o fator apoio social no trabalho, um dos que mais aparecem nos nossos diagnósticos. Custo próximo de zero e nenhuma barreira técnica.',
+    estudo: 'https://pubmed.ncbi.nlm.nih.gov/28816734/',
+  },
+  {
+    n: 3,
+    nome: 'Definição de metas centrada no grupo',
+    imp: 5.4, via: 6.0, dim: 'S', nivel: 'E', lp: 'l', dx: 0,
+    desc: 'A equipe define junto metas de trabalho claras, desafiadoras e alcançáveis, em vez de recebê-las prontas.',
+    leitura: 'Mexe em dois fatores de uma vez: previsibilidade da demanda e participação na decisão. É a medida mais barata desta lista entre as de impacto alto, porque não pede orçamento, pede método de reunião.',
+    estudo: 'https://psycnet.apa.org/doiLanding?doi=10.1037%2Fa0024315',
+  },
+  {
+    n: 4,
+    nome: 'Terapias digitais para saúde mental',
+    imp: 6.0, via: 5.0, dim: 'M', nivel: 'I', lp: 'r', dx: 0,
+    desc: 'Tratamento psicológico estruturado, com protocolo definido, entregue por site, celular ou tablet.',
+    leitura: 'Empata em impacto com a de melhor nota da base. Diferente do item 1, aqui existe tratamento, e não apenas apoio. Entra na conversa quando o diagnóstico já mostrou sofrimento instalado, não como primeira medida preventiva.',
+    estudo: 'https://journals.lww.com/joem/abstract/2021/08000/digital_mhealth_interventions_for_employees_.18.aspx',
+  },
+  {
+    n: 5,
+    nome: 'Rotação de turnos no sentido progressivo',
+    imp: 4.0, via: 5.7, dim: 'F', nivel: 'T', lp: 'r', dx: 0,
+    desc: 'Reorganizar a escala para que o turno avance no sentido noite, manhã, tarde, em vez de retroceder.',
+    leitura: 'É o tipo de medida que costuma passar despercebida e que gostamos de mostrar em devolutiva: não custa dinheiro, é uma decisão de escala. Em indústria, saúde e segurança patrimonial, mexe em sono e fadiga, que estão na origem de erro e de acidente.',
+    estudo: 'https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5011337/',
+  },
+  {
+    n: 6,
+    nome: 'Grupos de reflexão online',
+    imp: 4.9, via: 5.3, dim: 'M', nivel: 'I', lp: 'r', dx: 0,
+    desc: 'Encontros periódicos por vídeo em que um grupo pequeno discute casos difíceis do próprio trabalho e o que aquilo provocou em cada um.',
+    leitura: 'Formato antigo na medicina, os grupos Balint, que a evidência sustenta bem. Funciona onde o trabalho tem carga emocional constante: saúde, assistência social, atendimento, segurança. Não é terapia, e essa distinção precisa ficar clara para a equipe desde o convite.',
+    estudo: 'https://onlinelibrary.wiley.com/doi/10.1111/ajr.12212',
+  },
+  {
+    n: 7,
+    nome: 'Treinamento de manejo de estresse',
+    imp: 4.9, via: 5.0, dim: 'M', nivel: 'T', lp: 'r', dx: 0,
+    desc: 'Treinamento estruturado que trabalha como a pessoa interpreta a pressão antes de reagir a ela, com método e prática definidos.',
+    leitura: 'Compare com o item 15. Este tem nota de impacto 4,9 e aquele 1,5, e os dois chegam ao mercado com nomes parecidos. A diferença está em ser aplicado no contexto do trabalho, com método definido e resultado medido, em vez de palestra motivacional isolada.',
+    estudo: 'https://link.springer.com/article/10.1007/s11606-011-1640-x',
+  },
+  {
+    n: 8,
+    nome: 'Chefias treinadas para apoiar a vida familiar',
+    imp: 3.7, via: 5.0, dim: 'M', nivel: 'E', lp: 'l', dx: -7,
+    desc: 'Preparar quem gerencia para reconhecer e acomodar as demandas de vida pessoal da equipe, combinado com alguma flexibilidade de horário.',
+    leitura: 'Conflito entre trabalho e família aparece com força nos nossos levantamentos, sobretudo entre mulheres em dupla jornada. O resultado depende de a chefia ter autonomia real para flexibilizar. Treinar sem entregar essa autonomia produz frustração, não melhora.',
+    estudo: 'https://dx.doi.org/10.1037/ocp0000297',
+  },
+  {
+    n: 9,
+    nome: 'Programa de treinamento em civilidade',
+    imp: 3.7, via: 5.0, dim: 'S', nivel: 'E', lp: 'r', dx: 7,
+    desc: 'Oficinas com discussão e prática para a equipe reconhecer situações de descortesia e hostilidade no dia a dia e saber responder a elas.',
+    leitura: 'Trabalha a faixa que fica antes do assédio: a grosseria rotineira, o corte de palavra, o silêncio punitivo. É justamente onde a organização ainda consegue agir sem processo instaurado, e onde agir é mais barato.',
+    estudo: 'https://rnojournal.binghamton.edu/index.php/RNO/article/view/438',
+  },
+  {
+    n: 10,
+    nome: 'Reorganização participativa do trabalho',
+    imp: 5.4, via: 4.3, dim: 'M', nivel: 'T', lp: 'r', dx: 0,
+    desc: 'Redistribuir tarefas e decisões com a participação de quem executa, ampliando a margem de escolha sobre o próprio trabalho.',
+    leitura: 'Na nossa leitura, a mais importante desta lista. Baixo controle sobre o próprio trabalho combinado com alta demanda é o desenho clássico do adoecimento ocupacional, e esta é a intervenção que ataca exatamente isso. Exige disposição da liderança para abrir decisão, e é aí que costuma travar.',
+    estudo: 'https://pubmed.ncbi.nlm.nih.gov/11605824/',
+  },
+  {
+    n: 11,
+    nome: 'Gestores treinados para apoiar autonomia',
+    imp: 4.0, via: 4.3, dim: 'S', nivel: 'T', lp: 'r', dx: 0,
+    desc: 'Capacitar gestores a sustentar a autonomia da equipe em vez de controlar cada etapa do trabalho.',
+    leitura: 'É a versão de menor custo do item 10: muda o comportamento da chefia sem redesenhar a estrutura. O impacto é menor, e ainda assim vale como primeiro passo quando o redesenho não é viável no momento.',
+    estudo: 'https://onlinelibrary.wiley.com/doi/full/10.1111/j.1468-2419.2009.00325.x',
+  },
+  {
+    n: 12,
+    nome: 'Educação em higiene do sono',
+    imp: 4.9, via: 4.0, dim: 'F', nivel: 'O', lp: 'r', dx: 0,
+    desc: 'Sessão curta que ensina hábitos de sono e estratégias de comportamento para quem já tem dificuldade para dormir.',
+    leitura: 'Sono é um dos primeiros sinais que aparecem nos nossos dados e um dos últimos que a empresa associa ao trabalho. Rende bem mais quando vem junto de uma medida estrutural como o item 5: educar alguém a dormir melhor sem mexer na escala que o impede de dormir não sustenta resultado.',
+    estudo: 'https://www.jstage.jst.go.jp/article/indhealth/50/1/50_MS1318/_article/-char/ja/',
+  },
+  {
+    n: 13,
+    nome: 'Redução de burnout dirigida à organização',
+    imp: 5.2, via: 2.7, dim: 'M', nivel: 'O', lp: 'r', dx: 0,
+    desc: 'Agir sobre ambiente, processos e cultura de trabalho, em vez de agir sobre o repertório individual de quem já adoeceu.',
+    leitura: 'Impacto alto, viabilidade baixa. Não é medida de trimestre: é decisão de direção, com orçamento e prazo. Está nesta lista de propósito. Quando a empresa pergunta por que o programa anterior não funcionou, a resposta muitas vezes é que ela escolheu o caminho barato e o problema era estrutural.',
+    estudo: 'https://link.springer.com/article/10.1007/s40520-019-01368-3',
+  },
+  {
+    n: 14,
+    nome: 'Redesenho sistêmico do trabalho',
+    imp: 4.6, via: 2.3, dim: 'M', nivel: 'O', lp: 'r', dx: 0,
+    desc: 'Intervenção ampla que reformula características centrais das funções e alinha a isso as práticas de gestão de pessoas, a liderança e os canais de participação.',
+    leitura: 'A de execução mais difícil da lista. Só faz sentido quando o diagnóstico aponta problema difuso, presente em vários setores, e não concentrado em uma área. Nesse cenário, medida pontual desperdiça dinheiro.',
+    estudo: 'https://www.tandfonline.com/doi/full/10.1080/00140139.2017.1303085',
+  },
+  {
+    n: 15,
+    nome: 'Treinamento individual de resiliência',
+    imp: 1.5, via: 3.7, dim: 'M', nivel: 'I', lp: 'r', dx: 0,
+    desc: 'Programa que ensina o trabalhador a lidar melhor com o estresse e a crescer a partir dele.',
+    leitura: 'A menor nota de impacto entre as 115. Deixamos este item para o fim porque é, de longe, o mais oferecido no Brasil. A evidência não sustenta a promessa: ensinar alguém a suportar melhor uma carga não reduz a carga. É o melhor argumento a favor de medir antes de contratar solução.',
+    estudo: 'https://onlinelibrary.wiley.com/doi/abs/10.1002/smi.1275',
+  },
+];
+
+/* ------------------------------------------------------------------ */
+/* Geometria do gráfico, calculada no build (SVG estático, sem JS)     */
+/* ------------------------------------------------------------------ */
+const W = 940, H = 620;
+const PAD = { t: 56, r: 30, b: 96, l: 62 };
+// A escala vai de 0,8 a 6,2 para que notas 6,0 não encostem na borda do quadro.
+const LO = 0.8, HI = 6.2, MID = 3.5;
+const px = (v: number) => PAD.l + ((v - LO) / (HI - LO)) * (W - PAD.l - PAD.r);
+const py = (v: number) => (H - PAD.b) - ((v - LO) / (HI - LO)) * (H - PAD.t - PAD.b);
+const XM = px(MID), YM = py(MID);
+const X0 = PAD.l, X1 = W - PAD.r, Y0 = PAD.t, Y1 = H - PAD.b;
+
+// r é sempre o raio do círculo equivalente; quadrado e triângulo igualam a área,
+// para que as três formas leiam com o mesmo peso visual.
+const R = 5.5;
+const SQ = 0.8862;
+const TRI = 1.25;
+function marca(dim: string, cx: number, cy: number) {
+  if (dim === 'M') {
+    const a = R * SQ;
+    return `M${cx - a} ${cy - a}H${cx + a}V${cy + a}H${cx - a}Z`;
+  }
+  const h = R * TRI;
+  return `M${cx} ${cy - h}L${cx + h} ${cy + h * 0.78}L${cx - h} ${cy + h * 0.78}Z`;
+}
+
+const pontos = intervencoes.map((i) => {
+  const cx = px(i.via) + i.dx;
+  const cy = py(i.imp);
+  return {
+    ...i,
+    cx, cy,
+    d: i.dim === 'F' ? null : marca(i.dim, cx, cy),
+    lx: i.lp === 'l' ? cx - 11 : cx + 11,
+    anchor: i.lp === 'l' ? 'end' : 'start',
+  };
+});
+
+const ticks = [1, 2, 3, 4, 5, 6];
+const nf = (v: number) => v.toFixed(1).replace('.', ',');
+
+const pageTitle = 'Intervenções em riscos psicossociais: o que a evidência mostra que funciona';
+const pageDesc =
+  'A leitura da Escutaris sobre 115 intervenções de saúde no trabalho avaliadas em impacto e viabilidade, e o que isso muda na gestão dos fatores psicossociais que a NR-1 exige.';
+const canonical =
+  'https://www.escutaris.com.br/intervencoes-riscos-psicossociais-que-funcionam';
+
+const articleLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  '@id': `${canonical}#article`,
+  headline: pageTitle,
+  description: pageDesc,
+  url: canonical,
+  inLanguage: 'pt-BR',
+  articleSection: 'Saúde Mental no Trabalho',
+  author: { '@id': 'https://www.escutaris.com.br/#organization' },
+  publisher: { '@id': 'https://www.escutaris.com.br/#organization' },
+  mainEntityOfPage: { '@type': 'WebPage', '@id': canonical },
+  citation: {
+    '@type': 'CreativeWork',
+    name: 'From potential to practical: fueling performance with proven workplace health interventions',
+    publisher: { '@type': 'Organization', name: 'McKinsey Health Institute' },
+    url: fonteUrl,
+  },
+};
+---
+
+<Layout title={`${pageTitle} | Escutaris`} description={pageDesc} canonical={canonical}>
+  <script
+    slot="head"
+    type="application/ld+json"
+    set:html={JSON.stringify(articleLd)}
+    is:inline
+  />
+
+  <!-- Cabeçalho -->
+  <section class="bg-white border-b border-brand-border pt-16 pb-14 md:pt-24 md:pb-20">
+    <div class="container-soft">
+      <span class="eyebrow mb-4 block">Evidência</span>
+      <h1 class="max-w-4xl text-3xl md:text-[2.9rem] font-display font-bold text-brand-dark leading-[1.1] mb-6">
+        O que a evidência mostra sobre intervenções em riscos psicossociais
+      </h1>
+      <p class="max-w-2xl text-lg text-brand-muted leading-relaxed">
+        Existe pesquisa suficiente para parar de escolher medidas por intuição. Reunimos
+        aqui a nossa leitura de uma análise de 115 intervenções de saúde no trabalho, e as
+        15 que consideramos mais relevantes para a realidade brasileira.
+      </p>
+
+      <dl class="mt-12 grid grid-cols-1 sm:grid-cols-3 border border-brand-border">
+        <div class="p-6 border-b sm:border-b-0 sm:border-r border-brand-border">
+          <dt class="text-xs font-semibold uppercase tracking-[0.14em] text-brand-muted mb-1">
+            Intervenções avaliadas
+          </dt>
+          <dd class="font-display font-bold text-3xl text-brand-dark tabular-nums">115</dd>
+        </div>
+        <div class="p-6 border-b sm:border-b-0 sm:border-r border-brand-border">
+          <dt class="text-xs font-semibold uppercase tracking-[0.14em] text-brand-muted mb-1">
+            Dimensões de saúde
+          </dt>
+          <dd class="font-display font-bold text-3xl text-brand-dark tabular-nums">
+            3 <span class="font-body font-light text-sm text-brand-muted">física, mental, social</span>
+          </dd>
+        </div>
+        <div class="p-6">
+          <dt class="text-xs font-semibold uppercase tracking-[0.14em] text-brand-muted mb-1">
+            Escala das notas
+          </dt>
+          <dd class="font-display font-bold text-3xl text-brand-dark tabular-nums">
+            1–6 <span class="font-body font-light text-sm text-brand-muted">impacto e viabilidade</span>
+          </dd>
+        </div>
+      </dl>
+    </div>
+  </section>
+
+  <!-- A leitura da Escutaris -->
+  <section class="section-pad bg-brand-off-white">
+    <div class="container-soft">
+      <span class="eyebrow mb-4 block">A leitura da Escutaris</span>
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-x-16 gap-y-14">
+        <div>
+          <h2 class="text-2xl md:text-3xl font-display font-bold text-brand-dark mb-5 leading-tight">
+            O dado que muda a conversa
+          </h2>
+          <div class="space-y-4 text-brand-muted leading-relaxed">
+            <p>
+              Por anos, a discussão sobre saúde mental no trabalho girou em torno de convencer
+              a empresa de que o tema importa. Esse argumento está vencido. O que faltava era
+              outra coisa: saber o que efetivamente funciona.
+            </p>
+            <p>
+              O McKinsey Health Institute publicou em janeiro de 2026 uma análise de 115
+              intervenções que já foram testadas em ambiente ocupacional, com trabalhadores
+              adultos empregados. Cada uma recebeu duas notas de 1 a 6. Uma de impacto, que
+              considera a força e a consistência dos resultados e a robustez do desenho do
+              estudo. Outra de viabilidade, que considera recursos, facilidade de execução e
+              capacidade de escala.
+            </p>
+            <p>
+              O resultado é incômodo de um jeito produtivo. Existe intervenção com efeito
+              demonstrado e implantação simples, e existe intervenção popular cujo efeito
+              medido é próximo de nada. A diferença entre as duas raramente está no orçamento.
+              Está no desenho.
+            </p>
+          </div>
+        </div>
+
+        <div>
+          <h2 class="text-2xl md:text-3xl font-display font-bold text-brand-dark mb-5 leading-tight">
+            Onde a maioria erra
+          </h2>
+          <div class="space-y-4 text-brand-muted leading-relaxed">
+            <p>
+              O padrão mais frequente que encontramos nas empresas é responder a uma causa
+              organizacional com uma medida individual. A jornada está mal desenhada, a demanda
+              é imprevisível, a chefia não sustenta decisão, e a resposta contratada é uma
+              palestra sobre resiliência.
+            </p>
+            <p>
+              A base mostra o custo dessa escolha. A intervenção com a <strong class="text-brand-dark font-semibold">menor
+              nota de impacto entre as 115</strong> é justamente treinamento individual de
+              resiliência, com 1,5 de 6. E um grande ensaio randomizado de programa de bem-estar
+              corporativo encontrou efeito quase nulo, não porque o programa fosse mal feito,
+              mas porque apostou em participação e incentivo individual e deixou intactos os
+              fatores estruturais e culturais que determinam a saúde no trabalho.
+            </p>
+            <p>
+              Não é falta de boa intenção. É erro de endereço.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-16 pt-14 border-t border-brand-border grid grid-cols-1 lg:grid-cols-2 gap-x-16 gap-y-14">
+        <div>
+          <h2 class="text-2xl md:text-3xl font-display font-bold text-brand-dark mb-5 leading-tight">
+            O que caracteriza o que funciona
+          </h2>
+          <p class="text-brand-muted leading-relaxed mb-6">
+            Lendo as intervenções melhor avaliadas, cinco traços se repetem. Servem como filtro
+            antes de contratar qualquer coisa.
+          </p>
+          <ol class="space-y-4">
+            {tracos.map((t, idx) => (
+              <li class="flex gap-4">
+                <span
+                  class="flex-none w-7 h-7 flex items-center justify-center bg-brand-green text-white font-display font-bold text-sm tabular-nums"
+                  aria-hidden="true"
+                >
+                  {idx + 1}
+                </span>
+                <span class="text-brand-muted leading-relaxed">{t}</span>
+              </li>
+            ))}
+          </ol>
+        </div>
+
+        <div>
+          <h2 class="text-2xl md:text-3xl font-display font-bold text-brand-dark mb-5 leading-tight">
+            O que isso significa para a NR-1
+          </h2>
+          <p class="text-brand-muted leading-relaxed mb-6">
+            A NR-1 exige identificar, avaliar e gerenciar os fatores psicossociais de risco. A
+            palavra que costuma passar batida é gerenciar: não basta medir, é preciso agir, e a
+            ação precisa se sustentar. Daí a sequência que defendemos.
+          </p>
+          <ul class="divide-y divide-brand-border border-y border-brand-border">
+            {sequencia.map((s) => (
+              <li class="py-4">
+                <p class="font-semibold text-brand-dark mb-1">{s.t}</p>
+                <p class="text-brand-muted leading-relaxed text-[15px]">{s.d}</p>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+
+      <p class="mt-14 pt-10 border-t border-brand-border max-w-4xl text-lg text-brand-dark leading-relaxed">
+        Nada disso é plano de ação pronto, e não é isso que a Escutaris entrega. É o subsídio
+        técnico para que a organização desenhe o seu e consiga sustentar a escolha diante de
+        quem cobrar.
+      </p>
+    </div>
+  </section>
+
+  <!-- Matriz -->
+  <section class="section-pad bg-white border-y border-brand-border">
+    <div class="container-soft">
+      <span class="eyebrow mb-4 block">Impacto e viabilidade</span>
+      <h2 class="max-w-3xl text-2xl md:text-3xl font-display font-bold text-brand-dark mb-5 leading-tight">
+        As 15 intervenções que selecionamos, posicionadas
+      </h2>
+      <p class="max-w-2xl text-brand-muted leading-relaxed mb-10">
+        Quanto mais alto, mais forte a evidência de efeito. Quanto mais à direita, mais simples
+        de implantar. O corte dos quadrantes é o ponto médio da escala, em 3,5. Clique num ponto
+        para ir ao comentário da intervenção.
+      </p>
+
+      <figure class="border border-brand-border bg-brand-off-white p-4 md:p-8">
+        <div class="overflow-x-auto">
+          <svg
+            viewBox={`0 0 ${W} ${H}`}
+            class="block w-full h-auto min-w-[600px]"
+            role="img"
+            aria-label="Gráfico de dispersão das 15 intervenções por impacto e viabilidade. Os valores de cada ponto estão na lista que segue o gráfico."
+          >
+            <!-- zonas -->
+            <rect x={XM} y={Y0} width={X1 - XM} height={YM - Y0} fill="#46603a" opacity="0.09" />
+            <rect x={X0} y={Y0} width={XM - X0} height={YM - Y0} fill="#757050" opacity="0.05" />
+            <rect x={XM} y={YM} width={X1 - XM} height={Y1 - YM} fill="#757050" opacity="0.05" />
+
+            <!-- grade -->
+            {ticks.map((v) => (
+              <>
+                <line x1={X0} y1={py(v)} x2={X1} y2={py(v)} stroke="#e4dfd9" stroke-width="1" />
+                <line x1={px(v)} y1={Y0} x2={px(v)} y2={Y1} stroke="#e4dfd9" stroke-width="1" />
+                <text
+                  x={X0 - 12} y={py(v) + 4} text-anchor="end"
+                  font-size="12" font-weight="600" fill="#757050"
+                >{v}</text>
+                <text
+                  x={px(v)} y={Y1 + 24} text-anchor="middle"
+                  font-size="12" font-weight="600" fill="#757050"
+                >{v}</text>
+              </>
+            ))}
+
+            <!-- moldura e cortes -->
+            <rect x={X0} y={Y0} width={X1 - X0} height={Y1 - Y0} fill="none" stroke="#cfc9c0" stroke-width="1" />
+            <line x1={XM} y1={Y0} x2={XM} y2={Y1} stroke="#a89f92" stroke-width="1" stroke-dasharray="4 4" />
+            <line x1={X0} y1={YM} x2={X1} y2={YM} stroke="#a89f92" stroke-width="1" stroke-dasharray="4 4" />
+
+            <!-- rótulos de quadrante, nas margens -->
+            <text x={X1} y={Y0 - 26} text-anchor="end" font-size="11.5" font-weight="600" letter-spacing="0.09em" fill="#46603a">PRIORIZAR</text>
+            <text x={X1} y={Y0 - 11} text-anchor="end" font-size="11.5" fill="#757050">impacto e viabilidade altos</text>
+            <text x={X0} y={Y0 - 26} font-size="11.5" font-weight="600" letter-spacing="0.09em" fill="#757050">INVESTIMENTO ESTRATÉGICO</text>
+            <text x={X0} y={Y0 - 11} font-size="11.5" fill="#757050">impacto alto, execução difícil</text>
+            <text x={X0} y={Y1 + 52} font-size="11.5" font-weight="600" letter-spacing="0.09em" fill="#757050">NICHO</text>
+            <text x={X1} y={Y1 + 52} text-anchor="end" font-size="11.5" font-weight="600" letter-spacing="0.09em" fill="#757050">DEPENDE DO CONTEXTO</text>
+
+            <!-- eixos -->
+            <text
+              x={(X0 + X1) / 2} y={H - 12} text-anchor="middle"
+              font-size="11.5" font-weight="600" letter-spacing="0.12em" fill="#565e48"
+            >VIABILIDADE →</text>
+            <text
+              transform={`translate(20, ${(Y0 + Y1) / 2}) rotate(-90)`} text-anchor="middle"
+              font-size="11.5" font-weight="600" letter-spacing="0.12em" fill="#565e48"
+            >IMPACTO →</text>
+
+            <!-- marcas -->
+            {pontos.map((p) => (
+              <a href={`#int-${p.n}`}>
+                <title>{`${p.n}. ${p.nome} — impacto ${nf(p.imp)}, viabilidade ${nf(p.via)}`}</title>
+                <circle cx={p.cx} cy={p.cy} r="13" fill="transparent" />
+                {p.d
+                  ? <path d={p.d} fill="#b95839" fill-opacity="0.82" stroke="#f8f7f4" stroke-width="1.1" />
+                  : <circle cx={p.cx} cy={p.cy} r={R} fill="#b95839" fill-opacity="0.82" stroke="#f8f7f4" stroke-width="1.1" />}
+                <text
+                  x={p.lx} y={p.cy + 4} text-anchor={p.anchor}
+                  font-size="12" font-weight="600" fill="#222d19"
+                >{p.n}</text>
+              </a>
+            ))}
+          </svg>
+        </div>
+
+        <figcaption class="mt-6 pt-5 border-t border-brand-border flex flex-wrap items-center gap-x-7 gap-y-3 text-sm text-brand-muted !text-left">
+          <span class="flex items-center gap-2">
+            <svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><circle cx="7" cy="7" r="4.6" fill="#b95839" fill-opacity="0.82" /></svg>
+            Saúde física
+          </span>
+          <span class="flex items-center gap-2">
+            <svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><path d="M2.9 2.9H11.1V11.1H2.9Z" fill="#b95839" fill-opacity="0.82" /></svg>
+            Saúde mental
+          </span>
+          <span class="flex items-center gap-2">
+            <svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><path d="M7 1.2L12.8 11.5H1.2Z" fill="#b95839" fill-opacity="0.82" /></svg>
+            Saúde social
+          </span>
+          <span>
+            Notas do McKinsey Health Institute. Os itens 8 e 9 têm notas idênticas e aparecem
+            levemente afastados para que os dois fiquem visíveis.
+          </span>
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- As 15 comentadas -->
+  <section class="section-pad bg-brand-off-white">
+    <div class="container-soft">
+      <span class="eyebrow mb-4 block">Uma a uma</span>
+      <h2 class="max-w-3xl text-2xl md:text-3xl font-display font-bold text-brand-dark mb-5 leading-tight">
+        As 15 intervenções, com a nossa leitura de cada uma
+      </h2>
+      <p class="max-w-2xl text-brand-muted leading-relaxed mb-12">
+        A seleção cobre as três dimensões de saúde e os quatro níveis em que uma intervenção
+        pode agir, do indivíduo à organização. As notas são do estudo. As descrições e os
+        comentários são nossos.
+      </p>
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+        {intervencoes.map((i) => (
+          <article id={`int-${i.n}`} class="scroll-mt-28 border border-brand-border bg-white p-6 md:p-7 flex flex-col">
+            <div class="flex items-start justify-between gap-5 mb-4">
+              <div>
+                <span class="font-display font-bold text-brand-terracota text-sm tabular-nums block mb-1">
+                  {String(i.n).padStart(2, '0')}
+                </span>
+                <h3 class="font-display font-bold text-brand-dark text-lg leading-snug">
+                  {i.nome}
+                </h3>
+              </div>
+              <div class="flex-none text-right">
+                <p class="text-xs uppercase tracking-[0.1em] text-brand-muted mb-0.5">Impacto</p>
+                <p class="font-display font-bold text-brand-dark text-xl tabular-nums leading-none mb-2">{nf(i.imp)}</p>
+                <p class="text-xs uppercase tracking-[0.1em] text-brand-muted mb-0.5">Viabilidade</p>
+                <p class="font-display font-bold text-brand-dark text-xl tabular-nums leading-none">{nf(i.via)}</p>
+              </div>
+            </div>
+
+            <div class="flex flex-wrap gap-2 mb-5">
+              <span class="text-xs font-semibold text-brand-muted border border-brand-border px-2.5 py-1">
+                {DIM[i.dim as keyof typeof DIM]}
+              </span>
+              <span class="text-xs font-semibold text-brand-muted border border-brand-border px-2.5 py-1">
+                Nível: {NIVEL[i.nivel as keyof typeof NIVEL]}
+              </span>
+            </div>
+
+            <p class="text-brand-muted leading-relaxed mb-4">{i.desc}</p>
+
+            <div class="pl-4 border-l-2 border-brand-terracota mb-6">
+              <p class="text-[15px] text-brand-muted leading-relaxed">{i.leitura}</p>
+            </div>
+
+            <a
+              href={i.estudo}
+              target="_blank"
+              rel="noopener"
+              class="mt-auto text-sm font-semibold text-brand-green hover:text-brand-terracota transition-colors"
+            >
+              Ver o estudo de origem →
+            </a>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Fonte -->
+  <section class="py-16 md:py-20 bg-white border-t border-brand-border">
+    <div class="container-soft">
+      <span class="eyebrow mb-5 block">Fonte</span>
+      <div class="max-w-3xl space-y-5 text-brand-muted leading-relaxed">
+        <p>
+          Esta página é uma leitura da Escutaris sobre um estudo de terceiros. As descrições das
+          intervenções e todos os comentários são de nossa autoria. As notas de impacto e de
+          viabilidade são dados do McKinsey Health Institute, citados como referência.
+        </p>
+        <p class="pl-4 border-l-2 border-brand-terracota text-[15px]">
+          JEFFERY, Barbara; BRASSEY, Jacqueline; PÉREZ, Lucy.
+          <strong class="text-brand-dark font-semibold">From potential to practical: fueling
+          performance with proven workplace health interventions</strong>. Colaboração de
+          Darshini Mahadevia. McKinsey Health Institute, 7 jan. 2026. Interativo. Disponível em:
+          <a href={fonteUrl} target="_blank" rel="noopener" class="text-brand-terracota underline underline-offset-2 break-words">{fonteUrl}</a>.
+          Acesso em: 26 jul. 2026.
+        </p>
+        <p>
+          A base completa das 115 intervenções, com a metodologia de pontuação, está no
+          interativo original da publicação.
+        </p>
+        <p class="text-sm">
+          A Escutaris não possui vínculo, parceria ou endosso da McKinsey &amp; Company nem do
+          McKinsey Health Institute.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section-pad bg-brand-off-white-warm border-t border-brand-border">
+    <div class="container-soft">
+      <div class="max-w-3xl">
+        <span class="eyebrow mb-4 block">Diagnóstico Psicossocial</span>
+        <h2 class="text-2xl md:text-3xl font-display font-bold text-brand-dark mb-5 leading-tight">
+          Antes de escolher a intervenção, é preciso saber qual fator está pesando
+        </h2>
+        <p class="text-brand-muted leading-relaxed mb-8">
+          A Escutaris conduz o diagnóstico de fatores psicossociais com instrumentos
+          cientificamente validados, processo anonimizado, dashboard interativo e relatório
+          técnico assinado por médica do trabalho. É esse dado que define, no seu caso, quais
+          das intervenções desta página fazem sentido.
+        </p>
+        <div class="flex flex-wrap gap-3">
+          <a href="/#contato" class="btn-primary">Iniciar diagnóstico</a>
+          <a
+            href="/diagnostico-dos-fatores-psicossociais-e-saude-mental-no-trabalho"
+            class="btn-secondary"
+          >
+            Como funciona o diagnóstico
+          </a>
+          <a href={whatsappUrl} target="_blank" rel="noopener" class="btn-whatsapp">
+            Falar no WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>
