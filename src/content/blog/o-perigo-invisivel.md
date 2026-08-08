@@ -85,20 +85,22 @@ Para reduzir esses riscos e criar um ambiente de trabalho mais seguro e saudáve
 - Empresas que acompanham o ambiente de trabalho conseguem identificar padrões de estresse e sobrecarga antes que se tornem um problema maior.
 - Pesquisas de clima organizacional ajudam a entender como o ambiente impacta a segurança e o bem-estar dos funcionários.
 
-### 2. Treinamentos para fortalecer a resiliência e a segurança psicológica
+### 2. Segurança psicológica para que o risco seja relatado
 
-- Promova treinamentos que ensinem os funcionários a gerenciar o estresse e manter o foco.
 - Crie uma cultura onde os trabalhadores se sintam confortáveis para relatar riscos e pedir ajuda sem medo de represálias.
+- Garanta que relatar um problema tenha consequência sobre o problema, e não sobre quem relatou.
+- Informe as equipes sobre quais fatores foram identificados e o que a empresa decidiu fazer a respeito.
 
 ### 3. Implementação de pausas estratégicas e equilíbrio entre trabalho e descanso
 
 - Estabeleça pausas programadas e evite jornadas excessivas.
 - Incentive um equilíbrio entre vida pessoal e profissional para reduzir a sobrecarga mental.
 
-### 4. Promoção de uma liderança humanizada
+### 4. Liderança preparada e com poder de decidir
 
-- Gestores devem reconhecer sinais de estresse em suas equipes e oferecer suporte.
-- Uma liderança baseada em empatia e comunicação aberta reduz a pressão psicológica e melhora o ambiente de trabalho.
+- Prepare quem lidera para reconhecer sinal de sobrecarga na própria área e para encaminhar, sem tentar diagnosticar.
+- Dê à chefia margem real para ajustar carga e prazo. Sem isso, ela apenas absorve a pressão e a repassa.
+- Torne previsível a comunicação sobre mudança, porque insegurança prolongada desgasta tanto quanto excesso de trabalho.
 
 Segundo a OIT, empresas que adotam estratégias para gerenciar riscos psicossociais reduzem em até 40% os casos de acidentes relacionados à exaustão e estresse.
 

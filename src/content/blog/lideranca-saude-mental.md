@@ -81,16 +81,16 @@ Para que a liderança contribua efetivamente na prevenção de riscos psicossoci
 
 **Por que é importante?** Muitos gestores desconhecem o impacto de seu comportamento na saúde mental da equipe.
 
-- Ofereça treinamentos sobre riscos psicossociais e como preveni-los.
-- Ensine habilidades de inteligência emocional e gestão de conflitos.
-- Incentive uma liderança mais empática e humanizada.
+- Ofereça formação sobre riscos psicossociais e sobre como eles aparecem na rotina daquela área.
+- Prepare a chefia para mediar conflito e para conduzir conversa difícil sobre carga e prazo.
+- Dê poder real de ajustar demanda, e não apenas a tarefa de comunicar melhor a mesma demanda.
 
 ### 5. Valorize e reconheça os colaboradores (A Escutaris pode ajudar a implementar programas de reconhecimento e recompensa alinhados aos valores da empresa)
 
 **Por que é importante?** A falta de reconhecimento é um dos maiores fatores de desmotivação no trabalho.
 
 - Dê feedbacks positivos e reconheça o esforço da equipe.
-- Estabeleça uma cultura de valorização dos talentos internos.
+- Torne visível quem sustenta o trabalho, inclusive quem não aparece na entrega final.
 - Incentive o desenvolvimento profissional e pessoal dos funcionários.
 
 ## Treinamento e capacitação da liderança para lidar com riscos psicossociais
@@ -105,13 +105,13 @@ Muitos gestores não foram treinados para lidar com questões como saúde mental
 - Ensine estratégias de escuta ativa, comunicação não violenta e resolução de conflitos.
 - Explique a importância da NR-1 e da NR-17 no gerenciamento de riscos psicossociais.
 
-### Desenvolva a inteligência emocional dos líderes
+### Cuide também de quem lidera
 
-**Por que é importante?** Um gestor emocionalmente equilibrado lida melhor com desafios e mantém um ambiente mais positivo.
+**Por que é importante?** A chefia está exposta aos mesmos fatores da equipe, com o agravante de responder pelo resultado dela. É a camada que mais costuma ser cobrada e menos costuma ser olhada.
 
-- Promova treinamentos sobre autocontrole, empatia e gestão de emoções.
-- Incentive o desenvolvimento de habilidades de liderança humanizada.
-- Oriente os gestores a lidarem com crises e momentos de alta pressão sem desestabilizar a equipe.
+- Dimensione a carga da liderança com o mesmo critério aplicado ao resto da equipe.
+- Ofereça espaço de supervisão onde quem lidera possa tratar o que não consegue resolver sozinho.
+- Deixe claro o que está e o que não está sob a alçada daquela chefia, para que ela não responda pelo que não decide.
 
 ### Estimule o feedback e a comunicação assertiva
 
@@ -162,7 +162,7 @@ A liderança tem um papel fundamental na construção da cultura organizacional.
 **Por que é importante?** Os gestores precisam ser exemplo e referência para transformar a cultura organizacional.
 
 - Capacite os líderes para serem multiplicadores da cultura organizacional, garantindo que as boas práticas sejam seguidas em toda a empresa.
-- Reforce a importância da liderança humanizada, destacando o impacto positivo de gestores que demonstram empatia e escutam suas equipes.
+- Reforce que a escuta de quem lidera precisa vir acompanhada de poder para mudar o que foi ouvido.
 - Acompanhe a evolução das práticas da liderança, garantindo que as mudanças propostas estejam sendo aplicadas no dia a dia.
 
 ## Conclusão
@@ -175,7 +175,7 @@ Agora você já sabe que para prevenir os riscos psicossociais, os líderes deve
 - Evitar sobrecarga de trabalho, garantindo equilíbrio e metas realistas.
 - Gerenciar conflitos de forma eficaz, evitando que pequenos problemas se tornem crises.
 - Valorizar e reconhecer os colaboradores, aumentando o engajamento.
-- Capacitar-se continuamente, desenvolvendo habilidades de inteligência emocional e gestão humanizada.
+- Formar-se continuamente sobre fatores psicossociais e sobre como eles aparecem na própria área.
 - Promover uma cultura organizacional saudável, onde o bem-estar dos funcionários seja prioridade.
 
 Com a atualização da NR-1, que exige a consideração dos riscos psicossociais no Programa de Gerenciamento de Riscos (PGR), é essencial que a liderança esteja preparada para atuar ativamente na prevenção.
