@@ -17,6 +17,12 @@ const blog = defineCollection({
     // Opcional. Quando presente, manda no bloco "Leia também" do fim do artigo;
     // sem tags, a proximidade sai do título e da descrição. Ver src/lib/relacionados.ts.
     tags: z.array(z.string()).default([]),
+    // Perguntas e respostas do fim do artigo. Viram bloco na página e FAQPage
+    // para a busca, que é o formato que os motores de resposta conseguem citar
+    // inteiro. Resposta curta e fechada rende mais que parágrafo comprido.
+    faq: z
+      .array(z.object({ pergunta: z.string(), resposta: z.string() }))
+      .default([]),
     draft: z.boolean().default(false),
   }),
 });

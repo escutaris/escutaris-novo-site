@@ -1,6 +1,16 @@
 {
   "redirects": [
     {
+      "source": "/blog/a-nova-nr-1-e-a-gestao-de-riscos-psicossociais",
+      "destination": "/blog/riscos-psicossociais",
+      "permanent": true
+    },
+    {
+      "source": "/blog/riscos-psicossociais-nova-nr1",
+      "destination": "/blog/riscos-psicossociais",
+      "permanent": true
+    },
+    {
       "source": "/treinamentos",
       "destination": "/#servicos",
       "permanent": true
@@ -42,7 +52,7 @@
     },
     {
       "source": "/blog/a_nova_nr_1_e_a_gestao_de_riscos_psicossociais.html",
-      "destination": "/blog/a-nova-nr-1-e-a-gestao-de-riscos-psicossociais",
+      "destination": "/blog/riscos-psicossociais",
       "permanent": true
     },
     {
@@ -152,7 +162,7 @@
     },
     {
       "source": "/blog/riscos_psicossociais_nova_nr1.html",
-      "destination": "/blog/riscos-psicossociais-nova-nr1",
+      "destination": "/blog/riscos-psicossociais",
       "permanent": true
     },
     {

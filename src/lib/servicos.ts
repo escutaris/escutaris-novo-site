@@ -49,7 +49,6 @@ type Chave = keyof typeof SERVICOS;
 // editorial: "Assédio Moral" e "Cultura Organizacional" citam NR-1 no corpo,
 // mas quem lê os dois não está procurando consultoria de conformidade.
 const POR_ARTIGO: Record<string, Chave> = {
-  'a-nova-nr-1-e-a-gestao-de-riscos-psicossociais': 'consultoria',
   'adequacao-a-nr1': 'consultoria',
   'ambiente-seguro-mentalmente': 'intervencoes',
   'anonimato-e-lgpd': 'diagnostico',
@@ -71,7 +70,6 @@ const POR_ARTIGO: Record<string, Chave> = {
   'pesquisa-riscos-psicossociais': 'diagnostico',
   'riscos-psicossociais': 'diagnostico',
   'riscos-psicossociais-no-trabalho': 'intervencoes',
-  'riscos-psicossociais-nova-nr1': 'consultoria',
 };
 
 // Rede para artigo novo que ainda não esteja no mapa acima. Ordem importa:

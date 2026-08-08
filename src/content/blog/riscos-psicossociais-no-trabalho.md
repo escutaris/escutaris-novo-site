@@ -51,12 +51,12 @@ A NR-17 e a avaliação de riscos ocupacionais estabelecem diretrizes ergonômic
 - Proporcione pausas regulares para evitar fadiga mental e física.
 - Automatize processos repetitivos para reduzir carga cognitiva.
 
-## 6. Capacite Gestores para Lideranças Mais Humanas
+## 6. Prepare Quem Lidera para Reconhecer o Risco
 
-Líderes bem preparados são essenciais para a conformidade com a NR1. Para fortalecer esse papel:
+Quem lidera decide carga, prazo e margem de autonomia da equipe todos os dias. É onde o risco psicossocial é criado ou reduzido. Para fortalecer esse papel:
 
-- Ofereça treinamentos sobre gestão humanizada e inteligência emocional.
-- Incentive uma comunicação empática e clara entre líderes e equipes.
+- Ofereça formação sobre o que são fatores psicossociais e como eles aparecem na rotina da área.
+- Dê à liderança poder real de ajustar demanda e prazo, e não só a tarefa de comunicar melhor.
 - Estabeleça canais de suporte para que gestores possam relatar desafios e receber orientação.
 
 ## 7. Utilize Tecnologia para Monitoramento e Prevenção
