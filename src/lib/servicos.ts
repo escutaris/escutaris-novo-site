@@ -57,6 +57,8 @@ const POR_ARTIGO: Record<string, Chave> = {
   'avaliacao-fatores-psicossociais': 'diagnostico',
   'comunicacao-de-riscos': 'consultoria',
   'equipe-enxuta-ou-sobrecarga': 'diagnostico',
+  'fadiga-de-mudanca': 'programa',
+  'fatores-psicossociais-no-pgr': 'consultoria',
   'cultura-organizacional-e-saude-mental': 'programa',
   'hse-indicator-tool': 'diagnostico',
   'impacto-dos-fatores-psicossociais-no-trabalho': 'diagnostico',
