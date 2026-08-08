@@ -56,6 +56,7 @@ const POR_ARTIGO: Record<string, Chave> = {
   'assedio-moral-trabalho': 'roda',
   'avaliacao-fatores-psicossociais': 'diagnostico',
   'comunicacao-de-riscos': 'consultoria',
+  'equipe-enxuta-ou-sobrecarga': 'diagnostico',
   'cultura-organizacional-e-saude-mental': 'programa',
   'hse-indicator-tool': 'diagnostico',
   'impacto-dos-fatores-psicossociais-no-trabalho': 'diagnostico',
