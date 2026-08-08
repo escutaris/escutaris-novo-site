@@ -1,5 +1,5 @@
 ---
-title: "Como Integrar Riscos Psicossociais ao PCMSO e Evitar Falhas no PGR"
+title: "Riscos Psicossociais no PCMSO: Como Integrar ao PGR"
 description: "NR-1 e PCMSO: entenda a integração dos riscos psicossociais e como aplicar corretamente na sua empresa. Guia completo. Saiba mais."
 pubDate: 2025-08-18
 heroImage: "/blog-img/blog_integracaodos_risco_psicossociais_ao_PCMSO_.webp"

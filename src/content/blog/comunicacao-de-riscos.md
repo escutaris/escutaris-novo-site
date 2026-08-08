@@ -1,5 +1,5 @@
 ---
-title: "Comunicação de Riscos no Trabalho: Guia Completo para Implementação Eficaz"
+title: "Comunicação de Riscos: O Que a NR-1 Passou a Exigir"
 description: "Comunicação de riscos eficiente: aprenda a criar processos claros conforme normas e reduzir acidentes no trabalho. Guia prático. Saiba mais."
 pubDate: 2026-06-02
 heroImage: "/blog-img/artigo-como-a-nr1-orienta.webp"

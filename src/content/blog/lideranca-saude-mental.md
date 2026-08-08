@@ -1,5 +1,5 @@
 ---
-title: "Liderança e Saúde Mental: Como Gestores Podem Promover Bem-Estar nas Equipes"
+title: "Liderança e Saúde Mental: O Papel de Quem Lidera"
 description: "Liderança e saúde mental: estratégias práticas para líderes criarem ambientes seguros e produtivos. Identifique sinais e aja. Saiba mais."
 pubDate: 2025-06-02
 heroImage: "/blog-img/lideranca_saude_mental.webp"

@@ -1,5 +1,5 @@
 ---
-title: "Avaliação de Fatores Psicossociais vs Avaliação Psicossocial: Entenda as Diferenças"
+title: "Avaliação de Fatores Psicossociais x Avaliação Psicossocial"
 description: "Diferença entre avaliação psicossocial e fatores psicossociais na NR-1. Entenda como aplicar corretamente na sua empresa. Saiba mais."
 pubDate: 2026-05-26
 heroImage: "/blog-img/avaliacao_psicossocial.webp"

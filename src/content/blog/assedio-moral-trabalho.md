@@ -122,7 +122,7 @@ Divulgue essa política para todos os funcionários e reforce a importância do 
 
 Crie um canal anônimo e seguro, como uma plataforma digital terceirizada ou um e-mail específico gerenciado pelo RH. Garanta sigilo absoluto, principalmente em empresas pequenas, onde os colaboradores temem ser identificados. Defina um fluxo claro de investigação, garantindo que todas as denúncias sejam apuradas de forma justa.
 
-![Profissional em um escritório aciona um canal de denúncia anônima em uma interface digital](/blog-img/assedio_moral3.webp)
+![Mãos digitando em um notebook num canto reservado do escritório, sem que o rosto apareça](/blog-img/canal-de-denuncia.webp)
 
 **Dica para empresas pequenas:** Quando há poucos funcionários em um setor, a denúncia pode ser mais facilmente associada a um colaborador específico. Para evitar isso:
 

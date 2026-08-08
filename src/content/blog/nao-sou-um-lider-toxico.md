@@ -1,5 +1,5 @@
 ---
-title: "Não Sou um Líder Tóxico: Como Identificar e Transformar Comportamentos Nocivos"
+title: "Não Sou um Líder Tóxico: Como Saber se Você É"
 description: "7 sinais de liderança tóxica que você pode estar ignorando. Aprenda como se tornar um líder mais saudável e inspirador. Saiba mais."
 pubDate: 2026-06-04
 heroImage: "/blog-img/nao-sou-um-lider-toxico.webp"

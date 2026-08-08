@@ -1,5 +1,5 @@
 ---
-title: "Cultura Organizacional e Saúde Mental: Como Transformar o Ambiente de Trabalho"
+title: "Cultura Organizacional e Saúde Mental no Trabalho"
 description: "Cultura organizacional e saúde mental: descubra como impacta sua equipe e veja estratégias para criar um ambiente mais saudável e produtivo."
 pubDate: 2025-08-11
 heroImage: "/blog-img/blog_cultura_organizacional.webp"

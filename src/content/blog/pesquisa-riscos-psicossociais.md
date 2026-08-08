@@ -1,5 +1,5 @@
 ---
-title: "Pesquisa de Riscos Psicossociais: Guia Completo para Implementação Eficaz"
+title: "Pesquisa de Riscos Psicossociais: Como Garantir Sigilo"
 description: "Pesquisa de riscos psicossociais: aprenda o passo a passo conforme NR-1, da coleta à análise e plano de ação. Saiba mais."
 pubDate: 2025-05-26
 heroImage: "/blog-img/pesquisa_riscos_psicossociais.webp"

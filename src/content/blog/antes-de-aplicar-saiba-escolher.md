@@ -1,5 +1,5 @@
 ---
-title: "Antes de aplicar, saiba escolher: guia prático para avaliar Riscos Psicossociais com método"
+title: "Antes de Aplicar: Como Escolher o Instrumento Certo"
 description: "Como avaliar riscos psicossociais com método: da leitura do contexto à escolha do instrumento. O caminho de um diagnóstico que sustenta a NR-1."
 pubDate: 2026-04-10
 heroImage: "/blog-img/metodologias-de-avaliacao.webp"
