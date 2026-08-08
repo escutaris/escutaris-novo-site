@@ -1,87 +1,153 @@
 ---
-title: "Ferramenta de Indicadores HSE: O Guia Completo para Medir o Desempenho em Saúde e Segurança"
-description: "Aprenda como monitorar e melhorar a segurança no trabalho com indicadores HSE. Veja métricas, estratégias e boas práticas. Saiba mais."
+title: "HSE-IT: Como Medir os Riscos Psicossociais no Trabalho"
+description: "O que é o HSE Indicator Tool, os sete domínios que ele mede, como aplicar e o que fazer com o resultado. Guia técnico da Escutaris."
 pubDate: 2025-06-09
+updatedDate: 2026-08-07
 heroImage: "/blog-img/hse_indicator_tool.webp"
 heroImageAlt: "Ferramenta de indicadores HSE para medir o desempenho em saúde e segurança"
 category: "Saúde Mental no Trabalho"
+tags: ["hse-it", "instrumentos", "avaliação", "nr-1"]
+faq:
+  - pergunta: "O que é o HSE Indicator Tool?"
+    resposta: "É um questionário de 35 perguntas desenvolvido pelo Health and Safety Executive, o órgão britânico de segurança e saúde no trabalho. Mede sete domínios da organização do trabalho ligados ao estresse ocupacional. Faz parte das Management Standards do HSE e foi validado para o Brasil em 2013."
+  - pergunta: "Quais são os sete domínios que o HSE-IT mede?"
+    resposta: "Demanda, controle, apoio da gestão, apoio dos colegas, relacionamentos, clareza de papéis e gestão de mudanças. Cada um corresponde a uma condição da organização do trabalho, não a uma característica da pessoa que responde."
+  - pergunta: "Quanto tempo leva para responder o HSE-IT?"
+    resposta: "Entre 10 e 15 minutos, em formato digital ou impresso, com preenchimento anônimo. A escala é de frequência, de nunca a sempre."
+  - pergunta: "O HSE-IT sozinho basta para atender a NR-1?"
+    resposta: "Ele produz a medição, que é a parte quantitativa. A NR-1 pede também o registro do método, a avaliação do nível de risco e o plano de ação com prazo e responsável. Na prática, o resultado do questionário costuma ser aprofundado com grupos focais ou entrevistas antes de virar plano."
+  - pergunta: "Qual a diferença entre o HSE-IT e uma pesquisa de clima?"
+    resposta: "A pesquisa de clima mede satisfação e percepção geral, e cada empresa monta a sua. O HSE-IT é um instrumento validado, com pontuação comparável a referência externa e domínios definidos, o que permite dizer qual fator está alto e sustentar essa afirmação tecnicamente."
 ---
 
-Os fatores psicossociais no trabalho têm ganhado cada vez mais atenção, principalmente após as mudanças na NR-1, que agora exige que empresas incluam esses riscos no Programa de Gerenciamento de Riscos (PGR). Mas como identificar esses fatores de forma estruturada e baseada em evidências?
+Os riscos psicossociais no trabalho são invisíveis, e os efeitos não. Estresse crônico, relações desgastadas e carga desproporcional levam a afastamento, erro operacional e queda de produtividade. Para agir sobre isso, a empresa precisa primeiro medir.
 
-Uma das ferramentas mais eficazes para isso é o HSE Indicator Tool, um instrumento validado cientificamente que auxilia organizações a mapear, mensurar e agir sobre os riscos psicossociais no ambiente de trabalho.
+Uma das metodologias mais reconhecidas internacionalmente para essa medição é o Health and Safety Executive Indicator Tool, o HSE-IT: um questionário padronizado desenvolvido pelo órgão britânico HSE, validado para o Brasil em 2013.
 
-Neste artigo, vamos explicar o que é o HSE Indicator Tool, como ele funciona e por que ele pode ser um diferencial na gestão da saúde mental e segurança psicológica nas empresas.
+## O que é o HSE Indicator Tool
 
-## O que é o HSE Indicator Tool?
+O HSE-IT ([disponível no site do HSE](https://www.hse.gov.uk/stress/standards/)) foi criado para identificar os fatores de risco psicossocial no ambiente de trabalho e orientar a estratégia de melhoria. Faz parte das Management Standards do HSE, um modelo internacionalmente reconhecido para gestão do estresse ocupacional.
 
-O HSE Indicator Tool (disponível em [https://www.hse.gov.uk/stress/standards/](https://www.hse.gov.uk/stress/standards/)) é um questionário desenvolvido pelo Health and Safety Executive (HSE), do Reino Unido, que avalia níveis de estresse ocupacional e fatores psicossociais que impactam a saúde e o desempenho dos trabalhadores.
+O ponto que mais importa: ele mede a **organização do trabalho**, não a pessoa que responde. Nenhum item do questionário avalia traço de personalidade, resistência ou capacidade individual de lidar com pressão.
 
-Ele é amplamente utilizado em empresas para identificar áreas de risco e promover intervenções estratégicas, garantindo um ambiente de trabalho mais saudável e produtivo.
-
-O questionário mede seis dimensões essenciais do ambiente de trabalho:
+## Os sete domínios que o instrumento mede
 
 <div class="not-prose my-10 grid gap-px bg-brand-border border border-brand-border sm:grid-cols-2 lg:grid-cols-3">
   <div class="bg-white p-6">
     <span class="block font-display font-bold text-brand-green mb-1">Demanda</span>
-    <span class="block text-sm text-brand-muted leading-relaxed">Volume de trabalho, prazos e nível de esforço exigido.</span>
+    <span class="block text-sm text-brand-muted leading-relaxed">Carga, ritmo, prazo e complexidade das tarefas.</span>
   </div>
   <div class="bg-white p-6">
     <span class="block font-display font-bold text-brand-green mb-1">Controle</span>
-    <span class="block text-sm text-brand-muted leading-relaxed">Autonomia de quem trabalha sobre as próprias atividades.</span>
+    <span class="block text-sm text-brand-muted leading-relaxed">Margem de decisão sobre como e quando executar.</span>
   </div>
   <div class="bg-white p-6">
     <span class="block font-display font-bold text-brand-green mb-1">Apoio da gestão</span>
-    <span class="block text-sm text-brand-muted leading-relaxed">Como a liderança oferece suporte e orientação.</span>
+    <span class="block text-sm text-brand-muted leading-relaxed">Suporte da liderança em orientação e devolutiva.</span>
   </div>
   <div class="bg-white p-6">
     <span class="block font-display font-bold text-brand-green mb-1">Apoio dos colegas</span>
-    <span class="block text-sm text-brand-muted leading-relaxed">Qualidade das relações interpessoais no trabalho.</span>
+    <span class="block text-sm text-brand-muted leading-relaxed">Colaboração na equipe e sentimento de pertencimento.</span>
   </div>
   <div class="bg-white p-6">
     <span class="block font-display font-bold text-brand-green mb-1">Relacionamentos</span>
-    <span class="block text-sm text-brand-muted leading-relaxed">Presença de conflitos e de assédio no ambiente.</span>
+    <span class="block text-sm text-brand-muted leading-relaxed">Qualidade das interações e presença de conflito ou assédio.</span>
   </div>
   <div class="bg-white p-6">
-    <span class="block font-display font-bold text-brand-green mb-1">Clareza de papel</span>
-    <span class="block text-sm text-brand-muted leading-relaxed">Se cada pessoa compreende a própria função e o limite dela.</span>
+    <span class="block font-display font-bold text-brand-green mb-1">Clareza de papéis</span>
+    <span class="block text-sm text-brand-muted leading-relaxed">Entendimento das funções e do limite de cada uma.</span>
+  </div>
+  <div class="bg-white p-6 sm:col-span-2 lg:col-span-3">
+    <span class="block font-display font-bold text-brand-green mb-1">Gestão de mudanças</span>
+    <span class="block text-sm text-brand-muted leading-relaxed">Como as alterações na empresa são comunicadas e conduzidas. É o domínio que mais aparece alto em organização que passou por reestruturação recente.</span>
   </div>
 </div>
 
-## Como o HSE Indicator Tool Transforma a Gestão dos Fatores Psicossociais?
+## Como funciona a aplicação
 
-Empresas que utilizam o HSE Indicator Tool têm uma visão clara sobre onde estão os principais desafios e podem agir com mais precisão para melhorar a qualidade de vida dos trabalhadores.
+O questionário tem 35 questões objetivas, respondidas numa escala de frequência que vai de "nunca" a "sempre".
 
-**Principais benefícios:**
+<div class="not-prose my-10 grid gap-px bg-brand-border border border-brand-border sm:grid-cols-3">
+  <div class="bg-white p-6">
+    <span class="block font-display font-bold text-brand-terracota text-2xl leading-none mb-2">1</span>
+    <span class="block font-display font-bold text-brand-dark mb-2">Aplicação</span>
+    <span class="block text-sm text-brand-muted leading-relaxed">De 10 a 15 minutos, digital ou impresso, preenchimento anônimo.</span>
+  </div>
+  <div class="bg-white p-6">
+    <span class="block font-display font-bold text-brand-terracota text-2xl leading-none mb-2">2</span>
+    <span class="block font-display font-bold text-brand-dark mb-2">Análise</span>
+    <span class="block text-sm text-brand-muted leading-relaxed">Pontuação por domínio, identificação das áreas críticas e comparação com referência externa.</span>
+  </div>
+  <div class="bg-white p-6">
+    <span class="block font-display font-bold text-brand-terracota text-2xl leading-none mb-2">3</span>
+    <span class="block font-display font-bold text-brand-dark mb-2">Aprofundamento</span>
+    <span class="block text-sm text-brand-muted leading-relaxed">Grupos focais, entrevistas e leitura por setor, para entender o porquê do número.</span>
+  </div>
+</div>
 
-- **Identificação de riscos invisíveis:** Muitas empresas acreditam que não têm problemas psicossociais até medirem corretamente os impactos.
-- **Decisões baseadas em dados:** Os resultados do HSE Indicator Tool evitam achismos, fornecendo informações concretas sobre onde agir.
-- **Prevenção de afastamentos e processos:** Com um diagnóstico preciso, é possível intervir antes que o estresse se transforme em burnout, queda de produtividade ou ações trabalhistas.
-- **Conformidade com a NR-1:** A ferramenta auxilia no atendimento às exigências da nova norma, garantindo um PGR mais completo e alinhado com a legislação.
-- **Aumento do engajamento e da produtividade:** Ambientes saudáveis e organizados geram equipes mais motivadas e produtivas.
+A terceira etapa é a que costuma ser pulada, e é a que transforma número em decisão. O questionário diz **onde** o risco está concentrado. Ele não diz **por quê**.
 
-Segundo a Organização Internacional do Trabalho (OIT), trabalhadores expostos a altos níveis de estresse têm o dobro de chances de sofrer um acidente de trabalho e podem apresentar quedas significativas de produtividade.
+## Onde o HSE-IT já foi aplicado
 
-## Como Implementar o HSE Indicator Tool na Sua Empresa?
+O instrumento já foi usado em vários setores, no Brasil e fora dele:
 
-1. **Aplicação do questionário:** Os colaboradores respondem anonimamente às perguntas sobre sua percepção do ambiente de trabalho.
-2. **Análise dos dados:** Os resultados são interpretados para identificar padrões de risco.
-3. **Plano de ação:** A empresa desenvolve estratégias para reduzir os fatores de estresse e melhorar a segurança psicológica.
-4. **Monitoramento contínuo:** O processo não deve ser pontual. Reaplicações periódicas garantem que as mudanças estejam funcionando.
+<div class="not-prose my-10 grid gap-px bg-brand-border border border-brand-border sm:grid-cols-2 lg:grid-cols-4">
+  <div class="bg-white p-5">
+    <span class="block font-display font-bold text-brand-green text-sm mb-1">Call centers</span>
+    <span class="block text-sm text-brand-muted leading-relaxed">Sobrecarga e pressão por meta.</span>
+  </div>
+  <div class="bg-white p-5">
+    <span class="block font-display font-bold text-brand-green text-sm mb-1">Hospitais</span>
+    <span class="block text-sm text-brand-muted leading-relaxed">Falta de autonomia sobre o próprio trabalho.</span>
+  </div>
+  <div class="bg-white p-5">
+    <span class="block font-display font-bold text-brand-green text-sm mb-1">Bancos</span>
+    <span class="block text-sm text-brand-muted leading-relaxed">Efeito de metas agressivas.</span>
+  </div>
+  <div class="bg-white p-5">
+    <span class="block font-display font-bold text-brand-green text-sm mb-1">Indústrias</span>
+    <span class="block text-sm text-brand-muted leading-relaxed">Comunicação interna e condução de mudanças.</span>
+  </div>
+</div>
 
-**Dica:** O HSE Indicator Tool funciona ainda melhor quando combinado com outros métodos, como grupos focais e entrevistas individuais, garantindo um diagnóstico mais completo.
+Um estudo com 2.284 trabalhadores apontou baixa autonomia e falta de reconhecimento como os principais fatores de risco identificados. A partir desse diagnóstico, várias empresas reformularam políticas de gestão, com melhora no engajamento e redução de afastamentos.
 
-## Como a Escutaris Pode Ajudar Sua Empresa?
+## O que muda na gestão depois de medir
 
-Na Escutaris, somos especialistas na identificação e gestão de fatores psicossociais no trabalho, ajudando empresas a se adequarem à NR-1 e a promoverem ambientes mais saudáveis.
+<div class="not-prose my-10 grid gap-px bg-brand-border border border-brand-border sm:grid-cols-2">
+  <div class="bg-white p-6">
+    <span class="block font-display font-bold text-brand-green mb-1">Risco invisível vira risco nomeado</span>
+    <span class="block text-sm text-brand-muted leading-relaxed">Muita empresa acredita não ter problema psicossocial até medir.</span>
+  </div>
+  <div class="bg-white p-6">
+    <span class="block font-display font-bold text-brand-green mb-1">Decisão sai do achismo</span>
+    <span class="block text-sm text-brand-muted leading-relaxed">O resultado diz qual domínio está alto e em qual setor, com o que sustentar a escolha.</span>
+  </div>
+  <div class="bg-white p-6">
+    <span class="block font-display font-bold text-brand-green mb-1">Prevenção de afastamentos</span>
+    <span class="block text-sm text-brand-muted leading-relaxed">Permite intervir antes que o estresse vire adoecimento e ausência.</span>
+  </div>
+  <div class="bg-white p-6">
+    <span class="block font-display font-bold text-brand-green mb-1">Evidência para a NR-1</span>
+    <span class="block text-sm text-brand-muted leading-relaxed">Produz o registro que permite demonstrar como a empresa chegou às suas conclusões.</span>
+  </div>
+</div>
 
-**Oferecemos:**
+Segundo a Organização Internacional do Trabalho, quem trabalha exposto a alto nível de estresse tem o dobro de chance de sofrer um acidente de trabalho.
 
-- Aplicação do HSE Indicator Tool e outras ferramentas científicas validadas.
-- Análises detalhadas e dashboards interativos para tomada de decisão.
-- Consultoria especializada para implementação de ações eficazes.
-- Treinamento para líderes e RHs sobre gestão de riscos psicossociais.
+## Como aplicar na sua empresa
 
-## Você Está Preparado para a Nova NR-1?
+1. **Aplicação do questionário.** Resposta anônima sobre a percepção do ambiente de trabalho.
+2. **Análise dos dados.** Interpretação dos padrões por domínio, por setor e por função.
+3. **Plano de ação.** Medida ligada ao fator que apareceu alto, com prazo e responsável.
+4. **Reaplicação.** O processo não é pontual. Medir de novo é o que mostra se a medida funcionou.
 
-Não espere os problemas se tornarem crises. Se sua empresa já utiliza alguma ferramenta para avaliar riscos psicossociais, compartilhe sua experiência nos comentários! Se ainda não, qual é o maior desafio para implementar esse tipo de diagnóstico?
+O HSE-IT rende mais quando combinado com grupos focais e entrevistas. O questionário mede a extensão do problema; a escuta explica a origem dele.
+
+## Antes de escolher o instrumento
+
+O HSE-IT é adequado quando o objetivo é mapear estresse ocupacional ligado à organização do trabalho. Não é o único instrumento existente, e nem sempre é o mais indicado: contextos diferentes pedem instrumentos diferentes, e há situações em que a combinação de dois entrega o que um sozinho não alcança.
+
+A Escutaris aplica o HSE-IT com devolutiva por setor e por função, e combina com outros instrumentos validados quando a leitura do contexto pede.
+
+Sua empresa já mediu qual dos sete domínios está mais alto?

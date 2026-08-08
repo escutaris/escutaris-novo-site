@@ -11,6 +11,21 @@
       "permanent": true
     },
     {
+      "source": "/blog/o-HSE-IT-e-a-gestao-dos-fatores-psicossociais-no-trabalho",
+      "destination": "/blog/hse-indicator-tool",
+      "permanent": true
+    },
+    {
+      "source": "/blog/o-hse-it-e-a-gestao-dos-fatores-psicossociais-no-trabalho",
+      "destination": "/blog/hse-indicator-tool",
+      "permanent": true
+    },
+    {
+      "source": "/blog/nova-nr1-vai-aumentar-a-burocracia",
+      "destination": "/blog/adequacao-a-nr1",
+      "permanent": true
+    },
+    {
       "source": "/treinamentos",
       "destination": "/#servicos",
       "permanent": true
@@ -127,12 +142,12 @@
     },
     {
       "source": "/blog/nova_nr1_vai_aumentar_a_burocracia.html",
-      "destination": "/blog/nova-nr1-vai-aumentar-a-burocracia",
+      "destination": "/blog/adequacao-a-nr1",
       "permanent": true
     },
     {
       "source": "/blog/o_HSE_IT_e_a_gestao_dos_fatores_psicossociais_no_trabalho.html",
-      "destination": "/blog/o-HSE-IT-e-a-gestao-dos-fatores-psicossociais-no-trabalho",
+      "destination": "/blog/hse-indicator-tool",
       "permanent": true
     },
     {
