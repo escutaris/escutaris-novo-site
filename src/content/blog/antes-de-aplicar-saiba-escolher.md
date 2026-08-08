@@ -30,7 +30,16 @@ Antes de selecionar qualquer instrumento, é fundamental conhecer profundamente 
 
 Com base na análise do contexto organizacional, já é possível levantar uma hipótese inicial: quais riscos psicossociais têm maior probabilidade de estarem presentes naquele ambiente?
 
-![Exemplos de riscos psicossociais comuns identificados nessa etapa](/blog-img/Exemplos-de-riscos-psicossociais-comuns-identificados-nessa-etapa.webp)
+<div class="not-prose my-10 grid gap-px bg-brand-border border border-brand-border sm:grid-cols-2 lg:grid-cols-4">
+  <div class="bg-white p-5"><span class="block font-display font-bold text-brand-green text-sm">Sobrecarga de tarefas</span></div>
+  <div class="bg-white p-5"><span class="block font-display font-bold text-brand-green text-sm">Baixa autonomia</span></div>
+  <div class="bg-white p-5"><span class="block font-display font-bold text-brand-green text-sm">Suporte social insuficiente</span></div>
+  <div class="bg-white p-5"><span class="block font-display font-bold text-brand-green text-sm">Conflitos interpessoais</span></div>
+  <div class="bg-white p-5"><span class="block font-display font-bold text-brand-green text-sm">Ambiguidade de papel</span></div>
+  <div class="bg-white p-5"><span class="block font-display font-bold text-brand-green text-sm">Desequilíbrio esforço-recompensa</span></div>
+  <div class="bg-white p-5"><span class="block font-display font-bold text-brand-green text-sm">Conflito trabalho-família</span></div>
+  <div class="bg-white p-5"><span class="block font-display font-bold text-brand-green text-sm">Condições de trabalho precárias</span></div>
+</div>
 
 **Exemplos de riscos psicossociais comuns identificados nessa etapa:**
 

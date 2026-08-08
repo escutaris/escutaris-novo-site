@@ -36,7 +36,24 @@ Embora a avaliação de fatores psicossociais seja essencial para identificar ri
 - **Empresa pequena, poucos funcionários por setor:** Quando há poucos colaboradores, há o risco de que uma resposta negativa seja facilmente associada a um indivíduo específico.
 - **Desconhecimento sobre o objetivo da pesquisa:** Se os funcionários não entendem por que a pesquisa está sendo aplicada e como os dados serão usados, podem ter receio de expor problemas.
 
-![Pesquisa de riscos psicossociais](/blog-img/pesquisa_riscos_psicossociais2.webp)
+<div class="not-prose my-10 grid gap-px bg-brand-border border border-brand-border sm:grid-cols-2">
+  <div class="bg-white p-6">
+    <span class="block font-display font-bold text-brand-dark mb-1">Receio de retaliação</span>
+    <span class="block text-sm text-brand-muted leading-relaxed">Medo da consequência caso alguém descubra quem escreveu o quê.</span>
+  </div>
+  <div class="bg-white p-6">
+    <span class="block font-display font-bold text-brand-dark mb-1">Falta de confiança no sigilo</span>
+    <span class="block text-sm text-brand-muted leading-relaxed">Dúvida sobre o anonimato real da pesquisa.</span>
+  </div>
+  <div class="bg-white p-6">
+    <span class="block font-display font-bold text-brand-dark mb-1">Ambiente punitivo</span>
+    <span class="block text-sm text-brand-muted leading-relaxed">Onde quem reclama vira "problemático", ninguém responde com sinceridade.</span>
+  </div>
+  <div class="bg-white p-6">
+    <span class="block font-display font-bold text-brand-dark mb-1">Setor com poucas pessoas</span>
+    <span class="block text-sm text-brand-muted leading-relaxed">Em grupo pequeno, uma resposta negativa é fácil de associar a alguém.</span>
+  </div>
+</div>
 
 ### O impacto desse medo na qualidade da pesquisa
 

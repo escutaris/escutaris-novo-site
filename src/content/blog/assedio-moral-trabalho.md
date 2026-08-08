@@ -38,7 +38,32 @@ O assédio moral no ambiente de trabalho ocorre quando um colaborador é exposto
 - Ameaças constantes – Insinuar que o colaborador será demitido sem justificativa clara.
 - Impedir progressão na carreira – Bloquear promoções ou oportunidades como forma de punição velada.
 
-![Roda com seis formas de assédio moral em torno de um ambiente de trabalho tóxico: bloqueio de carreira, críticas excessivas, isolamento, sobrecarga de tarefas, ridicularização e ameaças](/blog-img/assedio_moral2.webp)
+<div class="not-prose my-10 grid gap-px bg-brand-border border border-brand-border sm:grid-cols-2 lg:grid-cols-3">
+  <div class="bg-white p-6">
+    <span class="block font-display font-bold text-brand-terracota mb-1">Críticas excessivas</span>
+    <span class="block text-sm text-brand-muted leading-relaxed">Cobrança constante que nunca reconhece o que foi feito.</span>
+  </div>
+  <div class="bg-white p-6">
+    <span class="block font-display font-bold text-brand-terracota mb-1">Isolamento</span>
+    <span class="block text-sm text-brand-muted leading-relaxed">Deixar a pessoa fora de reuniões, decisões e informação.</span>
+  </div>
+  <div class="bg-white p-6">
+    <span class="block font-display font-bold text-brand-terracota mb-1">Sobrecarga de tarefas</span>
+    <span class="block text-sm text-brand-muted leading-relaxed">Volume ou prazo desenhados para produzir a falha.</span>
+  </div>
+  <div class="bg-white p-6">
+    <span class="block font-display font-bold text-brand-terracota mb-1">Ridicularização</span>
+    <span class="block text-sm text-brand-muted leading-relaxed">Piada sobre aparência ou desempenho na frente dos colegas.</span>
+  </div>
+  <div class="bg-white p-6">
+    <span class="block font-display font-bold text-brand-terracota mb-1">Ameaças</span>
+    <span class="block text-sm text-brand-muted leading-relaxed">Insinuação de demissão sem justificativa clara.</span>
+  </div>
+  <div class="bg-white p-6">
+    <span class="block font-display font-bold text-brand-terracota mb-1">Bloqueio de carreira</span>
+    <span class="block text-sm text-brand-muted leading-relaxed">Promoção e oportunidade barradas como punição velada.</span>
+  </div>
+</div>
 
 ## Impactos do assédio moral
 

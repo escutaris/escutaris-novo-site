@@ -47,7 +47,36 @@ Ao avaliar esses elementos, a ferramenta fornece um diagnóstico preciso sobre o
 
 ## Domínios principais que influenciam o estresse no trabalho
 
-![Fatores avaliados pelo HSE-IT](/blog-img/hse_dominios_principais_que_influenciao_no_trabalho.webp)
+<div class="not-prose my-10 grid gap-px bg-brand-border border border-brand-border sm:grid-cols-2 lg:grid-cols-3">
+  <div class="bg-white p-6">
+    <span class="block font-display font-bold text-brand-green mb-1">Demanda</span>
+    <span class="block text-sm text-brand-muted leading-relaxed">Carga, ritmo e prazo do trabalho.</span>
+  </div>
+  <div class="bg-white p-6">
+    <span class="block font-display font-bold text-brand-green mb-1">Controle</span>
+    <span class="block text-sm text-brand-muted leading-relaxed">Margem de decisão sobre como e quando executar.</span>
+  </div>
+  <div class="bg-white p-6">
+    <span class="block font-display font-bold text-brand-green mb-1">Apoio da gestão</span>
+    <span class="block text-sm text-brand-muted leading-relaxed">Suporte da liderança em treinamentos e devolutivas.</span>
+  </div>
+  <div class="bg-white p-6">
+    <span class="block font-display font-bold text-brand-green mb-1">Apoio dos colegas</span>
+    <span class="block text-sm text-brand-muted leading-relaxed">Colaboração na equipe e sentimento de pertencimento.</span>
+  </div>
+  <div class="bg-white p-6">
+    <span class="block font-display font-bold text-brand-green mb-1">Relacionamentos</span>
+    <span class="block text-sm text-brand-muted leading-relaxed">Qualidade das interações e presença de conflito.</span>
+  </div>
+  <div class="bg-white p-6">
+    <span class="block font-display font-bold text-brand-green mb-1">Clareza de papéis</span>
+    <span class="block text-sm text-brand-muted leading-relaxed">Entendimento das funções e das responsabilidades.</span>
+  </div>
+  <div class="bg-white p-6 sm:col-span-2 lg:col-span-3">
+    <span class="block font-display font-bold text-brand-green mb-1">Gestão de mudanças</span>
+    <span class="block text-sm text-brand-muted leading-relaxed">Como as alterações na empresa são comunicadas e conduzidas. É o domínio que mais aparece alto em organização que passou por reestruturação recente.</span>
+  </div>
+</div>
 
 ## Como funciona a aplicação do HSE-IT?
 
@@ -93,29 +122,28 @@ Avaliação da comunicação interna
 
 Um estudo com 2.284 trabalhadores revelou que os principais fatores de risco identificados foram baixa autonomia e falta de reconhecimento. A partir desse diagnóstico, várias empresas reformularam suas políticas de gestão, resultando em melhora no engajamento e redução de afastamentos.
 
-### Benefícios do HSE-IT para Empresas
-
-![Fatores avaliados pelo HSE-IT](/blog-img/beneficios_hse.webp)
-
 ## Benefícios do HSE-IT para sua empresa
 
-### Prevenção de afastamentos
+<div class="not-prose my-10 grid gap-px bg-brand-border border border-brand-border sm:grid-cols-2">
+  <div class="bg-white p-6">
+    <span class="block font-display font-bold text-brand-green mb-1">Prevenção de afastamentos</span>
+    <span class="block text-sm text-brand-muted leading-relaxed">Identifica o fator de risco antes que ele vire adoecimento e afastamento.</span>
+  </div>
+  <div class="bg-white p-6">
+    <span class="block font-display font-bold text-brand-green mb-1">Redução de custos</span>
+    <span class="block text-sm text-brand-muted leading-relaxed">Reduz a exposição a processos e a penalizações ligadas à saúde mental.</span>
+  </div>
+  <div class="bg-white p-6">
+    <span class="block font-display font-bold text-brand-green mb-1">Aumento da produtividade</span>
+    <span class="block text-sm text-brand-muted leading-relaxed">Ambiente saudável gera equipe mais engajada e menos presenteísmo.</span>
+  </div>
+  <div class="bg-white p-6">
+    <span class="block font-display font-bold text-brand-green mb-1">Melhora na reputação</span>
+    <span class="block text-sm text-brand-muted leading-relaxed">Demonstra compromisso com quem trabalha, por evidência e não por discurso.</span>
+  </div>
+</div>
 
-Identifica riscos psicossociais antes que se tornem problemas graves
-
-### Redução de custos
-
-Evita processos e penalizações relacionadas à saúde mental
-
-### Aumento da produtividade
-
-Ambientes saudáveis geram equipes mais engajadas
-
-### Melhora na reputação
-
-Demonstra compromisso com o bem-estar dos colaboradores
-
-**Além disso, a aplicação do HSE-IT atende às exigências da NR1 sobre a avaliação de riscos psicossociais, garantindo conformidade legal.**
+**A aplicação do HSE-IT também produz a evidência que a NR-1 pede sobre avaliação de riscos psicossociais, e permite à empresa demonstrar como chegou às suas conclusões.**
 
 ## Sua empresa está preparada para avaliar e gerenciar os Riscos Psicossociais?
 

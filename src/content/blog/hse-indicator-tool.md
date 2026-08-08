@@ -21,14 +21,32 @@ Ele é amplamente utilizado em empresas para identificar áreas de risco e promo
 
 O questionário mede seis dimensões essenciais do ambiente de trabalho:
 
-- **Demanda:** Volume de trabalho, prazos e nível de esforço exigido.
-- **Controle:** Autonomia dos funcionários sobre suas atividades.
-- **Apoio da gestão:** Como a liderança oferece suporte e orientação.
-- **Apoio dos colegas:** Qualidade das relações interpessoais no trabalho.
-- **Relacionamentos no ambiente de trabalho:** Presença de conflitos e assédio.
-- **Clareza de papel:** Se os funcionários compreendem bem suas funções e responsabilidades.
-
-![Diagrama dos seis fatores avaliados pelo HSE Indicator Tool: demanda, controle, suporte, relacionamentos, função e mudança](/blog-img/hse_indicator_tool2.webp)
+<div class="not-prose my-10 grid gap-px bg-brand-border border border-brand-border sm:grid-cols-2 lg:grid-cols-3">
+  <div class="bg-white p-6">
+    <span class="block font-display font-bold text-brand-green mb-1">Demanda</span>
+    <span class="block text-sm text-brand-muted leading-relaxed">Volume de trabalho, prazos e nível de esforço exigido.</span>
+  </div>
+  <div class="bg-white p-6">
+    <span class="block font-display font-bold text-brand-green mb-1">Controle</span>
+    <span class="block text-sm text-brand-muted leading-relaxed">Autonomia de quem trabalha sobre as próprias atividades.</span>
+  </div>
+  <div class="bg-white p-6">
+    <span class="block font-display font-bold text-brand-green mb-1">Apoio da gestão</span>
+    <span class="block text-sm text-brand-muted leading-relaxed">Como a liderança oferece suporte e orientação.</span>
+  </div>
+  <div class="bg-white p-6">
+    <span class="block font-display font-bold text-brand-green mb-1">Apoio dos colegas</span>
+    <span class="block text-sm text-brand-muted leading-relaxed">Qualidade das relações interpessoais no trabalho.</span>
+  </div>
+  <div class="bg-white p-6">
+    <span class="block font-display font-bold text-brand-green mb-1">Relacionamentos</span>
+    <span class="block text-sm text-brand-muted leading-relaxed">Presença de conflitos e de assédio no ambiente.</span>
+  </div>
+  <div class="bg-white p-6">
+    <span class="block font-display font-bold text-brand-green mb-1">Clareza de papel</span>
+    <span class="block text-sm text-brand-muted leading-relaxed">Se cada pessoa compreende a própria função e o limite dela.</span>
+  </div>
+</div>
 
 ## Como o HSE Indicator Tool Transforma a Gestão dos Fatores Psicossociais?
 

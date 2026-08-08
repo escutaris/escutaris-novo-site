@@ -25,7 +25,23 @@ A NR1 não se resume à burocracia — ela é um conjunto de diretrizes que ajud
 
 Se a sua empresa ainda não vê a adequação à NR1 como prioridade, talvez seja hora de reavaliar os riscos de não seguir a norma.
 
-![Diagrama das consequências de ignorar as normas de segurança: multas e penalidades, impacto na reputação e queda na produtividade](/blog-img/adequacao_a_nr1_2.webp)
+<div class="not-prose my-10 grid gap-px bg-brand-border border border-brand-border sm:grid-cols-3">
+  <div class="bg-white p-6">
+    <span class="block text-xs uppercase tracking-widest text-brand-terracota font-bold mb-2">Consequência</span>
+    <span class="block font-display font-bold text-brand-dark mb-1">Multas e penalidades</span>
+    <span class="block text-sm text-brand-muted leading-relaxed">Autuação da fiscalização e, nos casos graves, interdição da atividade.</span>
+  </div>
+  <div class="bg-white p-6">
+    <span class="block text-xs uppercase tracking-widest text-brand-terracota font-bold mb-2">Consequência</span>
+    <span class="block font-display font-bold text-brand-dark mb-1">Impacto na reputação</span>
+    <span class="block text-sm text-brand-muted leading-relaxed">Dificuldade de contratar e de reter quem já está na casa.</span>
+  </div>
+  <div class="bg-white p-6">
+    <span class="block text-xs uppercase tracking-widest text-brand-terracota font-bold mb-2">Consequência</span>
+    <span class="block font-display font-bold text-brand-dark mb-1">Queda na produtividade</span>
+    <span class="block text-sm text-brand-muted leading-relaxed">Absenteísmo, presenteísmo e retrabalho que ninguém contabiliza.</span>
+  </div>
+</div>
 
 - **Multas e penalidades financeiras:** A fiscalização do Ministério do Trabalho e Emprego (MTE) pode autuar empresas que não cumprem as diretrizes da NR1, com multas que variam de centenas a milhares de reais. Em casos mais graves, a empresa pode até ter suas atividades interditadas.
 - **Processos trabalhistas e indenizações:** Se um funcionário sofrer um acidente ou desenvolver uma doença ocupacional e a empresa não tiver um Programa de Gerenciamento de Riscos (PGR) bem estruturado, pode ser considerada negligente e ser obrigada a pagar indenizações elevadas.

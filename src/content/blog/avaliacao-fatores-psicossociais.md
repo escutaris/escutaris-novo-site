@@ -38,7 +38,44 @@ A Avaliação Psicossocial tem um foco mais individualizado e avalia a aptidão 
 
 ## Principais Diferenças entre as Avaliações
 
-![Tabela comparando avaliação de fatores psicossociais e avaliação psicossocial em foco, objetivo, aplicação, ferramentas utilizadas e exigência legal](/blog-img/avaliacao_psicossocial2.webp)
+<div class="not-prose my-10 overflow-x-auto border border-brand-border">
+  <table class="w-full border-collapse text-left text-sm">
+    <thead>
+      <tr class="bg-brand-off-white-warm">
+        <th class="p-4 font-display font-bold text-brand-dark border-b border-brand-border">Aspecto</th>
+        <th class="p-4 font-display font-bold text-brand-dark border-b border-brand-border">Avaliação de Fatores Psicossociais</th>
+        <th class="p-4 font-display font-bold text-brand-dark border-b border-brand-border">Avaliação Psicossocial</th>
+      </tr>
+    </thead>
+    <tbody class="text-brand-muted">
+      <tr>
+        <th class="p-4 font-semibold text-brand-dark align-top border-b border-brand-border">Foco</th>
+        <td class="p-4 align-top border-b border-brand-border">O ambiente e a organização do trabalho</td>
+        <td class="p-4 align-top border-b border-brand-border">A saúde mental de quem trabalha, em função do trabalho</td>
+      </tr>
+      <tr>
+        <th class="p-4 font-semibold text-brand-dark align-top border-b border-brand-border">Objetivo</th>
+        <td class="p-4 align-top border-b border-brand-border">Prevenir riscos psicossociais e melhorar o ambiente</td>
+        <td class="p-4 align-top border-b border-brand-border">Detectar sofrimento e encaminhar para cuidado</td>
+      </tr>
+      <tr>
+        <th class="p-4 font-semibold text-brand-dark align-top border-b border-brand-border">Aplicação</th>
+        <td class="p-4 align-top border-b border-brand-border">Coletiva, por setor e por função</td>
+        <td class="p-4 align-top border-b border-brand-border">Individual</td>
+      </tr>
+      <tr>
+        <th class="p-4 font-semibold text-brand-dark align-top border-b border-brand-border">Ferramentas</th>
+        <td class="p-4 align-top border-b border-brand-border">Questionários validados, entrevistas e observação do trabalho</td>
+        <td class="p-4 align-top border-b border-brand-border">Testes psicológicos, entrevistas clínicas e análise individual</td>
+      </tr>
+      <tr>
+        <th class="p-4 font-semibold text-brand-dark align-top">Exigência legal</th>
+        <td class="p-4 align-top">NR-1 e PGR</td>
+        <td class="p-4 align-top">Normas específicas, conforme a finalidade</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
 **Por que essa diferença é importante?** Entender as distinções entre essas avaliações pode evitar equívocos na gestão da saúde mental no ambiente de trabalho. Empresas que confundem os dois tipos de avaliação podem negligenciar riscos importantes ou aplicar medidas inadequadas.
 

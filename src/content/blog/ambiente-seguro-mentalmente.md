@@ -30,7 +30,28 @@ Os **fatores de riscos psicossociais** são condições do ambiente de trabalho 
 
 A boa notícia é que é possível prevenir e reduzir os riscos psicossociais com mudanças estratégicas. Aqui estão algumas ações fundamentais:
 
-![Estratégia](/blog-img/estrategia.webp)
+<div class="not-prose my-10 grid gap-px bg-brand-border border border-brand-border sm:grid-cols-2 lg:grid-cols-5">
+  <div class="bg-white p-5">
+    <span class="block font-display font-bold text-brand-terracota text-2xl leading-none mb-2">1</span>
+    <span class="block font-display font-bold text-brand-dark text-sm leading-snug">Avaliar e mapear os riscos</span>
+  </div>
+  <div class="bg-white p-5">
+    <span class="block font-display font-bold text-brand-terracota text-2xl leading-none mb-2">2</span>
+    <span class="block font-display font-bold text-brand-dark text-sm leading-snug">Fortalecer a segurança psicológica</span>
+  </div>
+  <div class="bg-white p-5">
+    <span class="block font-display font-bold text-brand-terracota text-2xl leading-none mb-2">3</span>
+    <span class="block font-display font-bold text-brand-dark text-sm leading-snug">Garantir pausa e descanso reais</span>
+  </div>
+  <div class="bg-white p-5">
+    <span class="block font-display font-bold text-brand-terracota text-2xl leading-none mb-2">4</span>
+    <span class="block font-display font-bold text-brand-dark text-sm leading-snug">Preparar quem lidera</span>
+  </div>
+  <div class="bg-white p-5">
+    <span class="block font-display font-bold text-brand-terracota text-2xl leading-none mb-2">5</span>
+    <span class="block font-display font-bold text-brand-dark text-sm leading-snug">Formar as equipes no tema</span>
+  </div>
+</div>
 
 ### 1. Avalie e mapeie os riscos psicossociais
 
