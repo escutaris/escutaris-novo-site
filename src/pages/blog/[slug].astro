@@ -2,6 +2,7 @@
 import { getCollection, render } from 'astro:content';
 import Layout from '../../layouts/Layout.astro';
 import { mapaDeRelacionados } from '../../lib/relacionados';
+import { servicoDoArtigo } from '../../lib/servicos';
 
 export async function getStaticPaths() {
   const posts = (await getCollection('blog')).filter((p) => !p.data.draft);
@@ -25,6 +26,10 @@ const related = mapaDeRelacionados(
   (await getCollection('blog')).filter((p) => !p.data.draft),
 ).get(post.id) ?? [];
 
+// Para onde este artigo aponta dentro do site. Sem isso, todo artigo do blog
+// terminava na âncora /#contato e nenhuma página de serviço recebia link interno.
+const servico = servicoDoArtigo(post);
+
 const dateFmt = new Intl.DateTimeFormat('pt-BR', {
   day: '2-digit',
   month: 'long',
@@ -46,6 +51,11 @@ const articleLd = {
   description: post.data.description,
   url: postUrl,
   datePublished: post.data.pubDate.toISOString(),
+  // Só sai quando o artigo foi de fato revisado. Data de atualização inventada
+  // é o tipo de sinal que o Google pune quando o conteúdo não mudou junto.
+  ...(post.data.updatedDate
+    ? { dateModified: post.data.updatedDate.toISOString() }
+    : {}),
   inLanguage: 'pt-BR',
   articleSection: post.data.category,
   ...(heroAbsolute ? { image: heroAbsolute } : {}),
@@ -59,12 +69,26 @@ const articleLd = {
   mainEntityOfPage: { '@type': 'WebPage', '@id': postUrl },
 };
 
+// A trilha Início > Blog > artigo já existe na tela; aqui ela vira dado para a
+// busca, que passa a mostrar o caminho no lugar da URL crua.
+const breadcrumbLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Início', item: siteUrl },
+    { '@type': 'ListItem', position: 2, name: 'Blog', item: `${siteUrl}/blog` },
+    { '@type': 'ListItem', position: 3, name: post.data.title, item: postUrl },
+  ],
+};
+
 const whatsappUrl =
   'https://api.whatsapp.com/send?phone=5571981357004&text=Ol%C3%A1%2C+li+um+artigo+no+blog+e+gostaria+de+saber+mais+sobre+o+diagn%C3%B3stico+psicossocial';
 ---
 
+<!-- Sem o sufixo "| Escutaris": os títulos dos artigos já são longos e o Google
+     cortava justamente o fim. O nome da marca continua no og:site_name. -->
 <Layout
-  title={`${post.data.title} | Escutaris`}
+  title={post.data.title}
   description={post.data.description}
   canonical={postUrl}
   ogImage={post.data.heroImage ?? '/hero-banner.webp'}
@@ -73,6 +97,13 @@ const whatsappUrl =
     slot="head"
     type="application/ld+json"
     set:html={JSON.stringify(articleLd)}
+    is:inline
+  />
+
+  <script
+    slot="head"
+    type="application/ld+json"
+    set:html={JSON.stringify(breadcrumbLd)}
     is:inline
   />
 
@@ -99,6 +130,16 @@ const whatsappUrl =
           </time>
           <span aria-hidden="true">·</span>
           <span>{readingTime} min de leitura</span>
+          {post.data.updatedDate && (
+            <>
+              <span aria-hidden="true">·</span>
+              <span>
+                Revisado em <time datetime={post.data.updatedDate.toISOString()}>
+                  {dateFmt.format(post.data.updatedDate)}
+                </time>
+              </span>
+            </>
+          )}
         </div>
       </div>
 
@@ -120,6 +161,20 @@ const whatsappUrl =
       <!-- Corpo -->
       <div class="article-prose mx-auto">
         <Content />
+      </div>
+
+      <!-- Onde este assunto continua dentro do site. Fica aqui, e não no bloco
+           de diagnóstico abaixo, para não misturar dois serviços na mesma caixa. -->
+      <div class="max-w-3xl mx-auto mt-14">
+        <div class="border-l-2 border-brand-terracota pl-5 py-1">
+          <span class="eyebrow block mb-2">Da Escutaris, sobre este assunto</span>
+          <a
+            href={servico.url}
+            class="font-display font-bold text-lg text-brand-dark hover:text-brand-terracota transition-colors leading-snug"
+          >
+            {servico.chamada}
+          </a>
+        </div>
       </div>
 
       <!-- Caixa de autoria -->

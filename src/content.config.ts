@@ -8,6 +8,9 @@ const blog = defineCollection({
     title: z.string(),
     description: z.string(),
     pubDate: z.coerce.date(),
+    // Só preencher quando o texto for de fato revisado. Aparece na página e vira
+    // dateModified para a busca. Ver src/pages/blog/[slug].astro.
+    updatedDate: z.coerce.date().optional(),
     heroImage: z.string().optional(),
     heroImageAlt: z.string().optional(),
     category: z.string().default('Saúde Mental no Trabalho'),
