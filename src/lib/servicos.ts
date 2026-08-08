@@ -62,6 +62,7 @@ const POR_ARTIGO: Record<string, Chave> = {
   'indicadores-de-saude-mental-no-trabalho': 'diagnostico',
   'integracaodos-risco-psicossociais-ao-pcmso': 'consultoria',
   'lideranca-saude-mental': 'palestra',
+  'monitoramento-algoritmico': 'diagnostico',
   'nao-sou-um-lider-toxico': 'palestra',
   'o-erro-fatal-na-adequacao-a-nr1': 'consultoria',
   'o-perigo-invisivel': 'diagnostico',
