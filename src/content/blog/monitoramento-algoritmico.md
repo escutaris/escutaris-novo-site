@@ -2,10 +2,8 @@
 title: "Monitoramento Algorítmico: Produtividade ou Vigilância?"
 description: "Contar cliques mede produtividade? Como monitoramento algorítmico, LGPD e fatores psicossociais se encontram, e o que o gestor precisa perguntar antes."
 pubDate: 2026-04-09
-# Capa pendente. Salve a imagem em public/blog-img/monitoramento-algoritmico.webp
-# (1400x788, mesmo formato das outras capas) e descomente as duas linhas abaixo.
-# heroImage: "/blog-img/monitoramento-algoritmico.webp"
-# heroImageAlt: "Monitoramento algorítmico do trabalho e o limite entre medir produtividade e vigiar quem trabalha"
+heroImage: "/blog-img/monitoramento-algoritmico.webp"
+heroImageAlt: "Profissional concentrado diante de um monitor com painel de dados, em escritório com luz natural"
 category: "Saúde Mental no Trabalho"
 tags: ["monitoramento", "lgpd", "algoritmo", "autonomia", "gro"]
 faq:
