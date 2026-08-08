@@ -25,7 +25,7 @@ A NR1 não se resume à burocracia — ela é um conjunto de diretrizes que ajud
 
 Se a sua empresa ainda não vê a adequação à NR1 como prioridade, talvez seja hora de reavaliar os riscos de não seguir a norma.
 
-![](/blog-img/adequacao_a_nr1_2.webp)
+![Diagrama das consequências de ignorar as normas de segurança: multas e penalidades, impacto na reputação e queda na produtividade](/blog-img/adequacao_a_nr1_2.webp)
 
 - **Multas e penalidades financeiras:** A fiscalização do Ministério do Trabalho e Emprego (MTE) pode autuar empresas que não cumprem as diretrizes da NR1, com multas que variam de centenas a milhares de reais. Em casos mais graves, a empresa pode até ter suas atividades interditadas.
 - **Processos trabalhistas e indenizações:** Se um funcionário sofrer um acidente ou desenvolver uma doença ocupacional e a empresa não tiver um Programa de Gerenciamento de Riscos (PGR) bem estruturado, pode ser considerada negligente e ser obrigada a pagar indenizações elevadas.

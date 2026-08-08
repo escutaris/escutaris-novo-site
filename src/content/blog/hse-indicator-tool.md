@@ -28,7 +28,7 @@ O questionário mede seis dimensões essenciais do ambiente de trabalho:
 - **Relacionamentos no ambiente de trabalho:** Presença de conflitos e assédio.
 - **Clareza de papel:** Se os funcionários compreendem bem suas funções e responsabilidades.
 
-![](/blog-img/hse_indicator_tool2.webp)
+![Diagrama dos seis fatores avaliados pelo HSE Indicator Tool: demanda, controle, suporte, relacionamentos, função e mudança](/blog-img/hse_indicator_tool2.webp)
 
 ## Como o HSE Indicator Tool Transforma a Gestão dos Fatores Psicossociais?
 

@@ -1,6 +1,6 @@
 ---
 title: "Riscos Psicossociais no Trabalho: Práticas Eficazes para Mitigar Impactos e Fortalecer Equipes"
-description: "Descubra como identificar e mitigar riscos psicossociais no trabalho, fortalecendo equipes, aumentando produtividade e promovendo um ambiente organizacional saudável. Saiba mais."
+description: "Como identificar e reduzir riscos psicossociais no trabalho: as práticas que mudam a organização do trabalho, não só o discurso. Saiba mais."
 pubDate: 2025-07-14
 heroImage: "/blog-img/riscos-psicossociais-no-trabalho.webp"
 heroImageAlt: "Equipe fortalecida com mitigação de riscos psicossociais no trabalho"

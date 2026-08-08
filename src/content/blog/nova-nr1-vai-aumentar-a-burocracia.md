@@ -19,7 +19,7 @@ A atualização da NR1 trouxe uma mudança significativa para as empresas brasil
 
 A NR1 sempre estabeleceu diretrizes gerais de segurança e saúde no trabalho, mas a atualização mais recente trouxe um novo elemento que está gerando dúvidas e preocupações entre empresários e gestores: a necessidade de avaliar e gerenciar os riscos psicossociais no ambiente de trabalho.
 
-Para saber mais sobre o que são e a importância dos fatores psicossociais, **[acesse aqui](https://www.escutaris.com.br/blog/riscos-psicossociais.html)**.
+Para saber mais sobre o que são e a importância dos fatores psicossociais, leia **[Riscos Psicossociais no Trabalho: Guia Completo da NR-1](/blog/riscos-psicossociais)**.
 
 ## Principais mudanças da NR1
 

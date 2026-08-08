@@ -1,6 +1,6 @@
 ---
 title: "Antes de aplicar, saiba escolher: guia prático para avaliar Riscos Psicossociais com método"
-description: "Guia prático para avaliar riscos psicossociais no trabalho com método: da análise do contexto à escolha das ferramentas. Aprenda a fazer um diagnóstico psicossocial eficaz e em conformidade com a NR-1."
+description: "Como avaliar riscos psicossociais com método: da leitura do contexto à escolha do instrumento. O caminho de um diagnóstico que sustenta a NR-1."
 pubDate: 2026-04-10
 heroImage: "/blog-img/metodologias-de-avaliacao.webp"
 heroImageAlt: "Ilustração sobre guia prático para avaliar riscos psicossociais com método"

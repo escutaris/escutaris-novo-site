@@ -38,7 +38,7 @@ O assédio moral no ambiente de trabalho ocorre quando um colaborador é exposto
 - Ameaças constantes – Insinuar que o colaborador será demitido sem justificativa clara.
 - Impedir progressão na carreira – Bloquear promoções ou oportunidades como forma de punição velada.
 
-![](/blog-img/assedio_moral2.webp)
+![Roda com seis formas de assédio moral em torno de um ambiente de trabalho tóxico: bloqueio de carreira, críticas excessivas, isolamento, sobrecarga de tarefas, ridicularização e ameaças](/blog-img/assedio_moral2.webp)
 
 ## Impactos do assédio moral
 
@@ -86,7 +86,7 @@ Divulgue essa política para todos os funcionários e reforce a importância do 
 
 Crie um canal anônimo e seguro, como uma plataforma digital terceirizada ou um e-mail específico gerenciado pelo RH. Garanta sigilo absoluto, principalmente em empresas pequenas, onde os colaboradores temem ser identificados. Defina um fluxo claro de investigação, garantindo que todas as denúncias sejam apuradas de forma justa.
 
-![](/blog-img/assedio_moral3.webp)
+![Profissional em um escritório aciona um canal de denúncia anônima em uma interface digital](/blog-img/assedio_moral3.webp)
 
 **Dica para empresas pequenas:** Quando há poucos funcionários em um setor, a denúncia pode ser mais facilmente associada a um colaborador específico. Para evitar isso:
 

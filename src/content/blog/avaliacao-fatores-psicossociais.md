@@ -38,7 +38,7 @@ A Avaliação Psicossocial tem um foco mais individualizado e avalia a aptidão 
 
 ## Principais Diferenças entre as Avaliações
 
-![](/blog-img/avaliacao_psicossocial2.webp)
+![Tabela comparando avaliação de fatores psicossociais e avaliação psicossocial em foco, objetivo, aplicação, ferramentas utilizadas e exigência legal](/blog-img/avaliacao_psicossocial2.webp)
 
 **Por que essa diferença é importante?** Entender as distinções entre essas avaliações pode evitar equívocos na gestão da saúde mental no ambiente de trabalho. Empresas que confundem os dois tipos de avaliação podem negligenciar riscos importantes ou aplicar medidas inadequadas.
 
