@@ -117,8 +117,8 @@ Na Escutaris, o acompanhamento é feito com instrumentos validados, aplicação 
 
 Quais desses onze sua empresa já acompanha hoje?
 
-##### Fontes
+## Fontes
 
-- International Stress Management Association Brasil (ISMA-BR)
-- Organização Mundial da Saúde. Mental Health in the Workplace
-- Associação Nacional de Medicina do Trabalho. Panorama da Saúde Mental
+- [Mental health at work](https://www.who.int/news-room/fact-sheets/detail/mental-health-at-work) — Organização Mundial da Saúde
+- [Guidelines on mental health at work](https://www.who.int/publications/i/item/9789240053052) — Organização Mundial da Saúde
+- [Psychosocial risks and mental health at work](https://osha.europa.eu/en/themes/psychosocial-risks-and-mental-health) — Agência Europeia para a Segurança e Saúde no Trabalho

@@ -124,3 +124,9 @@ Se sua empresa quer sair do improviso e construir um processo sólido, **fale co
 - @escutarissaudemental
 
 [Fale com um especialista](https://api.whatsapp.com/send?phone=5571981357004&text=Olá, gostaria de saber mais sobre avaliação de riscos psicossociais!)
+
+## Fontes
+
+- [COPSOQ International Network](https://www.copsoq-network.org/), sobre o Copenhagen Psychosocial Questionnaire
+- [Management Standards for work-related stress](https://www.hse.gov.uk/stress/standards/) — Health and Safety Executive, Reino Unido
+- [NR-1: Disposições Gerais e Gerenciamento de Riscos Ocupacionais](https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-1) — Ministério do Trabalho e Emprego

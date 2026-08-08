@@ -190,3 +190,9 @@ Agora você já sabe que um Programa de Prevenção e Controle do Assédio Moral
 Além disso, para empresas pequenas, é essencial adotar estratégias que garantam o sigilo dos denunciantes, como pesquisas anônimas e canais de denúncia terceirizados.
 
 **O próximo passo?** Se sua empresa ainda não tem um programa estruturado, agora é o momento ideal para começar. Implementar essas práticas não só garante conformidade com a legislação, mas também fortalece a confiança e o bem-estar dos colaboradores. A Escutaris está pronta para te ajudar a construir um ambiente de trabalho mais seguro e saudável.
+
+## Fontes
+
+- [NR-1: Disposições Gerais e Gerenciamento de Riscos Ocupacionais](https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-1) — Ministério do Trabalho e Emprego
+- [Segurança e saúde no trabalho](https://www.ilo.org/topics-and-sectors/safety-and-health-work) — Organização Internacional do Trabalho
+- [Mental health at work](https://www.who.int/news-room/fact-sheets/detail/mental-health-at-work) — Organização Mundial da Saúde

@@ -100,3 +100,10 @@ Depois, case a medida com o fator encontrado. Se o dado mostrou baixo controle s
 A Escutaris conduz esse diagnóstico com instrumentos validados, aplicação anônima em conformidade com a LGPD e devolutiva por setor e função, para que a empresa saiba onde o risco está concentrado e possa demonstrar como chegou a essa conclusão.
 
 Sua empresa já sabe qual fator psicossocial está mais alto em cada setor?
+
+## Fontes
+
+- [NR-1: Disposições Gerais e Gerenciamento de Riscos Ocupacionais](https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-1) — Ministério do Trabalho e Emprego
+- [Texto atualizado da NR-1, em PDF](https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-01-atualizada-2025-i-1.pdf) — Ministério do Trabalho e Emprego
+- [Perguntas e respostas oficiais sobre GRO e PGR](https://www.gov.br/trabalho-e-emprego/pt-br/assuntos/inspecao-do-trabalho/pgr/faq-perguntas-e-respostas-gro-e-pgr-da-nr-01.pdf) — Ministério do Trabalho e Emprego
+- [Segurança e saúde no trabalho](https://www.ilo.org/topics-and-sectors/safety-and-health-work) — Organização Internacional do Trabalho

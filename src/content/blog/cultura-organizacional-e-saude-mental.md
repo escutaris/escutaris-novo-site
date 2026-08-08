@@ -161,3 +161,9 @@ A Escutaris é especialista em diagnóstico psicossocial com base na NR1, integr
 [Fale com um especialista](https://api.whatsapp.com/send?phone=5571981357004&text=Olá, gostaria de saber mais sobre cultura organizacional e saúde mental!)
 
 E para saber mais da nossa empresa, acesse: [www.escutaris.com.br](https://www.escutaris.com.br)
+
+## Fontes
+
+- [Mental health at work](https://www.who.int/news-room/fact-sheets/detail/mental-health-at-work) — Organização Mundial da Saúde
+- [Guidelines on mental health at work](https://www.who.int/publications/i/item/9789240053052) — Organização Mundial da Saúde
+- [Segurança e saúde no trabalho](https://www.ilo.org/topics-and-sectors/safety-and-health-work) — Organização Internacional do Trabalho

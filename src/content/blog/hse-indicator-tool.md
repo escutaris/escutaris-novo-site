@@ -151,3 +151,10 @@ O HSE-IT é adequado quando o objetivo é mapear estresse ocupacional ligado à 
 A Escutaris aplica o HSE-IT com devolutiva por setor e por função, e combina com outros instrumentos validados quando a leitura do contexto pede.
 
 Sua empresa já mediu qual dos sete domínios está mais alto?
+
+## Fontes
+
+- [Management Standards for work-related stress](https://www.hse.gov.uk/stress/standards/) — Health and Safety Executive, Reino Unido
+- [HSE Indicator Tool, o questionário](https://www.hse.gov.uk/stress/standards/step2/index.htm) — Health and Safety Executive, Reino Unido
+- [Psychosocial risks and mental health at work](https://osha.europa.eu/en/themes/psychosocial-risks-and-mental-health) — Agência Europeia para a Segurança e Saúde no Trabalho
+- [NR-1: Disposições Gerais e Gerenciamento de Riscos Ocupacionais](https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-1) — Ministério do Trabalho e Emprego

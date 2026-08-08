@@ -97,3 +97,9 @@ Com a **Escutaris**, sua empresa tem acesso a **diagnósticos completos e confi�
 ** Quer saber mais sobre como garantir um diagnóstico psicossocial preciso e alinhado à NR1?**
 
 Quer saber mais? [Clique aqui para falar conosco no WhatsApp](https://api.whatsapp.com/send?phone=5571981357004&text=Olá, gostaria de saber mais sobre seus serviços) ou visite nosso site [www.escutaris.com.br](https://www.escutaris.com.br).
+
+## Fontes
+
+- [NR-1: Disposições Gerais e Gerenciamento de Riscos Ocupacionais](https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-1) — Ministério do Trabalho e Emprego
+- [COPSOQ International Network](https://www.copsoq-network.org/), sobre o Copenhagen Psychosocial Questionnaire
+- [Management Standards for work-related stress](https://www.hse.gov.uk/stress/standards/) — Health and Safety Executive, Reino Unido

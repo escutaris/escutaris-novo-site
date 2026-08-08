@@ -179,3 +179,9 @@ Agora você já sabe que para prevenir os riscos psicossociais, os líderes deve
 - Promover uma cultura organizacional saudável, onde o bem-estar dos funcionários seja prioridade.
 
 Com a atualização da NR-1, que exige a consideração dos riscos psicossociais no Programa de Gerenciamento de Riscos (PGR), é essencial que a liderança esteja preparada para atuar ativamente na prevenção.
+
+## Fontes
+
+- [Guidelines on mental health at work](https://www.who.int/publications/i/item/9789240053052) — Organização Mundial da Saúde
+- [Segurança e saúde no trabalho](https://www.ilo.org/topics-and-sectors/safety-and-health-work) — Organização Internacional do Trabalho
+- [NR-1: Disposições Gerais e Gerenciamento de Riscos Ocupacionais](https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-1) — Ministério do Trabalho e Emprego

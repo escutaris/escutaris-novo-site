@@ -120,3 +120,10 @@ Na Escutaris, apoiamos empresas na avaliação dos riscos psicossociais e na int
 - @escutarissaudemental
 
 [Fale com um especialista](https://api.whatsapp.com/send?phone=5571981357004&text=Olá, gostaria de saber mais sobre integração de riscos psicossociais no PCMSO e PGR!)
+
+## Fontes
+
+- [NR-1: Disposições Gerais e Gerenciamento de Riscos Ocupacionais](https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-1) — Ministério do Trabalho e Emprego
+- [Normas Regulamentadoras vigentes](https://www.gov.br/trabalho-e-emprego/pt-br/assuntos/inspecao-do-trabalho/seguranca-e-saude-no-trabalho/ctpp-nrs/normas-regulamentadoras-nrs) — Ministério do Trabalho e Emprego
+- [Conselho Federal de Medicina](https://portal.cfm.org.br/)
+- [Conselho Federal de Psicologia](https://site.cfp.org.br/)

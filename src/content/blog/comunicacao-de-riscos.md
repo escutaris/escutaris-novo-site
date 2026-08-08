@@ -108,3 +108,9 @@ Com a **Escutaris**, sua empresa tem acesso a **diagnósticos completos e confi�
 ** Quer saber mais sobre como garantir um diagnóstico psicossocial preciso e alinhado à NR1?**
 
 Quer saber mais? [Clique aqui para falar conosco no WhatsApp](https://api.whatsapp.com/send?phone=5571981357004&text=Olá, gostaria de saber mais sobre seus serviços) ou visite nosso site [www.escutaris.com.br](https://www.escutaris.com.br).
+
+## Fontes
+
+- [NR-1: Disposições Gerais e Gerenciamento de Riscos Ocupacionais](https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-1) — Ministério do Trabalho e Emprego
+- [Perguntas e respostas oficiais sobre GRO e PGR](https://www.gov.br/trabalho-e-emprego/pt-br/assuntos/inspecao-do-trabalho/pgr/faq-perguntas-e-respostas-gro-e-pgr-da-nr-01.pdf) — Ministério do Trabalho e Emprego
+- [Normas Regulamentadoras vigentes](https://www.gov.br/trabalho-e-emprego/pt-br/assuntos/inspecao-do-trabalho/seguranca-e-saude-no-trabalho/ctpp-nrs/normas-regulamentadoras-nrs) — Ministério do Trabalho e Emprego

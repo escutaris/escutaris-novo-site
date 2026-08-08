@@ -164,3 +164,9 @@ A Escutaris é especialista em diagnósticos psicossociais e oferece ferramentas
 Com a Escutaris, sua empresa realiza um diagnóstico psicossocial confiável, incentivando respostas sinceras e permitindo a criação de um ambiente de trabalho mais saudável e produtivo.
 
 Quer saber mais sobre como implementar essa solução? [Entre em contato com a Escutaris](/#contato) e descubra como podemos apoiar sua empresa nesse processo!
+
+## Fontes
+
+- [Lei nº 13.709/2018, Lei Geral de Proteção de Dados](https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm) — Presidência da República
+- [Autoridade Nacional de Proteção de Dados](https://www.gov.br/anpd/pt-br)
+- [Management Standards for work-related stress](https://www.hse.gov.uk/stress/standards/) — Health and Safety Executive, Reino Unido

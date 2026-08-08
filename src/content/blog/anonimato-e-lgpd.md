@@ -96,3 +96,9 @@ Empresa que trata privacidade como formalidade recebe respostas formais. E depoi
 Na Escutaris, apoiamos a condução do diagnóstico psicossocial com anonimato na origem, análise agregada e responsabilidade técnica sobre a leitura.
 
 Quem responde na sua empresa sabe exatamente para onde vai o que escreveu?
+
+## Fontes
+
+- [Lei nº 13.709/2018, Lei Geral de Proteção de Dados](https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm) — Presidência da República
+- [Autoridade Nacional de Proteção de Dados](https://www.gov.br/anpd/pt-br)
+- [NR-1: Disposições Gerais e Gerenciamento de Riscos Ocupacionais](https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-1) — Ministério do Trabalho e Emprego

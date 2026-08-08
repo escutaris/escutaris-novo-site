@@ -109,3 +109,9 @@ Muitas empresas ainda têm dúvidas sobre quando e como aplicar cada avaliação
 Muitas organizações ainda não possuem uma estratégia clara para lidar com os riscos psicossociais no trabalho. A NR-1 exige um olhar mais atento para esses fatores, e a tendência é que a regulamentação se torne ainda mais rigorosa nos próximos anos.
 
 Empresas que investem em um diagnóstico adequado não só atendem à legislação, mas também reduzem afastamentos, fortalecem o clima organizacional e garantem mais produtividade. Com a NR-1, a gestão dos fatores psicossociais deixou de ser opcional e passou a ser uma necessidade estratégica para empresas que desejam prevenir problemas trabalhistas e garantir um ambiente mais saudável.
+
+## Fontes
+
+- [NR-1: Disposições Gerais e Gerenciamento de Riscos Ocupacionais](https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-1) — Ministério do Trabalho e Emprego
+- [Conselho Federal de Psicologia](https://site.cfp.org.br/)
+- [Normas Regulamentadoras vigentes](https://www.gov.br/trabalho-e-emprego/pt-br/assuntos/inspecao-do-trabalho/seguranca-e-saude-no-trabalho/ctpp-nrs/normas-regulamentadoras-nrs) — Ministério do Trabalho e Emprego

@@ -99,7 +99,9 @@ A Escutaris conduz esse mapeamento com aplicação anônima e devolutiva por set
 
 E na sua empresa, quem está olhando os fatores que não aparecem no painel, mas aparecem nas conversas de corredor?
 
-##### Referências
+## Fontes
 
-- BRASIL. Ministério do Trabalho e Emprego. Norma Regulamentadora NR-1: Disposições gerais e gerenciamento de riscos ocupacionais.
-- BRASIL. Ministério do Trabalho e Emprego. Norma Regulamentadora NR-17: Ergonomia.
+- [Mental health at work](https://www.who.int/news-room/fact-sheets/detail/mental-health-at-work) — Organização Mundial da Saúde
+- [Segurança e saúde no trabalho](https://www.ilo.org/topics-and-sectors/safety-and-health-work) — Organização Internacional do Trabalho
+- [NR-1: Disposições Gerais e Gerenciamento de Riscos Ocupacionais](https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-1) — Ministério do Trabalho e Emprego
+- [Normas Regulamentadoras vigentes](https://www.gov.br/trabalho-e-emprego/pt-br/assuntos/inspecao-do-trabalho/seguranca-e-saude-no-trabalho/ctpp-nrs/normas-regulamentadoras-nrs) — Ministério do Trabalho e Emprego

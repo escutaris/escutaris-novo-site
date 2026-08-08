@@ -103,3 +103,9 @@ Adequação bem conduzida reduz afastamento, reduz custo trabalhista e melhora a
 A Escutaris conduz esse mapeamento com instrumentos validados, aplicação anônima e devolutiva por setor e função, para que a empresa saiba onde agir primeiro e possa demonstrar tecnicamente como chegou lá.
 
 Sua empresa já sabe qual fator psicossocial está mais alto em cada área?
+
+## Fontes
+
+- [NR-1: Disposições Gerais e Gerenciamento de Riscos Ocupacionais](https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-1) — Ministério do Trabalho e Emprego
+- [Portaria MTE nº 1.419/2024](https://www.gov.br/trabalho-e-emprego/pt-br/assuntos/inspecao-do-trabalho/seguranca-e-saude-no-trabalho/sst-portarias/2024/portaria-mte-no-1-419-nr-01-gro-nova-redacao.pdf), que deu nova redação ao capítulo 1.5 da NR-1
+- [Perguntas e respostas oficiais sobre GRO e PGR](https://www.gov.br/trabalho-e-emprego/pt-br/assuntos/inspecao-do-trabalho/pgr/faq-perguntas-e-respostas-gro-e-pgr-da-nr-01.pdf) — Ministério do Trabalho e Emprego

@@ -118,3 +118,9 @@ Com o suporte da Escutaris, sua empresa pode contar com soluções especializada
 Investir no bem-estar dos funcionários não é apenas uma obrigação, mas uma estratégia para um ambiente de trabalho mais seguro e eficiente.
 
  Quer saber mais? [Clique aqui para falar conosco no WhatsApp](https://api.whatsapp.com/send?phone=5571981357004&text=Olá, gostaria de saber mais sobre seus serviços) ou visite nosso site [www.escutaris.com.br](https://www.escutaris.com.br).
+
+## Fontes
+
+- [Psychosocial risks and mental health at work](https://osha.europa.eu/en/themes/psychosocial-risks-and-mental-health) — Agência Europeia para a Segurança e Saúde no Trabalho
+- [Segurança e saúde no trabalho](https://www.ilo.org/topics-and-sectors/safety-and-health-work) — Organização Internacional do Trabalho
+- [NR-1: Disposições Gerais e Gerenciamento de Riscos Ocupacionais](https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-1) — Ministério do Trabalho e Emprego

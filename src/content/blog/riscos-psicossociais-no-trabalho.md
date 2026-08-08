@@ -107,3 +107,9 @@ Empresa que pula a primeira etapa escolhe a prática que parece mais simpática,
 A Escutaris conduz o diagnóstico com instrumentos validados e devolutiva por setor e função, e reúne em [o que a evidência mostra sobre intervenções](/intervencoes-riscos-psicossociais-que-funcionam) a leitura sobre quais medidas se sustentam.
 
 Qual dessas sete sua empresa faria primeiro, se tivesse que escolher uma?
+
+## Fontes
+
+- [Segurança e saúde no trabalho](https://www.ilo.org/topics-and-sectors/safety-and-health-work) — Organização Internacional do Trabalho
+- [Psychosocial risks and mental health at work](https://osha.europa.eu/en/themes/psychosocial-risks-and-mental-health) — Agência Europeia para a Segurança e Saúde no Trabalho
+- [Normas Regulamentadoras vigentes](https://www.gov.br/trabalho-e-emprego/pt-br/assuntos/inspecao-do-trabalho/seguranca-e-saude-no-trabalho/ctpp-nrs/normas-regulamentadoras-nrs) — Ministério do Trabalho e Emprego

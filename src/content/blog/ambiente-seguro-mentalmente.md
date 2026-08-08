@@ -123,3 +123,9 @@ Cuidar da organização do trabalho não é custo. É o que evita o custo que ni
 Na Escutaris, mapeamos os fatores psicossociais com instrumento validado e devolutiva por setor e função, para que a empresa saiba onde começar.
 
 Qual desses cinco pontos sua empresa ainda não começou?
+
+## Fontes
+
+- [NR-1: Disposições Gerais e Gerenciamento de Riscos Ocupacionais](https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-1) — Ministério do Trabalho e Emprego
+- [Psychosocial risks and mental health at work](https://osha.europa.eu/en/themes/psychosocial-risks-and-mental-health) — Agência Europeia para a Segurança e Saúde no Trabalho
+- [Mental health at work](https://www.who.int/news-room/fact-sheets/detail/mental-health-at-work) — Organização Mundial da Saúde

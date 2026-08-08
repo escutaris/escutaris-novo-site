@@ -152,3 +152,9 @@ Siga a Escutaris e acompanhe mais reflexões sobre saúde emocional no trabalho:
 - LinkedIn: [Escutaris](https://www.linkedin.com/in/escutaris)
 - ▶ YouTube: [@Escutaris](https://www.youtube.com/@Escutaris)
 - X (Twitter): [@escutaris_sst](https://twitter.com/escutaris_sst)
+
+## Fontes
+
+- [NR-1: Disposições Gerais e Gerenciamento de Riscos Ocupacionais](https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-1) — Ministério do Trabalho e Emprego
+- [Mental health at work](https://www.who.int/news-room/fact-sheets/detail/mental-health-at-work) — Organização Mundial da Saúde
+- [Segurança e saúde no trabalho](https://www.ilo.org/topics-and-sectors/safety-and-health-work) — Organização Internacional do Trabalho
