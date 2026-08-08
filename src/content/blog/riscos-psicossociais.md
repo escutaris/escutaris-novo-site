@@ -22,6 +22,8 @@ faq:
 
 A saúde mental de quem trabalha deixou de ser assunto de programa de bem-estar e virou item de gestão de risco ocupacional. A NR-1 passou a exigir que a empresa identifique, avalie e controle os fatores psicossociais com o mesmo rigor aplicado aos riscos físicos, químicos e biológicos.
 
+A exigência não é mais novidade nem promessa futura: a nova redação do capítulo 1.5 veio pela Portaria MTE nº 1.419, de 27 de agosto de 2024, e está em vigor desde 26 de maio de 2026.
+
 Isso muda o que precisa estar dentro do Programa de Gerenciamento de Riscos, e muda quem precisa ser ouvido para construí-lo.
 
 ## O que são riscos psicossociais
@@ -66,11 +68,38 @@ O efeito de fazer isso bem aparece antes na operação do que no papel: absente�
 
 A avaliação pode seguir três caminhos.
 
-**Avaliação qualitativa.** Escuta dos trabalhadores, observação direta do trabalho e análise documental. Alcança o que não cabe em escala: o que se diz no corredor, o que ninguém escreve em formulário.
-
-**Avaliação quantitativa.** Instrumentos validados cientificamente, aplicados de forma anônima, que permitem comparar setores e acompanhar a evolução ao longo do tempo.
-
-**Abordagem mista.** Combina as duas, e é o que costuma sustentar melhor a decisão.
+<div class="not-prose my-10 overflow-x-auto border border-brand-border">
+  <table class="w-full border-collapse text-left text-sm">
+    <thead>
+      <tr class="bg-brand-off-white-warm">
+        <th class="p-4 font-display font-bold text-brand-dark border-b border-brand-border">Caminho</th>
+        <th class="p-4 font-display font-bold text-brand-dark border-b border-brand-border">Como se faz</th>
+        <th class="p-4 font-display font-bold text-brand-dark border-b border-brand-border">O que alcança</th>
+        <th class="p-4 font-display font-bold text-brand-dark border-b border-brand-border">O que não alcança</th>
+      </tr>
+    </thead>
+    <tbody class="text-brand-muted">
+      <tr>
+        <th class="p-4 font-semibold text-brand-dark align-top border-b border-brand-border">Qualitativa</th>
+        <td class="p-4 align-top border-b border-brand-border">Escuta dos trabalhadores, observação do trabalho e análise documental</td>
+        <td class="p-4 align-top border-b border-brand-border">O que não cabe em escala: o que se diz no corredor e o que ninguém escreve em formulário</td>
+        <td class="p-4 align-top border-b border-brand-border">Comparação entre setores e acompanhamento ao longo do tempo</td>
+      </tr>
+      <tr>
+        <th class="p-4 font-semibold text-brand-dark align-top border-b border-brand-border">Quantitativa</th>
+        <td class="p-4 align-top border-b border-brand-border">Instrumento validado, aplicado de forma anônima</td>
+        <td class="p-4 align-top border-b border-brand-border">Onde o risco está concentrado, com comparação por setor e evolução no tempo</td>
+        <td class="p-4 align-top border-b border-brand-border">A razão do número: o instrumento diz onde, não diz por quê</td>
+      </tr>
+      <tr>
+        <th class="p-4 font-semibold text-brand-dark align-top">Mista</th>
+        <td class="p-4 align-top">Combina as duas, geralmente medindo primeiro e aprofundando depois</td>
+        <td class="p-4 align-top">Extensão e origem do problema, que é o que sustenta a decisão</td>
+        <td class="p-4 align-top">Exige mais tempo e competência técnica para conduzir</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
 ![Metodologias de Avaliação de Riscos Psicossociais](/blog-img/metodologias-de-avaliacao.webp)
 

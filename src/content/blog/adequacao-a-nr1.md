@@ -10,8 +10,8 @@ tags: ["nr-1", "pgr", "gro", "adequação"]
 faq:
   - pergunta: "O que a NR-1 exige da empresa?"
     resposta: "Três coisas: o Gerenciamento de Riscos Ocupacionais, que é identificar, avaliar e controlar os riscos; o Programa de Gerenciamento de Riscos, que substituiu o antigo PPRA e exige inventário atualizado de riscos e medidas de controle; e treinamentos que de fato façam quem trabalha entender o risco e saber como agir."
-  - pergunta: "O que mudou com a inclusão dos riscos psicossociais?"
-    resposta: "Os fatores psicossociais passaram a integrar o GRO e o PGR, com o mesmo rigor dos riscos físicos, químicos e biológicos. Antes eram tratados como questão individual de quem trabalha; agora são responsabilidade da organização, que precisa identificá-los e controlá-los."
+  - pergunta: "Desde quando a NR-1 exige a gestão de riscos psicossociais?"
+    resposta: "A nova redação do capítulo 1.5 da NR-1 veio pela Portaria MTE nº 1.419, de 27 de agosto de 2024, e está em vigor desde 26 de maio de 2026. Os fatores psicossociais passaram a integrar o GRO e o PGR com o mesmo rigor dos riscos físicos, químicos e biológicos. Antes eram tratados como questão individual de quem trabalha; agora são responsabilidade da organização."
   - pergunta: "A NR-1 obriga a usar um método específico de avaliação?"
     resposta: "Não. A norma exige a avaliação, mas não impõe instrumento único. Cada organização escolhe o caminho, desde que use método validado e registre como chegou ao resultado. Essa flexibilidade é o que permite adequar o esforço ao porte e ao contexto da empresa."
   - pergunta: "Adequar-se à NR-1 significa criar mais papelada?"
@@ -34,7 +34,7 @@ A NR-1 não se resume a papel. É um conjunto de diretrizes para prevenir aciden
 
 ## O que mudou: os riscos psicossociais entraram
 
-A atualização mais recente trouxe o elemento que gera mais dúvida entre gestores: a obrigação de avaliar e gerenciar os riscos psicossociais.
+A atualização mais recente trouxe o elemento que gera mais dúvida entre gestores: a obrigação de avaliar e gerenciar os riscos psicossociais. Ela veio pela Portaria MTE nº 1.419, de 27 de agosto de 2024, que deu nova redação ao capítulo 1.5 da norma, e está em vigor desde 26 de maio de 2026.
 
 ### Entraram no GRO e no PGR
 

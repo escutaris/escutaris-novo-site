@@ -83,10 +83,44 @@ Antes de escolher qualquer ferramenta, responda: **por que você está fazendo e
 
 Agora sim, com base em todas as etapas anteriores, é possível escolher uma ferramenta geral. Critérios: validação científica, abrangência, linguagem acessível, facilidade de aplicação.
 
-- **COPSOQ-II** — Versão brasileira
-- **HSE-IT** — Health and Safety Executive
-- **FPSICO** — INSST
-- **Copenhagen Psychosocial Questionnaire** — COPSOQ
+<div class="not-prose my-10 overflow-x-auto border border-brand-border">
+  <table class="w-full border-collapse text-left text-sm">
+    <thead>
+      <tr class="bg-brand-off-white-warm">
+        <th class="p-4 font-display font-bold text-brand-dark border-b border-brand-border">Instrumento</th>
+        <th class="p-4 font-display font-bold text-brand-dark border-b border-brand-border">Origem</th>
+        <th class="p-4 font-display font-bold text-brand-dark border-b border-brand-border">O que investiga</th>
+        <th class="p-4 font-display font-bold text-brand-dark border-b border-brand-border">Quando faz sentido</th>
+      </tr>
+    </thead>
+    <tbody class="text-brand-muted">
+      <tr>
+        <th class="p-4 font-semibold text-brand-dark align-top border-b border-brand-border">HSE-IT</th>
+        <td class="p-4 align-top border-b border-brand-border">Health and Safety Executive, Reino Unido</td>
+        <td class="p-4 align-top border-b border-brand-border">Sete domínios ligados ao estresse ocupacional: demanda, controle, apoio, relações, papel e mudança</td>
+        <td class="p-4 align-top border-b border-brand-border">Triagem geral, com resultado comparável e leitura por setor</td>
+      </tr>
+      <tr>
+        <th class="p-4 font-semibold text-brand-dark align-top border-b border-brand-border">COPSOQ</th>
+        <td class="p-4 align-top border-b border-brand-border">Dinamarca, com rede internacional e versão brasileira</td>
+        <td class="p-4 align-top border-b border-brand-border">Espectro mais amplo, incluindo exigência emocional, liderança e justiça organizacional</td>
+        <td class="p-4 align-top border-b border-brand-border">Quando o interesse passa por relações e por percepção de justiça</td>
+      </tr>
+      <tr>
+        <th class="p-4 font-semibold text-brand-dark align-top border-b border-brand-border">FPSICO</th>
+        <td class="p-4 align-top border-b border-brand-border">INSST, Espanha</td>
+        <td class="p-4 align-top border-b border-brand-border">Condições da tarefa e da organização, com peso no conteúdo do trabalho</td>
+        <td class="p-4 align-top border-b border-brand-border">Contextos industriais e de tarefa bem estruturada</td>
+      </tr>
+      <tr>
+        <th class="p-4 font-semibold text-brand-dark align-top">JSS e ERI</th>
+        <td class="p-4 align-top">Modelos demanda-controle e esforço-recompensa</td>
+        <td class="p-4 align-top">Recortes específicos: margem de decisão diante da demanda, e reconhecimento diante do esforço</td>
+        <td class="p-4 align-top">Como complemento, quando a triagem apontou um desses eixos</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
 ## 6. Planejamento da Coleta de Dados Complementares
 

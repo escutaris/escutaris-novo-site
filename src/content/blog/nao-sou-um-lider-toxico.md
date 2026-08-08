@@ -112,13 +112,13 @@ Esses fatores não aparecem no exame médico — mas estão diretamente ligados 
 
 ## O que a nova NR-01 exige das empresas?
 
-A NR-01 atualizada determina que, a partir de maio de 2025, todas as empresas deverão:
+A nova redação do capítulo 1.5 da NR-1 veio pela Portaria MTE nº 1.419, de 27 de agosto de 2024, e está em vigor desde 26 de maio de 2026. Ela determina que a empresa precisa:
 
 - Incluir os riscos psicossociais no Programa de Gerenciamento de Riscos (PGR)
-- Monitorar e avaliar esses riscos com a mesma seriedade que os demais
-- Adotar ações para prevenir e mitigar seus impactos
+- Avaliar esses riscos com o mesmo rigor aplicado aos demais
+- Adotar medidas para prevenir e reduzir a exposição
 
-Em outras palavras: ambientes emocionalmente hostis passam a ser risco legal. Ignorá-los pode gerar passivos trabalhistas, afastamentos frequentes e perda de talentos.
+Em outras palavras: ambiente emocionalmente hostil passou a ser risco ocupacional, com o tratamento que isso implica. Ignorá-lo custa em afastamento, em rotatividade e na exposição da empresa quando alguém adoece e não há registro de que o risco era gerido.
 
 Mas há um lado positivo: com o diagnóstico certo e mudanças consistentes, é possível transformar o ambiente — sem perder produtividade, e sim ganhando sustentabilidade.
 

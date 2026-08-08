@@ -37,9 +37,44 @@ A Lei Geral de Proteção de Dados classifica informação referente à saúde c
 
 Essa distinção decide a qualidade do diagnóstico inteiro, e quase sempre é tratada como detalhe.
 
-**Sigilo** é a promessa de não revelar. Alguém sabe quem respondeu o quê, e se compromete a não contar. A proteção depende da conduta de quem sabe.
-
-**Anonimato** é a impossibilidade de saber. A informação que ligaria a resposta à pessoa não existe. A proteção não depende de conduta, porque não há o que revelar.
+<div class="not-prose my-10 overflow-x-auto border border-brand-border">
+  <table class="w-full border-collapse text-left text-sm">
+    <thead>
+      <tr class="bg-brand-off-white-warm">
+        <th class="p-4 font-display font-bold text-brand-dark border-b border-brand-border">Aspecto</th>
+        <th class="p-4 font-display font-bold text-brand-dark border-b border-brand-border">Sigilo</th>
+        <th class="p-4 font-display font-bold text-brand-dark border-b border-brand-border">Anonimato</th>
+      </tr>
+    </thead>
+    <tbody class="text-brand-muted">
+      <tr>
+        <th class="p-4 font-semibold text-brand-dark align-top border-b border-brand-border">O que é</th>
+        <td class="p-4 align-top border-b border-brand-border">A promessa de não revelar</td>
+        <td class="p-4 align-top border-b border-brand-border">A impossibilidade de saber</td>
+      </tr>
+      <tr>
+        <th class="p-4 font-semibold text-brand-dark align-top border-b border-brand-border">Alguém sabe quem respondeu?</th>
+        <td class="p-4 align-top border-b border-brand-border">Sim, e se compromete a não contar</td>
+        <td class="p-4 align-top border-b border-brand-border">Não, porque o vínculo não foi coletado</td>
+      </tr>
+      <tr>
+        <th class="p-4 font-semibold text-brand-dark align-top border-b border-brand-border">A proteção depende de quê</th>
+        <td class="p-4 align-top border-b border-brand-border">Da conduta de quem tem acesso</td>
+        <td class="p-4 align-top border-b border-brand-border">De nada: não há o que revelar</td>
+      </tr>
+      <tr>
+        <th class="p-4 font-semibold text-brand-dark align-top border-b border-brand-border">Risco em caso de vazamento</th>
+        <td class="p-4 align-top border-b border-brand-border">Exposição direta de quem respondeu</td>
+        <td class="p-4 align-top border-b border-brand-border">Dado agregado, sem pessoa identificável</td>
+      </tr>
+      <tr>
+        <th class="p-4 font-semibold text-brand-dark align-top">Efeito na resposta</th>
+        <td class="p-4 align-top">Resposta diplomática, sobretudo sobre a própria chefia</td>
+        <td class="p-4 align-top">Resposta mais próxima do que a pessoa pensa</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
 Quem responde percebe a diferença mesmo sem saber nomeá-la. Numa avaliação de percepção sobre a própria chefia, essa percepção define se a resposta será honesta ou diplomática.
 
