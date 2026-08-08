@@ -5,6 +5,17 @@ pubDate: 2025-05-26
 heroImage: "/blog-img/pesquisa_riscos_psicossociais.webp"
 heroImageAlt: "Pesquisa de riscos psicossociais com garantia de sigilo nas respostas"
 category: "Saúde Mental no Trabalho"
+faq:
+  - pergunta: "Por que as pessoas não respondem com sinceridade?"
+    resposta: "Por cinco razões que se somam: receio de retaliação, desconfiança do anonimato, ambiente onde reclamar marca quem reclama, setor pequeno demais para esconder quem disse o quê, e desconhecimento sobre o propósito da pesquisa."
+  - pergunta: "Como aplicar a pesquisa em empresa pequena?"
+    resposta: "Definindo antes um número mínimo de respostas para abrir qualquer recorte, e agregando setores pequenos em grupos maiores na hora de apresentar o resultado. Sem essa regra, o recorte identifica a pessoa por eliminação, mesmo sem nome nenhum."
+  - pergunta: "O que acontece quando as respostas não são sinceras?"
+    resposta: "A empresa recebe um retrato mais favorável do que a realidade e decide com base nele. O efeito perverso é que a organização com mais problema tende a produzir a resposta mais cuidadosa, e portanto o relatório mais tranquilizador."
+  - pergunta: "Como aumentar a confiança na pesquisa?"
+    resposta: "Dizendo antes, com clareza, para que serve, quem verá o resultado, em que agrupamento ele será apresentado e o que a empresa se compromete a fazer. E cumprindo: o que decide a adesão da próxima pesquisa é o que aconteceu depois da anterior."
+  - pergunta: "Como apresentar o resultado sem expor ninguém?"
+    resposta: "Em nível agregado, por setor ou por função, sempre acima do corte mínimo definido. Nenhum resultado individual é entregue à empresa, e recortes cruzados demais devem ser evitados porque a combinação de filtros identifica a pessoa."
 ---
 
 ## Introdução

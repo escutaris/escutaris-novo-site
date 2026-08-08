@@ -5,6 +5,17 @@ pubDate: 2025-08-18
 heroImage: "/blog-img/blog_integracaodos_risco_psicossociais_ao_PCMSO_.webp"
 heroImageAlt: "Integração dos riscos psicossociais ao PCMSO e PGR"
 category: "Saúde Mental no Trabalho"
+faq:
+  - pergunta: "O PCMSO precisa incluir riscos psicossociais?"
+    resposta: "Sim. A NR-7 já previa que o PCMSO estivesse integrado ao PGR, e com a atualização da NR-1 os fatores psicossociais passaram a integrar esse gerenciamento. As ações médicas precisam considerar os riscos identificados no ambiente de trabalho, e não apenas exames clínicos genéricos."
+  - pergunta: "Qual o papel do médico do trabalho nessa integração?"
+    resposta: "Estabelecer nexo causal a partir de história clínica, organização do trabalho, literatura científica e dados epidemiológicos; solicitar exame complementar quando necessário, mesmo que não previsto no PGR; e registrar evidência e emitir parecer com base técnica e ética."
+  - pergunta: "O que muda no ASO e nos relatórios?"
+    resposta: "O Atestado de Saúde Ocupacional passa a considerar os riscos psicossociais sempre que classificados como necessitando de controle médico. E os relatórios analíticos ganham foco em prevenção, com dados agregados sobre adoecimento, exames e ações recomendadas."
+  - pergunta: "Só psicólogo pode avaliar fatores psicossociais?"
+    resposta: "A legislação não restringe a avaliação a uma única categoria. A Resolução CFP 02/2022 reforça que o psicólogo é o profissional mais indicado para investigação aprofundada sobre ambiente, relações e organização do trabalho. Na prática, a avaliação funciona melhor conduzida por equipe multidisciplinar."
+  - pergunta: "Qual a diferença entre avaliar fatores psicossociais e avaliar a saúde de quem trabalha?"
+    resposta: "A avaliação de fatores psicossociais é responsabilidade do empregador, integra o PGR e olha para riscos organizacionais. A avaliação de saúde é ato clínico, individual, e pertence ao PCMSO. Confundir as duas transfere para a pessoa o que é do desenho do trabalho."
 ---
 
 A gestão da saúde ocupacional no Brasil está passando por uma transformação profunda. Com a publicação da Portaria MTE nº 1.419/2024, que atualiza a NR-1, torna-se obrigatória a inclusão dos Fatores de Risco Psicossociais Relacionados ao Trabalho (FRPRT) no Programa de Gerenciamento de Riscos (PGR). E isso impacta diretamente o PCMSO, exigindo que ele seja reestruturado com base em dados reais sobre riscos psicossociais no ambiente de trabalho.

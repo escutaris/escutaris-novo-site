@@ -5,6 +5,17 @@ pubDate: 2026-06-02
 heroImage: "/blog-img/artigo-como-a-nr1-orienta.webp"
 heroImageAlt: "Como a NR1 orienta a comunicação de riscos ocupacionais aos trabalhadores"
 category: "Saúde Mental no Trabalho"
+faq:
+  - pergunta: "O que a NR-1 exige sobre comunicação de riscos?"
+    resposta: "Que a informação seja clara e acessível a qualquer nível de escolaridade, fundamentada no PGR, contínua e atualizada sempre que algo mudar, e acompanhada de capacitação. O critério não é ter comunicado: é ter sido compreendido."
+  - pergunta: "O que mudou com a substituição do PPRA pelo PGR?"
+    resposta: "O controle dos riscos passou a ser mais detalhado, e a comunicação passou a ter de se apoiar nesse inventário. O que se comunica precisa corresponder ao que foi identificado e avaliado, incluindo os riscos psicossociais."
+  - pergunta: "Treinamento com carga horária mínima basta?"
+    resposta: "Não. A norma deslocou o critério da carga horária para o resultado: quem trabalha precisa compreender o risco e saber como agir. Registro de presença não demonstra compreensão."
+  - pergunta: "Como adaptar a comunicação para públicos diferentes?"
+    resposta: "Linguagem simples, recurso visual, e ajuste por função, porque risco de uma área não é risco de outra. Onde há trabalhadores de outros idiomas ou baixa escolaridade, a adaptação deixa de ser cuidado extra e passa a ser condição para a comunicação existir."
+  - pergunta: "Como comunicar risco psicossocial, que é invisível?"
+    resposta: "A partir do diagnóstico. Sem identificar quais fatores estão presentes e onde, a comunicação vira mensagem genérica sobre bem-estar. Com o mapeamento em mãos, é possível dizer o que foi encontrado, no nível de agregação que preserva quem respondeu, e o que a empresa decidiu fazer."
 ---
 
 Entenda como a NR1 orienta a comunicação de riscos ocupacionais e veja as melhores práticas para garantir um ambiente de trabalho seguro e conforme a lei.

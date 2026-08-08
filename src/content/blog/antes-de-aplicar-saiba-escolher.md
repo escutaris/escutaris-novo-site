@@ -5,6 +5,17 @@ pubDate: 2026-04-10
 heroImage: "/blog-img/metodologias-de-avaliacao.webp"
 heroImageAlt: "Ilustração sobre guia prático para avaliar riscos psicossociais com método"
 category: "Saúde Mental no Trabalho"
+faq:
+  - pergunta: "Qual o primeiro passo para avaliar riscos psicossociais?"
+    resposta: "Ler o contexto, não escolher a ferramenta. Setor de atuação, perfil de quem trabalha, histórico de afastamento e cultura de gestão mudam completamente o que se deve procurar. Começar pelo instrumento é como receitar remédio antes de examinar."
+  - pergunta: "Existe um instrumento melhor que os outros?"
+    resposta: "Não em abstrato. Existe instrumento adequado ao objetivo e ao contexto. COPSOQ-II, HSE-IT e FPSICO são referências validadas, e cada um foi construído para responder a perguntas diferentes. A escolha vem depois de definir o que se quer saber."
+  - pergunta: "Questionário sozinho é suficiente?"
+    resposta: "Não. A ferramenta de triagem mostra a extensão e a distribuição do risco. Ela não explica a origem. Observação do trabalho, entrevista, grupo focal e análise documental são o que transformam o número em decisão."
+  - pergunta: "O que precisa ser definido antes de aplicar?"
+    resposta: "Escopo, profundidade, finalidade e recursos. E também os critérios de análise: como o risco será classificado, o que será considerado aceitável e como a priorização será documentada no PGR. Definir isso depois do resultado abre espaço para acomodar o dado à conclusão desejada."
+  - pergunta: "Como escolher entre abordagem quantitativa e qualitativa?"
+    resposta: "Na prática as duas se combinam. A abordagem em camadas faz triagem ampla e aprofunda onde o resultado apontou. A mista une questionário e escuta. A participativa envolve quem trabalha na própria construção do diagnóstico, o que costuma melhorar tanto a adesão quanto a qualidade da informação."
 ---
 
 Você já se viu nessa situação? A empresa quer incluir os riscos psicossociais no PGR, e a primeira pergunta que surge é: **"Qual ferramenta vamos usar?"**

@@ -5,6 +5,17 @@ pubDate: 2025-03-21
 heroImage: "/blog-img/erro.webp"
 heroImageAlt: "Erro fatal na adequação à NR1 que empresas cometem"
 category: "Saúde Mental no Trabalho"
+faq:
+  - pergunta: "Qual o erro mais comum na adequação à NR-1?"
+    resposta: "Tratar os fatores psicossociais de forma genérica: questionário sem validação científica, montado internamente, ou avaliação baseada apenas na percepção da gestão. O resultado parece um diagnóstico, e não sustenta decisão nenhuma."
+  - pergunta: "Por que um diagnóstico superficial é arriscado?"
+    resposta: "Porque produz três efeitos ao mesmo tempo: deixa risco sério sem identificação, leva a medidas que não atacam a causa real, e faz a empresa gastar recurso sem resultado. O problema segue existindo, agora com um relatório dizendo que não existe."
+  - pergunta: "Quais instrumentos são reconhecidos para essa avaliação?"
+    resposta: "Entre os mais usados estão o HSE Indicator Tool, o Job Stress Scale, o Effort-Reward Imbalance, o Copenhagen Psychosocial Questionnaire e a ESCAM. Cada um responde a uma pergunta diferente, e a escolha depende do que se quer investigar."
+  - pergunta: "Questionário validado é suficiente sozinho?"
+    resposta: "Não. Entrevista individual, grupo focal e observação direta do trabalho são o que dão profundidade ao número. O questionário mostra onde o risco está concentrado; a escuta explica por quê."
+  - pergunta: "Como garantir que o diagnóstico se sustente tecnicamente?"
+    resposta: "Usar metodologia validada, combinar abordagem quantitativa e qualitativa, adaptar à realidade da empresa em vez de aplicar modelo pronto, e reavaliar periodicamente. E registrar o método: sem isso, o número não demonstra nada diante de uma fiscalização."
 ---
 
 ## O perigo dos diagnósticos superficiais

@@ -5,6 +5,17 @@ pubDate: 2026-05-26
 heroImage: "/blog-img/avaliacao_psicossocial.webp"
 heroImageAlt: "Avaliação de fatores psicossociais x avaliação psicossocial"
 category: "Saúde Mental no Trabalho"
+faq:
+  - pergunta: "Qual a diferença entre avaliação de fatores psicossociais e avaliação psicossocial?"
+    resposta: "A primeira olha para o ambiente e a organização do trabalho, é coletiva e integra o PGR conforme a NR-1. A segunda olha para o indivíduo e verifica aptidão para determinadas atividades. Uma investiga a condição; a outra, a pessoa."
+  - pergunta: "Quando a avaliação psicossocial individual é exigida?"
+    resposta: "Em atividades que envolvem risco à própria vida ou à de terceiros e que demandam resposta rápida sob pressão: trabalho em altura, espaço confinado, operação de máquina pesada, setor elétrico, vigilância, além de contextos de saúde e segurança pública."
+  - pergunta: "Qual delas atende a NR-1?"
+    resposta: "A avaliação de fatores psicossociais. É ela que produz o retrato coletivo dos riscos organizacionais que precisa constar no Programa de Gerenciamento de Riscos."
+  - pergunta: "Uma substitui a outra?"
+    resposta: "Não. Têm finalidades distintas e podem coexistir na mesma empresa. Aplicar avaliação individual esperando cumprir a exigência coletiva da NR-1 é o erro mais comum, e deixa o PGR sem a informação que ele precisa ter."
+  - pergunta: "Que ferramentas cada uma usa?"
+    resposta: "A avaliação de fatores psicossociais usa questionário validado, entrevista, grupo focal e análise organizacional. A avaliação psicossocial individual usa teste psicológico e entrevista clínica, conduzidos por psicólogo."
 ---
 
 Nos últimos anos, a gestão da saúde mental no trabalho ganhou mais visibilidade, especialmente com a atualização da NR-1, que tornou obrigatória a inclusão dos riscos psicossociais no Programa de Gerenciamento de Riscos (PGR). Porém, ao abordar a avaliação desses riscos, é comum haver confusão entre a Avaliação de Fatores Psicossociais e a Avaliação Psicossocial. Embora os termos pareçam semelhantes, eles têm objetivos e aplicações diferentes. Compreender essa diferença é fundamental para a conformidade legal e para a prevenção de problemas trabalhistas.

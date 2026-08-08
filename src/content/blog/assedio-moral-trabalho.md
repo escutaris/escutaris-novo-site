@@ -1,10 +1,21 @@
 ---
 title: "Assédio Moral no Trabalho: Como Prevenir e Combater"
-description: "Assédio moral no trabalho: entenda impactos, legislação e como prevenir. Guia prático para proteger colaboradores e evitar riscos legais. Saiba mais."
+description: "O que caracteriza assédio moral, o que a NR-1 passou a exigir e o passo a passo para montar um programa de prevenção que funcione na prática."
 pubDate: 2025-06-16
 heroImage: "/blog-img/assedio_moral.webp"
 heroImageAlt: "Assédio moral no trabalho: como prevenir e combater"
 category: "Saúde Mental no Trabalho"
+faq:
+  - pergunta: "O que caracteriza assédio moral no trabalho?"
+    resposta: "A repetição e a intenção de constranger, e não o episódio isolado. Aparece como crítica excessiva, isolamento, sobrecarga desenhada para produzir a falha, ridicularização diante de colegas, ameaça velada de demissão e bloqueio de carreira como punição."
+  - pergunta: "A empresa é responsável mesmo quando o assédio parte de um funcionário?"
+    resposta: "A empresa responde pelo ambiente que mantém. Quando não há política, canal de denúncia nem apuração, a omissão pesa contra ela, porque o que se avalia é se havia meio de identificar e agir."
+  - pergunta: "Como montar um programa de prevenção ao assédio moral?"
+    resposta: "Cinco passos: política escrita que defina o que é inaceitável, canal de denúncia seguro, formação para liderança e equipes, comitê de ética para apurar cada caso, e monitoramento contínuo com ajuste do programa."
+  - pergunta: "Como fazer o canal de denúncia funcionar de verdade?"
+    resposta: "Garantindo sigilo real, com fluxo de apuração definido e prazo de resposta. Canal onde a denúncia não é apurada, ou onde quem denuncia sofre consequência, ensina que denunciar é pior que suportar, e o silêncio que se segue é lido como ausência de problema."
+  - pergunta: "Aumento de denúncias significa que o problema piorou?"
+    resposta: "Nem sempre, e essa leitura invertida atrapalha muita empresa. Aumento logo após a criação de um canal confiável costuma indicar que as pessoas passaram a confiar o suficiente para falar do que já acontecia."
 ---
 
 ## Introdução

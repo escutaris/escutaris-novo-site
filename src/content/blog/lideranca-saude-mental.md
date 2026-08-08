@@ -5,6 +5,17 @@ pubDate: 2025-06-02
 heroImage: "/blog-img/lideranca_saude_mental.webp"
 heroImageAlt: "Liderança e saúde mental: gestores promovendo bem-estar nas equipes"
 category: "Saúde Mental no Trabalho"
+faq:
+  - pergunta: "Como a liderança influencia o risco psicossocial?"
+    resposta: "Por cinco vias diretas: distribuição de carga e definição de meta, clareza da comunicação, apoio oferecido, forma de mediar conflito e reconhecimento do trabalho feito. São decisões diárias, e é onde o risco é criado ou reduzido."
+  - pergunta: "O que quem lidera pode fazer na prática?"
+    resposta: "Ajustar tarefa à capacidade real da equipe, proteger pausa e descanso, dar devolutiva regular em vez de só na avaliação anual, ser transparente sobre mudança antes que ela vire boato, e intervir quando houver comportamento abusivo em vez de esperar passar."
+  - pergunta: "Gestor precisa saber identificar sofrimento na equipe?"
+    resposta: "Precisa saber reconhecer mudança de padrão e encaminhar: queda de desempenho em quem sempre entregou, isolamento, irritabilidade persistente, aumento de falta. Reconhecer e encaminhar é o papel. Diagnóstico é da área da saúde."
+  - pergunta: "A empresa precisa formar a liderança para isso?"
+    resposta: "Sim, e a NR-1 tornou isso mais concreto ao incluir os riscos psicossociais no gerenciamento. Mas formação sem autonomia para mudar carga e prazo não protege ninguém: quem lidera absorve a pressão e a repassa."
+  - pergunta: "E quem cuida de quem lidera?"
+    resposta: "Essa é a pergunta que costuma faltar. A chefia está exposta aos mesmos fatores, com o agravante de responder pelo resultado da equipe. Suporte contínuo a quem lidera é parte da gestão do risco, não benefício."
 ---
 
 ## Prevenção de Riscos Psicossociais e o Papel da Liderança

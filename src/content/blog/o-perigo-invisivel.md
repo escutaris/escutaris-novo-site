@@ -5,6 +5,17 @@ pubDate: 2025-04-28
 heroImage: "/blog-img/o-perigo-invisivel.webp"
 heroImageAlt: "O perigo invisível dos fatores psicossociais no trabalho"
 category: "Saúde Mental no Trabalho"
+faq:
+  - pergunta: "Fator psicossocial pode causar acidente de trabalho?"
+    resposta: "Sim, por um caminho indireto e bem documentado. Fadiga mental e estresse contínuo reduzem o tempo de reação, estreitam a atenção e favorecem decisão impulsiva. O acidente é registrado como falha humana, e a condição que o produziu não entra no relatório."
+  - pergunta: "Quais fatores mais pesam na segurança?"
+    resposta: "Carga excessiva com prazo apertado, jornada longa sem pausa adequada, pressão de uma liderança autoritária e ausência de apoio entre colegas e chefia. Costumam aparecer combinados."
+  - pergunta: "Como identificar que existe risco psicossocial na operação?"
+    resposta: "Por sinais que a operação já registra: aumento de erro e de pequeno incidente, equipe cronicamente cansada, clima tenso com rotatividade alta, crescimento de afastamento, e o silêncio de quem deixou de relatar problema."
+  - pergunta: "Equipamento de proteção resolve esse tipo de risco?"
+    resposta: "Não. Equipamento protege contra o risco físico e não altera carga, prazo, autonomia ou apoio. Se esses fatores continuam, a exposição continua, ainda que todo o equipamento esteja em uso."
+  - pergunta: "Por onde a empresa começa a controlar esse risco?"
+    resposta: "Acompanhando carga de trabalho e clima com método, para identificar padrão de sobrecarga antes que ele vire incidente. Depois, agindo sobre o que o dado apontou: proteger pausa, reduzir jornada excessiva e preparar quem lidera para reconhecer o sinal na própria área."
 ---
 
 ## O perigo invisível: como fatores psicossociais impactam a segurança no trabalho

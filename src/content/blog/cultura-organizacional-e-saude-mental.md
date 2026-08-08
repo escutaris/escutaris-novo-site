@@ -5,6 +5,17 @@ pubDate: 2025-08-11
 heroImage: "/blog-img/blog_cultura_organizacional.webp"
 heroImageAlt: "Cultura organizacional e saúde mental: como transformar o ambiente de trabalho"
 category: "Saúde Mental no Trabalho"
+faq:
+  - pergunta: "Cultura organizacional afeta a saúde mental?"
+    resposta: "Sim. A cultura define o que é aceitável na prática: se dá para discordar, se erro vira aprendizado ou punição, se pedir ajuda custa caro. Essas regras não escritas moldam a exposição ao risco psicossocial mais do que qualquer política formal."
+  - pergunta: "Por que ação pontual não resolve?"
+    resposta: "Porque semana temática, palestra e campanha não alteram a regra do dia seguinte. Quando a ação termina e a carga, o prazo e a forma de cobrar continuam iguais, o que fica é a percepção de que o cuidado era encenação."
+  - pergunta: "O que é uma cultura de cuidado?"
+    resposta: "Não é ambiente sem conflito nem clima permanentemente agradável. É um ambiente com segurança psicológica, coerência entre discurso e prática, e cuidado intencional, planejado como parte da gestão e não como resposta a crise."
+  - pergunta: "Qual o papel de quem lidera na cultura?"
+    resposta: "Presença, coerência e escuta. Presença é estar de fato disponível. Coerência é fazer o que se diz, porque a equipe aprende pelo que vê. Escuta é ouvir sem se defender, sem corrigir e sem negar o que foi dito."
+  - pergunta: "Por onde começar a mudar a cultura?"
+    resposta: "Por microações consistentes, não por reformulação anunciada. Mudança de cultura se sustenta na repetição do gesto pequeno, e se perde na primeira vez em que a regra vale para uns e não para outros."
 ---
 
 > "Já fizemos palestra sobre saúde mental, colocamos meditação no aplicativo de benefícios e até abrimos um canal de escuta... mas o clima continua pesado. O que mais falta fazer?"

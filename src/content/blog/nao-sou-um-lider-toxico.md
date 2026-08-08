@@ -5,6 +5,17 @@ pubDate: 2026-06-04
 heroImage: "/blog-img/nao-sou-um-lider-toxico.webp"
 heroImageAlt: "Como identificar e transformar comportamentos de liderança tóxica"
 category: "Saúde Mental no Trabalho"
+faq:
+  - pergunta: "Como saber se sou um líder tóxico?"
+    resposta: "Pela pergunta que importa mais que a intenção: o que acontece com quem aponta um problema na sua equipe? Boa intenção não neutraliza efeito. Cobrança sem limite, silêncio diante do conflito e decisão sem explicação produzem o mesmo resultado, independentemente da intenção de quem as pratica."
+  - pergunta: "Liderança tóxica é sempre agressiva?"
+    resposta: "Não, e é aí que costuma passar despercebida. A omissão diante de um conflito, a ausência de devolutiva e a mudança de regra sem aviso desgastam por acúmulo, sem nenhum episódio que alguém consiga apontar como grave."
+  - pergunta: "O que a NR-1 tem a ver com o comportamento da liderança?"
+    resposta: "A norma passou a exigir a gestão dos riscos psicossociais, e boa parte deles é definida no dia a dia da gestão: carga, prazo, margem de decisão, clareza de papel e apoio. Isso deixou de ser estilo pessoal e passou a ser risco ocupacional."
+  - pergunta: "Como mudar sem perder a firmeza?"
+    resposta: "Firmeza está na clareza, não na pressão. Meta explícita, prioridade definida quando entra demanda nova e devolutiva direta são exigentes e não adoecem. O que adoece é a exigência sem previsibilidade e sem margem de decisão."
+  - pergunta: "Preparar a liderança resolve o problema sozinho?"
+    resposta: "Não. Quem lidera precisa de poder real para ajustar carga e prazo. Sem isso, a formação apenas informa sobre um problema que a pessoa não tem como resolver, e transfere para ela a responsabilidade por uma decisão que é da organização."
 ---
 
 Liderar com empatia sem perder a firmeza é possível. Aprenda como equilibrar cuidado e autoridade.
