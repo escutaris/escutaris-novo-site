@@ -65,5 +65,8 @@ export async function insertLead(lead: LeadInput) {
   // mas (corretamente) não permite LER a tabela — pedir o dado de volta derruba o envio.
   const { error } = await supabase.from('leads_escutaris').insert([lead]);
 
+  // Lead no pixel da Meta (só envia se a pessoa aceitou os cookies)
+  if (!error) (window as any).escutarisLead?.();
+
   return { error };
 }
