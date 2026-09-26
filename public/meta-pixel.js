@@ -43,7 +43,7 @@
     caixa.setAttribute('role', 'dialog');
     caixa.setAttribute('aria-label', 'Aviso de cookies');
     caixa.innerHTML =
-      '<p>Usamos cookies para medir as visitas e mostrar nossos anúncios.</p>' +
+      '<p>Usamos cookies para medir as visitas e mostrar nossos anúncios. <a href="/politica-de-privacidade" style="color:inherit;text-decoration:underline">Política de privacidade</a></p>' +
       '<div class="esc-cookies__botoes">' +
       '<button type="button" class="esc-cookies__nao">Recusar</button>' +
       '<button type="button" class="esc-cookies__sim">Aceitar</button></div>';
