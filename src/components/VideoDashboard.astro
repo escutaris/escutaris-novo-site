@@ -1,7 +1,8 @@
 ---
-// Vídeo do dashboard como prova visual da entrega (2min02, narração da
-// Dra. Ana Paula). Click-to-play, sem autoplay com som — mesmo padrão do
-// depoimento em vídeo. Arquivo em /dashboard-escutaris.mp4.
+// Vídeo "Jornada" (1min30, só trilha, dados fictícios do painel de demonstração):
+// do questionário ao painel. Trocou em 15/10/26 o vídeo antigo do dashboard narrado
+// pela Dra. Ana Paula (/dashboard-escutaris.mp4, que segue em public/).
+// Click-to-play, sem autoplay com som, mesmo padrão do depoimento em vídeo.
 const whatsappUrl =
   'https://api.whatsapp.com/send?phone=5571981357004&text=Ol%C3%A1%2C+quero+entender+como+aplicar+o+diagn%C3%B3stico+na+minha+empresa';
 ---
@@ -11,12 +12,12 @@ const whatsappUrl =
     <div class="reveal max-w-4xl mb-10 md:mb-14">
       <span class="eyebrow mb-3 block">Veja na prática</span>
       <h2 class="text-3xl md:text-5xl font-display font-bold mb-6 leading-[1.1] text-brand-dark">
-        Veja como o dashboard funciona na prática.
+        Do questionário ao painel, em 90 segundos.
       </h2>
       <p class="text-lg md:text-xl text-brand-muted leading-relaxed">
-        Em pouco mais de dois minutos, a Dra. Ana Paula mostra como a empresa visualiza
-        os resultados, aplica filtros e transforma os dados do diagnóstico em insumos
-        para decisão.
+        Veja como as pessoas respondem, como os dados ficam protegidos e como a empresa
+        usa o painel para filtrar os resultados, comparar grupos e escolher por onde começar.
+        Os dados do vídeo são fictícios.
       </p>
     </div>
 
@@ -24,19 +25,19 @@ const whatsappUrl =
       <video
         id="video-dashboard-player"
         class="w-full h-auto block"
-        poster="/dashboard-escutaris-poster.webp"
+        poster="/jornada-escutaris-poster.webp"
         preload="none"
         controls
         playsinline
       >
-        <source src="/dashboard-escutaris.mp4" type="video/mp4" />
+        <source src="/jornada-escutaris.mp4" type="video/mp4" />
       </video>
 
       <button
         type="button"
         id="video-dashboard-play"
         class="absolute inset-0 flex items-center justify-center bg-brand-dark/30 hover:bg-brand-dark/15 transition-colors group"
-        aria-label="Reproduzir vídeo do dashboard Escutaris"
+        aria-label="Reproduzir vídeo: do questionário ao painel"
       >
         <span class="w-20 h-20 rounded-full bg-white/95 flex items-center justify-center group-hover:scale-105 transition-transform">
           <svg class="w-8 h-8 text-brand-terracota ml-1.5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
