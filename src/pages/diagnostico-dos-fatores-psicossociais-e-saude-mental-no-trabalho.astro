@@ -22,14 +22,9 @@ const questionarios = [
       'O par ideal do HSE: equipes psicologicamente seguras falam antes de adoecer, aprendem mais rápido e sustentam qualquer mudança. É o termômetro mais direto da cultura da sua empresa.',
   },
   {
-    sigla: 'ERI',
-    nome: 'Esforço-Recompensa',
-    mede: 'O desequilíbrio entre o esforço dedicado ao trabalho e o reconhecimento recebido em troca.',
-  },
-  {
-    sigla: 'JCQ',
-    nome: 'Job Content Questionnaire',
-    mede: 'A relação entre demanda, controle sobre o próprio trabalho e apoio social — um dos modelos mais consolidados da área.',
+    sigla: 'Radar',
+    nome: 'Radar de Competências da Liderança',
+    mede: 'Como a liderança age nas competências ligadas à prevenção do estresse na equipe: integridade, comunicação do trabalho, atenção a cada pessoa e conflitos. É uma autoavaliação de quem lidera, baseada no SMCIT, do mesmo HSE britânico, e não uma avaliação de desempenho.',
   },
 ];
 
@@ -83,7 +78,7 @@ const faqs = [
   },
   {
     q: 'Quais questionários são utilizados?',
-    a: 'Trabalhamos com quatro instrumentos cientificamente validados: HSE, Segurança Psicológica, ERI e JCQ. Para a maioria das empresas, recomendamos o HSE — referência internacional para fatores psicossociais — combinado ao de Segurança Psicológica; os demais entram conforme o objetivo da organização.',
+    a: 'Trabalhamos com três questionários científicos: o HSE Indicator Tool (HSE-IT), a escala de Segurança Psicológica e o Radar de Competências da Liderança. Para a maioria das empresas, recomendamos começar pelo HSE, referência internacional para fatores psicossociais, junto com o de Segurança Psicológica. O Radar entra quando o foco é a liderança.',
   },
 ];
 
@@ -119,7 +114,7 @@ const jsonLd = {
 
 <Layout
   title="Diagnóstico de Fatores Psicossociais e Saúde Mental no Trabalho | Escutaris"
-  description="Diagnóstico psicossocial conduzido pela Escutaris: questionários validados (HSE, Segurança Psicológica, ERI, JCQ), processo anônimo e dashboard interativo em até 72 horas. Conformidade com a NR-1."
+  description="Diagnóstico psicossocial conduzido pela Escutaris: questionários validados (HSE-IT, Segurança Psicológica e Radar de Competências da Liderança), processo anônimo e dashboard interativo em até 72 horas. Conformidade com a NR-1."
   canonical={pageUrl}
   ogImage="/dashboard-karasek.webp"
 >
@@ -150,8 +145,8 @@ const jsonLd = {
           validados, processo anonimizado e dashboard em até 72 horas.
         </p>
         <div class="flex flex-wrap gap-3">
-          <a href="/#contato" class="btn-primary">
-            Iniciar diagnóstico
+          <a href="https://escutarisonline.zohobookings.com/#/4939683000000293007" target="_blank" rel="noopener" class="btn-primary">
+            Escolher dia e horário
             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
             </svg>
@@ -270,13 +265,13 @@ const jsonLd = {
       <div class="reveal max-w-4xl mb-16 md:mb-20">
         <span class="eyebrow mb-5">Base científica</span>
         <h2 class="text-3xl md:text-5xl font-display font-bold mb-6 leading-[1.1] text-brand-dark">
-          Quatro instrumentos validados, não pesquisa genérica.
+          Três questionários validados, não pesquisa genérica.
         </h2>
         <p class="text-lg md:text-xl text-brand-muted leading-relaxed">
           Selecionamos os questionários conforme o objetivo da sua organização.
-          Todos com evidência científica publicada, não improviso de clima — e dois
-          deles, o HSE e o de Segurança Psicológica, são os que recomendamos para a
-          maioria das empresas.
+          Todos têm evidência científica publicada. Para a maioria das empresas,
+          recomendamos começar pelo HSE e pelo de Segurança Psicológica; o Radar
+          entra quando o foco é a liderança.
         </p>
       </div>
 
@@ -285,8 +280,9 @@ const jsonLd = {
           <article class:list={[
             'reveal p-8 md:p-12 border-brand-border',
             i < questionarios.length - 1 && 'border-b',
-            i >= questionarios.length - 2 && 'md:border-b-0',
-            i % 2 === 0 && 'md:border-r',
+            i >= questionarios.length - (questionarios.length % 2 === 0 ? 2 : 1) && 'md:border-b-0',
+            i % 2 === 0 && i < questionarios.length - 1 && 'md:border-r',
+            questionarios.length % 2 === 1 && i === questionarios.length - 1 && 'md:col-span-2',
             q.destaque && 'border-t-2 border-t-brand-terracota bg-brand-off-white-warm',
           ]}>
             <div class="flex items-baseline gap-4 mb-4 flex-wrap">
@@ -504,8 +500,8 @@ const jsonLd = {
           alinhamento e desenhamos o diagnóstico ideal para o seu contexto.
         </p>
         <div class="flex flex-wrap gap-3 justify-center">
-          <a href="/#contato" class="btn-primary">
-            Iniciar diagnóstico
+          <a href="https://escutarisonline.zohobookings.com/#/4939683000000293007" target="_blank" rel="noopener" class="btn-primary">
+            Escolher dia e horário
             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
             </svg>

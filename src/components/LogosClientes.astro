@@ -37,6 +37,17 @@ const clientes = [
         </div>
       </div>
     </div>
+
+    <figure class="reveal max-w-3xl mx-auto mt-10 md:mt-12 text-center">
+      <blockquote class="font-display text-xl md:text-2xl text-brand-dark leading-snug">
+        “Os questionários, muito bem feitos, me ajudaram a enxergar questões na empresa
+        que a gente nem percebe no dia a dia.”
+      </blockquote>
+      <figcaption class="mt-4 text-sm text-brand-muted">
+        Setor Pessoal, Gelo Alagoinhas ·
+        <a href="#depoimentos" class="text-brand-terracota font-semibold hover:underline">Ver outros depoimentos</a>
+      </figcaption>
+    </figure>
   </div>
 </section>
 
@@ -67,8 +78,8 @@ const clientes = [
 
   .logo-item {
     flex: 0 0 auto;
-    width: 180px;
-    height: 112px;
+    width: 200px;
+    height: 124px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -80,14 +91,8 @@ const clientes = [
     border-radius: 6px;
   }
 
+  /* Logos em cor e opacidade cheia: em cinza claro eles não eram lidos (análise de 16/10/26) */
   .logo-item img {
-    filter: grayscale(100%) contrast(1.05);
-    opacity: 0.7;
-    transition: filter 250ms ease, opacity 250ms ease;
-  }
-
-  .logo-item:hover img {
-    filter: grayscale(0%);
     opacity: 1;
   }
 
