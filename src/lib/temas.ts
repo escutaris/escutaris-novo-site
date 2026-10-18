@@ -93,6 +93,7 @@ const POR_ARTIGO: Record<string, Chave> = {
   'cultura-organizacional-e-saude-mental': 'lideranca',
   'lideranca-saude-mental': 'lideranca',
   'nao-sou-um-lider-toxico': 'lideranca',
+  'sofrimento-moral-no-trabalho': 'lideranca',
 
   'brain-capital': 'estrategia',
   'lei-15377-informacao-cancer': 'estrategia',
