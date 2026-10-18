@@ -1,0 +1,103 @@
+---
+import { getCollection } from 'astro:content';
+import Layout from '../../../layouts/Layout.astro';
+import CartaoArtigo from '../../../components/CartaoArtigo.astro';
+import { TEMAS, temaDoArtigo, type Tema } from '../../../lib/temas';
+
+export async function getStaticPaths() {
+  return Object.values(TEMAS).map((tema) => ({ params: { tema: tema.slug }, props: { tema } }));
+}
+
+const { tema } = Astro.props as { tema: Tema };
+
+const posts = (await getCollection('blog'))
+  .filter((p) => !p.data.draft && temaDoArtigo(p).slug === tema.slug)
+  .sort((a, b) => b.data.pubDate.getTime() - a.data.pubDate.getTime());
+
+const outros = Object.values(TEMAS).filter((t) => t.slug !== tema.slug);
+
+const siteUrl = 'https://www.escutaris.com.br';
+const temaUrl = `${siteUrl}/blog/tema/${tema.slug}`;
+
+// A página de tema é uma coleção: a busca lê os artigos como itens dela.
+const colecaoLd = {
+  '@context': 'https://schema.org',
+  '@type': 'CollectionPage',
+  name: tema.nome,
+  description: tema.descricao,
+  url: temaUrl,
+  inLanguage: 'pt-BR',
+  mainEntity: {
+    '@type': 'ItemList',
+    itemListElement: posts.map((p, i) => ({
+      '@type': 'ListItem',
+      position: i + 1,
+      url: `${siteUrl}/blog/${p.id}`,
+      name: p.data.title,
+    })),
+  },
+};
+
+const breadcrumbLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Início', item: siteUrl },
+    { '@type': 'ListItem', position: 2, name: 'Blog', item: `${siteUrl}/blog` },
+    { '@type': 'ListItem', position: 3, name: tema.nome, item: temaUrl },
+  ],
+};
+---
+
+<Layout title={`${tema.titulo} | Escutaris`} description={tema.descricao}>
+  <script type="application/ld+json" set:html={JSON.stringify(colecaoLd)} />
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbLd)} />
+
+  <section class="section-pad bg-brand-off-white">
+    <div class="container-soft">
+      <nav class="mb-8 text-xs uppercase tracking-[0.14em] text-brand-muted" aria-label="Trilha">
+        <a href="/blog" class="hover:text-brand-terracota transition-colors">Blog</a>
+        <span class="mx-2" aria-hidden="true">/</span>
+        <span>{tema.nome}</span>
+      </nav>
+
+      <div class="reveal max-w-4xl mb-12 md:mb-16">
+        <span class="eyebrow mb-5">Tema · {posts.length} artigos</span>
+        <h1 class="text-3xl md:text-5xl font-display font-bold mb-6 leading-[1.1] text-brand-dark">
+          {tema.nome}
+        </h1>
+        <p class="text-lg md:text-xl text-brand-muted leading-relaxed">
+          {tema.intro}
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {posts.map((post) => <CartaoArtigo post={post} />)}
+      </div>
+
+      <nav class="mt-16 md:mt-20 pt-10 border-t border-brand-border" aria-label="Outros temas">
+        <span class="block text-xs uppercase tracking-[0.14em] text-brand-muted mb-4">Outros temas</span>
+        <ul class="flex flex-wrap gap-3">
+          {outros.map((t) => (
+            <li>
+              <a
+                href={`/blog/tema/${t.slug}`}
+                class="inline-flex border border-brand-border bg-white px-4 py-2 text-sm text-brand-dark hover:border-brand-terracota hover:text-brand-terracota transition-colors"
+              >
+                {t.nome}
+              </a>
+            </li>
+          ))}
+          <li>
+            <a
+              href="/blog"
+              class="inline-flex px-4 py-2 text-sm text-brand-terracota hover:underline"
+            >
+              Todos os artigos
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </section>
+</Layout>
