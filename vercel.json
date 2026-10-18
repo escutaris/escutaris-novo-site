@@ -127,7 +127,7 @@
     },
     {
       "source": "/blog/integracaodos_risco_psicossociais_ao_PCMSO.html",
-      "destination": "/blog/integracaodos-risco-psicossociais-ao-PCMSO",
+      "destination": "/blog/integracaodos-risco-psicossociais-ao-pcmso",
       "permanent": true
     },
     {
@@ -178,6 +178,56 @@
     {
       "source": "/blog/riscos_psicossociais_nova_nr1.html",
       "destination": "/blog/riscos-psicossociais",
+      "permanent": true
+    },
+    {
+      "source": "/pt",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/pt/",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/blog.html",
+      "destination": "/blog",
+      "permanent": true
+    },
+    {
+      "source": "/blog/integracaodos-risco-psicossociais-ao-PCMSO",
+      "destination": "/blog/integracaodos-risco-psicossociais-ao-pcmso",
+      "permanent": true
+    },
+    {
+      "source": "/blog/integracao_riscos_psicossociais_pcmsopgr.html",
+      "destination": "/blog/integracaodos-risco-psicossociais-ao-pcmso",
+      "permanent": true
+    },
+    {
+      "source": "/blog/impacto_dos_fatores_psicososciais_no_trabalho.html",
+      "destination": "/blog/impacto-dos-fatores-psicossociais-no-trabalho",
+      "permanent": true
+    },
+    {
+      "source": "/blog/guia-pratico-avaliar-riscos-psicossociais.html",
+      "destination": "/blog/avaliacao-fatores-psicossociais",
+      "permanent": true
+    },
+    {
+      "source": "/blog/pesquisa-riscos-psicososciais",
+      "destination": "/blog/pesquisa-riscos-psicossociais",
+      "permanent": true
+    },
+    {
+      "source": "/blog/avaliacao-fatores-psicososciais",
+      "destination": "/blog/avaliacao-fatores-psicossociais",
+      "permanent": true
+    },
+    {
+      "source": "/blog/o-hse-it-ea-gestao-dos-fatores-psicossociais-no-trabalho",
+      "destination": "/blog/hse-indicator-tool",
       "permanent": true
     },
     {
