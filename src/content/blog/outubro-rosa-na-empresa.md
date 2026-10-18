@@ -1,7 +1,7 @@
 ---
 title: "Outubro Rosa na Empresa: Como Ir Além do Laço"
 description: "Laço na fachada não leva ninguém ao exame. Como a empresa organiza o acesso à avaliação, o rastreamento com indicação e os indicadores que mostram se o cuidado chegou."
-pubDate: 2026-10-18
+pubDate: 2026-10-01
 heroImage: "/blog-img/outubro-rosa-na-empresa.webp"
 heroImageAlt: "Profissional de RH organiza agenda e documentos em uma mesa perto da janela"
 category: "Saúde Mental no Trabalho"

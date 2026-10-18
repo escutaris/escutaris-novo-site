@@ -1,7 +1,7 @@
 ---
 title: "Brain Capital: O Que É e Onde Entra a Saúde Ocupacional"
 description: "Brain Capital junta saúde cerebral, habilidades e as condições que permitem desenvolvê-las. O que o conceito acrescenta à saúde mental no trabalho, e o risco de tratar o cérebro como ativo."
-pubDate: 2026-10-18
+pubDate: 2026-10-06
 heroImage: "/blog-img/brain-capital.webp"
 heroImageAlt: "Pessoa concentrada lendo documentos em uma mesa de trabalho iluminada por janela lateral"
 category: "Saúde Mental no Trabalho"

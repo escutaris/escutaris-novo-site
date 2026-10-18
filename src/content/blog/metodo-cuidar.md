@@ -1,7 +1,7 @@
 ---
 title: "Método CUIDAR: Seis Etapas da Saúde Mental à Estratégia"
 description: "Comprometer, unificar, identificar, desenvolver, acompanhar e revisar. As seis etapas do Método CUIDAR, o que entregar em cada uma e o erro mais comum, com o plano de 90 dias e de 12 meses."
-pubDate: 2026-10-18
+pubDate: 2026-10-13
 heroImage: "/blog-img/metodo-cuidar.webp"
 heroImageAlt: "Grupo reunido em torno de uma mesa com papéis e anotações de planejamento"
 category: "Saúde Mental no Trabalho"

@@ -1,7 +1,7 @@
 ---
 title: "Lei 15.377/2026: O Que a Empresa Precisa Informar"
 description: "A lei de abril de 2026 criou o art. 169-A da CLT. O que ela obriga a empresa a informar sobre vacinação, HPV e cânceres de mama, colo do útero e próstata, e o que ela não diz."
-pubDate: 2026-10-18
+pubDate: 2026-10-09
 heroImage: "/blog-img/lei-15377-informacao-cancer.webp"
 heroImageAlt: "Mural de avisos de uma área de convivência com folhetos de saúde presos por alfinetes"
 category: "Saúde Mental no Trabalho"

@@ -1,7 +1,7 @@
 ---
 title: "Câncer de Mama no Trabalho: O Papel da Liderança"
 description: "Da primeira conversa ao retorno: o que o gestor diz, o que precisa saber, como reorganizar a equipe sem sobrecarga e como planejar a volta de quem passou pelo tratamento."
-pubDate: 2026-10-18
+pubDate: 2026-10-16
 heroImage: "/blog-img/cancer-de-mama-e-lideranca.webp"
 heroImageAlt: "Duas pessoas conversam sentadas em uma sala de reunião pequena, com luz natural"
 category: "Saúde Mental no Trabalho"
