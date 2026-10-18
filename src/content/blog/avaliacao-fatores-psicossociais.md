@@ -1,6 +1,6 @@
 ---
-title: "Avaliação de Fatores Psicossociais x Avaliação Psicossocial"
-description: "Diferença entre avaliação psicossocial e fatores psicossociais na NR-1. Entenda como aplicar corretamente na sua empresa. Saiba mais."
+title: "Avaliação Psicossocial ou de Fatores Psicossociais?"
+description: "A avaliação psicossocial olha a pessoa; a de fatores psicossociais olha o trabalho. Qual das duas a NR-1 pede no PGR, e quando cada uma se aplica."
 pubDate: 2026-05-26
 heroImage: "/blog-img/avaliacao_psicossocial.webp"
 heroImageAlt: "Avaliação de fatores psicossociais x avaliação psicossocial"
@@ -18,9 +18,11 @@ faq:
     resposta: "A avaliação de fatores psicossociais usa questionário validado, entrevista, grupo focal e análise organizacional. A avaliação psicossocial individual usa teste psicológico e entrevista clínica, conduzidos por psicólogo."
 ---
 
-Nos últimos anos, a gestão da saúde mental no trabalho ganhou mais visibilidade, especialmente com a atualização da NR-1, que tornou obrigatória a inclusão dos riscos psicossociais no Programa de Gerenciamento de Riscos (PGR). Porém, ao abordar a avaliação desses riscos, é comum haver confusão entre a Avaliação de Fatores Psicossociais e a Avaliação Psicossocial. Embora os termos pareçam semelhantes, eles têm objetivos e aplicações diferentes. Compreender essa diferença é fundamental para a conformidade legal e para a prevenção de problemas trabalhistas.
+A avaliação dos fatores psicossociais tem como foco principal as **condições organizacionais e a estrutura do trabalho**: demandas, prazos, autonomia, apoio, relações e clareza de papéis. Ela não investiga a vida pessoal nem faz diagnóstico individual. É essa avaliação que a NR-1 passou a exigir dentro do gerenciamento de riscos ocupacionais.
 
-Neste artigo, explicamos as diferenças entre essas duas avaliações, quando aplicá-las e como garantir uma gestão eficaz da saúde mental no ambiente de trabalho.
+A avaliação psicossocial é outra coisa. Olha para a pessoa, e não para o trabalho, e costuma ser pedida para verificar aptidão em funções específicas. Os nomes parecidos fazem muita empresa aplicar uma no lugar da outra.
+
+A seguir, as diferenças entre as duas, quando cada uma se aplica e como saber qual a sua empresa precisa.
 
 ## O que é a Avaliação de Fatores Psicossociais?
 
