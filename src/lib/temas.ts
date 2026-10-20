@@ -76,6 +76,7 @@ const POR_ARTIGO: Record<string, Chave> = {
   'anonimato-e-lgpd': 'avaliacao',
   'antes-de-aplicar-saiba-escolher': 'avaliacao',
   'avaliacao-fatores-psicossociais': 'avaliacao',
+  'seguranca-psicologica-no-trabalho': 'avaliacao',
   'hse-indicator-tool': 'avaliacao',
   'indicadores-de-saude-mental-no-trabalho': 'avaliacao',
   'pesquisa-riscos-psicossociais': 'avaliacao',

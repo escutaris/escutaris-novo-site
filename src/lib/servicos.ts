@@ -78,6 +78,7 @@ const POR_ARTIGO: Record<string, Chave> = {
   'riscos-psicossociais': 'diagnostico',
   'riscos-psicossociais-no-trabalho': 'intervencoes',
   'sofrimento-moral-no-trabalho': 'diagnostico',
+  'seguranca-psicologica-no-trabalho': 'diagnostico',
 };
 
 // Rede para artigo novo que ainda não esteja no mapa acima. Ordem importa:
