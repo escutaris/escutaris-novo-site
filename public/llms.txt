@@ -3,12 +3,12 @@
 > Diagnóstico de fatores psicossociais e saúde mental no trabalho, com base
 > científica, para apoiar a gestão de riscos que a NR-1 exige. Responsabilidade
 > técnica da Dra. Ana Paula Teixeira, médica do trabalho, CRM-BA 12797.
-> Queluz Serviços Médicos Ltda., Salvador, Bahia.
+> Escutaris Inteligência em Saúde Mental Ltda., CNPJ 61.444.190/0001-20, Salvador, Bahia.
 
 A Escutaris aplica instrumentos validados (HSE Indicator Tool, Segurança Psicológica
 e Radar de Competências da Liderança, baseado no SMCIT) para medir fatores psicossociais de risco em uma organização e devolver o
-resultado como evidência utilizável: relatório técnico, matriz de risco e plano de
-ação. O produto é o diagnóstico, não a certificação. A Escutaris não emite PGR nem
+resultado como evidência utilizável: painel de resultados e relatório técnico, com
+subsídios para a matriz de risco e o plano de ação da empresa. O produto é o diagnóstico, não a certificação. A Escutaris não emite PGR nem
 promete conformidade: entrega os subsídios técnicos que sustentam a decisão da
 empresa.
 
@@ -26,6 +26,8 @@ empresa.
 - [Blog](https://www.escutaris.com.br/blog): NR-1, fatores psicossociais de risco, PGR, PCMSO, LGPD e cultura organizacional
 - [O que a evidência mostra sobre intervenções](https://www.escutaris.com.br/intervencoes-riscos-psicossociais-que-funcionam): leitura da Escutaris sobre 115 intervenções de saúde no trabalho avaliadas em impacto e viabilidade
 - [Perguntas frequentes](https://www.escutaris.com.br/perguntas-frequentes): NR-1, diagnóstico psicossocial e proteção de dados
+- [HSE Indicator Tool (HSE-IT)](https://www.escutaris.com.br/blog/hse-indicator-tool): o questionário de 35 perguntas do HSE britânico, como aplicar e como ler o resultado
+- [Segurança psicológica no trabalho](https://www.escutaris.com.br/blog/seguranca-psicologica-no-trabalho): o que é, o que não é e como medir na equipe
 
 ## Posição técnica
 
