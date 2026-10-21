@@ -65,7 +65,7 @@ O ponto que mais importa: ele mede a **organização do trabalho**, não a pesso
 
 ## Como funciona a aplicação
 
-O questionário tem 35 questões objetivas, respondidas numa escala de frequência que vai de "nunca" a "sempre".
+O questionário tem 35 questões objetivas, respondidas numa escala de frequência que vai de "nunca" a "sempre". Você pode [baixar o questionário HSE-IT em PDF](/questionario-hse-it-pdf), em português, com as 35 perguntas.
 
 <div class="not-prose my-10 grid gap-px bg-brand-border border border-brand-border sm:grid-cols-3">
   <div class="bg-white p-6">

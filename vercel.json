@@ -1,6 +1,11 @@
 {
   "redirects": [
     {
+      "source": "/assets/img/:arquivo(.*\\.pdf)",
+      "destination": "/questionario-hse-it-pdf",
+      "permanent": true
+    },
+    {
       "source": "/blog/a-nova-nr-1-e-a-gestao-de-riscos-psicossociais",
       "destination": "/blog/riscos-psicossociais",
       "permanent": true
@@ -239,6 +244,17 @@
       "source": "/:page(.+)\\.html",
       "destination": "/:page",
       "permanent": true
+    }
+  ],
+  "headers": [
+    {
+      "source": "/downloads/(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex"
+        }
+      ]
     }
   ]
 }

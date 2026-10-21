@@ -1,0 +1,160 @@
+---
+// Página do PDF do questionário HSE-IT (35 perguntas em português).
+// O download é liberado depois de nome, e-mail e empresa; o lead vai direto para o Zoho.
+import Layout from '../layouts/Layout.astro';
+
+const pdf = '/downloads/questionario-hse-it-escutaris.pdf';
+
+const conteudo = [
+  'As 35 perguntas do HSE-IT em português, numeradas na ordem do questionário original',
+  'A fonte oficial e os termos de uso do instrumento',
+];
+---
+
+<Layout
+  title="Questionário HSE-IT em PDF: as 35 Perguntas | Escutaris"
+  description="Baixe o questionário HSE-IT em PDF, em português, com as 35 perguntas do instrumento do Health and Safety Executive para avaliar fatores de risco psicossocial."
+>
+  <section class="section-pad bg-white">
+    <div class="container-soft">
+      <div class="max-w-5xl mx-auto grid gap-12 md:grid-cols-[1.1fr_1fr] items-start">
+        <div>
+          <nav class="mb-8 text-xs uppercase tracking-[0.14em] text-brand-muted" aria-label="Trilha">
+            <a href="/" class="hover:text-brand-terracota transition-colors">Início</a>
+            <span class="mx-2" aria-hidden="true">/</span>
+            <a href="/blog/hse-indicator-tool" class="hover:text-brand-terracota transition-colors">HSE-IT</a>
+            <span class="mx-2" aria-hidden="true">/</span>
+            <span>PDF</span>
+          </nav>
+          <span class="eyebrow mb-4 block">Material gratuito</span>
+          <h1 class="text-3xl md:text-[2.6rem] font-display font-bold text-brand-dark mb-6 leading-[1.12]">
+            Questionário HSE-IT em PDF: as 35 perguntas em português
+          </h1>
+          <p class="text-brand-muted leading-relaxed mb-6">
+            O HSE-IT foi criado pelo Health and Safety Executive, o órgão público de saúde e segurança do
+            trabalho do Reino Unido, para medir os fatores de risco psicossocial ligados à organização do
+            trabalho. É um dos instrumentos mais usados para atender ao que a NR-1 pede no gerenciamento de riscos.
+          </p>
+          <p class="font-semibold text-brand-dark mb-3">O que vem no PDF</p>
+          <ul class="space-y-2 mb-8">
+            {conteudo.map((c) => (
+              <li class="flex gap-3 text-brand-muted leading-relaxed">
+                <span class="text-brand-terracota font-bold" aria-hidden="true">+</span>
+                <span>{c}</span>
+              </li>
+            ))}
+          </ul>
+          <div class="border-l-4 border-brand-terracota bg-brand-off-white p-5 mb-8">
+            <p class="font-semibold text-brand-dark mb-2">As perguntas são só o começo</p>
+            <p class="text-sm text-brand-muted leading-relaxed">
+              O resultado depende da forma de aplicar, do cálculo de cada fator, do anonimato e da leitura por grupo.
+              Antes de aplicar na sua empresa, converse com a Escutaris.
+            </p>
+          </div>
+          <p class="text-sm text-brand-muted">
+            Quer entender o instrumento antes? Leia o guia
+            <a href="/blog/hse-indicator-tool" class="text-brand-terracota underline">Questionário HSE-IT: o que é, como aplicar e como ler</a>.
+          </p>
+        </div>
+
+        <div class="bg-brand-off-white border border-brand-border p-6 md:p-8">
+          <form id="form-hse" class="space-y-4" novalidate>
+            <p class="font-display font-bold text-brand-dark text-xl mb-1">Receba o PDF</p>
+            <p class="text-sm text-brand-muted mb-4">Preencha e o download começa na hora.</p>
+            <div>
+              <label for="hse-nome" class="block text-xs uppercase tracking-[0.12em] text-brand-dark font-semibold mb-2">Nome</label>
+              <input id="hse-nome" name="nome" required autocomplete="name" class="w-full border border-brand-border bg-white px-4 py-3" />
+            </div>
+            <div>
+              <label for="hse-email" class="block text-xs uppercase tracking-[0.12em] text-brand-dark font-semibold mb-2">E-mail de trabalho</label>
+              <input id="hse-email" name="email" type="email" required autocomplete="email" class="w-full border border-brand-border bg-white px-4 py-3" />
+            </div>
+            <div>
+              <label for="hse-empresa" class="block text-xs uppercase tracking-[0.12em] text-brand-dark font-semibold mb-2">Empresa</label>
+              <input id="hse-empresa" name="empresa" required autocomplete="organization" class="w-full border border-brand-border bg-white px-4 py-3" />
+            </div>
+            <div>
+              <label for="hse-cargo" class="block text-xs uppercase tracking-[0.12em] text-brand-dark font-semibold mb-2">Cargo (opcional)</label>
+              <input id="hse-cargo" name="cargo" autocomplete="organization-title" class="w-full border border-brand-border bg-white px-4 py-3" />
+            </div>
+            <input type="text" name="website" tabindex="-1" autocomplete="off" class="hidden" aria-hidden="true" />
+            <label class="flex gap-3 text-xs text-brand-muted leading-relaxed">
+              <input type="checkbox" name="lgpd" required class="mt-1" />
+              <span>Concordo em receber o material e conteúdos da Escutaris por e-mail, conforme a
+              <a href="/politica-de-privacidade" class="underline">Política de Privacidade</a>. Posso cancelar quando quiser.</span>
+            </label>
+            <p id="hse-erro" class="hidden text-sm text-brand-terracota"></p>
+            <button type="submit" class="w-full bg-brand-terracota text-white font-semibold px-6 py-4 hover:opacity-90 transition-opacity">
+              Baixar o questionário em PDF
+            </button>
+          </form>
+
+          <div id="hse-ok" class="hidden">
+            <p class="font-display font-bold text-brand-dark text-xl mb-3">Pronto, o download começou.</p>
+            <p class="text-sm text-brand-muted mb-6">Se não abriu, use o botão abaixo.</p>
+            <a href={pdf} download class="block text-center bg-brand-terracota text-white font-semibold px-6 py-4 hover:opacity-90 transition-opacity mb-6">
+              Baixar o PDF
+            </a>
+            <p class="text-sm text-brand-muted">
+              Quer aplicar o HSE-IT com anonimato e receber o painel de resultados em até 72 horas?
+              <a href="/diagnostico-dos-fatores-psicossociais-e-saude-mental-no-trabalho" class="text-brand-terracota underline">Veja como a Escutaris faz</a>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>
+
+<script define:vars={{ pdf }}>
+  const form = document.getElementById('form-hse');
+  const erro = document.getElementById('hse-erro');
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const f = new FormData(form);
+    const nome = String(f.get('nome') || '').trim();
+    const email = String(f.get('email') || '').trim();
+    const empresa = String(f.get('empresa') || '').trim();
+    if (!nome || !/^\S+@\S+\.\S+$/.test(email) || !empresa || !f.get('lgpd')) {
+      erro.textContent = 'Preencha nome, e-mail, empresa e marque a autorização para baixar.';
+      erro.classList.remove('hidden');
+      return;
+    }
+    if (!f.get('website')) {
+      const partes = nome.split(/\s+/);
+      const sobrenome = partes.length > 1 ? partes.pop() : partes[0];
+      const params = new URLSearchParams(window.location.search);
+      const d = new URLSearchParams();
+      d.append('xnQsjsdp', '7cfa33e6b9556bf57389e3bdd8c348d4458747e166e2592f6ec4a1425c1a7445');
+      d.append('xmIwtLD', '3a9dee7718f233d47ee2be042fb1642d7cd055de14277d0ee26ba09821b1aef116ea37815d5e470e4b3220a416417990');
+      d.append('actionType', 'TGVhZHM=');
+      d.append('returnURL', 'https://www.escutaris.com.br');
+      d.append('zc_gad', '');
+      d.append('aG9uZXlwb3Q', '');
+      d.append('Company', empresa);
+      d.append('First Name', partes.length ? partes.join(' ') : '');
+      d.append('Last Name', sobrenome);
+      d.append('Email', email);
+      d.append('Designation', String(f.get('cargo') || '').trim());
+      d.append('LEADCF14', 'Site escutaris.com.br (/questionario-hse-it-pdf)');
+      d.append('LEADCF15', 'Questionário HSE-IT PDF');
+      d.append('LEADCF51', 'on');
+      d.append('LEADCF16', params.get('utm_source') || '');
+      d.append('LEADCF17', params.get('utm_medium') || '');
+      d.append('LEADCF18', params.get('utm_campaign') || '');
+      d.append('LEADCF19', params.get('utm_content') || '');
+      d.append('LEADCF20', params.get('utm_term') || '');
+      fetch('https://crm.zoho.com/crm/WebToLeadForm', { method: 'POST', mode: 'no-cors', keepalive: true, body: d })
+        .catch((err) => console.warn('Zoho:', err));
+      window.escutarisLead?.();
+    }
+    form.classList.add('hidden');
+    document.getElementById('hse-ok').classList.remove('hidden');
+    const a = document.createElement('a');
+    a.href = pdf;
+    a.download = 'questionario-hse-it-escutaris.pdf';
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
+  });
+</script>
