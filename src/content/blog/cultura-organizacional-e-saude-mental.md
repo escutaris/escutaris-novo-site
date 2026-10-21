@@ -76,7 +76,7 @@ Transformar a cultura de uma empresa pode parecer um desafio imenso — e, de fa
 
 ### Segurança psicológica
 
-As pessoas precisam sentir que podem ser elas mesmas, expressar opiniões, admitir erros e pedir ajuda — sem medo de retaliação ou julgamento. Quando há segurança psicológica, os conflitos são tratados com maturidade, e os erros não viram armas.
+As pessoas precisam sentir que podem ser elas mesmas, expressar opiniões, admitir erros e pedir ajuda — sem medo de retaliação ou julgamento. Quando há [segurança psicológica](/blog/seguranca-psicologica-no-trabalho), os conflitos são tratados com maturidade, e os erros não viram armas.
 
 ### Coerência organizacional
 

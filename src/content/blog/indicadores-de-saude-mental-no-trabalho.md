@@ -1,5 +1,5 @@
 ---
-title: "11 Indicadores de Saúde Mental no Trabalho"
+title: "Indicadores de Saúde Mental no Trabalho: 11 Para Acompanhar"
 description: "Os 11 indicadores que mostram como está a saúde mental na sua empresa, o que cada um revela e a ação prática para cada um deles."
 pubDate: 2026-05-19
 updatedDate: 2026-08-07

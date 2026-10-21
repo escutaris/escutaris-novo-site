@@ -71,9 +71,9 @@ Para que essa comunicação seja eficiente, a PGR deve:
 
 - **identificar os riscos**: Incluindo riscos físicos, químicos, biológicos, ergonômicos e psicossociais.
 - **Elaborar um inventário de riscos**: Estabelecer estratégias para reduzir ou eliminar riscos.
-- **Manter uma comunicação contínua**: Informar os colaboradores sobre qualquer atualização nos riscos e medidas preventivas.
+- **Manter uma comunicação contínua**: Informar os trabalhadores sobre qualquer atualização nos riscos e medidas preventivas.
 
-## Boas práticas para uma comunicação eficiente e em conformidade com a NR1
+## Boas práticas para uma comunicação eficiente e alinhada à NR-1
 
 - **Use linguagem simples e objetiva** para que todos compreendam.
 - **Utilize recursos visuais** como vídeos e sinalizações para reforçar a mensagem.

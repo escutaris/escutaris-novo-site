@@ -22,7 +22,7 @@ faq:
 
 ## Introdução
 
-O comportamento da liderança tem um impacto direto na saúde mental dos colaboradores. Um gestor que estabelece um ambiente de trabalho saudável pode reduzir significativamente os riscos psicossociais, que são condições no ambiente de trabalho que podem afetar a saúde mental e o bem-estar dos colaboradores, como estresse, ansiedade e burnout. Uma liderança tóxica, por outro lado, pode agravá-los, levando a estresse, esgotamento profissional e alta rotatividade.
+O comportamento da liderança tem um impacto direto na saúde mental dos trabalhadores. Um gestor que estabelece um ambiente de trabalho saudável pode reduzir significativamente os riscos psicossociais, que são condições no ambiente de trabalho que podem afetar a saúde mental e o bem-estar dos trabalhadores, como estresse, ansiedade e burnout. Uma liderança tóxica, por outro lado, pode agravá-los, levando a estresse, esgotamento profissional e alta rotatividade.
 
 Com a atualização da NR-1, que exige a consideração dos riscos psicossociais no Programa de Gerenciamento de Riscos (PGR), as empresas precisam ir além da identificação dos problemas. É fundamental que a liderança assuma um papel ativo na prevenção. Mas como fazer isso na prática?
 
@@ -37,7 +37,7 @@ Se você quer evitar os impactos negativos dos riscos psicossociais e engajar a 
 
 ## Como a liderança influencia os riscos psicossociais?
 
-Os líderes têm um papel fundamental na criação do ambiente de trabalho. Seu estilo de gestão pode minimizar ou agravar os riscos psicossociais. Quando a liderança é equilibrada, acessível e empática, os colaboradores se sentem mais seguros e produtivos. Por outro lado, um ambiente liderado por gestores autoritários, ausentes ou sem preparo pode aumentar o estresse, os conflitos e até causar afastamentos por problemas de saúde mental.
+Os líderes têm um papel fundamental na criação do ambiente de trabalho. Seu estilo de gestão pode minimizar ou agravar os riscos psicossociais. Quando a liderança é equilibrada, acessível e empática, os trabalhadores se sentem mais seguros e produtivos. Por outro lado, um ambiente liderado por gestores autoritários, ausentes ou sem preparo pode aumentar o estresse, os conflitos e até causar afastamentos por problemas de saúde mental.
 
 ### Principais formas como a liderança pode impactar os riscos psicossociais:
 
@@ -51,7 +51,7 @@ Exemplo prático: Uma pesquisa da Harvard Business Review mostrou que funcionár
 
 ## Boas práticas para a prevenção de riscos psicossociais
 
-Para que a liderança contribua efetivamente na prevenção de riscos psicossociais, é necessário adotar práticas de gestão que promovam um ambiente de trabalho mais saudável. Pequenas mudanças na forma como os gestores lidam com suas equipes podem fazer uma grande diferença no engajamento, bem-estar e produtividade dos colaboradores.
+Para que a liderança contribua efetivamente na prevenção de riscos psicossociais, é necessário adotar práticas de gestão que promovam um ambiente de trabalho mais saudável. Pequenas mudanças na forma como os gestores lidam com suas equipes podem fazer uma grande diferença no engajamento, bem-estar e produtividade dos trabalhadores.
 
 ### 1. Estabeleça uma comunicação clara e aberta (A Escutaris oferece workshops de comunicação para líderes e equipes)
 
@@ -65,7 +65,7 @@ Para que a liderança contribua efetivamente na prevenção de riscos psicossoci
 
 **Por que é importante?** Excesso de demandas e prazos irreais são grandes gatilhos para o estresse e o esgotamento.
 
-- Ajuste as tarefas de acordo com a capacidade e habilidades de cada colaborador.
+- Ajuste as tarefas de acordo com a capacidade e habilidades de cada trabalhador.
 - Evite sobrecargas, incentivando pausas regulares e descanso adequado.
 - Monitore sinais de fadiga e alto nível de estresse na equipe.
 
@@ -74,7 +74,7 @@ Para que a liderança contribua efetivamente na prevenção de riscos psicossoci
 **Por que é importante?** Um clima organizacional positivo reduz conflitos, desmotivação e problemas interpessoais.
 
 - Estimule um ambiente de trabalho respeitoso, livre de assédio e discriminação.
-- Promova atividades de integração entre os colaboradores para fortalecer a colaboração.
+- Promova atividades de integração entre os trabalhadores para fortalecer a colaboração.
 - Não tolere comportamentos abusivos dentro da equipe e intervenha sempre que necessário.
 
 ### 4. Capacite os líderes para a gestão de riscos psicossociais (A Escutaris oferece programas de treinamento personalizados para líderes.)
@@ -85,7 +85,7 @@ Para que a liderança contribua efetivamente na prevenção de riscos psicossoci
 - Prepare a chefia para mediar conflito e para conduzir conversa difícil sobre carga e prazo.
 - Dê poder real de ajustar demanda, e não apenas a tarefa de comunicar melhor a mesma demanda.
 
-### 5. Valorize e reconheça os colaboradores (A Escutaris pode ajudar a implementar programas de reconhecimento e recompensa alinhados aos valores da empresa)
+### 5. Valorize e reconheça os trabalhadores (A Escutaris pode ajudar a implementar programas de reconhecimento e recompensa alinhados aos valores da empresa)
 
 **Por que é importante?** A falta de reconhecimento é um dos maiores fatores de desmotivação no trabalho.
 
@@ -131,7 +131,7 @@ Muitos gestores não foram treinados para lidar com questões como saúde mental
 
 ## Cultura organizacional e engajamento da equipe
 
-A liderança tem um papel fundamental na construção da cultura organizacional. Um ambiente saudável, onde os colaboradores se sentem respeitados e valorizados, reduz significativamente os riscos psicossociais e melhora a produtividade da equipe.
+A liderança tem um papel fundamental na construção da cultura organizacional. Um ambiente saudável, onde os trabalhadores se sentem respeitados e valorizados, reduz significativamente os riscos psicossociais e melhora a produtividade da equipe.
 
 ### Promova uma cultura de bem-estar e respeito
 
@@ -139,7 +139,7 @@ A liderança tem um papel fundamental na construção da cultura organizacional.
 
 - Desenvolva políticas claras contra assédio e discriminação e garanta que todos saibam como denunciar situações de abuso.
 - Crie programas de bem-estar mental, oferecendo apoio psicológico e incentivando um equilíbrio saudável entre vida profissional e pessoal.
-- Encoraje o respeito e a empatia entre os colaboradores, promovendo um ambiente de trabalho positivo.
+- Encoraje o respeito e a empatia entre os trabalhadores, promovendo um ambiente de trabalho positivo.
 
 ### Incentive o trabalho em equipe e a colaboração
 
@@ -151,10 +151,11 @@ A liderança tem um papel fundamental na construção da cultura organizacional.
 
 ### Estabeleça um canal aberto de comunicação
 
-**Por que é importante?** Colaboradores que se sentem ouvidos e têm espaço para expressar preocupações são menos propensos a desenvolver estresse e ansiedade.
+**Por que é importante?** Trabalhadores que se sentem ouvidos e têm espaço para expressar preocupações são menos propensos a desenvolver estresse e ansiedade.
 
 - Realize reuniões periódicas onde os funcionários possam dar feedback sobre o ambiente de trabalho.
-- Crie um canal de comunicação anônimo, onde os colaboradores possam relatar problemas sem medo de represálias.
+- Crie um canal de comunicação anônimo, onde os trabalhadores possam relatar problemas sem medo de represálias.
+- Acompanhe a [segurança psicológica](/blog/seguranca-psicologica-no-trabalho) da equipe: ela mostra se falar sobre um problema ainda custa caro.
 - Demonstre transparência nas decisões da empresa, reduzindo insegurança e boatos que podem gerar estresse.
 
 ### Reforce o papel dos líderes como agentes de mudança
@@ -174,7 +175,7 @@ Agora você já sabe que para prevenir os riscos psicossociais, os líderes deve
 - Comunicar-se de forma clara e transparente, promovendo um ambiente de respeito.
 - Evitar sobrecarga de trabalho, garantindo equilíbrio e metas realistas.
 - Gerenciar conflitos de forma eficaz, evitando que pequenos problemas se tornem crises.
-- Valorizar e reconhecer os colaboradores, aumentando o engajamento.
+- Valorizar e reconhecer os trabalhadores, aumentando o engajamento.
 - Formar-se continuamente sobre fatores psicossociais e sobre como eles aparecem na própria área.
 - Promover uma cultura organizacional saudável, onde o bem-estar dos funcionários seja prioridade.
 

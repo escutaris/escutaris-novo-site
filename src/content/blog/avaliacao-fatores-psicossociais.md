@@ -1,6 +1,6 @@
 ---
-title: "Avaliação Psicossocial ou de Fatores Psicossociais?"
-description: "A avaliação psicossocial olha a pessoa; a de fatores psicossociais olha o trabalho. Qual das duas a NR-1 pede no PGR, e quando cada uma se aplica."
+title: "Avaliação Psicossocial x Fatores Psicossociais: Qual a NR-1 Pede"
+description: "A avaliação psicossocial olha a pessoa. A de fatores psicossociais examina as condições do trabalho, com foco preventivo. Veja qual a NR-1 pede no PGR."
 pubDate: 2026-05-26
 heroImage: "/blog-img/avaliacao_psicossocial.webp"
 heroImageAlt: "Avaliação de fatores psicossociais x avaliação psicossocial"
@@ -26,7 +26,7 @@ A seguir, as diferenças entre as duas, quando cada uma se aplica e como saber q
 
 ## O que é a Avaliação de Fatores Psicossociais?
 
-A Avaliação de Fatores Psicossociais é um processo amplo que busca identificar e analisar os elementos do ambiente de trabalho que podem impactar a saúde mental e emocional dos colaboradores. Essa avaliação foca em aspectos organizacionais e estruturais que podem gerar riscos psicossociais, como:
+A Avaliação de Fatores Psicossociais é um processo amplo que busca identificar e analisar os elementos do ambiente de trabalho que podem impactar a saúde mental e emocional dos trabalhadores. Essa avaliação foca em aspectos organizacionais e estruturais que podem gerar riscos psicossociais, como:
 
 - **Sobrecarga de trabalho:** Excesso de demandas e prazos irreais.
 - **Falta de apoio organizacional:** Liderança autoritária ou comunicação ineficaz.
@@ -39,7 +39,7 @@ A Avaliação de Fatores Psicossociais é um processo amplo que busca identifica
 
 ## O que é a Avaliação Psicossocial?
 
-A Avaliação Psicossocial tem um foco mais individualizado e avalia a aptidão de um colaborador para exercer determinadas atividades que possam impactar sua saúde mental e emocional. Ela é comumente exigida para funções que envolvem alto nível de estresse ou risco, tais como:
+A Avaliação Psicossocial tem um foco mais individualizado e avalia a aptidão de um trabalhador para exercer determinadas atividades que possam impactar sua saúde mental e emocional. Ela é comumente exigida para funções que envolvem alto nível de estresse ou risco, tais como:
 
 - **Trabalho em altura ou espaço confinado:** Funções que exigem controle emocional e resposta rápida a emergências.
 - **Atividades com risco à vida:** Vigilantes, operadores de máquinas pesadas, trabalhadores do setor elétrico.
@@ -93,7 +93,7 @@ A Avaliação Psicossocial tem um foco mais individualizado e avalia a aptidão 
 **Por que essa diferença é importante?** Entender as distinções entre essas avaliações pode evitar equívocos na gestão da saúde mental no ambiente de trabalho. Empresas que confundem os dois tipos de avaliação podem negligenciar riscos importantes ou aplicar medidas inadequadas.
 
 - **Evita equívocos na gestão de saúde mental:** Empresas que confundem as avaliações podem negligenciar riscos importantes ou aplicar medidas inadequadas.
-- **Garante conformidade com a legislação:** A Avaliação de Fatores Psicossociais é exigida pela NR-1, enquanto a Avaliação Psicossocial pode ser necessária para determinadas funções específicas previstas em outras NRs.
+- **Responde a uma exigência legal:** A Avaliação de Fatores Psicossociais é exigida pela NR-1, enquanto a Avaliação Psicossocial pode ser necessária para determinadas funções específicas previstas em outras NRs.
 - **Reduz passivos trabalhistas:** Empresas que não realizam a avaliação correta podem ser responsabilizadas por negligência na gestão da saúde ocupacional.
 - **Melhora o bem-estar e a produtividade:** Enquanto a Avaliação Psicossocial protege o trabalhador individualmente, a Avaliação de Fatores Psicossociais transforma o ambiente de trabalho como um todo.
 
@@ -101,7 +101,7 @@ A Avaliação Psicossocial tem um foco mais individualizado e avalia a aptidão 
 
 Muitas empresas ainda têm dúvidas sobre quando e como aplicar cada avaliação. Veja um guia simples:
 
-- **Avaliação de Fatores Psicossociais:** Se sua preocupação é entender o impacto do ambiente de trabalho na saúde mental dos colaboradores, prevenir riscos organizacionais e atender à NR-1, sua empresa precisa dessa avaliação.
+- **Avaliação de Fatores Psicossociais:** Se sua preocupação é entender o impacto do ambiente de trabalho na saúde mental dos trabalhadores, prevenir riscos organizacionais e atender à NR-1, sua empresa precisa dessa avaliação.
 - **Avaliação Psicossocial:** Se a necessidade for avaliar se um trabalhador tem condições psicológicas para exercer uma função específica de alto risco, o indicado é a Avaliação Psicossocial.
 
 **E quando ambas são necessárias?** Algumas empresas podem precisar dos dois tipos de avaliação, mas para propósitos distintos. A chave está em entender o objetivo de cada uma e garantir que estejam bem implementadas.

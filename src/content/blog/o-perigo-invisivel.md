@@ -90,6 +90,7 @@ Para reduzir esses riscos e criar um ambiente de trabalho mais seguro e saudáve
 - Crie uma cultura onde os trabalhadores se sintam confortáveis para relatar riscos e pedir ajuda sem medo de represálias.
 - Garanta que relatar um problema tenha consequência sobre o problema, e não sobre quem relatou.
 - Informe as equipes sobre quais fatores foram identificados e o que a empresa decidiu fazer a respeito.
+- Meça: o artigo sobre [segurança psicológica no trabalho](/blog/seguranca-psicologica-no-trabalho) mostra como avaliar quanto custa falar dentro de cada equipe.
 
 ### 3. Implementação de pausas estratégicas e equilíbrio entre trabalho e descanso
 

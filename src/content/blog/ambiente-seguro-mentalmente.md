@@ -75,7 +75,7 @@ O ponto que costuma ser pulado é o aprofundamento. O questionário diz **onde**
 
 ### 2. Fortaleça a segurança psicológica
 
-Segurança psicológica não é ambiente sem conflito. É ambiente onde discordar, apontar erro e pedir ajuda não custa caro a quem faz isso.
+Segurança psicológica não é ambiente sem conflito. É ambiente onde discordar, apontar erro e pedir ajuda não custa caro a quem faz isso. Explicamos o conceito e como medir no artigo sobre [segurança psicológica no trabalho](/blog/seguranca-psicologica-no-trabalho).
 
 - Crie canal de escuta com regra clara sobre o que acontece depois que alguém fala
 - Trate assédio e agressão sutil com a mesma seriedade, porque a segunda desgasta por acúmulo

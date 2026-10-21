@@ -20,7 +20,7 @@ faq:
 
 ## Introdução
 
-O assédio moral no trabalho pode destruir carreiras, afetar gravemente a saúde mental dos colaboradores e prejudicar a produtividade das empresas. O assédio moral causa prejuízos financeiros e de imagem irreparáveis para as empresas. Infelizmente, muitos trabalhadores têm medo de denunciar por receio de retaliações ou até mesmo de perder o emprego.
+O assédio moral no trabalho pode destruir carreiras, afetar gravemente a saúde mental dos trabalhadores e prejudicar a produtividade das empresas. O assédio moral causa prejuízos financeiros e de imagem irreparáveis para as empresas. Infelizmente, muitos trabalhadores têm medo de denunciar por receio de retaliações ou até mesmo de perder o emprego.
 
 Além disso, com a atualização da NR-1, as empresas agora são obrigadas a considerar fatores psicossociais na gestão de riscos ocupacionais. Isso significa que o assédio moral não é mais apenas uma questão ética e trabalhista, mas também uma exigência legal que precisa ser monitorada e controlada dentro do Programa de Gerenciamento de Riscos (PGR).
 
@@ -38,15 +38,15 @@ Se o seu objetivo é construir um ambiente de trabalho respeitoso, seguro e livr
 
 ## O que é assédio moral no trabalho?
 
-O assédio moral no ambiente de trabalho ocorre quando um colaborador é exposto a situações humilhantes, constrangedoras ou degradantes de forma repetitiva e prolongada. É importante diferenciar o assédio moral de conflitos pontuais ou discordâncias no ambiente de trabalho. O assédio moral se caracteriza pela repetição e intencionalidade de atos que visam prejudicar a vítima. Essas práticas criam um ambiente hostil e prejudicam não apenas a vítima, mas toda a equipe, impactando a produtividade e a cultura organizacional.
+O assédio moral no ambiente de trabalho ocorre quando um trabalhador é exposto a situações humilhantes, constrangedoras ou degradantes de forma repetitiva e prolongada. É importante diferenciar o assédio moral de conflitos pontuais ou discordâncias no ambiente de trabalho. O assédio moral se caracteriza pela repetição e intencionalidade de atos que visam prejudicar a vítima. Essas práticas criam um ambiente hostil e prejudicam não apenas a vítima, mas toda a equipe, impactando a produtividade e a cultura organizacional.
 
 ### Exemplos de assédio moral no trabalho
 
 - Críticas excessivas ou injustificadas – Chamados constantes de "incompetente", "incapaz" ou outros termos depreciativos.
-- Isolamento e exclusão – Não convidar um colaborador para reuniões ou eventos intencionalmente.
+- Isolamento e exclusão – Não convidar um trabalhador para reuniões ou eventos intencionalmente.
 - Sobrecarregar de tarefas ou retirar responsabilidades sem motivo – Atribuir trabalho excessivo para provocar o erro ou, ao contrário, impedir que o funcionário tenha atribuições.
 - Expor ao ridículo – Gritar com o funcionário, fazer piadas sobre sua aparência ou desempenho na frente de colegas.
-- Ameaças constantes – Insinuar que o colaborador será demitido sem justificativa clara.
+- Ameaças constantes – Insinuar que o trabalhador será demitido sem justificativa clara.
 - Impedir progressão na carreira – Bloquear promoções ou oportunidades como forma de punição velada.
 
 <div class="not-prose my-10 grid gap-px bg-brand-border border border-brand-border sm:grid-cols-2 lg:grid-cols-3">
@@ -98,7 +98,7 @@ Com a atualização da NR-1, as empresas agora são obrigadas a identificar e ge
 ## O que acontece se a empresa não agir?
 
 - Multas e penalidades aplicadas pelos órgãos de fiscalização do trabalho.
-- Processos trabalhistas por danos morais movidos por colaboradores.
+- Processos trabalhistas por danos morais movidos por trabalhadores.
 - Dano à reputação da empresa, dificultando a atração e retenção de talentos.
 
 ## Passo a passo para criar um Programa de Prevenção e Controle do Assédio Moral
@@ -107,7 +107,7 @@ A implementação de um programa eficaz exige planejamento, envolvimento da lide
 
 ### 1º Passo: Criar uma Política de Prevenção ao Assédio Moral
 
-**Por que é importante?** Uma política clara define as regras da empresa e orienta os colaboradores sobre o que é assédio moral e como preveni-lo. Escreva um documento oficial com os seguintes pontos:
+**Por que é importante?** Uma política clara define as regras da empresa e orienta os trabalhadores sobre o que é assédio moral e como preveni-lo. Escreva um documento oficial com os seguintes pontos:
 
 - Definição do que constitui assédio moral.
 - Exemplos práticos para facilitar o entendimento.
@@ -118,22 +118,22 @@ Divulgue essa política para todos os funcionários e reforce a importância do 
 
 ### 2º Passo: Estabelecer um Canal de Denúncias Seguro
 
-**Por que é importante?** Muitos colaboradores têm medo de denunciar por receio de represálias. Um canal seguro aumenta a confiança e a eficácia do programa.
+**Por que é importante?** Muitos trabalhadores têm medo de denunciar por receio de represálias. Um canal seguro aumenta a confiança e a eficácia do programa.
 
-Crie um canal anônimo e seguro, como uma plataforma digital terceirizada ou um e-mail específico gerenciado pelo RH. Garanta sigilo absoluto, principalmente em empresas pequenas, onde os colaboradores temem ser identificados. Defina um fluxo claro de investigação, garantindo que todas as denúncias sejam apuradas de forma justa.
+Crie um canal anônimo e seguro, como uma plataforma digital terceirizada ou um e-mail específico gerenciado pelo RH. Garanta sigilo absoluto, principalmente em empresas pequenas, onde os trabalhadores temem ser identificados. Defina um fluxo claro de investigação, garantindo que todas as denúncias sejam apuradas de forma justa.
 
 ![Mãos digitando em um notebook num canto reservado do escritório, sem que o rosto apareça](/blog-img/canal-de-denuncia.webp)
 
-**Dica para empresas pequenas:** Quando há poucos funcionários em um setor, a denúncia pode ser mais facilmente associada a um colaborador específico. Para evitar isso:
+**Dica para empresas pequenas:** Quando há poucos funcionários em um setor, a denúncia pode ser mais facilmente associada a um trabalhador específico. Para evitar isso:
 
 - Use pesquisas de clima organizacional anônimas para identificar padrões de assédio sem expor indivíduos.
 - Terceirize o canal de denúncias, garantindo imparcialidade e proteção à identidade dos envolvidos.
 
-### 3º Passo: Treinar a Liderança e os Colaboradores
+### 3º Passo: Treinar a Liderança e os Trabalhadores
 
 **Por que é importante?** Líderes despreparados podem ser coniventes ou até praticantes de assédio sem perceber.
 
-Capacite os gestores para reconhecer e agir contra o assédio moral. Treine os colaboradores para identificar e relatar casos sem medo. Promova uma cultura de respeito, incentivando diálogos abertos sobre o tema.
+Capacite os gestores para reconhecer e agir contra o assédio moral. Treine os trabalhadores para identificar e relatar casos sem medo. Promova uma cultura de respeito, incentivando diálogos abertos sobre o tema.
 
 ### 4º Passo: Criar um Comitê de Ética para Investigar Casos
 
@@ -153,13 +153,13 @@ Criar um Programa de Prevenção e Controle do Assédio Moral é um grande passo
 
 ### 1. Engaje a liderança no combate ao assédio
 
-**Por que é importante?** Se os gestores não levarem o programa a sério, os colaboradores não confiarão nele.
+**Por que é importante?** Se os gestores não levarem o programa a sério, os trabalhadores não confiarão nele.
 
 Treine os líderes para reconhecer e intervir em casos de assédio moral. Inclua a prevenção do assédio como critério de avaliação dos gestores, garantindo que eles promovam um ambiente saudável. Demonstre apoio público ao programa, com comunicados internos da diretoria reforçando seu compromisso com um ambiente de respeito.
 
 ### 2. Dê credibilidade ao canal de denúncias
 
-**Por que é importante?** Se as denúncias não forem levadas a sério, os colaboradores deixarão de reportar casos.
+**Por que é importante?** Se as denúncias não forem levadas a sério, os trabalhadores deixarão de reportar casos.
 
 Garanta que todas as denúncias sejam investigadas de forma justa e imparcial. Comunique os resultados das investigações, sempre respeitando o sigilo. Proteja os denunciantes, garantindo que não sofram retaliações por expor o problema.
 
@@ -177,19 +177,19 @@ Reveja periodicamente as diretrizes do programa para garantir que estejam atuali
 
 ## Conclusão
 
-O assédio moral no trabalho não é apenas um problema individual, mas sim um reflexo da cultura organizacional da empresa. Ignorar essa questão pode levar a impactos negativos na saúde mental dos colaboradores, queda na produtividade, processos trabalhistas e danos à reputação da empresa.
+O assédio moral no trabalho não é apenas um problema individual, mas sim um reflexo da cultura organizacional da empresa. Ignorar essa questão pode levar a impactos negativos na saúde mental dos trabalhadores, queda na produtividade, processos trabalhistas e danos à reputação da empresa.
 
 Agora você já sabe que um Programa de Prevenção e Controle do Assédio Moral eficaz deve incluir:
 
 - Uma política clara de prevenção, com regras bem definidas.
 - Um canal de denúncias seguro, que proteja a identidade dos denunciantes.
-- Treinamento da liderança e dos colaboradores, para que todos saibam reconhecer e combater o assédio.
+- Treinamento da liderança e dos trabalhadores, para que todos saibam reconhecer e combater o assédio.
 - Um comitê de ética para garantir investigações justas e imparciais.
 - Monitoramento contínuo, para avaliar e melhorar as ações de combate ao assédio.
 
 Além disso, para empresas pequenas, é essencial adotar estratégias que garantam o sigilo dos denunciantes, como pesquisas anônimas e canais de denúncia terceirizados.
 
-**O próximo passo?** Se sua empresa ainda não tem um programa estruturado, agora é o momento ideal para começar. Implementar essas práticas não só garante conformidade com a legislação, mas também fortalece a confiança e o bem-estar dos colaboradores. A Escutaris está pronta para te ajudar a construir um ambiente de trabalho mais seguro e saudável.
+**O próximo passo?** Se sua empresa ainda não tem um programa estruturado, agora é o momento ideal para começar. Essas práticas respondem ao que a legislação pede e fortalecem a confiança e o bem-estar dos trabalhadores. A Escutaris está pronta para te ajudar a construir um ambiente de trabalho mais seguro e saudável.
 
 ## Fontes
 

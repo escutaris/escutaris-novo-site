@@ -1,6 +1,6 @@
 ---
-title: "HSE-IT: Como Medir os Riscos Psicossociais no Trabalho"
-description: "O que é o HSE Indicator Tool, os sete domínios que ele mede, como aplicar e o que fazer com o resultado. Guia técnico da Escutaris."
+title: "Questionário HSE-IT: O Que É, Como Aplicar e Como Ler"
+description: "O questionário HSE-IT (HSE Indicator Tool) tem 35 perguntas e mede sete fatores de risco psicossocial. Veja como aplicar, como ler o resultado e o que a NR-1 pede."
 pubDate: 2025-06-09
 updatedDate: 2026-08-07
 heroImage: "/blog-img/hse_indicator_tool.webp"
@@ -148,7 +148,7 @@ O HSE-IT rende mais quando combinado com grupos focais e entrevistas. O question
 
 O HSE-IT é adequado quando o objetivo é mapear estresse ocupacional ligado à organização do trabalho. Não é o único instrumento existente, e nem sempre é o mais indicado: contextos diferentes pedem instrumentos diferentes, e há situações em que a combinação de dois entrega o que um sozinho não alcança.
 
-A Escutaris aplica o HSE-IT com devolutiva por setor e por função, e combina com outros instrumentos validados quando a leitura do contexto pede.
+A Escutaris aplica o HSE-IT com devolutiva por setor e por função, e costuma combiná-lo com o questionário de [segurança psicológica](/blog/seguranca-psicologica-no-trabalho), que mostra onde a equipe deixou de falar.
 
 Sua empresa já mediu qual dos sete domínios está mais alto?
 

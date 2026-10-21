@@ -69,7 +69,7 @@ Além dos questionários, entrevistas individuais e grupos focais são métodos 
 
 ### 3. Observação direta do ambiente de trabalho
 
-A observação permite identificar **cargas excessivas, pressões por produtividade e outros elementos do dia a dia** que podem impactar a saúde mental dos colaboradores.
+A observação permite identificar **cargas excessivas, pressões por produtividade e outros elementos do dia a dia** que podem impactar a saúde mental dos trabalhadores.
 
 A escolha do método adequado faz toda a diferença para garantir que a i**dentificação dos riscos psicossociais seja precisa e alinhada às diretrizes da NR1**.
 
