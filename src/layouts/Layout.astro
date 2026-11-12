@@ -89,13 +89,19 @@ const jsonLd = {
     })(window,document,'script','dataLayer','GTM-WRT2F3WJ');</script>
     <!-- End Google Tag Manager -->
 
-    <!-- Google tag (gtag.js) — Google Ads -->
-    <script async is:inline src="https://www.googletagmanager.com/gtag/js?id=AW-16879349391"></script>
+    <!-- Conversão: clique em qualquer botão "Solicite uma proposta" (formulário do Zoho).
+         Avisa o GTM com o evento "solicitar_proposta"; o Brenno configura o acionador lá. -->
     <script is:inline>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'AW-16879349391');
+      document.addEventListener('click', function (e) {
+        var a = e.target && e.target.closest ? e.target.closest('a[href*="FRCADI02DADOSCLIENTE"]') : null;
+        if (!a) return;
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({
+          event: 'solicitar_proposta',
+          pagina: location.pathname,
+          texto_botao: (a.textContent || '').trim().slice(0, 80)
+        });
+      }, true);
     </script>
 
     <!-- Pixel da Meta (Escutaris) + aviso de cookies -->
