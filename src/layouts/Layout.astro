@@ -89,15 +89,40 @@ const jsonLd = {
     })(window,document,'script','dataLayer','GTM-WRT2F3WJ');</script>
     <!-- End Google Tag Manager -->
 
-    <!-- Conversão: clique em qualquer botão "Solicite uma proposta" (formulário do Zoho).
-         Avisa o GTM com o evento "solicitar_proposta"; o Brenno configura o acionador lá. -->
+    <!-- Google Ads, conta AW-18567646947 (enviada pelo Brenno em 13/11/26) -->
+    <script is:inline async src="https://www.googletagmanager.com/gtag/js?id=AW-18567646947"></script>
+    <script is:inline>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'AW-18567646947');
+    </script>
+
+    <!-- Conversões de clique (todas as páginas):
+         - "Solicite uma proposta" (formulário do Zoho) -> AW-18567646947/KimPCJnU7rcdEOOd35VF
+         - qualquer botão de WhatsApp                   -> AW-18567646947/JTAACOaw7rcdEOOd35VF
+         Os links abrem em aba nova, então não há redirecionamento a esperar.
+         Também avisa o GTM (solicitar_proposta / clique_whatsapp), só para relatório. -->
     <script is:inline>
       document.addEventListener('click', function (e) {
-        var a = e.target && e.target.closest ? e.target.closest('a[href*="FRCADI02DADOSCLIENTE"]') : null;
+        if (!e.target || !e.target.closest) return;
+        var a = e.target.closest('a[href]');
         if (!a) return;
+        var href = a.getAttribute('href') || '';
+        var conv, evento;
+        if (href.indexOf('FRCADI02DADOSCLIENTE') !== -1) {
+          conv = 'AW-18567646947/KimPCJnU7rcdEOOd35VF'; evento = 'solicitar_proposta';
+        } else if (/whatsapp\.com|wa\.me/i.test(href)) {
+          conv = 'AW-18567646947/JTAACOaw7rcdEOOd35VF'; evento = 'clique_whatsapp';
+        } else {
+          return;
+        }
+        if (typeof gtag === 'function') {
+          gtag('event', 'conversion', { send_to: conv });
+        }
         window.dataLayer = window.dataLayer || [];
         window.dataLayer.push({
-          event: 'solicitar_proposta',
+          event: evento,
           pagina: location.pathname,
           texto_botao: (a.textContent || '').trim().slice(0, 80)
         });
