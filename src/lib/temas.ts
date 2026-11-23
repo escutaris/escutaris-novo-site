@@ -73,6 +73,7 @@ const POR_ARTIGO: Record<string, Chave> = {
   'o-erro-fatal-na-adequacao-a-nr1': 'nr1',
   'riscos-psicossociais': 'nr1',
   'stf-suspende-multas-nr-1': 'nr1',
+  'inventario-sem-risco-psicossocial': 'nr1',
 
   'anonimato-e-lgpd': 'avaliacao',
   'antes-de-aplicar-saiba-escolher': 'avaliacao',
